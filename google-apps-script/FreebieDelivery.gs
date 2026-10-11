@@ -15,7 +15,7 @@
  * 5) Test a signup with your own email and confirm a Subscribers row plus the PDF.
  * Only use Marketing Opt-In = YES when the user explicitly opted in.
  */
-const SHEET_ID = 'PASTE_GOOGLE_SHEET_ID_HERE';
+const SHEET_ID = '1LMswnT-46ONCQmnVzeCEAgTR41wJufDOg_9iz01lR0Y';
 const SITE_NAME = "What's for Eats";
 const ASSETS = {
   "20-lazy-dinners-for-when-your-brain-has-left-the-building": {
