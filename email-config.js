@@ -8,4 +8,4 @@
    Timestamp | Email | Requested Freebie | Marketing Opt-In | Source URL | Delivery Status
    Do not put the Google Sheet ID or Apps Script URL in public-facing HTML.
 */
-window.FREEBIES_WEB_APP_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+window.FREEBIES_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxcRJBkyd1HEEGkJLUzCtqQ-dn7dogz4EeJuOaVGrODZZ5WlMLd-BwcAR_mceYgSs3z/exec";
