@@ -2,7 +2,7 @@
    Each request is logged, then redirected to the matching styled HTML resource.
    Newsletter consent remains optional. Keep the endpoint synced with the deployed Apps Script.
 */
-window.FREEBIES_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxcRJBkyd1HEEGkJLUzCtqQ-dn7dogz4EeJuOaVGrODZZ5WlMLd-BwcAR_mceYgSs3z/exec";
+window.FREEBIES_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzqWjkThQ0gjfqTMzwp4ovuVfjNFXgK6Q79ZXRUHWIB92gjjdTAR2NwyYrPjoeFUVY7/exec";
 window.FREEBIE_HTML_ROUTES = {
   "20-lazy-dinners-for-when-your-brain-has-left-the-building": "/20-lazy-dinners-for-when-your-brain-has-left-the-building.html",
   "20-lazy-dinners-sorted-by-how-tired-you-are": "/20-lazy-dinners-sorted-by-how-tired-you-are.html",
