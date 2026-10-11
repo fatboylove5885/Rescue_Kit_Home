@@ -2,7 +2,7 @@
  * 1) Create a Google Sheet from the supplied lead-tracker CSV or a blank sheet.
  * 2) Extensions > Apps Script; paste this file.
  * 3) Set SHEET_ID and deploy as a Web app: Execute as you, access Anyone.
- * 4) Copy the /exec URL into freebies.html as window.FREEBIES_WEB_APP_URL.
+ * 4) Copy the /exec URL into email-config.js as window.FREEBIES_WEB_APP_URL.
  * 5) Test with your own email before promoting. Do not send newsletter messages unless marketingOptIn is true.
  */
 const SHEET_ID = 'PASTE_GOOGLE_SHEET_ID_HERE';
