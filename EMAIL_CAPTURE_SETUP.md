@@ -11,6 +11,14 @@ The site files and subscriber-tracker template are in this repository. The email
 
 The columns are: Timestamp, Email, Requested Freebie, Marketing Opt-In, Source URL, Delivery Status.
 
+## If “Extensions → Apps Script” is missing
+
+- Open the spreadsheet in a **desktop browser** at `https://sheets.google.com` or `https://docs.google.com/spreadsheets/`. The Google Sheets iPhone/iPad app does not expose the full Apps Script editor menu.
+- Make sure you are in the actual spreadsheet editor (URL normally contains `/spreadsheets/d/...`), not Drive's preview, a CSV preview, or an Excel file opened in compatibility mode.
+- If you imported the CSV, save it as a native Google Sheets spreadsheet: open a new Google Sheet, use **File → Import → Upload**, select the CSV, and choose **Insert new sheet(s)** or import into the spreadsheet. Confirm the tab is named `Subscribers`.
+- Confirm you have edit access. A view-only file or managed work/school account with Apps Script disabled may hide or block the menu.
+- Then use **Extensions → Apps Script** from the desktop editor. You can also open Apps Script from `https://script.google.com`, create a project, paste the supplied script, and set the Sheet ID in the code.
+
 ## 2. Authorize the email delivery script
 
 1. Open the Sheet and choose **Extensions → Apps Script**.
