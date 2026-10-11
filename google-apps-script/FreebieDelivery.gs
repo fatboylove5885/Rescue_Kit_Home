@@ -150,6 +150,6 @@ function json(obj) {
 function resultPage(result) {
   const payload = JSON.stringify(result).replace(/</g, '\\u003c');
   const status = result.ok ? 'Opening your resource…' : 'Your request could not be saved.';
-  const html = '<!doctype html><html><head><meta charset="utf-8"><title>Free resource</title></head><body><p>' + status + '</p><script>window.parent.postMessage({type:"freebie-signup-result",payload:1,...' + payload + '}, "*");<\\/script></body></html>';
+  const html = '<!doctype html><html><head><meta charset="utf-8"><title>Free resource</title></head><body><p>' + status + '</p><script>window.parent.postMessage({type:"freebie-signup-result",payload:1,...' + payload + '}, "*");</script></body></html>';
   return HtmlService.createHtmlOutput(html).setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
 }
