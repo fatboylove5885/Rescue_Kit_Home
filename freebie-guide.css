@@ -1,0 +1,43 @@
+/* What's for Eats — polished free-guide visual system */
+:root{--wfe-cream:#fff8ef;--wfe-paper:#fffdf9;--wfe-ink:#30241d;--wfe-muted:#78675a;--wfe-tomato:#c84927;--wfe-coral:#f2a17f;--wfe-sage:#2f6b50;--wfe-mint:#e7f0e7;--wfe-linen:#f4e5d4;--wfe-gold:#e8b94f;--wfe-line:#e7d5c1;--wfe-shadow:0 16px 42px rgba(74,43,21,.09)}
+html{scroll-behavior:smooth;background:var(--wfe-cream)}
+body{background:var(--wfe-cream)!important;color:var(--wfe-ink)!important}
+main,.ld-post main,article, .guide,.printable,.content,.container{color:var(--wfe-ink)}
+h1,h2,h3,h4{color:var(--wfe-ink);letter-spacing:-.025em}
+h1{font-size:clamp(2.25rem,6vw,4rem)!important;line-height:1.03!important}
+h2{font-size:clamp(1.65rem,4vw,2.45rem)!important}
+p,li{line-height:1.72}
+a{transition:color .18s ease,background .18s ease}
+img{max-width:100%;height:auto}
+figure,.hero,.ph{overflow:hidden;border-radius:20px!important}
+figure img,.hero img,.ph img{display:block;width:100%;object-fit:cover;border-radius:inherit;box-shadow:0 8px 24px rgba(55,33,20,.08)}
+.ld-post .topbar{height:9px!important;background:linear-gradient(90deg,var(--wfe-tomato),var(--wfe-coral),var(--wfe-gold))!important}
+.ld-post main{max-width:900px!important;padding:clamp(22px,5vw,58px) clamp(16px,4vw,32px) 72px!important}
+.ld-post h1{margin:16px 0 18px!important}
+.ld-post .sub{font-size:clamp(1.08rem,2.4vw,1.35rem)!important;color:var(--wfe-muted)!important;max-width:68ch}
+.ld-post figure.hero{margin:24px 0 30px!important;border-radius:22px!important;box-shadow:var(--wfe-shadow)}
+.ld-post figure.hero img{aspect-ratio:16/8.5;object-fit:cover}
+.ld-post nav[aria-label="Jump to a section"]{display:flex;flex-wrap:wrap;gap:8px;background:var(--wfe-paper);border:1px solid var(--wfe-line);border-radius:16px;padding:16px!important;margin:26px 0!important;line-height:1.8}
+.ld-post nav a{display:inline-block;background:var(--wfe-mint);color:var(--wfe-sage)!important;padding:5px 10px;border-radius:999px;text-decoration:none;font-weight:700}
+.ld-post .level{margin:54px 0 26px!important;padding:20px 22px!important;border:0!important;border-left:6px solid var(--wfe-tomato)!important;border-radius:0 16px 16px 0;background:linear-gradient(110deg,#f8e5d6,var(--wfe-cream))!important}
+.ld-post .level h2{margin-bottom:10px!important}
+.ld-post .rec{background:var(--wfe-paper);border:1px solid var(--wfe-line);border-radius:20px;padding:clamp(16px,3vw,28px)!important;margin:0 0 26px!important;box-shadow:var(--wfe-shadow)}
+.ld-post .rec figure{margin:0 0 18px!important}
+.ld-post .rec img{aspect-ratio:16/9;object-fit:cover}
+.ld-post .meta{gap:8px!important}
+.ld-post .pill{background:var(--wfe-sage)!important;border-radius:999px!important;padding:7px 13px!important}
+.ld-post .eff{background:#fff0e8;border-radius:999px;padding:7px 11px;color:var(--wfe-tomato)!important}
+.ld-post h4{color:var(--wfe-tomato)!important;font-size:.82rem!important;letter-spacing:.09em!important}
+.ld-post .need{background:var(--wfe-linen)!important;border-radius:12px!important;padding:16px 20px 16px 36px!important}
+.ld-post .tip{background:var(--wfe-mint)!important;border-left:4px solid var(--wfe-sage);border-radius:0 12px 12px 0;padding:15px 18px!important}
+.ld-post section:not(.level){margin-top:38px}
+.ld-post table.data{border-collapse:separate!important;border-spacing:0!important;border:1px solid var(--wfe-line);border-radius:14px;overflow:hidden;background:var(--wfe-paper)}
+.ld-post table.data th,.ld-post table.data td{padding:12px!important;border-bottom:1px solid var(--wfe-line)!important}
+.ld-post table.data thead th{background:var(--wfe-sage)!important}
+.ld-post input[type="checkbox"]{accent-color:var(--wfe-sage);width:18px;height:18px}
+.ld-post button,.ld-post .button,.ld-post a.button,.ld-post input[type="submit"]{border:0;border-radius:12px;background:var(--wfe-tomato);color:white;padding:12px 18px;font-weight:800;cursor:pointer}
+.ld-post .site-nav{font-family:Arial,sans-serif}
+.site-nav{box-shadow:0 3px 18px rgba(74,43,21,.05)}
+.site-nav .brand{font-weight:800}
+@media(max-width:640px){.ld-post main{padding:24px 15px 48px!important}.ld-post .rec{border-radius:15px!important}.ld-post .level{padding:16px!important}.ld-post figure.hero img{aspect-ratio:4/3}}
+@media print{html,body{background:#fff!important}.ld-post .rec{box-shadow:none;break-inside:avoid}.ld-post .level{background:#fff!important;border:1px solid #bbb!important}.site-nav{display:none!important}}
