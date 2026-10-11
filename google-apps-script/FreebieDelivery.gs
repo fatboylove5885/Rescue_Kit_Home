@@ -1,4 +1,4 @@
-/** What's for Eats printable delivery + subscriber log.
+/** What's for Eats HTML free-resource capture + subscriber log.
  * Google Sheet compatibility:
  * - Use the updated email-list workbook imported into Google Sheets.
  * - Keep the Subscribers tab and its six columns in this exact order:
@@ -141,7 +141,7 @@ function doPost(e) {
   }
 }
 function doGet() {
-  return json({ok:true,service:SITE_NAME+' printable delivery',message:'POST email, asset, marketing, and source fields.'});
+  return json({ok:true,service:SITE_NAME+' HTML free-resource capture',message:'POST email, asset, marketing, and source fields.'});
 }
 function json(obj) {
   return ContentService.createTextOutput(JSON.stringify(obj)).setMimeType(ContentService.MimeType.JSON);
