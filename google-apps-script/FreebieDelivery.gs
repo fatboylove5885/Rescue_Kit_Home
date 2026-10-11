@@ -122,8 +122,8 @@ function doPost(e) {
     const assetKey = String(data.asset || 'picky-family-7-night-dinner-plan');
     const asset = ASSETS[assetKey];
     const marketing = data.marketing === true || String(data.marketing || '').toLowerCase() === 'true';
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return json({ok:false,error:'Enter a valid email address.'});
-    if (!asset) return json({ok:false,error:'That printable was not found.'});
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return resultPage({ok:false,message:'Enter a valid email address.'});
+    if (!asset) return resultPage({ok:false,message:'That free resource was not found. Please choose it again from the library.'});
     const ss = SpreadsheetApp.openById(SHEET_ID);
     let sheet = ss.getSheetByName('Subscribers');
     if (!sheet) {
