@@ -11,7 +11,7 @@ const ASSETS = {
   "20-lazy-dinners-for-when-your-brain-has-left-the-building": {
     "title": "20 Lazy Dinners for When Your Brain Has Left the Building",
     "desc": "A low-effort dinner guide for tired nights.",
-    "url": "https://whatsforeats.online/pdfs/lazy-dinner-energy-picker.pdf"
+    "url": "https://whatsforeats.online/pdfs/20-lazy-dinners-for-when-your-brain-has-left-the-building.pdf"
   },
   "20-lazy-dinners-sorted-by-how-tired-you-are": {
     "title": "20 Lazy Dinners Sorted by How Tired You Are",
@@ -21,7 +21,7 @@ const ASSETS = {
   "22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater": {
     "title": "22 Cozy Fall Dinners",
     "desc": "Cozy seasonal dinners and comfort-food inspiration.",
-    "url": "https://whatsforeats.online/pdfs/cozy-fall-dinner-bingo.pdf"
+    "url": "https://whatsforeats.online/pdfs/22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.pdf"
   },
   "5-ingredient-dinners": {
     "title": "5-Ingredient Dinners",
