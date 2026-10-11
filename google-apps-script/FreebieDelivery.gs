@@ -11,97 +11,97 @@ const ASSETS = {
   "20-lazy-dinners-for-when-your-brain-has-left-the-building": {
     "title": "20 Lazy Dinners for When Your Brain Has Left the Building",
     "desc": "A low-effort dinner guide for tired nights.",
-    "url": "https://whatsforeats.online/pdfs/20-lazy-dinners-for-when-your-brain-has-left-the-building.pdf"
+    "url": "https://whatsforeats.online/pdfs/dinner-rescue-playbook.pdf"
   },
   "20-lazy-dinners-sorted-by-how-tired-you-are": {
     "title": "20 Lazy Dinners Sorted by How Tired You Are",
     "desc": "Choose dinner ideas by your energy level.",
-    "url": "https://whatsforeats.online/pdfs/20-lazy-dinners-sorted-by-how-tired-you-are.pdf"
+    "url": "https://whatsforeats.online/pdfs/energy-level-dinner-selector.pdf"
   },
   "22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater": {
     "title": "22 Cozy Fall Dinners",
     "desc": "Cozy seasonal dinners and comfort-food inspiration.",
-    "url": "https://whatsforeats.online/pdfs/22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.pdf"
+    "url": "https://whatsforeats.online/pdfs/cozy-season-supper-collection.pdf"
   },
   "5-ingredient-dinners": {
     "title": "5-Ingredient Dinners",
     "desc": "Simplify dinner with a short ingredient list.",
-    "url": "https://whatsforeats.online/pdfs/5-ingredient-dinners.pdf"
+    "url": "https://whatsforeats.online/pdfs/five-ingredient-favorites.pdf"
   },
   "7-night-dinner-plan-for-picky-families": {
     "title": "7-Night Dinner Plan for Picky Families",
     "desc": "Seven flexible dinners with easy swaps.",
-    "url": "https://whatsforeats.online/pdfs/7-night-dinner-plan-for-picky-families.pdf"
+    "url": "https://whatsforeats.online/pdfs/picky-family-weeknight-blueprint.pdf"
   },
   "cheap-family-dinners-cost-per-serving": {
     "title": "Cheap Family Dinners With Cost Per Serving",
     "desc": "Budget-friendly dinners and cost-per-serving tips.",
-    "url": "https://whatsforeats.online/pdfs/cheap-family-dinners-cost-per-serving.pdf"
+    "url": "https://whatsforeats.online/pdfs/budget-bites-cost-guide.pdf"
   },
   "easy-dinner-ideas-no-energy": {
     "title": "Easy Dinner Ideas for When You Have No Energy",
     "desc": "Fast ideas for low-energy evenings.",
-    "url": "https://whatsforeats.online/pdfs/easy-dinner-ideas-no-energy.pdf"
+    "url": "https://whatsforeats.online/pdfs/low-energy-meal-survival-guide.pdf"
   },
   "easy-sheet-pan-dinners": {
     "title": "Easy Sheet-Pan Dinners",
     "desc": "One-pan dinner ideas and cleanup shortcuts.",
-    "url": "https://whatsforeats.online/pdfs/easy-sheet-pan-dinners.pdf"
+    "url": "https://whatsforeats.online/pdfs/sheet-pan-supper-starter.pdf"
   },
   "easy-weeknight-dinner-recipes": {
     "title": "Easy Weeknight Dinner Recipes",
     "desc": "Weeknight recipes and practical cooking ideas.",
-    "url": "https://whatsforeats.online/pdfs/easy-weeknight-dinner-recipes.pdf"
+    "url": "https://whatsforeats.online/pdfs/weeknight-dinner-companion.pdf"
   },
   "freezer-meals-for-busy-weeknights": {
     "title": "Freezer Meals for Busy Weeknights",
     "desc": "Make-ahead meals, freezing, thawing, and reheating.",
-    "url": "https://whatsforeats.online/pdfs/freezer-meals-for-busy-weeknights.pdf"
+    "url": "https://whatsforeats.online/pdfs/freezer-friendly-family-meals.pdf"
   },
   "leftover-chicken-recipes": {
     "title": "Leftover Chicken Recipes",
     "desc": "Turn cooked chicken into another easy dinner.",
-    "url": "https://whatsforeats.online/pdfs/leftover-chicken-recipes.pdf"
+    "url": "https://whatsforeats.online/pdfs/chicken-leftover-reinvention-kit.pdf"
   },
   "pantry-staples-list-for-budget-cooking": {
     "title": "Pantry Staples List for Budget Cooking",
     "desc": "Build flexible dinners from pantry basics.",
-    "url": "https://whatsforeats.online/pdfs/pantry-staples-list-for-budget-cooking.pdf"
+    "url": "https://whatsforeats.online/pdfs/budget-pantry-checklist.pdf"
   },
   "picky-eater-dinner-ideas": {
     "title": "Picky-Eater Dinner Ideas",
     "desc": "Flexible family meals and low-pressure swaps.",
-    "url": "https://whatsforeats.online/pdfs/picky-eater-dinner-ideas.pdf"
+    "url": "https://whatsforeats.online/pdfs/picky-eater-plate-builder.pdf"
   },
   "sheet-pan-vs-slow-cooker-vs-one-pot-vs-air-fryer": {
     "title": "Sheet Pan vs. Slow Cooker vs. One Pot vs. Air Fryer",
     "desc": "Compare dinner methods, effort, and cleanup.",
-    "url": "https://whatsforeats.online/pdfs/sheet-pan-vs-slow-cooker-vs-one-pot-vs-air-fryer.pdf"
+    "url": "https://whatsforeats.online/pdfs/cooking-method-cheat-sheet.pdf"
   },
   "slow-cooker-dinners-for-busy-families": {
     "title": "Slow Cooker Dinners for Busy Families",
     "desc": "Hands-off dinners for busy days.",
-    "url": "https://whatsforeats.online/pdfs/slow-cooker-dinners-for-busy-families.pdf"
+    "url": "https://whatsforeats.online/pdfs/slow-cooker-comfort-collection.pdf"
   },
   "weekly-meal-plan-for-busy-families": {
     "title": "Weekly Meal Plan for Busy Families",
     "desc": "Seven-night planning with a practical shopping list.",
-    "url": "https://whatsforeats.online/pdfs/weekly-meal-plan-for-busy-families.pdf"
+    "url": "https://whatsforeats.online/pdfs/family-meal-planning-map.pdf"
   },
   "picky-family-7-night-dinner-plan": {
     "title": "7-Night Dinner Plan Printable",
     "desc": "The print-focused weekly meal plan.",
-    "url": "https://whatsforeats.online/pdfs/picky-family-7-night-dinner-plan-printable.pdf"
+    "url": "https://whatsforeats.online/pdfs/seven-night-picky-eater-menu.pdf"
   },
   "lazy-dinner-energy-picker": {
     "title": "Energy Level Dinner Picker",
     "desc": "A low-effort guide to match dinner to your energy.",
-    "url": "https://whatsforeats.online/pdfs/lazy-dinner-energy-picker.pdf"
+    "url": "https://whatsforeats.online/pdfs/what-to-cook-tonight-picker.pdf"
   },
   "cozy-fall-dinner-bingo": {
     "title": "Cozy Fall Dinner Bingo and Dinner Guide",
     "desc": "Seasonal dinner inspiration in printable form.",
-    "url": "https://whatsforeats.online/pdfs/cozy-fall-dinner-bingo.pdf"
+    "url": "https://whatsforeats.online/pdfs/cozy-dinner-bingo.pdf"
   }
 };
 function doPost(e) {
