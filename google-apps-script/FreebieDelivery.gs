@@ -137,7 +137,7 @@ function doPost(e) {
     const body = 'Thanks for requesting a free PDF from ' + SITE_NAME + '.\n\nYour PDF is attached, and you can also open it here: ' + asset.url + '\n\nYou requested this delivery email. You will only receive occasional marketing emails if you separately opted in on the form.\n\n— ' + SITE_NAME;
     const response = UrlFetchApp.fetch(asset.url, {muteHttpExceptions:true, followRedirects:true});
     if (response.getResponseCode() < 200 || response.getResponseCode() >= 300) throw new Error('PDF could not be retrieved for attachment: ' + asset.url);
-    const pdfBlob = response.getBlob().setName(asset.title.replace(/[^a-z0-9 -]/gi, '').replace(/\\s+/g, '-') + '.pdf');
+    const pdfBlob = response.getBlob().setName(asset.title.replace(/[^a-z0-9 -]/gi, '').replace(/\s+/g, '-') + '.pdf');
     MailApp.sendEmail({to: email, subject: subject, body: body, name: SITE_NAME, attachments:[pdfBlob]});
     sheet.getRange(row, 6).setValue('Email sent');
     return json({ok:true,marketingOptIn:marketing});
