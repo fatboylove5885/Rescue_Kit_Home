@@ -22,7 +22,7 @@ The columns are: Timestamp, Email, Requested Freebie, Marketing Opt-In, Source U
 
 ## 3. Connect the site form
 
-In `freebies.html`, replace `PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE` with the deployed URL. Commit the change and wait for the site host to deploy.
+In `email-config.js`, replace `PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE` with the deployed `/exec` URL. This single shared config connects the inline email gates on every blog and the Free PDFs library. Commit the change and wait for the site host to deploy.
 
 ## 4. Test before promoting
 
@@ -35,6 +35,6 @@ In `freebies.html`, replace `PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE` wit
 ## Important notes
 
 - The freebie delivery email is transactional: it sends the resource requested by the visitor. Marketing permission is a separate, optional checkbox.
-- This static-site version delivers a link to a print-ready page with a **Print / Save as PDF** button. The standalone PDF generated for the current plan is also attached in the working ChatGPT conversation.
+- This site emails the requested standalone PDF as an attachment and includes a direct PDF link. The static PDFs are publicly hosted, so this is a soft email gate rather than access control; anyone who already has a PDF URL can open it directly.
 - The form is not active until steps 1–3 are completed. Do not advertise the email gate as working before you test it.
 - This is a simple soft gate: the print-ready page itself is a public URL. It is designed to encourage signups, not provide DRM or prevent a visitor from sharing the link.
