@@ -96,12 +96,12 @@ const ASSETS = {
   "lazy-dinner-energy-picker": {
     "title": "Energy Level Dinner Picker",
     "desc": "A low-effort guide to match dinner to your energy.",
-    "url": "https://whatsforeats.online/pdfs/20-lazy-dinners-for-when-your-brain-has-left-the-building.pdf"
+    "url": "https://whatsforeats.online/pdfs/lazy-dinner-energy-picker.pdf"
   },
   "cozy-fall-dinner-bingo": {
     "title": "Cozy Fall Dinner Bingo and Dinner Guide",
     "desc": "Seasonal dinner inspiration in printable form.",
-    "url": "https://whatsforeats.online/pdfs/22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.pdf"
+    "url": "https://whatsforeats.online/pdfs/cozy-fall-dinner-bingo.pdf"
   }
 };
 function doPost(e) {
