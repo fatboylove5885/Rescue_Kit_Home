@@ -43,6 +43,7 @@ function doPost(e) {
     const subject = 'Your free printable: ' + asset.title;
     const body = 'Thanks for requesting a free printable from ' + SITE_NAME + '.\n\nHere is your requested resource: ' + asset.url + '\n\nYou requested this delivery email. You will only receive occasional marketing emails if you separately opted in on the form.\n\n— ' + SITE_NAME;
     MailApp.sendEmail({to: email, subject: subject, body: body, name: SITE_NAME});
+    sheet.getRange(row, 6).setValue('Email sent');
     return json({ok:true,marketingOptIn:marketing});
   } catch (err) {
     return json({ok:false,error:'Signup could not be completed.'});
