@@ -1,9 +1,19 @@
 /** What's for Eats printable delivery + subscriber log.
- * 1) Create a Google Sheet from the supplied lead-tracker CSV or a blank sheet.
- * 2) Extensions > Apps Script; paste this file.
- * 3) Set SHEET_ID and deploy as a Web app: Execute as you, access Anyone.
- * 4) Copy the /exec URL into email-config.js as window.FREEBIES_WEB_APP_URL.
- * 5) Test with your own email before promoting. Do not send newsletter messages unless marketingOptIn is true.
+ * Google Sheet compatibility:
+ * - Use the updated email-list workbook imported into Google Sheets.
+ * - Keep the Subscribers tab and its six columns in this exact order:
+ *   Timestamp, Email, Requested Freebie, Marketing Opt-In, Source URL, Delivery Status.
+ * - Keep the Freebie Catalog tab as the human-readable catalog/reference list.
+ * - The 19 asset keys and PDF URLs below must match the Freebie Catalog entries
+ *   and the website forms' submitted "asset" values.
+ *
+ * Setup:
+ * 1) Copy the spreadsheet ID from the Google Sheets URL into SHEET_ID below.
+ * 2) Extensions > Apps Script; paste/save this file.
+ * 3) Deploy as a Web app: Execute as you, access Anyone.
+ * 4) Copy the deployed /exec URL into email-config.js.
+ * 5) Test a signup with your own email and confirm a Subscribers row plus the PDF.
+ * Only use Marketing Opt-In = YES when the user explicitly opted in.
  */
 const SHEET_ID = 'PASTE_GOOGLE_SHEET_ID_HERE';
 const SITE_NAME = "What's for Eats";
