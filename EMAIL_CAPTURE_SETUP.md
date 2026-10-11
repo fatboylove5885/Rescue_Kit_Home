@@ -38,3 +38,7 @@ In `email-config.js`, replace `PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE` w
 - This site emails the requested standalone PDF as an attachment and includes a direct PDF link. The static PDFs are publicly hosted, so this is a soft email gate rather than access control; anyone who already has a PDF URL can open it directly.
 - The form is not active until steps 1–3 are completed. Do not advertise the email gate as working before you test it.
 - This is a simple soft gate: the print-ready page itself is a public URL. It is designed to encourage signups, not provide DRM or prevent a visitor from sharing the link.
+
+## If the Extensions menu is missing
+
+The Apps Script editor is available only from a native Google Sheets spreadsheet that you can edit. If you opened the CSV file itself, an Excel preview, or a view-only file, **Extensions** may not appear. Open the actual spreadsheet from [Google Sheets](https://sheets.google.com), confirm you have Editor access, and if needed choose **File → Save as Google Sheets** to convert an Excel file. Then open **Extensions → Apps Script** from that converted, editable spreadsheet.
