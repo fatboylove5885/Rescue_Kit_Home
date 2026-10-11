@@ -23,7 +23,8 @@ const ASSETS = {
 };
 function doPost(e) {
   try {
-    let data = (e && e.parameter) ? e.parameter : {};\n    if (e && e.postData && e.postData.contents && String(e.postData.type || '').indexOf('application/json') !== -1) data = JSON.parse(e.postData.contents);
+    let data = (e && e.parameter) ? e.parameter : {};
+    if (e && e.postData && e.postData.contents && String(e.postData.type || '').indexOf('application/json') !== -1) data = JSON.parse(e.postData.contents);
     const email = String(data.email || '').trim().toLowerCase();
     const assetKey = String(data.asset || 'picky-family-7-night-dinner-plan');
     const asset = ASSETS[assetKey];
@@ -37,7 +38,8 @@ function doPost(e) {
       sheet.appendRow(['Timestamp','Email','Requested Freebie','Marketing Opt-In','Source URL','Delivery Status']);
       sheet.setFrozenRows(1);
     }
-    const row = sheet.getLastRow() + 1;\n    sheet.appendRow([new Date(), email, asset.title, marketing ? 'YES' : 'NO', String(data.source || ''), 'Pending']);
+    const row = sheet.getLastRow() + 1;
+    sheet.appendRow([new Date(), email, asset.title, marketing ? 'YES' : 'NO', String(data.source || ''), 'Pending']);
     const subject = 'Your free printable: ' + asset.title;
     const body = 'Thanks for requesting a free printable from ' + SITE_NAME + '.\n\nHere is your requested resource: ' + asset.url + '\n\nYou requested this delivery email. You will only receive occasional marketing emails if you separately opted in on the form.\n\n— ' + SITE_NAME;
     MailApp.sendEmail({to: email, subject: subject, body: body, name: SITE_NAME});
