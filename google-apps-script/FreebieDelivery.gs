@@ -4,7 +4,7 @@
  * - Keep the Subscribers tab and its six columns in this exact order:
  *   Timestamp, Email, Requested Freebie, Marketing Opt-In, Source URL, Delivery Status.
  * - Keep the Freebie Catalog tab as the human-readable catalog/reference list.
- * - The 19 asset keys and PDF URLs below must match the Freebie Catalog entries
+ * - The 19 asset keys and HTML guide URLs below must match the Freebie Catalog entries
  *   and the website forms' submitted "asset" values.
  *
  * Setup:
@@ -12,7 +12,7 @@
  * 2) Extensions > Apps Script; paste/save this file.
  * 3) Deploy as a Web app: Execute as you, access Anyone.
  * 4) Copy the deployed /exec URL into email-config.js.
- * 5) Test a signup with your own email and confirm a Subscribers row plus the PDF.
+ * 5) Deploy a new version, then test a signup and confirm a Subscribers row, redirect to the matching HTML guide, and delivery email.
  * Only use Marketing Opt-In = YES when the user explicitly opted in.
  */
 const SHEET_ID = '1LMswnT-46ONCQmnVzeCEAgTR41wJufDOg_9iz01lR0Y';
@@ -154,7 +154,7 @@ function resultPage(result) {
   const payload = JSON.stringify(result).replace(/</g, '\\u003c');
   const html = '<!doctype html><html><head><meta charset="utf-8"><title>Free dinner guide</title></head><body><p>' +
     (result.ok ? 'Your guide is ready. Opening it now…' : 'We could not complete your request.') +
-    '</p><script>window.parent.postMessage({type:"freebie-signup-result",payload:' + payload + '}, "*");<\\/script></body></html>';
+    '</p><script>window.parent.postMessage({type:"freebie-signup-result",payload:' + payload + '}, "*");<\/script></body></html>';
   return HtmlService.createHtmlOutput(html).setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
 }
 function doGet() {
