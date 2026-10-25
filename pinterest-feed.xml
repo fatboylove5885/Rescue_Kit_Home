@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+  <channel>
+    <title>What's for Eats — practical dinner ideas</title>
+    <link>https://whatsforeats.online/</link>
+    <description>Free dinner tools and guides for busy households.</description>
+    <language>en-us</language>
+    <atom:link href="https://whatsforeats.online/pinterest-feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What should I make for dinner? Try this free dinner finder</title>
+      <link>https://whatsforeats.online/what-to-make-for-dinner.html?utm_source=pinterest&amp;utm_medium=organic_social&amp;utm_campaign=dinner_rescue_2026_10&amp;utm_content=dinner-finder</link>
+      <description>Too tired to decide what to cook? Choose your available time, effort and main ingredient to browse 12 practical dinner ideas with links to full recipes. Free to use, with no signup. Save it for your next busy evening.</description>
+      <guid isPermaLink="false">wfe-dinner-rescue-2026-10-dinner-finder</guid>
+      <pubDate>Sun, 25 Oct 2026 16:00:00 GMT</pubDate>
+      <media:content url="https://whatsforeats.online/assets/pins/dinner-finder.jpg" medium="image" type="image/jpeg" width="1024" height="1536" />
+      <enclosure url="https://whatsforeats.online/assets/pins/dinner-finder.jpg" type="image/jpeg" length="272890" />
+    </item>
+    <item>
+      <title>5-ingredient dinners for busy nights</title>
+      <link>https://whatsforeats.online/5-ingredient-dinners.html?utm_source=pinterest&amp;utm_medium=organic_social&amp;utm_campaign=dinner_rescue_2026_10&amp;utm_content=five-ingredients</link>
+      <description>Keep dinner simple with seven flexible recipes, measured ingredients and step-by-step directions. Find black bean sweet potatoes, cheesy bean quesadillas, pasta and more. Read the free guide and choose one meal for tonight.</description>
+      <guid isPermaLink="false">wfe-dinner-rescue-2026-10-five-ingredients</guid>
+      <pubDate>Sun, 25 Oct 2026 16:01:00 GMT</pubDate>
+      <media:content url="https://whatsforeats.online/assets/pins/five-ingredients.jpg" medium="image" type="image/jpeg" width="1024" height="1536" />
+      <enclosure url="https://whatsforeats.online/assets/pins/five-ingredients.jpg" type="image/jpeg" length="271401" />
+    </item>
+    <item>
+      <title>A 7-night dinner plan for picky families</title>
+      <link>https://whatsforeats.online/7-night-dinner-plan-for-picky-families.html?utm_source=pinterest&amp;utm_medium=organic_social&amp;utm_campaign=dinner_rescue_2026_10&amp;utm_content=family-plan</link>
+      <description>Take some of the guessing out of dinner with a flexible seven-night plan. Explore tacos, pasta, breakfast for dinner and build-your-own plates, with practical serving ideas. Read the free plan and adapt it to your family.</description>
+      <guid isPermaLink="false">wfe-dinner-rescue-2026-10-family-plan</guid>
+      <pubDate>Sun, 25 Oct 2026 16:02:00 GMT</pubDate>
+      <media:content url="https://whatsforeats.online/assets/pins/family-plan.jpg" medium="image" type="image/jpeg" width="1024" height="1536" />
+      <enclosure url="https://whatsforeats.online/assets/pins/family-plan.jpg" type="image/jpeg" length="308461" />
+    </item>
+  </channel>
+</rss>

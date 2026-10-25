@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "what-to-make-for-dinner",
+    "title": "What should I make for dinner? Try this free dinner finder",
+    "description": "Too tired to decide what to cook? Choose your available time, effort and main ingredient to browse 12 practical dinner ideas with links to full recipes. Free to use, with no signup. Save it for your next busy evening.",
+    "image": "assets/pins/dinner-finder.jpg",
+    "board": "Easy Weeknight Dinners",
+    "intent": "what should I make for dinner",
+    "creative": "dinner-finder",
+    "url": "https://whatsforeats.online/what-to-make-for-dinner.html",
+    "tracked_url": "https://whatsforeats.online/what-to-make-for-dinner.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=dinner_rescue_2026_10&utm_content=dinner-finder",
+    "status": "ready_to_publish_not_scheduled"
+  },
+  {
+    "slug": "5-ingredient-dinners",
+    "title": "5-ingredient dinners for busy nights",
+    "description": "Keep dinner simple with seven flexible recipes, measured ingredients and step-by-step directions. Find black bean sweet potatoes, cheesy bean quesadillas, pasta and more. Read the free guide and choose one meal for tonight.",
+    "image": "assets/pins/five-ingredients.jpg",
+    "board": "Easy Weeknight Dinners",
+    "intent": "5 ingredient dinners",
+    "creative": "five-ingredients",
+    "url": "https://whatsforeats.online/5-ingredient-dinners.html",
+    "tracked_url": "https://whatsforeats.online/5-ingredient-dinners.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=dinner_rescue_2026_10&utm_content=five-ingredients",
+    "status": "ready_to_publish_not_scheduled"
+  },
+  {
+    "slug": "7-night-dinner-plan-for-picky-families",
+    "title": "A 7-night dinner plan for picky families",
+    "description": "Take some of the guessing out of dinner with a flexible seven-night plan. Explore tacos, pasta, breakfast for dinner and build-your-own plates, with practical serving ideas. Read the free plan and adapt it to your family.",
+    "image": "assets/pins/family-plan.jpg",
+    "board": "Family Meal Planning",
+    "intent": "meal plan for picky families",
+    "creative": "family-plan",
+    "url": "https://whatsforeats.online/7-night-dinner-plan-for-picky-families.html",
+    "tracked_url": "https://whatsforeats.online/7-night-dinner-plan-for-picky-families.html?utm_source=pinterest&utm_medium=organic_social&utm_campaign=dinner_rescue_2026_10&utm_content=family-plan",
+    "status": "ready_to_publish_not_scheduled"
+  }
+]
