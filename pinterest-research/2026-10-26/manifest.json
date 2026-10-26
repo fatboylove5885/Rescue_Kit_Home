@@ -1,0 +1,202 @@
+{
+  "date": "2026-10-26",
+  "research_completed_at": "2026-10-26T17:58:27-04:00",
+  "audit_note": "Three Pinterest visual references archived as cropped images from the user shared research screenshot. No publicly verified engagement metrics, so not proven winners. Brand graphics are not admitted as user winners without verified 500+ impressions.",
+  "reference_images": [
+    {
+      "id": "ref-competitor-001",
+      "type": "competitor_observed",
+      "pin_url": "https://www.pinterest.com/pin/quick-20minute-dinner-recipes-for-busy-nights-in-2025--1124703706948772252/",
+      "archive_file": "Google Drive/Pinterest Reference Library/2026-10-26/Competitor Observed/ref-competitor-001.jpg",
+      "archive_status": "saved_in_drive",
+      "visual_features": "Two genuine appetizing food photographs, a bold high-contrast yellow benefit headline, and prominent simple food closeups.",
+      "metric_status": "not_verified",
+      "label": "observed_visual_inspiration_not_proven"
+    },
+    {
+      "id": "ref-competitor-002",
+      "type": "competitor_observed",
+      "pin_url": "https://www.pinterest.com/pin/35-dinner-ideas-for-tonight-that-are-nofuss-big-flavor--681873199858570306/",
+      "archive_file": "Google Drive/Pinterest Reference Library/2026-10-26/Competitor Observed/ref-competitor-002.jpg",
+      "archive_status": "saved_in_drive",
+      "visual_features": "Multi-meal food collage built around a high-contrast centered text panel; multiple visible specific dishes.",
+      "metric_status": "not_verified",
+      "label": "observed_visual_inspiration_not_proven"
+    },
+    {
+      "id": "ref-competitor-003",
+      "type": "competitor_observed",
+      "pin_url": "https://www.pinterest.com/pin/20-easy-homemade-dinner-recipes--157696424443444551/",
+      "archive_file": "Google Drive/Pinterest Reference Library/2026-10-26/Competitor Observed/ref-competitor-003.jpg",
+      "archive_status": "saved_in_drive",
+      "visual_features": "Single realistic hero meal photographed from above with a very clean title region and appetizing true-to-recipe details.",
+      "metric_status": "not_verified",
+      "label": "observed_visual_inspiration_not_proven"
+    },
+    {
+      "id": "brand-style-1",
+      "type": "own_unverified_style",
+      "archive_file": "Google Drive/Pinterest Reference Library/2026-10-26/Brand Style Examples/Five-Ingredient Sweet Potato Dinner.png",
+      "archive_status": "saved_in_drive",
+      "visual_features": "Brand identity reference only: cream, forest green, rust accent, appetizing realistic meal, clear editorial headline.",
+      "metric_status": "not_verified",
+      "label": "NOT_IN_WINNERS_UNTIL_500_IMPRESSIONS_AND_STRONG_ENGAGEMENT"
+    },
+    {
+      "id": "brand-style-2",
+      "type": "own_unverified_style",
+      "archive_file": "Google Drive/Pinterest Reference Library/2026-10-26/Brand Style Examples/Cozy taco night dinner plan.png",
+      "archive_status": "saved_in_drive",
+      "visual_features": "Brand identity reference only: cream, forest green, rust accent, appetizing realistic meal, clear editorial headline.",
+      "metric_status": "not_verified",
+      "label": "NOT_IN_WINNERS_UNTIL_500_IMPRESSIONS_AND_STRONG_ENGAGEMENT"
+    },
+    {
+      "id": "brand-style-3",
+      "type": "own_unverified_style",
+      "archive_file": "Google Drive/Pinterest Reference Library/2026-10-26/Brand Style Examples/Leftover Chicken Recipe Roundup.png",
+      "archive_status": "saved_in_drive",
+      "visual_features": "Brand identity reference only: cream, forest green, rust accent, appetizing realistic meal, clear editorial headline.",
+      "metric_status": "not_verified",
+      "label": "NOT_IN_WINNERS_UNTIL_500_IMPRESSIONS_AND_STRONG_ENGAGEMENT"
+    },
+    {
+      "id": "brand-style-4",
+      "type": "own_unverified_style",
+      "archive_file": "Google Drive/Pinterest Reference Library/2026-10-26/Brand Style Examples/15-Minute Dinners for Busy Weeknights.png",
+      "archive_status": "saved_in_drive",
+      "visual_features": "Brand identity reference only: cream, forest green, rust accent, appetizing realistic meal, clear editorial headline.",
+      "metric_status": "not_verified",
+      "label": "NOT_IN_WINNERS_UNTIL_500_IMPRESSIONS_AND_STRONG_ENGAGEMENT"
+    },
+    {
+      "id": "brand-style-5",
+      "type": "own_unverified_style",
+      "archive_file": "Google Drive/Pinterest Reference Library/2026-10-26/Brand Style Examples/Warm Dinner Ideas with Sweet Potatoes.png",
+      "archive_status": "saved_in_drive",
+      "visual_features": "Brand identity reference only: cream, forest green, rust accent, appetizing realistic meal, clear editorial headline.",
+      "metric_status": "not_verified",
+      "label": "NOT_IN_WINNERS_UNTIL_500_IMPRESSIONS_AND_STRONG_ENGAGEMENT"
+    }
+  ],
+  "pin_concepts": [
+    {
+      "destination_slug": "easy-sheet-pan-dinners.html",
+      "headline": "EASY SHEET PAN DINNERS",
+      "seo_title": "Easy Sheet Pan Dinner Ideas",
+      "description": "Sheet pan dinners are a simple way to get flavorful meals on the table with less cleanup. Find practical easy dinner recipes for busy families.",
+      "food_scene": "Roasted herb chicken thighs with crisp potatoes and broccoli on a genuine silver baking sheet, garnished with fresh parsley and natural caramelization, warm kitchen counter.",
+      "layout": "hero",
+      "research_ref_ids": [
+        "ref-competitor-001",
+        "ref-competitor-003"
+      ],
+      "subheadline": "Real food, less weeknight stress"
+    },
+    {
+      "destination_slug": "20-lazy-dinners-for-when-your-brain-has-left-the-building.html",
+      "headline": "20 LAZY DINNERS",
+      "seo_title": "20 Lazy Dinner Ideas for Tired Nights",
+      "description": "Quick low-effort dinner ideas for exhausted evenings, with practical shortcuts and family-friendly choices.",
+      "food_scene": "An indulgent bowl of creamy tomato tortellini, grated parmesan and basil on a worn wooden table with one skillet blurred in the background; realistic and freshly cooked.",
+      "layout": "editorial",
+      "research_ref_ids": [
+        "ref-competitor-001",
+        "ref-competitor-003"
+      ],
+      "subheadline": "Real food, less weeknight stress"
+    },
+    {
+      "destination_slug": "weekly-meal-plan-for-busy-families.html",
+      "headline": "7 EASY FAMILY DINNERS",
+      "seo_title": "Weekly Family Meal Plan with 7 Easy Dinners",
+      "description": "Use a flexible family meal plan to make dinner decisions easier. Includes approachable recipes and shopping planning.",
+      "food_scene": "Wide overhead editorial family dinner spread with baked chicken, roasted potatoes, a big salad, rustic pasta, and tacos in authentic serving dishes, warm welcoming home table.",
+      "layout": "photo_first",
+      "research_ref_ids": [
+        "ref-competitor-002",
+        "ref-competitor-003"
+      ],
+      "subheadline": "Real food, less weeknight stress"
+    },
+    {
+      "destination_slug": "cheap-family-dinners-cost-per-serving.html",
+      "headline": "BUDGET FAMILY DINNERS",
+      "seo_title": "Cheap Family Dinners and Cost per Serving",
+      "description": "Make budget-friendly family meals without giving up flavor. Explore simple dishes and ways to compare cost per serving.",
+      "food_scene": "Beautiful hearty black bean and tomato rice bowls with roasted sweet potatoes, cilantro, lime and modest home-kitchen food plating, natural light.",
+      "layout": "hero",
+      "research_ref_ids": [
+        "ref-competitor-002",
+        "ref-competitor-001"
+      ],
+      "subheadline": "Real food, less weeknight stress"
+    },
+    {
+      "destination_slug": "slow-cooker-dinners-for-busy-families.html",
+      "headline": "SLOW COOKER DINNERS",
+      "seo_title": "Easy Slow Cooker Dinners for Busy Families",
+      "description": "Try slow cooker meals with less active cooking time, helpful prep shortcuts, and practical recipe ideas.",
+      "food_scene": "Photoreal slow cooker with tender shredded salsa chicken in rich tomato sauce, neatly plated tortilla bowls beside it, rustic kitchen counter, steam and fresh cilantro.",
+      "layout": "editorial",
+      "research_ref_ids": [
+        "ref-competitor-001",
+        "ref-competitor-003"
+      ],
+      "subheadline": "Real food, less weeknight stress"
+    },
+    {
+      "destination_slug": "22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.html",
+      "headline": "COZY FALL DINNERS",
+      "seo_title": "Cozy Fall Dinner Ideas for Busy Nights",
+      "description": "Warm up with easy comforting fall meals including soups, casseroles and weeknight dinner favorites.",
+      "food_scene": "Rich autumn fall supper with bubbling baked pasta casserole in white ceramic baking dish, crusty bread, golden butternut squash soup and warm seasonal light.",
+      "layout": "hero",
+      "research_ref_ids": [
+        "ref-competitor-002",
+        "ref-competitor-003"
+      ],
+      "subheadline": "Real food, less weeknight stress"
+    },
+    {
+      "destination_slug": "freezer-meals-for-busy-weeknights.html",
+      "headline": "MAKE AHEAD FREEZER MEALS",
+      "seo_title": "Make Ahead Freezer Meals for Busy Weeknights",
+      "description": "Prep satisfying freezer meals ahead of time and learn sensible freezing, labeling and thawing tips.",
+      "food_scene": "Genuinely appetizing baked ziti in a reusable casserole tray, accompanied by sealed labeled meal prep containers with real chicken and vegetable dinners, home-kitchen styling.",
+      "layout": "photo_first",
+      "research_ref_ids": [
+        "ref-competitor-002",
+        "ref-competitor-001"
+      ],
+      "subheadline": "Real food, less weeknight stress"
+    },
+    {
+      "destination_slug": "leftover-chicken-recipes.html",
+      "headline": "LEFTOVER CHICKEN DINNERS",
+      "seo_title": "Leftover Chicken Recipes for Easy Dinners",
+      "description": "Turn cooked chicken into easy quesadillas, taco bowls, soups and other family dinners with simple ingredients.",
+      "food_scene": "Several photoreal leftover roast chicken meals: toasted chicken quesadillas, a colorful chicken taco bowl and creamy chicken pasta on the same wooden table, food photography overhead.",
+      "layout": "editorial",
+      "research_ref_ids": [
+        "ref-competitor-002",
+        "ref-competitor-003"
+      ],
+      "subheadline": "Real food, less weeknight stress"
+    },
+    {
+      "destination_slug": "picky-eater-dinner-ideas.html",
+      "headline": "PICKY EATER DINNER IDEAS",
+      "seo_title": "Easy Family Dinners for Picky Eaters",
+      "description": "Make family dinner flexible with build-your-own taco meals and adaptable familiar ingredients.",
+      "food_scene": "Beautiful family DIY chicken taco night: individual bowls of colorful veggies, seasoned chicken strips, shredded cheese, tortillas and fresh lime on an inviting dining table.",
+      "layout": "hero",
+      "research_ref_ids": [
+        "ref-competitor-001",
+        "ref-competitor-003"
+      ],
+      "subheadline": "Real food, less weeknight stress"
+    }
+  ],
+  "status": "historical_example_NOT_for_tomorrow_reuse"
+}
