@@ -67,11 +67,11 @@ def compose(photo:Image.Image,concept:dict,index:int)->Image.Image:
     brand='WHAT\'S FOR EATS';bf=font(24)
     if top[0]==0:
         d.text((500,42),brand,font=bf,fill=DARK,anchor='mm')
-        f,rows=lines_fit(d,concept['headline'],908,max_lines=3,initial=94)
-        step=f.size*1.17;y=110
+        f,rows=lines_fit(d,concept['headline'],908,max_lines=2,initial=80)
+        step=f.size*1.15;y=112
         for k,txt in enumerate(rows):d.text((500,int(y+k*step)),txt,font=f,fill=RUST if k==len(rows)-1 and len(rows)>1 else GREEN,anchor='mt')
         subtitle=concept.get('subheadline','Easy meals for busy days')
-        d.text((500,318),subtitle[:62],font=font(24,serif=True),fill=DARK,anchor='mm')
+        d.text((500,326),subtitle[:62],font=font(24,serif=True),fill=DARK,anchor='mm')
     else:
         d.text((500,975),brand,font=bf,fill=DARK,anchor='mm')
         f,rows=lines_fit(d,concept['headline'],908,max_lines=3,initial=82)
@@ -85,7 +85,7 @@ def compose(photo:Image.Image,concept:dict,index:int)->Image.Image:
 
 def validate_manifest(obj):
     ensure(obj.get('date')==DATE,f'Research manifest must be for TODAY ({DATE}), not old evidence')
-    ensure(obj.get('research_completed_at'), 'Research completion timestamp missing')
+    ensure(str(obj.get('research_completed_at','')).startswith(DATE), 'Research must actually have been performed today')
     refs=obj.get('reference_images') or []
     observed=[r for r in refs if r.get('type')=='competitor_observed']
     ensure(len(observed)>=3,'At least three independently observed Pinterest image references must be archived today')
@@ -96,7 +96,7 @@ def validate_manifest(obj):
         if r.get('type')=='competitor_observed':
             u=r.get('pin_url',''); parsed=urlparse(u)
             ensure(parsed.scheme=='https' and parsed.netloc in ('www.pinterest.com','pinterest.com','pin.it') and '/pin/' in parsed.path, 'Competitor needs an actual Pinterest pin URL')
-            ensure(r.get('archive_status')=='saved_in_drive' and r.get('archive_file'),'Competitor visual must be saved in the reference library')
+            ensure(r.get('archive_status')=='saved_in_drive' and DATE in r.get('archive_file',''),'Competitor visual must be saved TODAY in the dated reference library')
             ensure(len(r.get('visual_features',''))>=20,'Competitor visual observations missing')
             ensure(r.get('metric_status')=='not_verified' or r.get('metric_status')=='verified_public','Competitor metrics may not be fabricated')
         if r.get('type')=='own_verified_winner':
@@ -113,6 +113,8 @@ def validate_manifest(obj):
         ensure(bool(re.fullmatch(r'[a-z0-9-]+\.html',path)) and (ROOT/path).is_file(),'Pin destination not a real page: '+path)
         ensure(c.get('headline') and c.get('seo_title') and c.get('description') and c.get('food_scene'),'Complete original brief required')
         ensure(c.get('research_ref_ids') and all(x in ref_ids for x in c['research_ref_ids']),'Every pin must cite archived same-day references')
+        kinds={r['id']:r.get('type') for r in refs}
+        ensure(any(kinds[x] in ('competitor_observed','own_verified_winner') for x in c['research_ref_ids']), 'Every pin needs a visually observed competitor or a verified own winner; brand moodboard alone is insufficient')
         ensure(c.get('layout') in ('hero','photo_first','editorial'),'Unknown layout')
         ensure(len(c.get('food_scene',''))>=30,'Food scene must be specifically described; not generic')
     return concepts
