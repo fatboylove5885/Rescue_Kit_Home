@@ -1,9 +1,8 @@
-name: What’s For Eats — daily Pinterest RSS pin creator
+name: What's For Eats — daily Pinterest RSS pin creator
 on:
   schedule:
-    # Two UTC starts cover 07:00 Detroit across DST changes.
-    - cron: '0 11 * * *'
-    - cron: '0 12 * * *'
+    - cron: '7 7 * * *'
+      timezone: 'America/Detroit'
   workflow_dispatch:
 permissions:
   contents: write
@@ -25,22 +24,9 @@ jobs:
           python-version: '3.12'
       - name: Install image renderer
         run: python -m pip install --disable-pip-version-check pillow==11.3.0
-      - name: Only start on the scheduled Detroit morning
-        id: localtime
-        shell: bash
-        run: |
-          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
-            echo 'run=yes' >> "$GITHUB_OUTPUT"
-          elif [[ "$(TZ=America/Detroit date +%H)" == "07" ]]; then
-            echo 'run=yes' >> "$GITHUB_OUTPUT"
-          else
-            echo 'run=no' >> "$GITHUB_OUTPUT"
-          fi
       - name: Generate photo-led Pins and update RSS feed
-        if: steps.localtime.outputs.run == 'yes'
         run: python scripts/pinterest_publisher.py
       - name: Commit public image assets and feed changes
-        if: steps.localtime.outputs.run == 'yes'
         shell: bash
         run: |
           git config user.name 'Whats For Eats Pin Publisher'
