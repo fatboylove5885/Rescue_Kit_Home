@@ -1,7 +1,7 @@
 name: What's For Eats — daily Pinterest RSS pin creator
 on:
   schedule:
-    - cron: '7 7 * * *'
+    - cron: '17 6 * * *'
       timezone: 'America/Detroit'
   workflow_dispatch:
 permissions:
