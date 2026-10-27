@@ -1,0 +1,48 @@
+name: "Pinterest Creative Lab — reference-led Medium image test"
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/pinterest-reference-visual-test.yml"
+permissions:
+  contents: write
+concurrency:
+  group: pinterest-reference-visual-test
+  cancel-in-progress: false
+jobs:
+  creative_test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 17
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check Pillow==11.3.0
+      - name: Generate two DIFFERENT reference-led GPT Image 2 MEDIUM test photos
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python scripts/pinterest_reference_visual_test.py
+      - name: Save creative tests separately from the production Pinterest images
+        shell: bash
+        run: |
+          git config user.name 'Whats For Eats Creative Lab'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add pinterest-creative-lab/2026-10-27/reference-driven
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive two original Medium reference-led creative tests"
+            for attempt in 1 2 3; do
+              git fetch origin main
+              if git rebase -X theirs origin/main && git push origin HEAD:main; then
+                echo "Saved creative research experiment without scheduling either image."
+                exit 0
+              fi
+              git rebase --abort || true
+              sleep 2
+            done
+            exit 1
+          fi
