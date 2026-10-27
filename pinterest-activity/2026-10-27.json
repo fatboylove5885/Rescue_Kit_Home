@@ -141,6 +141,15 @@
       "phase": "publishing",
       "source": "Connected Metricool getScheduledPosts; GitHub scheduling receipt",
       "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-scheduling-ledger/2026-10-27.json"
+    },
+    {
+      "at": "2026-10-27T18:58:14-04:00",
+      "title": "2 more October 27 Pinterest pins confirmed published",
+      "description": "Fresh connected Metricool verification: posts 408055052,408055165 changed from PENDING to PUBLISHED, with Pinterest public URLs verified. October 27 totals: 7 PUBLISHED, 2 PENDING; all nine receipts and original images intact. No duplicate posts or image-generation calls.",
+      "severity": "success",
+      "phase": "publishing",
+      "source": "Verified connected Metricool getScheduledPosts",
+      "url": "https://www.pinterest.es/pin/947163365478242522"
     }
   ]
 }
