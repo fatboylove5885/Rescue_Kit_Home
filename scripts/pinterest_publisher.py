@@ -8,7 +8,7 @@ missing/invalid, the feed is not modified. Companion daily research happens
 upstream in ChatGPT; this script never invents reference evidence.
 """
 from __future__ import annotations
-import base64, datetime as dt, email.utils, hashlib, io, json, os, re, sys, urllib.request
+import base64, datetime as dt, email.utils, hashlib, io, json, os, re, sys, urllib.request, urllib.error
 from pathlib import Path
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
@@ -129,7 +129,27 @@ def new_photo(c,index,refmap):
             "Make it distinct from the referenced creators' exact imagery, layouts, and brand identity. Portrait 2:3 framing with centered dishes. No existing website photography reused.")
     payload=json.dumps(dict(model=OPENAI_IMAGE_MODEL,prompt=prompt,n=1,size='1024x1536',quality='medium',output_format='jpeg')).encode()
     req=urllib.request.Request('https://api.openai.com/v1/images/generations',data=payload,headers={'Content-Type':'application/json','Authorization':'Bearer '+os.environ['OPENAI_API_KEY']},method='POST')
-    with urllib.request.urlopen(req,timeout=170) as resp: result=json.loads(resp.read())
+    try:
+        with urllib.request.urlopen(req, timeout=170) as resp:
+            result = json.loads(resp.read())
+    except urllib.error.HTTPError as exc:
+        # GitHub masks the secret; expose only provider status/type/code/message.
+        # In particular a 429 could mean insufficient_quota OR a rate limit.
+        response = exc.read().decode('utf-8', 'replace')[:2000]
+        try:
+            detail = json.loads(response).get('error') or {}
+            err_type = str(detail.get('type') or 'unknown')
+            err_code = str(detail.get('code') or 'unknown')
+            err_msg = str(detail.get('message') or '')
+        except (ValueError, AttributeError):
+            err_type, err_code, err_msg = 'unparsed', 'unknown', response
+        secret = os.getenv('OPENAI_API_KEY') or ''
+        if secret:
+            err_msg = err_msg.replace(secret, '[REDACTED]')
+        raise PublishingBlocked(
+            f'OpenAI Images API HTTP {exc.code} | type={err_type} | '
+            f'code={err_code} | {err_msg[:500]}'
+        ) from None
     raw=result.get('data',[{}])[0].get('b64_json')
     if not raw:raise PublishingBlocked(f'First-party image generation gave no pixels for pin {index}')
     decoded=base64.b64decode(raw)
