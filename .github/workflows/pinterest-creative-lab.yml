@@ -1,0 +1,38 @@
+name: "Pinterest Creative Lab — isolated image quality A/B"
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/pinterest-creative-lab.yml"
+permissions:
+  contents: write
+concurrency:
+  group: wfe-creative-lab
+  cancel-in-progress: false
+jobs:
+  experiment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install Pillow==11.3.0
+      - name: Generate two independent image-quality test variants
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python scripts/pinterest_creative_lab.py
+      - name: Archive private-to-workflow creative tests (not published)
+        run: |
+          git config user.name 'What For Eats Creative Lab'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add pinterest-creative-lab/2026-10-27
+          if ! git diff --cached --quiet; then
+            git commit -m "Creative lab: test Medium versus High premium pin styling"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
