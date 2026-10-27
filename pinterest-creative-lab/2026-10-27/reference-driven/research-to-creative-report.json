@@ -1,0 +1,56 @@
+{
+  "test_date": "2026-10-27",
+  "status": "complete",
+  "model": "gpt-image-2",
+  "quality": "medium",
+  "isolated": true,
+  "scheduled": false,
+  "published": false,
+  "description": "Two different images inspired by actual private reference-library images visually reviewed on October 27. API uses derived design directions, not the competitor image pixels. Every photograph and composited layout is independently original.",
+  "tests": [
+    {
+      "id": "A",
+      "name": "fast-dinner-hero",
+      "source_reference_ids": [
+        "competitor-quick-dinners-20261027",
+        "competitor-hero-meal-20261027"
+      ],
+      "source_reference_files": [
+        "reobserved-20-minute-dinner.jpg",
+        "reobserved-single-meal-hero.jpg"
+      ],
+      "derived_design_principles": [
+        "The thumbnail shows two close-up savory meals, warm food textures, obvious 20-minute benefit, highly contrasting headline band. Borrow an immediately legible FAST DINNER proposition and crop tightly into irresistible food; do not reproduce the original image or yellow central band.",
+        "Single-pan, believable plated chicken, clearly readable heading above imagery. Borrow the single-hero food focus with a tidy type hierarchy; create a different meal and visual angle."
+      ],
+      "new_original_photo": true,
+      "title": "15-MINUTE DINNERS",
+      "destination_slug": "15-minute-dinners-for-busy-weeknights.html",
+      "filename": "A-fast-dinner-hero-medium.jpg",
+      "output_size_bytes": 381573,
+      "source_image_sha256": "1f6d514d7100cf3a5740b7de704db7a6a93a3abe1c19730e79e243de6cc76473"
+    },
+    {
+      "id": "B",
+      "name": "family-dinner-variety",
+      "source_reference_ids": [
+        "competitor-dinner-collage-20261027",
+        "competitor-hero-meal-20261027"
+      ],
+      "source_reference_files": [
+        "reobserved-family-dinner-collage.jpg",
+        "reobserved-single-meal-hero.jpg"
+      ],
+      "derived_design_principles": [
+        "Multiple distinctly appetizing dinners offer immediate variety and a bold multi-recipe value promise. Borrow variety of meal textures and a bold central value proposition, but not the white diamond, photo quadrants or composition.",
+        "Grounded family food with familiar chicken, vegetables and dinnerware. Borrow approachable authentic home dinner appeal rather than staged luxury."
+      ],
+      "new_original_photo": true,
+      "title": "7 EASY FAMILY DINNERS",
+      "destination_slug": "weekly-meal-plan-for-busy-families.html",
+      "filename": "B-family-dinner-variety-medium.jpg",
+      "output_size_bytes": 515037,
+      "source_image_sha256": "701f776fd8a1608d4d598b605b9cd523cc694dee0e263ff066ce7352f59106b5"
+    }
+  ]
+}
