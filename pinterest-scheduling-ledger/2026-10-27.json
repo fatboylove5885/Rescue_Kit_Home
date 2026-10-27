@@ -1,8 +1,8 @@
 {
   "asset_date": "2026-10-27",
-  "status": "nine_accepted_5_published_4_pending",
+  "status": "nine_accepted_7_published_2_pending",
   "platform": "Metricool Pinterest",
-  "verified_at": "2026-10-27T15:58:13-04:00",
+  "verified_at": "2026-10-27T18:58:14-04:00",
   "scheduled_count": 9,
   "expected_count": 9,
   "posts": [
@@ -95,10 +95,12 @@
       "link": "https://whatsforeats.online/picky-eater-dinner-ideas.html",
       "board_id": "947163434072266364",
       "publish_at": "2026-10-27T18:00:00 America/New_York",
-      "status": "PENDING",
+      "status": "PUBLISHED",
       "auto_publish": true,
       "media": "https://static.metricool.com/planner/202610/4488790-file-14834528478268769555.jpeg",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-4273608105993548180"
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-4273608105993548180",
+      "public_url": "https://www.pinterest.es/pin/947163365478242522",
+      "provider_pin_id": "947163365478242522"
     },
     {
       "asset_filename": "07-cozy-fall-dinners.jpg",
@@ -109,10 +111,12 @@
       "link": "https://whatsforeats.online/22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.html",
       "board_id": "947163434072266364",
       "publish_at": "2026-10-27T18:30:00 America/New_York",
-      "status": "PENDING",
+      "status": "PUBLISHED",
       "auto_publish": true,
       "media": "https://static.metricool.com/planner/202610/4488790-file-5533905981892379613.jpeg",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-2836583831882020988"
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-2836583831882020988",
+      "public_url": "https://www.pinterest.es/pin/947163365478243143",
+      "provider_pin_id": "947163365478243143"
     },
     {
       "asset_filename": "08-leftover-chicken-ideas.jpg",
@@ -143,5 +147,5 @@
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=5537313764211837855"
     }
   ],
-  "notes": "Nine unique original-image posts accepted with autoPublish, verified through live connected Metricool. 5 confirmed PUBLISHED, 4 PENDING. No new posts created. Never infer publishing from queue acceptance. Pinterest RSS duplicate import disabled after initial acceptance; pin-level analytics not verified."
+  "notes": "Nine original-image posts accepted with autoPublish. 7 confirmed PUBLISHED, 2 PENDING in fresh connected Metricool readback at 2026-10-27T18:58:14-04:00. No new posts created; no images generated. Do not equate acceptance with publishing. Pinterest RSS duplicate import previously disabled; pin-level analytics unverified."
 }
