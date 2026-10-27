@@ -1,8 +1,8 @@
 {
   "asset_date": "2026-10-27",
-  "status": "nine_accepted_one_published_eight_pending",
+  "status": "nine_accepted_4_published_5_pending",
   "platform": "Metricool Pinterest",
-  "verified_at": "2026-10-27T13:56:17-04:00",
+  "verified_at": "2026-10-27T15:04:10-04:00",
   "scheduled_count": 9,
   "expected_count": 9,
   "posts": [
@@ -31,10 +31,12 @@
       "link": "https://whatsforeats.online/cheap-family-dinners-cost-per-serving.html",
       "board_id": "947163434072266364",
       "publish_at": "2026-10-27T14:00:00 America/New_York",
-      "status": "PENDING",
+      "status": "PUBLISHED",
       "auto_publish": true,
       "media": "https://static.metricool.com/planner/202610/4488790-file-18270578795341260590.jpeg",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=2780131312255320967"
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=2780131312255320967",
+      "provider_pin_id": "947163365478237052",
+      "public_url": "https://www.pinterest.es/pin/947163365478237052"
     },
     {
       "asset_filename": "03-easy-sheet-pan-dinners.jpg",
@@ -45,10 +47,12 @@
       "link": "https://whatsforeats.online/easy-sheet-pan-dinners.html",
       "board_id": "947163434072266364",
       "publish_at": "2026-10-27T14:30:00 America/New_York",
-      "status": "PENDING",
+      "status": "PUBLISHED",
       "auto_publish": true,
       "media": "https://static.metricool.com/planner/202610/4488790-file-11164582930555719609.jpeg",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-5539250778229485677"
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-5539250778229485677",
+      "provider_pin_id": "947163365478237803",
+      "public_url": "https://www.pinterest.es/pin/947163365478237803"
     },
     {
       "asset_filename": "04-20-lazy-dinners.jpg",
@@ -59,10 +63,12 @@
       "link": "https://whatsforeats.online/20-lazy-dinners-for-when-your-brain-has-left-the-building.html",
       "board_id": "947163434072266364",
       "publish_at": "2026-10-27T15:00:00 America/New_York",
-      "status": "PENDING",
+      "status": "PUBLISHED",
       "auto_publish": true,
       "media": "https://static.metricool.com/planner/202610/4488790-file-2460147675709658276.jpeg",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-2824381828641176671"
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-2824381828641176671",
+      "provider_pin_id": "947163365478238615",
+      "public_url": "https://www.pinterest.es/pin/947163365478238615"
     },
     {
       "asset_filename": "05-15-minute-dinners.jpg",
