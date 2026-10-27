@@ -1,3 +1,4 @@
+# Recovery check Oct 27: expose OpenAI 429 provider error details; do not retry quota failures blindly.
 name: "What's For Eats — research-gated original Pinterest publisher"
 on:
   push:
