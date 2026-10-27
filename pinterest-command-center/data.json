@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-27T17:56:48+00:00",
+  "updated_at": "2026-10-27T19:05:06+00:00",
   "site": "What's For Eats — Pinterest Command Center",
   "timezone": "America/Detroit",
   "visibility": "PUBLIC_SITE_METADATA_ONLY",
@@ -484,9 +484,19 @@
           "description": "9 provider IDs. Scheduling is not proof of publication.",
           "severity": "success",
           "phase": "scheduling",
-          "at": "2026-10-27T13:56:17-04:00",
+          "at": "2026-10-27T15:04:10-04:00",
           "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-scheduling-ledger/2026-10-27.json",
           "source": "Recorded artifact"
+        },
+        {
+          "date": "2026-10-27",
+          "title": "Creative Lab Medium-versus-High image quality A/B completed",
+          "description": "Isolated test completed: one original medium-quality and one high-quality GPT Image 2 photograph with identical detailed food styling prompts and an upgraded photo-dominant Pinterest composition. Both archived for human evaluation, neither added to the publishing queue. The newer art direction substantially reduces empty bands; quality cost comparison requires visual review.",
+          "severity": "success",
+          "phase": "creative_test",
+          "at": "2026-10-27T15:03:48-04:00",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40565348964",
+          "source": "GitHub Creative Lab run 40565348964"
         },
         {
           "date": "2026-10-27",
@@ -747,7 +757,7 @@
           "provider_board_id": "947163434072266364",
           "status": "PUBLISHED",
           "status_source": "Metricool snapshot",
-          "status_observed_at": "2026-10-27T13:56:17-04:00",
+          "status_observed_at": "2026-10-27T15:04:10-04:00",
           "schedule_time": "2026-10-26T18:00:00 America/New_York",
           "post_id": "407173112",
           "auto_publish": true,
@@ -1032,7 +1042,7 @@
           "provider_board_id": null,
           "status": "PUBLISHED",
           "status_source": "Metricool snapshot",
-          "status_observed_at": "2026-10-27T13:56:17-04:00",
+          "status_observed_at": "2026-10-27T15:04:10-04:00",
           "schedule_time": "2026-10-26T18:30:00 America/New_York",
           "post_id": "407177875",
           "auto_publish": true,
@@ -1061,7 +1071,7 @@
           "provider_board_id": null,
           "status": "PUBLISHED",
           "status_source": "Metricool snapshot",
-          "status_observed_at": "2026-10-27T13:56:17-04:00",
+          "status_observed_at": "2026-10-27T15:04:10-04:00",
           "schedule_time": "2026-10-26T19:00:00 America/New_York",
           "post_id": "407177944",
           "auto_publish": true,
@@ -1090,7 +1100,7 @@
           "provider_board_id": null,
           "status": "PUBLISHED",
           "status_source": "Metricool snapshot",
-          "status_observed_at": "2026-10-27T13:56:17-04:00",
+          "status_observed_at": "2026-10-27T15:04:10-04:00",
           "schedule_time": "2026-10-26T19:30:00 America/New_York",
           "post_id": "407177993",
           "auto_publish": true,
@@ -1204,7 +1214,7 @@
           "description": "PUBLISHED: 4",
           "severity": "success",
           "phase": "publishing",
-          "at": "2026-10-27T13:56:17-04:00",
+          "at": "2026-10-27T15:04:10-04:00",
           "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-status-snapshots/2026-10-26.json",
           "source": "Recorded artifact"
         },
@@ -1288,19 +1298,63 @@
           "available": true
         }
       ],
-      "status_snapshot_at": "2026-10-27T13:56:17-04:00",
+      "status_snapshot_at": "2026-10-27T15:04:10-04:00",
       "reviewed_at": "2026-10-26T17:58:27-04:00"
     }
   ],
   "runs": [
     {
-      "id": 40555280772,
+      "id": 40565858198,
+      "name": "What's For Eats — Pinterest Command Center data sync",
+      "event": "push",
+      "status": "pending",
+      "conclusion": null,
+      "created_at": "2026-10-27T19:05:01Z",
+      "updated_at": "2026-10-27T19:05:02Z",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40565858198",
+      "attempt": 1
+    },
+    {
+      "id": 40565852003,
+      "name": "What's For Eats — Pinterest Command Center data sync",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "created_at": "2026-10-27T19:04:58Z",
+      "updated_at": "2026-10-27T19:05:03Z",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40565852003",
+      "attempt": 1
+    },
+    {
+      "id": 40565840489,
       "name": "What's For Eats — Pinterest Command Center data sync",
       "event": "push",
       "status": "in_progress",
       "conclusion": null,
+      "created_at": "2026-10-27T19:04:54Z",
+      "updated_at": "2026-10-27T19:04:58Z",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40565840489",
+      "attempt": 1
+    },
+    {
+      "id": 40565348964,
+      "name": "Pinterest Creative Lab — isolated image quality A/B",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-10-27T19:01:37Z",
+      "updated_at": "2026-10-27T19:03:56Z",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40565348964",
+      "attempt": 1
+    },
+    {
+      "id": 40555280772,
+      "name": "What's For Eats — Pinterest Command Center data sync",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
       "created_at": "2026-10-27T17:56:32Z",
-      "updated_at": "2026-10-27T17:56:41Z",
+      "updated_at": "2026-10-27T17:56:54Z",
       "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40555280772",
       "attempt": 1
     },
