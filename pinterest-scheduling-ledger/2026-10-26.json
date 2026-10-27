@@ -1,0 +1,67 @@
+{
+  "asset_date": "2026-10-26",
+  "status": "four_verified_published",
+  "platform": "Metricool Pinterest",
+  "verified_at": "2026-10-27",
+  "scheduled_count": 4,
+  "expected_count": 9,
+  "posts": [
+    {
+      "asset_filename": "easy-sheet-pan-dinners-photo-pin.jpg",
+      "recipe_slug": "easy-sheet-pan-dinners.html",
+      "post_id": "407173112",
+      "uuid": "-3575784588377635758",
+      "pin_title": "Easy Sheet Pan Dinners for Busy Weeknights",
+      "link": "https://whatsforeats.online/easy-sheet-pan-dinners.html",
+      "board_id": "947163434072266364",
+      "publish_at": "2026-10-26T18:00:00 America/New_York",
+      "status": "PUBLISHED",
+      "auto_publish": true,
+      "media": "https://static.metricool.com/planner/202610/4488790-file-44693733151866953.jpeg",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-3575784588377635758"
+    },
+    {
+      "asset_filename": "five-ingredient-dinner-pin.jpg",
+      "recipe_slug": "5-ingredient-dinners.html",
+      "post_id": "407177875",
+      "uuid": "-5577879543513396778",
+      "pin_title": "Easy 5-Ingredient Dinners for Busy Weeknights",
+      "link": "https://whatsforeats.online/5-ingredient-dinners.html",
+      "board_id": "947163434072264969",
+      "publish_at": "2026-10-26T18:30:00 America/New_York",
+      "status": "PUBLISHED",
+      "auto_publish": true,
+      "media": "https://static.metricool.com/planner/202610/4488790-file-8072022020073183032.jpeg",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-5577879543513396778"
+    },
+    {
+      "asset_filename": "seven-night-family-dinner-pin.jpg",
+      "recipe_slug": "7-night-dinner-plan-for-picky-families.html",
+      "post_id": "407177944",
+      "uuid": "-6566391734386864315",
+      "pin_title": "7-Night Dinner Plan for Picky Families",
+      "link": "https://whatsforeats.online/7-night-dinner-plan-for-picky-families.html",
+      "board_id": "947163434072266364",
+      "publish_at": "2026-10-26T19:00:00 America/New_York",
+      "status": "PUBLISHED",
+      "auto_publish": true,
+      "media": "https://static.metricool.com/planner/202610/4488790-file-13483902571549576622.jpeg",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-6566391734386864315"
+    },
+    {
+      "asset_filename": "fifteen-minute-dinners-pin.jpg",
+      "recipe_slug": "15-minute-dinners-for-busy-weeknights.html",
+      "post_id": "407177993",
+      "uuid": "1763038473752301425",
+      "pin_title": "15-Minute Dinners for Busy Weeknights | 5 Easy Recipes",
+      "link": "https://whatsforeats.online/15-minute-dinners-for-busy-weeknights.html",
+      "board_id": "947163434072266364",
+      "publish_at": "2026-10-26T19:30:00 America/New_York",
+      "status": "PUBLISHED",
+      "auto_publish": true,
+      "media": "https://static.metricool.com/planner/202610/4488790-file-5567696856561902963.jpeg",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=1763038473752301425"
+    }
+  ],
+  "notes": "Four late-day Oct 26 posts verified as PUBLISHED via Metricool Oct 27. Earlier five slots were not verified as scheduled or published. Research contains 9 concepts and 8 references but only 4 original hosted photo-pin assets confirmed."
+}
