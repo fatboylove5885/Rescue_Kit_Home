@@ -51,36 +51,52 @@ def lines_fit(draw,s,max_width,max_lines=3,initial=92):
         if len(lines)<=max_lines:return f,lines
     raise PublishingBlocked('Headline does not fit mobile-friendly layout: '+s)
 
+def _title_lines(headline):
+    """Large mobile-first two-line editorial typography, not tiny generic cards."""
+    words=str(headline).upper().split()
+    if not words:return ["EASY", "DINNERS"]
+    if len(words)==1:return ["EASY",words[0]]
+    if len(words)==2:return words
+    if words[-1] in ("DINNERS","RECIPES","IDEAS","MEALS","PLAN"):
+        return [" ".join(words[:-1]),words[-1]]
+    # Choose the most balanced natural pair, avoiding tiny final lines.
+    choices=[(" ".join(words[:n])," ".join(words[n:])) for n in range(1,len(words))]
+    return list(min(choices,key=lambda x:max(len(x[0]),len(x[1]))+0.14*abs(len(x[0])-len(x[1]))))
+
+def _fit_heading(draw,s,max_px,start=104):
+    for size in range(start,49,-2):
+        ff=font(size,serif=True)
+        if draw.textbbox((0,0),s,font=ff)[2] <=max_px:return ff
+    raise PublishingBlocked('Creative headline cannot fit 1000px wide card: '+s)
+
 def compose(photo:Image.Image,concept:dict,index:int)->Image.Image:
-    # Three related food-blog layouts; photographic content is wholly original.
-    style=concept.get('layout','hero')
-    out=Image.new('RGB',(1000,1500),CREAM); d=ImageDraw.Draw(out)
-    p=ImageOps.fit(photo.convert('RGB'),(1000,960),method=Image.Resampling.LANCZOS)
-    if style=='hero':
-        out.paste(p,(0,350)); top=(0,350)
-    elif style=='photo_first':
-        out.paste(p,(0,0)); d.rectangle((0,950,1000,1320),fill=CREAM);top=(950,1320)
-    elif style=='editorial':
-        out.paste(p,(0,350));d.rectangle((0,350,1000,425),fill=CREAM);top=(0,350)
-    else:raise PublishingBlocked('Unsupported design layout: '+str(style))
-    d=ImageDraw.Draw(out)
-    brand='WHAT\'S FOR EATS';bf=font(24)
-    if top[0]==0:
-        d.text((500,42),brand,font=bf,fill=DARK,anchor='mm')
-        f,rows=lines_fit(d,concept['headline'],908,max_lines=2,initial=80)
-        step=f.size*1.15;y=112
-        for k,txt in enumerate(rows):d.text((500,int(y+k*step)),txt,font=f,fill=RUST if k==len(rows)-1 and len(rows)>1 else GREEN,anchor='mt')
-        subtitle=concept.get('subheadline','Easy meals for busy days')
-        d.text((500,326),subtitle[:62],font=font(24,serif=True),fill=DARK,anchor='mm')
-    else:
-        d.text((500,975),brand,font=bf,fill=DARK,anchor='mm')
-        f,rows=lines_fit(d,concept['headline'],908,max_lines=3,initial=82)
-        step=f.size*1.12; y=1018
-        for k,txt in enumerate(rows):d.text((500,int(y+k*step)),txt,font=f,fill=RUST if k==len(rows)-1 else GREEN,anchor='mt')
-    d.rectangle((0,1320,1000,1500),fill=CREAM)
-    d.rounded_rectangle((140,1340,860,1433),radius=47,fill=RUST)
-    d.text((500,1387),'SEE THE EASY RECIPES',font=font(31),fill=(255,255,255),anchor='mm')
-    d.text((500,1470),'whatsforeats.online',font=font(24),fill=DARK,anchor='mm')
+    """Photo-led editorial concept inspired by Oct26 + Oct27 approved Medium lab.
+    Original meal imagery spans nearly entire card; only small header/CTA
+    overlays. Sourced visual reference notes guide the PHOTO prompt upstream.
+    """
+    out=ImageOps.fit(photo.convert('RGB'),(1000,1500),method=Image.Resampling.LANCZOS)
+    d=ImageDraw.Draw(out,'RGBA')
+    # Continuous photographic scene; translucent design overlays are not photo splits.
+    d.rectangle((0,0,1000,322),fill=(251,247,238,247))
+    d.rectangle((0,1332,1000,1500),fill=(251,247,238,241))
+    d.line((68,35,213,35),fill=RUST+(255,),width=3)
+    d.line((787,35,932,35),fill=RUST+(255,),width=3)
+    d.text((500,45),"W H A T ' S   F O R   E A T S",font=font(22),fill=DARK,anchor='mt')
+    a,b=_title_lines(concept['headline'])
+    fa=_fit_heading(d,a,910,96)
+    fb=_fit_heading(d,b,925,112)
+    d.text((500,89),a,font=fa,fill=GREEN,anchor='mt')
+    d.text((500,185),b,font=fb,fill=RUST,anchor='mt')
+    subtitle=concept.get('subheadline') or concept.get('tagline') or 'Simple meals for busy nights'
+    subtitle=subtitle[:75]
+    # Restrict subtitle safely to the remaining light header.
+    fsub=font(26,serif=True)
+    while d.textbbox((0,0),subtitle,font=fsub)[2]>925 and fsub.size>19:
+        fsub=font(fsub.size-1,serif=True)
+    d.text((500,301),subtitle,font=fsub,fill=DARK,anchor='mm')
+    d.rounded_rectangle((106,1352,894,1442),radius=45,fill=RUST)
+    d.text((500,1396),concept.get('cta_text','GET THE EASY RECIPES')[:34],font=font(32),fill=(255,255,255),anchor='mm')
+    d.text((500,1475),'whatsforeats.online',font=font(21),fill=DARK,anchor='mm')
     return out
 
 def validate_manifest(obj):
@@ -117,16 +133,33 @@ def validate_manifest(obj):
         ensure(any(kinds[x] in ('competitor_observed','own_verified_winner') for x in c['research_ref_ids']), 'Every pin needs a visually observed competitor or a verified own winner; brand moodboard alone is insufficient')
         ensure(c.get('layout') in ('hero','photo_first','editorial'),'Unknown layout')
         ensure(len(c.get('food_scene',''))>=30,'Food scene must be specifically described; not generic')
+        if DATE>='2026-10-28':
+            ensure(len(str(c.get('visual_direction') or ''))>=60, 'Daily pins must have detailed photo-specific VISUAL DIRECTION traced to their same-day Pinterest references')
+            ensure(len(str(c.get('original_twist') or ''))>=35, 'Daily pins need a documented original twist to avoid imitating source photos too closely')
+            ensure(len(str(c.get('why_reference_is_relevant') or ''))>=30, 'Daily research must justify the reference choice')
     return concepts
 
 def new_photo(c,index,refmap):
     if not os.getenv('OPENAI_API_KEY'):raise PublishingBlocked('OPENAI_API_KEY GitHub repository secret is missing; first-party NEW food photographs unavailable. No recycled-photo fallback.')
-    evidence='; '.join(refmap[x].get('visual_features','') for x in c['research_ref_ids'])[:450]
-    prompt=(f"Original premium REALISTIC editorial food PHOTOGRAPH ONLY for an easy dinner recipe Pinterest pin; no lettering, words, logos, graphics or watermarks. "
-            f"Depict this specific food/scene accurately: {c['food_scene']}. "
-            f"Niche design research from observed Pinterest image references suggests: {evidence}. "
-            "Use the EFFECTIVE GENERAL PRINCIPLES only: delicious physically plausible food, natural light, genuine cooking textures, intentional framing, generous high-resolution details, sophisticated food-blog photographic styling. "
-            "Make it distinct from the referenced creators' exact imagery, layouts, and brand identity. Portrait 2:3 framing with centered dishes. Single uninterrupted photographic scene; NO montage, NO collage, NO split panels, NO white bars, NO dividers, NO empty separator bands. If multiple dishes appear they are all naturally arranged on one continuous physical table. No existing website photography reused.")
+    evidence='; '.join(refmap[x].get('visual_features','') for x in c['research_ref_ids'])[:900]
+    visual_direction=str(c.get('visual_direction') or '')[:700]
+    original_twist=str(c.get('original_twist') or '')[:500]
+    design_keywords=', '.join(map(str,c.get('design_keywords') or []))[:300]
+    prompt=(
+        'Generate ONE original magazine-quality PHOTOGRAPH of authentic, irresistibly appealing dinner food for a vertically oriented Pinterest recipe card. '
+        'The premium branded editorial heading and CTA will be added outside the image by Pillow; do not create any lettering, logos, typography, art or white graphic bands within the photograph. '
+        f'Cook and style exactly this NEW meal concept: {c["food_scene"]}. '
+        f'TODAYS VISUALLY EXAMINED niche Pinterest source photos gave these broad winning visual ideas: {evidence}. '
+        f'For THIS pin, apply the observed reference-specific photography art direction: {visual_direction}. '
+        f'Generate a distinctive own-brand twist rather than reproducing the reference: {original_twist}. '
+        f'Useful style details: {design_keywords}. '
+        'The final dish must be original, plausible, freshly cooked, abundant, glossy where appropriate, crispy and textured where appropriate, beautifully garnished. '
+        'Use a visually arresting angle selected for this reference style: dramatic close-up food hero OR naturally arranged variety of meals on one actual continuous table. '
+        'Rich but appetizing colors, sophisticated natural light, tactile linen and believable dishes, publication-grade photography. '
+        'Fill the entire portrait 2:3 frame with continuous real food photography. Maintain recognizably edible ingredients, sharp hero dishes and tasteful depth of field. '
+        'Avoid CGI, plastic appearance, cartoon style, AI surrealism, repeated food assets, fake seams, collages, quadrants, split panels, gigantic empty photo areas, overlaid text, watermarks and any direct reconstruction of another creator\'s composition. '
+        'The outer 20 percent at the top and last 11 percent at the bottom will receive a branded editorial overlay, so make the best hero food visible in the central 20-89 percent region.'
+    )
     payload=json.dumps(dict(model=OPENAI_IMAGE_MODEL,prompt=prompt,n=1,size='1024x1536',quality='medium',output_format='jpeg')).encode()
     req=urllib.request.Request('https://api.openai.com/v1/images/generations',data=payload,headers={'Content-Type':'application/json','Authorization':'Bearer '+os.environ['OPENAI_API_KEY']},method='POST')
     try:
