@@ -1,8 +1,8 @@
 {
   "asset_date": "2026-10-27",
-  "status": "nine_accepted_4_published_5_pending",
+  "status": "nine_accepted_5_published_4_pending",
   "platform": "Metricool Pinterest",
-  "verified_at": "2026-10-27T15:04:10-04:00",
+  "verified_at": "2026-10-27T15:58:13-04:00",
   "scheduled_count": 9,
   "expected_count": 9,
   "posts": [
@@ -79,10 +79,12 @@
       "link": "https://whatsforeats.online/15-minute-dinners-for-busy-weeknights.html",
       "board_id": "947163434072266364",
       "publish_at": "2026-10-27T15:30:00 America/New_York",
-      "status": "PENDING",
+      "status": "PUBLISHED",
       "auto_publish": true,
       "media": "https://static.metricool.com/planner/202610/4488790-file-9949978718135010158.jpeg",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-27926441737426"
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-27926441737426",
+      "provider_pin_id": "947163365478239321",
+      "public_url": "https://www.pinterest.es/pin/947163365478239321"
     },
     {
       "asset_filename": "06-dinners-picky-eaters-love.jpg",
@@ -141,5 +143,5 @@
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=5537313764211837855"
     }
   ],
-  "notes": "Nine unique posts accepted with autoPublish, correct images and links. One confirmed PUBLISHED by connected Metricool; eight remain PENDING. Do not duplicate. RSS duplicates were removed after Metricool acceptance; direct Pinterest pin-level analytics unverified."
+  "notes": "Nine unique original-image posts accepted with autoPublish, verified through live connected Metricool. 5 confirmed PUBLISHED, 4 PENDING. No new posts created. Never infer publishing from queue acceptance. Pinterest RSS duplicate import disabled after initial acceptance; pin-level analytics not verified."
 }
