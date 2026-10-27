@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-27T19:58:43+00:00",
+  "updated_at": "2026-10-27T21:03:47+00:00",
   "site": "What's For Eats — Pinterest Command Center",
   "timezone": "America/Detroit",
   "visibility": "PUBLIC_SITE_METADATA_ONLY",
@@ -124,7 +124,7 @@
           "provider_board_id": "947163434072266364",
           "status": "PUBLISHED",
           "status_source": "Metricool snapshot",
-          "status_observed_at": "2026-10-27T15:58:13-04:00",
+          "status_observed_at": "2026-10-27T17:03:33-04:00",
           "schedule_time": "2026-10-27T13:30:00 America/New_York",
           "post_id": "408053788",
           "auto_publish": true,
@@ -161,7 +161,7 @@
           "provider_board_id": "947163434072266364",
           "status": "PUBLISHED",
           "status_source": "Metricool snapshot",
-          "status_observed_at": "2026-10-27T15:58:13-04:00",
+          "status_observed_at": "2026-10-27T17:03:33-04:00",
           "schedule_time": "2026-10-27T14:00:00 America/New_York",
           "post_id": "408054475",
           "auto_publish": true,
@@ -198,7 +198,7 @@
           "provider_board_id": "947163434072266364",
           "status": "PUBLISHED",
           "status_source": "Metricool snapshot",
-          "status_observed_at": "2026-10-27T15:58:13-04:00",
+          "status_observed_at": "2026-10-27T17:03:33-04:00",
           "schedule_time": "2026-10-27T14:30:00 America/New_York",
           "post_id": "408054618",
           "auto_publish": true,
@@ -235,7 +235,7 @@
           "provider_board_id": "947163434072266364",
           "status": "PUBLISHED",
           "status_source": "Metricool snapshot",
-          "status_observed_at": "2026-10-27T15:58:13-04:00",
+          "status_observed_at": "2026-10-27T17:03:33-04:00",
           "schedule_time": "2026-10-27T15:00:00 America/New_York",
           "post_id": "408054712",
           "auto_publish": true,
@@ -272,7 +272,7 @@
           "provider_board_id": "947163434072266364",
           "status": "PUBLISHED",
           "status_source": "Metricool snapshot",
-          "status_observed_at": "2026-10-27T15:58:13-04:00",
+          "status_observed_at": "2026-10-27T17:03:33-04:00",
           "schedule_time": "2026-10-27T15:30:00 America/New_York",
           "post_id": "408054914",
           "auto_publish": true,
@@ -309,7 +309,7 @@
           "provider_board_id": "947163434072266364",
           "status": "PENDING",
           "status_source": "Metricool snapshot",
-          "status_observed_at": "2026-10-27T15:58:13-04:00",
+          "status_observed_at": "2026-10-27T17:03:33-04:00",
           "schedule_time": "2026-10-27T18:00:00 America/New_York",
           "post_id": "408055052",
           "auto_publish": true,
@@ -346,7 +346,7 @@
           "provider_board_id": "947163434072266364",
           "status": "PENDING",
           "status_source": "Metricool snapshot",
-          "status_observed_at": "2026-10-27T15:58:13-04:00",
+          "status_observed_at": "2026-10-27T17:03:33-04:00",
           "schedule_time": "2026-10-27T18:30:00 America/New_York",
           "post_id": "408055165",
           "auto_publish": true,
@@ -383,7 +383,7 @@
           "provider_board_id": "947163434072266364",
           "status": "PENDING",
           "status_source": "Metricool snapshot",
-          "status_observed_at": "2026-10-27T15:58:13-04:00",
+          "status_observed_at": "2026-10-27T17:03:33-04:00",
           "schedule_time": "2026-10-27T19:00:00 America/New_York",
           "post_id": "408055277",
           "auto_publish": true,
@@ -420,7 +420,7 @@
           "provider_board_id": "947163434072266364",
           "status": "PENDING",
           "status_source": "Metricool snapshot",
-          "status_observed_at": "2026-10-27T15:58:13-04:00",
+          "status_observed_at": "2026-10-27T17:03:33-04:00",
           "schedule_time": "2026-10-27T19:30:00 America/New_York",
           "post_id": "408055360",
           "auto_publish": true,
@@ -470,6 +470,16 @@
       "events": [
         {
           "date": "2026-10-27",
+          "title": "Metricool publishing status observed",
+          "description": "PUBLISHED: 5, PENDING: 4",
+          "severity": "success",
+          "phase": "publishing",
+          "at": "2026-10-27T17:03:33-04:00",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-status-snapshots/2026-10-27.json",
+          "source": "Recorded artifact"
+        },
+        {
+          "date": "2026-10-27",
           "title": "New original images created",
           "description": "9 GPT Image source artifacts with individual hashes.",
           "severity": "success",
@@ -486,16 +496,6 @@
           "phase": "scheduling",
           "at": "2026-10-27T15:58:13-04:00",
           "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-scheduling-ledger/2026-10-27.json",
-          "source": "Recorded artifact"
-        },
-        {
-          "date": "2026-10-27",
-          "title": "Metricool publishing status observed",
-          "description": "PUBLISHED: 5, PENDING: 4",
-          "severity": "success",
-          "phase": "publishing",
-          "at": "2026-10-27T15:58:13-04:00",
-          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-status-snapshots/2026-10-27.json",
           "source": "Recorded artifact"
         },
         {
@@ -719,7 +719,7 @@
           "available": true
         }
       ],
-      "status_snapshot_at": "2026-10-27T15:58:13-04:00",
+      "status_snapshot_at": "2026-10-27T17:03:33-04:00",
       "reviewed_at": "2026-10-27T07:40:35-04:00"
     },
     {
@@ -787,7 +787,7 @@
           "provider_board_id": "947163434072266364",
           "status": "PUBLISHED",
           "status_source": "Metricool snapshot",
-          "status_observed_at": "2026-10-27T15:58:13-04:00",
+          "status_observed_at": "2026-10-27T17:03:33-04:00",
           "schedule_time": "2026-10-26T18:00:00 America/New_York",
           "post_id": "407173112",
           "auto_publish": true,
@@ -1072,7 +1072,7 @@
           "provider_board_id": null,
           "status": "PUBLISHED",
           "status_source": "Metricool snapshot",
-          "status_observed_at": "2026-10-27T15:58:13-04:00",
+          "status_observed_at": "2026-10-27T17:03:33-04:00",
           "schedule_time": "2026-10-26T18:30:00 America/New_York",
           "post_id": "407177875",
           "auto_publish": true,
@@ -1101,7 +1101,7 @@
           "provider_board_id": null,
           "status": "PUBLISHED",
           "status_source": "Metricool snapshot",
-          "status_observed_at": "2026-10-27T15:58:13-04:00",
+          "status_observed_at": "2026-10-27T17:03:33-04:00",
           "schedule_time": "2026-10-26T19:00:00 America/New_York",
           "post_id": "407177944",
           "auto_publish": true,
@@ -1130,7 +1130,7 @@
           "provider_board_id": null,
           "status": "PUBLISHED",
           "status_source": "Metricool snapshot",
-          "status_observed_at": "2026-10-27T15:58:13-04:00",
+          "status_observed_at": "2026-10-27T17:03:33-04:00",
           "schedule_time": "2026-10-26T19:30:00 America/New_York",
           "post_id": "407177993",
           "auto_publish": true,
@@ -1244,7 +1244,7 @@
           "description": "PUBLISHED: 4",
           "severity": "success",
           "phase": "publishing",
-          "at": "2026-10-27T15:58:13-04:00",
+          "at": "2026-10-27T17:03:33-04:00",
           "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-status-snapshots/2026-10-26.json",
           "source": "Recorded artifact"
         },
@@ -1328,19 +1328,41 @@
           "available": true
         }
       ],
-      "status_snapshot_at": "2026-10-27T15:58:13-04:00",
+      "status_snapshot_at": "2026-10-27T17:03:33-04:00",
       "reviewed_at": "2026-10-26T17:58:27-04:00"
     }
   ],
   "runs": [
     {
-      "id": 40573861937,
+      "id": 40583512633,
+      "name": "What's For Eats — Pinterest Command Center data sync",
+      "event": "push",
+      "status": "pending",
+      "conclusion": null,
+      "created_at": "2026-10-27T21:03:40Z",
+      "updated_at": "2026-10-27T21:03:41Z",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40583512633",
+      "attempt": 1
+    },
+    {
+      "id": 40583506755,
       "name": "What's For Eats — Pinterest Command Center data sync",
       "event": "push",
       "status": "in_progress",
       "conclusion": null,
+      "created_at": "2026-10-27T21:03:37Z",
+      "updated_at": "2026-10-27T21:03:41Z",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40583506755",
+      "attempt": 1
+    },
+    {
+      "id": 40573861937,
+      "name": "What's For Eats — Pinterest Command Center data sync",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
       "created_at": "2026-10-27T19:58:26Z",
-      "updated_at": "2026-10-27T19:58:39Z",
+      "updated_at": "2026-10-27T19:58:49Z",
       "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40573861937",
       "attempt": 1
     },
