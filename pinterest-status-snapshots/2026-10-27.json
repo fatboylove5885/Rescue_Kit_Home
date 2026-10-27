@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-27",
+  "observed_at": "2026-10-27T13:04:47-04:00",
+  "source": "Connected Metricool getScheduledPosts",
+  "notes": "All nine were accepted in Metricool but actual live Pinterest publication is not yet confirmed.",
+  "posts": [
+    {
+      "post_id": "408053788",
+      "status": "PENDING"
+    },
+    {
+      "post_id": "408054475",
+      "status": "PENDING"
+    },
+    {
+      "post_id": "408054618",
+      "status": "PENDING"
+    },
+    {
+      "post_id": "408054712",
+      "status": "PENDING"
+    },
+    {
+      "post_id": "408054914",
+      "status": "PENDING"
+    },
+    {
+      "post_id": "408055052",
+      "status": "PENDING"
+    },
+    {
+      "post_id": "408055165",
+      "status": "PENDING"
+    },
+    {
+      "post_id": "408055277",
+      "status": "PENDING"
+    },
+    {
+      "post_id": "408055360",
+      "status": "PENDING"
+    }
+  ]
+}

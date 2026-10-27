@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-27",
+  "record_type": "GitHub Actions troubleshooting and live publication handoff",
+  "events": [
+    {
+      "at": "2026-10-27T07:01:29-04:00",
+      "title": "Research automation required attention",
+      "description": "7AM task returned requires_user_action with no explanation and was paused, preventing normal automatic handoff.",
+      "severity": "warning",
+      "phase": "research",
+      "source": "ChatGPT scheduled task record"
+    },
+    {
+      "at": "2026-10-27T07:40:35-04:00",
+      "title": "Research recovered",
+      "description": "Re-enabled research automation and committed nine original daily concept briefs; re-reviewed three Pinterest references and archived copies in that day's private folder.",
+      "severity": "success",
+      "phase": "research",
+      "source": "GitHub dated research manifest",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-research/2026-10-27/manifest.json"
+    },
+    {
+      "at": "2026-10-27T08:15:00-04:00",
+      "title": "Expected publishing output absent",
+      "description": "By noon there were no October 27 image assets or RSS records from the scheduled GitHub publisher; a new recovery run was initiated.",
+      "severity": "warning",
+      "phase": "generation",
+      "source": "GitHub tree and feed audit",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions"
+    },
+    {
+      "at": "2026-10-27T12:16:26-04:00",
+      "title": "OpenAI first image request failed",
+      "description": "GitHub recovery run reported HTTP 429 Too Many Requests on the first image-generation request.",
+      "severity": "error",
+      "phase": "generation",
+      "source": "GitHub Actions run 40539238332",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40539238332"
+    },
+    {
+      "at": "2026-10-27T12:19:45-04:00",
+      "title": "Credit balance exhausted diagnosed",
+      "description": "Exact response was HTTP 429 insufficient_quota / credit_balance_exhausted. GitHub key was present but there were no API credits.",
+      "severity": "error",
+      "phase": "billing",
+      "source": "GitHub Actions run 40539791866",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40539791866"
+    },
+    {
+      "at": "2026-10-27T12:40:40-04:00",
+      "title": "API credits added; retry initiated",
+      "description": "User funded API with $10 and the failed image job was retried at GPT Image 2 Medium quality.",
+      "severity": "success",
+      "phase": "generation",
+      "source": "GitHub workflow attempt 2",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40539791866"
+    },
+    {
+      "at": "2026-10-27T12:45:26-04:00",
+      "title": "Nine original AI images generated",
+      "description": "Recovery run completed with nine distinct new photographs, updated source-image hashes and a successful site deployment.",
+      "severity": "success",
+      "phase": "generation",
+      "source": "GitHub image ledger",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-publishing-ledger/2026-10-27.json"
+    },
+    {
+      "at": "2026-10-27T12:53:00-04:00",
+      "title": "Metricool scheduling started",
+      "description": "First original image accepted at 1:30 PM, remaining eight queued at half-hour and evening intervals with autoPublish enabled.",
+      "severity": "success",
+      "phase": "scheduling",
+      "source": "Metricool queue"
+    },
+    {
+      "at": "2026-10-27T13:00:00-04:00",
+      "title": "All nine Metricool receipts verified",
+      "description": "Nine provider IDs confirmed, all with stored images and correct target article URLs. PENDING is a scheduling status, not published proof.",
+      "severity": "success",
+      "phase": "scheduling",
+      "source": "GitHub scheduling receipt",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-scheduling-ledger/2026-10-27.json"
+    },
+    {
+      "at": "2026-10-27T13:02:00-04:00",
+      "title": "Double-posting protection added",
+      "description": "Switched future image generation to Metricool-first. Removed today's nine RSS duplicates after direct scheduling, though past import cannot be reversed.",
+      "severity": "success",
+      "phase": "deduplication",
+      "source": "GitHub publisher and RSS"
+    },
+    {
+      "at": "2026-10-27T13:04:00-04:00",
+      "title": "Hourly scheduling guard created",
+      "description": "Automated guard checks outstanding images and provider receipts hourly; it does not create duplicate items or override posting quotas.",
+      "severity": "success",
+      "phase": "automation",
+      "source": "ChatGPT Pinterest Scheduling Guard"
+    }
+  ]
+}

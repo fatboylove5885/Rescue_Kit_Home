@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-26",
+  "record_type": "historical verified Metricool outcomes and operational notes",
+  "historical_posts": [
+    {
+      "post_id": "407173112",
+      "recipe_slug": "easy-sheet-pan-dinners.html",
+      "pin_title": "Easy Sheet Pan Dinners for Busy Weeknights",
+      "link": "https://whatsforeats.online/easy-sheet-pan-dinners.html",
+      "publish_at": "2026-10-26T18:00:00 America/New_York",
+      "status": "PUBLISHED",
+      "auto_publish": true,
+      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-26/easy-sheet-pan-dinners-photo-pin.jpg",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-3575784588377635758"
+    },
+    {
+      "post_id": "407177875",
+      "recipe_slug": "5-ingredient-dinners.html",
+      "pin_title": "Easy 5-Ingredient Dinners for Busy Weeknights",
+      "link": "https://whatsforeats.online/5-ingredient-dinners.html",
+      "publish_at": "2026-10-26T18:30:00 America/New_York",
+      "status": "PUBLISHED",
+      "auto_publish": true,
+      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-26/five-ingredient-dinner-pin.jpg",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-5577879543513396778"
+    },
+    {
+      "post_id": "407177944",
+      "recipe_slug": "7-night-dinner-plan-for-picky-families.html",
+      "pin_title": "7-Night Dinner Plan for Picky Families",
+      "link": "https://whatsforeats.online/7-night-dinner-plan-for-picky-families.html",
+      "publish_at": "2026-10-26T19:00:00 America/New_York",
+      "status": "PUBLISHED",
+      "auto_publish": true,
+      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-26/seven-night-family-dinner-pin.jpg",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-6566391734386864315"
+    },
+    {
+      "post_id": "407177993",
+      "recipe_slug": "15-minute-dinners-for-busy-weeknights.html",
+      "pin_title": "15-Minute Dinners for Busy Weeknights | 5 Easy Recipes",
+      "link": "https://whatsforeats.online/15-minute-dinners-for-busy-weeknights.html",
+      "publish_at": "2026-10-26T19:30:00 America/New_York",
+      "status": "PUBLISHED",
+      "auto_publish": true,
+      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-26/fifteen-minute-dinners-pin.jpg",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=1763038473752301425"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-10-26T15:00:00-04:00",
+      "title": "Reference-first creative standard adopted",
+      "description": "Three Pinterest visual observations and five owned brand examples archived privately. Own images require verified 500+ impressions before being promoted as winners.",
+      "severity": "success",
+      "phase": "research",
+      "source": "Research archive and creative policy",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-reference-library/POLICY.md"
+    },
+    {
+      "at": "2026-10-26T17:35:00-04:00",
+      "title": "Four evening pins queued",
+      "description": "Four recipe-matched images accepted in Metricool with autoPublish=true for 6:00, 6:30, 7:00 and 7:30 PM. The October 27 provider readback confirmed all four PUBLISHED.",
+      "severity": "success",
+      "phase": "scheduling",
+      "source": "Metricool verified provider records",
+      "url": "https://app.metricool.com/planner/calendar?blogId=4488790"
+    },
+    {
+      "at": "2026-10-26T20:00:00-04:00",
+      "title": "Original RSS design limitations identified",
+      "description": "RSS timing is asynchronous and the old layout builder reused site photos. The research-first original AI-image pipeline replaced it; RSS records were never evidence of exact scheduling.",
+      "severity": "warning",
+      "phase": "diagnostics",
+      "source": "RSS and workflow review",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-rss.xml"
+    }
+  ]
+}

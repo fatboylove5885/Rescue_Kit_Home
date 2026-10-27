@@ -1,0 +1,51 @@
+name: "What's For Eats — Pinterest Command Center data sync"
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build_pinterest_dashboard.py'
+      - 'pinterest-command-center/index.html'
+      - 'pinterest-research/**'
+      - 'pinterest-daily-pins/**'
+      - 'pinterest-publishing-ledger/**'
+      - 'pinterest-scheduling-ledger/**'
+      - 'pinterest-status-snapshots/**'
+      - 'pinterest-activity/**'
+      - '.github/workflows/pinterest-dashboard.yml'
+  schedule:
+    - cron: '13 8-20 * * *'
+      timezone: 'America/Detroit'
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: wfe-pinterest-dashboard
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build sanitized audit JSON (no secrets or private reference files)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/build_pinterest_dashboard.py
+      - name: Update dashboard data only
+        shell: bash
+        run: |
+          git config user.name 'Whats For Eats Dashboard'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add pinterest-command-center/data.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh Pinterest Command Center daily audit data"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
