@@ -1,0 +1,260 @@
+{
+  "date": "2026-10-27",
+  "research_completed_at": "2026-10-27T07:40:35-04:00",
+  "audit_note": "Recovery of the paused 07:00 automation. Three actual Pinterest imagery references were re-reviewed and copied into today's private research archive. These same three reference pins were also inspected on Oct 26; do not claim they are newly discovered or verified winners. Current niche signal: recent public dinner-pin leaderboard emphasizes cheesy, potato, casseroles, slow-cooker comfort food; numbers reflect a third-party public tracker, not Pinterest account-specific analytics. Own account analytics insufficient; concepts are hypotheses.",
+  "evidence_sources": [
+    {
+      "url": "https://pinpinterest.com/niches/dinner-recipes",
+      "type": "third_party_ranked_public_save_growth",
+      "note": "Observed October 27; leaderboard can change and independent Pinterest metrics were not verified."
+    },
+    {
+      "url": "https://www.pinterest.com/pin/cheesy-ground-beef-potato-casserole-my-incredible-recipes--271764158757801331/",
+      "type": "same_day_public_pin",
+      "note": "Observed this morning from public Pinterest HTML; image not successfully archived due download restriction."
+    },
+    {
+      "url": "https://in.pinterest.com/pin/409264684906212099/",
+      "type": "same_day_public_pin",
+      "note": "Slow cooker cowboy casserole image observed; image not successfully archived due download restriction."
+    },
+    {
+      "url": "https://www.pinterest.com/pin/846606429929093434/",
+      "type": "same_day_public_pin",
+      "note": "15 minute dinner pin visually observed; image not successfully archived due download restriction."
+    }
+  ],
+  "reference_images": [
+    {
+      "id": "competitor-quick-dinners-20261027",
+      "type": "competitor_observed",
+      "pin_url": "https://www.pinterest.com/pin/quick-20minute-dinner-recipes-for-busy-nights-in-2025--1124703706948772252/",
+      "archive_file": "Google Drive/Pinterest Reference Library/2026-10-27/Competitor Observed/reobserved-20-minute-dinner.jpg",
+      "archive_status": "saved_in_drive",
+      "visual_features": "Two close-up cooked dishes with crisp realistic appetizing textures separated by a bold high-contrast quick-dinner benefit band; mobile-readable and food-focused.",
+      "metric_status": "not_verified",
+      "label": "Previously identified pin, visually re-reviewed this morning; NOT independently established as a winning individual pin."
+    },
+    {
+      "id": "competitor-dinner-collage-20261027",
+      "type": "competitor_observed",
+      "pin_url": "https://www.pinterest.com/pin/35-dinner-ideas-for-tonight-that-are-nofuss-big-flavor--681873199858570306/",
+      "archive_file": "Google Drive/Pinterest Reference Library/2026-10-27/Competitor Observed/reobserved-family-dinner-collage.jpg",
+      "archive_status": "saved_in_drive",
+      "visual_features": "Four realistic ready-to-eat meal photos arranged around one central oversized clear white headline, appealing as a multi-recipe value proposition.",
+      "metric_status": "not_verified",
+      "label": "Previously identified visual reference, re-reviewed today; actual competitor save/click metrics not verified."
+    },
+    {
+      "id": "competitor-hero-meal-20261027",
+      "type": "competitor_observed",
+      "pin_url": "https://www.pinterest.com/pin/20-easy-homemade-dinner-recipes--157696424443444551/",
+      "archive_file": "Google Drive/Pinterest Reference Library/2026-10-27/Competitor Observed/reobserved-single-meal-hero.jpg",
+      "archive_status": "saved_in_drive",
+      "visual_features": "One large overhead chicken-dinner hero photo showing realistic ingredients, clean uncluttered space and a large readable light title panel.",
+      "metric_status": "not_verified",
+      "label": "Previously identified Pinterest design, re-observed for today's production, not a proven performance winner."
+    }
+  ],
+  "pin_concepts": [
+    {
+      "id": "20261027-01",
+      "destination_slug": "slow-cooker-dinners-for-busy-families.html",
+      "headline": "SLOW COOKER DINNERS",
+      "seo_title": "Slow Cooker Dinner Ideas for Busy Families",
+      "description": "Bring home comforting slow cooker dinners without hours of hands-on work. Explore easy family recipes, prep shortcuts and practical tips.",
+      "food_scene": "A photorealistic home slow cooker holding richly sauced salsa chicken with tender vegetables, warm steam, fresh coriander and a served chicken-rice bowl beside it, appetizing rustic fall kitchen atmosphere.",
+      "layout": "hero",
+      "research_ref_ids": [
+        "competitor-hero-meal-20261027",
+        "competitor-quick-dinners-20261027"
+      ],
+      "subheadline": "Simple meals for busy weeknights",
+      "primary_keyword": "slow cooker dinners",
+      "secondary_keywords": [
+        "easy crockpot meals",
+        "weeknight slow cooker recipes",
+        "family comfort food"
+      ],
+      "board_suggestion": "Quick Dinner Recipes",
+      "creative_rationale": "Use today's reviewed competitor visual principles, while keeping original meals and matching the linked article."
+    },
+    {
+      "id": "20261027-02",
+      "destination_slug": "cheap-family-dinners-cost-per-serving.html",
+      "headline": "CHEAP FAMILY DINNERS",
+      "seo_title": "Cheap Family Dinner Ideas With Big Flavor",
+      "description": "Make satisfying family dinners while keeping grocery spending in check. Explore cheap meal ideas, pantry staples and cost-per-serving tips.",
+      "food_scene": "Rich photorealistic affordable rice-and-beans bowl with roasted diced potatoes and browned ground-beef taco-style filling, chopped tomatoes, cheese and herbs, cozy ordinary family home dinner setting.",
+      "layout": "photo_first",
+      "research_ref_ids": [
+        "competitor-dinner-collage-20261027",
+        "competitor-hero-meal-20261027"
+      ],
+      "subheadline": "Simple meals for busy weeknights",
+      "primary_keyword": "cheap family dinners",
+      "secondary_keywords": [
+        "budget dinner ideas",
+        "affordable family meals",
+        "dinner cost per serving"
+      ],
+      "board_suggestion": "Most-Affordable Recipes",
+      "creative_rationale": "Use today's reviewed competitor visual principles, while keeping original meals and matching the linked article."
+    },
+    {
+      "id": "20261027-03",
+      "destination_slug": "easy-sheet-pan-dinners.html",
+      "headline": "EASY SHEET PAN DINNERS",
+      "seo_title": "Easy Sheet Pan Dinners With Less Cleanup",
+      "description": "Skip the sink full of dishes. Find easy sheet-pan dinner ideas with juicy chicken, roasted vegetables and useful cooking tips.",
+      "food_scene": "Real food photography of oven-roasted herb chicken thighs with caramelized sliced potatoes, broccoli florets and colorful bell peppers on one silver rimmed baking pan, warm natural light, accurate cooking texture.",
+      "layout": "editorial",
+      "research_ref_ids": [
+        "competitor-hero-meal-20261027",
+        "competitor-quick-dinners-20261027"
+      ],
+      "subheadline": "Simple meals for busy weeknights",
+      "primary_keyword": "easy sheet pan dinners",
+      "secondary_keywords": [
+        "one pan chicken dinner",
+        "minimal cleanup meals",
+        "weeknight sheet pan recipes"
+      ],
+      "board_suggestion": "Quick Dinner Recipes",
+      "creative_rationale": "Use today's reviewed competitor visual principles, while keeping original meals and matching the linked article."
+    },
+    {
+      "id": "20261027-04",
+      "destination_slug": "20-lazy-dinners-for-when-your-brain-has-left-the-building.html",
+      "headline": "20 LAZY DINNERS",
+      "seo_title": "20 Lazy Dinner Ideas for Tired Nights",
+      "description": "When you're too tired to cook, browse low-effort family dinners, pantry shortcuts and delicious quick meals for busy nights.",
+      "food_scene": "Photorealistic creamy chicken spinach pasta in a ceramic bowl with parmesan, herbs and visible tender chicken, one pan and fork nearby, relaxed weeknight home dining table without food styling excess.",
+      "layout": "hero",
+      "research_ref_ids": [
+        "competitor-quick-dinners-20261027",
+        "competitor-hero-meal-20261027"
+      ],
+      "subheadline": "Simple meals for busy weeknights",
+      "primary_keyword": "lazy dinners",
+      "secondary_keywords": [
+        "easy low energy meals",
+        "quick family dinners",
+        "no fuss dinner recipes"
+      ],
+      "board_suggestion": "Quick Dinner Recipes",
+      "creative_rationale": "Use today's reviewed competitor visual principles, while keeping original meals and matching the linked article."
+    },
+    {
+      "id": "20261027-05",
+      "destination_slug": "15-minute-dinners-for-busy-weeknights.html",
+      "headline": "15-MINUTE DINNERS",
+      "seo_title": "15-Minute Dinners for Busy Weeknights",
+      "description": "Explore fast weeknight dinner recipes such as garlic shrimp fajitas, honey garlic chicken stir fry and creamy chicken spinach pasta.",
+      "food_scene": "Photorealistic seared garlic-butter shrimp with charred multicolored peppers and onion in a skillet, tortillas and lime wedges set beside it, clear restaurant-quality textures and naturally lit kitchen table.",
+      "layout": "photo_first",
+      "research_ref_ids": [
+        "competitor-quick-dinners-20261027",
+        "competitor-dinner-collage-20261027"
+      ],
+      "subheadline": "Simple meals for busy weeknights",
+      "primary_keyword": "15 minute dinners",
+      "secondary_keywords": [
+        "quick 15 minute meals",
+        "easy weeknight recipes",
+        "shrimp fajita dinner"
+      ],
+      "board_suggestion": "Quick Dinner Recipes",
+      "creative_rationale": "Use today's reviewed competitor visual principles, while keeping original meals and matching the linked article."
+    },
+    {
+      "id": "20261027-06",
+      "destination_slug": "picky-eater-dinner-ideas.html",
+      "headline": "DINNERS PICKY EATERS LOVE",
+      "seo_title": "Easy Dinner Ideas for Picky Eaters",
+      "description": "Make dinner more flexible for the whole family with customizable tacos, familiar ingredients and low-stress meal ideas.",
+      "food_scene": "Photorealistic family taco assembly dinner spread with tortillas, mild seasoned chicken pieces, grated cheese, lettuce, rice and colorful separate bowls, welcoming clutter-free home table.",
+      "layout": "editorial",
+      "research_ref_ids": [
+        "competitor-dinner-collage-20261027",
+        "competitor-hero-meal-20261027"
+      ],
+      "subheadline": "Simple meals for busy weeknights",
+      "primary_keyword": "picky eater dinner ideas",
+      "secondary_keywords": [
+        "family taco night",
+        "kid friendly dinners",
+        "flexible family meals"
+      ],
+      "board_suggestion": "Quick Dinner Recipes",
+      "creative_rationale": "Use today's reviewed competitor visual principles, while keeping original meals and matching the linked article."
+    },
+    {
+      "id": "20261027-07",
+      "destination_slug": "22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.html",
+      "headline": "COZY FALL DINNERS",
+      "seo_title": "Cozy Fall Dinner Ideas for Chilly Nights",
+      "description": "Explore comforting soups, pasta bakes and hearty dinner ideas for crisp autumn nights without complicated cooking.",
+      "food_scene": "Photorealistic bubbling golden baked pasta casserole with browned cheddar top beside a bowl of velvety orange pumpkin soup, rustic napkin and autumn evening window light, cozy home dinner scene.",
+      "layout": "hero",
+      "research_ref_ids": [
+        "competitor-dinner-collage-20261027",
+        "competitor-hero-meal-20261027"
+      ],
+      "subheadline": "Simple meals for busy weeknights",
+      "primary_keyword": "cozy fall dinners",
+      "secondary_keywords": [
+        "fall comfort foods",
+        "easy autumn dinner",
+        "baked pasta casserole"
+      ],
+      "board_suggestion": "Fall Dinner Ideas",
+      "creative_rationale": "Use today's reviewed competitor visual principles, while keeping original meals and matching the linked article."
+    },
+    {
+      "id": "20261027-08",
+      "destination_slug": "leftover-chicken-recipes.html",
+      "headline": "LEFTOVER CHICKEN IDEAS",
+      "seo_title": "Easy Leftover Chicken Recipes for Dinner",
+      "description": "Transform extra cooked chicken into crispy quesadillas, colorful taco bowls and creamy pasta meals without starting from scratch.",
+      "food_scene": "Photorealistic trio of plated meals made from cooked roast chicken: crispy golden quesadilla wedges, a chicken taco rice bowl, and creamy chicken pasta arranged at a casual home dining table.",
+      "layout": "photo_first",
+      "research_ref_ids": [
+        "competitor-dinner-collage-20261027",
+        "competitor-hero-meal-20261027"
+      ],
+      "subheadline": "Simple meals for busy weeknights",
+      "primary_keyword": "leftover chicken recipes",
+      "secondary_keywords": [
+        "rotisserie chicken leftovers",
+        "chicken quesadilla dinner",
+        "easy second night meals"
+      ],
+      "board_suggestion": "Quick Dinner Recipes",
+      "creative_rationale": "Use today's reviewed competitor visual principles, while keeping original meals and matching the linked article."
+    },
+    {
+      "id": "20261027-09",
+      "destination_slug": "weekly-meal-plan-for-busy-families.html",
+      "headline": "7 EASY FAMILY DINNERS",
+      "seo_title": "Easy Weekly Family Meal Plan",
+      "description": "Take the guesswork out of dinners with a flexible seven-night meal plan and shopping guidance for busy households.",
+      "food_scene": "Photorealistic overhead spread of several genuine plated family meals, including baked chicken and potatoes, vegetable pasta, taco bowls, and a side salad, different dishes clearly recognizable without overly cluttered collage.",
+      "layout": "editorial",
+      "research_ref_ids": [
+        "competitor-dinner-collage-20261027",
+        "competitor-quick-dinners-20261027"
+      ],
+      "subheadline": "Simple meals for busy weeknights",
+      "primary_keyword": "weekly family meal plan",
+      "secondary_keywords": [
+        "7 day dinner plan",
+        "easy family dinner schedule",
+        "meal planning for busy families"
+      ],
+      "board_suggestion": "Quick Dinner Recipes",
+      "creative_rationale": "Use today's reviewed competitor visual principles, while keeping original meals and matching the linked article."
+    }
+  ],
+  "status": "research_archived_recovery_awaiting_openai_image_pipeline"
+}
