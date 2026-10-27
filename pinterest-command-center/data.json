@@ -1,0 +1,831 @@
+{
+  "schema_version": 2,
+  "site": "What's For Eats",
+  "dashboard": "Pinterest Command Center",
+  "built_at": "2026-10-27T17:30:45.234224+00:00",
+  "timezone": "America/Detroit",
+  "source": "GitHub repository research/image/scheduling ledgers plus public GitHub Actions run metadata; provider receipt snapshots are NOT live Pinterest telemetry",
+  "privacy": "PUBLIC DATASET: no secrets or private reference images",
+  "days": [
+    {
+      "date": "2026-10-27",
+      "planned_count": 9,
+      "research_completed_at": "2026-10-27T07:40:35-04:00",
+      "audit_note": "Recovery of the paused 07:00 automation. Three actual Pinterest imagery references were re-reviewed and copied into today's private research archive. These same three reference pins were also inspected on Oct 26; do not claim they are newly discovered or verified winners. Current niche signal: recent public dinner-pin leaderboard emphasizes cheesy, potato, casseroles, slow-cooker comfort food; numbers reflect a third-party public tracker, not Pinterest account-specific analytics. Own account analytics insufficient; concepts are hypotheses.",
+      "research_status": "research_archived_recovery_awaiting_openai_image_pipeline",
+      "references": [
+        {
+          "id": "competitor-quick-dinners-20261027",
+          "type": "competitor_observed",
+          "title": "Previously identified pin, visually re-reviewed this morning; NOT independently established as a winning individual pin.",
+          "pin_url": "https://www.pinterest.com/pin/quick-20minute-dinner-recipes-for-busy-nights-in-2025--1124703706948772252/",
+          "visual_features": "Two close-up cooked dishes with crisp realistic appetizing textures separated by a bold high-contrast quick-dinner benefit band; mobile-readable and food-focused.",
+          "archive_status": "saved_in_drive",
+          "metric_status": "not_verified"
+        },
+        {
+          "id": "competitor-dinner-collage-20261027",
+          "type": "competitor_observed",
+          "title": "Previously identified visual reference, re-reviewed today; actual competitor save/click metrics not verified.",
+          "pin_url": "https://www.pinterest.com/pin/35-dinner-ideas-for-tonight-that-are-nofuss-big-flavor--681873199858570306/",
+          "visual_features": "Four realistic ready-to-eat meal photos arranged around one central oversized clear white headline, appealing as a multi-recipe value proposition.",
+          "archive_status": "saved_in_drive",
+          "metric_status": "not_verified"
+        },
+        {
+          "id": "competitor-hero-meal-20261027",
+          "type": "competitor_observed",
+          "title": "Previously identified Pinterest design, re-observed for today's production, not a proven performance winner.",
+          "pin_url": "https://www.pinterest.com/pin/20-easy-homemade-dinner-recipes--157696424443444551/",
+          "visual_features": "One large overhead chicken-dinner hero photo showing realistic ingredients, clean uncluttered space and a large readable light title panel.",
+          "archive_status": "saved_in_drive",
+          "metric_status": "not_verified"
+        }
+      ],
+      "evidence_sources": [
+        {
+          "type": "third_party_ranked_public_save_growth",
+          "note": "Observed October 27; leaderboard can change and independent Pinterest metrics were not verified.",
+          "url": "https://pinpinterest.com/niches/dinner-recipes"
+        },
+        {
+          "type": "same_day_public_pin",
+          "note": "Observed this morning from public Pinterest HTML; image not successfully archived due download restriction.",
+          "url": "https://www.pinterest.com/pin/cheesy-ground-beef-potato-casserole-my-incredible-recipes--271764158757801331/"
+        },
+        {
+          "type": "same_day_public_pin",
+          "note": "Slow cooker cowboy casserole image observed; image not successfully archived due download restriction.",
+          "url": "https://in.pinterest.com/pin/409264684906212099/"
+        },
+        {
+          "type": "same_day_public_pin",
+          "note": "15 minute dinner pin visually observed; image not successfully archived due download restriction.",
+          "url": "https://www.pinterest.com/pin/846606429929093434/"
+        }
+      ],
+      "pins": [
+        {
+          "id": "408053788",
+          "slug": "slow-cooker-dinners-for-busy-families.html",
+          "title": "Slow Cooker Dinner Ideas for Busy Families",
+          "description": "Bring home comforting slow cooker dinners without hours of hands-on work. Explore easy family recipes, prep shortcuts and practical tips.",
+          "generated": true,
+          "status": "PENDING",
+          "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-27/01-slow-cooker-dinners.jpg",
+          "destination": "https://whatsforeats.online/slow-cooker-dinners-for-busy-families.html",
+          "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-3379620963386634430",
+          "schedule_at": "2026-10-27T13:30:00 America/New_York",
+          "media_provider_uploaded": true,
+          "auto_publish": true,
+          "reference_ids": [
+            "competitor-hero-meal-20261027",
+            "competitor-quick-dinners-20261027"
+          ],
+          "prompt_subject": "A photorealistic home slow cooker holding richly sauced salsa chicken with tender vegetables, warm steam, fresh coriander and a served chicken-rice bowl beside it, appetizing rustic fall kitchen atmosphere.",
+          "primary_keyword": "slow cooker dinners",
+          "board_id": "947163434072266364",
+          "provider_post_id": "408053788",
+          "model": "gpt-image-2"
+        },
+        {
+          "id": "408054475",
+          "slug": "cheap-family-dinners-cost-per-serving.html",
+          "title": "Cheap Family Dinner Ideas With Big Flavor",
+          "description": "Make satisfying family dinners while keeping grocery spending in check. Explore cheap meal ideas, pantry staples and cost-per-serving tips.",
+          "generated": true,
+          "status": "PENDING",
+          "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-27/02-cheap-family-dinners.jpg",
+          "destination": "https://whatsforeats.online/cheap-family-dinners-cost-per-serving.html",
+          "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=2780131312255320967",
+          "schedule_at": "2026-10-27T14:00:00 America/New_York",
+          "media_provider_uploaded": true,
+          "auto_publish": true,
+          "reference_ids": [
+            "competitor-dinner-collage-20261027",
+            "competitor-hero-meal-20261027"
+          ],
+          "prompt_subject": "Rich photorealistic affordable rice-and-beans bowl with roasted diced potatoes and browned ground-beef taco-style filling, chopped tomatoes, cheese and herbs, cozy ordinary family home dinner setting.",
+          "primary_keyword": "cheap family dinners",
+          "board_id": "947163434072266364",
+          "provider_post_id": "408054475",
+          "model": "gpt-image-2"
+        },
+        {
+          "id": "408054618",
+          "slug": "easy-sheet-pan-dinners.html",
+          "title": "Easy Sheet Pan Dinners With Less Cleanup",
+          "description": "Skip the sink full of dishes. Find easy sheet-pan dinner ideas with juicy chicken, roasted vegetables and useful cooking tips.",
+          "generated": true,
+          "status": "PENDING",
+          "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-27/03-easy-sheet-pan-dinners.jpg",
+          "destination": "https://whatsforeats.online/easy-sheet-pan-dinners.html",
+          "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-5539250778229485677",
+          "schedule_at": "2026-10-27T14:30:00 America/New_York",
+          "media_provider_uploaded": true,
+          "auto_publish": true,
+          "reference_ids": [
+            "competitor-hero-meal-20261027",
+            "competitor-quick-dinners-20261027"
+          ],
+          "prompt_subject": "Real food photography of oven-roasted herb chicken thighs with caramelized sliced potatoes, broccoli florets and colorful bell peppers on one silver rimmed baking pan, warm natural light, accurate cooking texture.",
+          "primary_keyword": "easy sheet pan dinners",
+          "board_id": "947163434072266364",
+          "provider_post_id": "408054618",
+          "model": "gpt-image-2"
+        },
+        {
+          "id": "408054712",
+          "slug": "20-lazy-dinners-for-when-your-brain-has-left-the-building.html",
+          "title": "20 Lazy Dinner Ideas for Tired Nights",
+          "description": "When you're too tired to cook, browse low-effort family dinners, pantry shortcuts and delicious quick meals for busy nights.",
+          "generated": true,
+          "status": "PENDING",
+          "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-27/04-20-lazy-dinners.jpg",
+          "destination": "https://whatsforeats.online/20-lazy-dinners-for-when-your-brain-has-left-the-building.html",
+          "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-2824381828641176671",
+          "schedule_at": "2026-10-27T15:00:00 America/New_York",
+          "media_provider_uploaded": true,
+          "auto_publish": true,
+          "reference_ids": [
+            "competitor-quick-dinners-20261027",
+            "competitor-hero-meal-20261027"
+          ],
+          "prompt_subject": "Photorealistic creamy chicken spinach pasta in a ceramic bowl with parmesan, herbs and visible tender chicken, one pan and fork nearby, relaxed weeknight home dining table without food styling excess.",
+          "primary_keyword": "lazy dinners",
+          "board_id": "947163434072266364",
+          "provider_post_id": "408054712",
+          "model": "gpt-image-2"
+        },
+        {
+          "id": "408054914",
+          "slug": "15-minute-dinners-for-busy-weeknights.html",
+          "title": "15-Minute Dinners for Busy Weeknights",
+          "description": "Explore fast weeknight dinner recipes such as garlic shrimp fajitas, honey garlic chicken stir fry and creamy chicken spinach pasta.",
+          "generated": true,
+          "status": "PENDING",
+          "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-27/05-15-minute-dinners.jpg",
+          "destination": "https://whatsforeats.online/15-minute-dinners-for-busy-weeknights.html",
+          "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-27926441737426",
+          "schedule_at": "2026-10-27T15:30:00 America/New_York",
+          "media_provider_uploaded": true,
+          "auto_publish": true,
+          "reference_ids": [
+            "competitor-quick-dinners-20261027",
+            "competitor-dinner-collage-20261027"
+          ],
+          "prompt_subject": "Photorealistic seared garlic-butter shrimp with charred multicolored peppers and onion in a skillet, tortillas and lime wedges set beside it, clear restaurant-quality textures and naturally lit kitchen table.",
+          "primary_keyword": "15 minute dinners",
+          "board_id": "947163434072266364",
+          "provider_post_id": "408054914",
+          "model": "gpt-image-2"
+        },
+        {
+          "id": "408055052",
+          "slug": "picky-eater-dinner-ideas.html",
+          "title": "Easy Dinner Ideas for Picky Eaters",
+          "description": "Make dinner more flexible for the whole family with customizable tacos, familiar ingredients and low-stress meal ideas.",
+          "generated": true,
+          "status": "PENDING",
+          "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-27/06-dinners-picky-eaters-love.jpg",
+          "destination": "https://whatsforeats.online/picky-eater-dinner-ideas.html",
+          "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-4273608105993548180",
+          "schedule_at": "2026-10-27T18:00:00 America/New_York",
+          "media_provider_uploaded": true,
+          "auto_publish": true,
+          "reference_ids": [
+            "competitor-dinner-collage-20261027",
+            "competitor-hero-meal-20261027"
+          ],
+          "prompt_subject": "Photorealistic family taco assembly dinner spread with tortillas, mild seasoned chicken pieces, grated cheese, lettuce, rice and colorful separate bowls, welcoming clutter-free home table.",
+          "primary_keyword": "picky eater dinner ideas",
+          "board_id": "947163434072266364",
+          "provider_post_id": "408055052",
+          "model": "gpt-image-2"
+        },
+        {
+          "id": "408055165",
+          "slug": "22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.html",
+          "title": "Cozy Fall Dinner Ideas for Chilly Nights",
+          "description": "Explore comforting soups, pasta bakes and hearty dinner ideas for crisp autumn nights without complicated cooking.",
+          "generated": true,
+          "status": "PENDING",
+          "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-27/07-cozy-fall-dinners.jpg",
+          "destination": "https://whatsforeats.online/22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.html",
+          "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-2836583831882020988",
+          "schedule_at": "2026-10-27T18:30:00 America/New_York",
+          "media_provider_uploaded": true,
+          "auto_publish": true,
+          "reference_ids": [
+            "competitor-dinner-collage-20261027",
+            "competitor-hero-meal-20261027"
+          ],
+          "prompt_subject": "Photorealistic bubbling golden baked pasta casserole with browned cheddar top beside a bowl of velvety orange pumpkin soup, rustic napkin and autumn evening window light, cozy home dinner scene.",
+          "primary_keyword": "cozy fall dinners",
+          "board_id": "947163434072266364",
+          "provider_post_id": "408055165",
+          "model": "gpt-image-2"
+        },
+        {
+          "id": "408055277",
+          "slug": "leftover-chicken-recipes.html",
+          "title": "Easy Leftover Chicken Recipes for Dinner",
+          "description": "Transform extra cooked chicken into crispy quesadillas, colorful taco bowls and creamy pasta meals without starting from scratch.",
+          "generated": true,
+          "status": "PENDING",
+          "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-27/08-leftover-chicken-ideas.jpg",
+          "destination": "https://whatsforeats.online/leftover-chicken-recipes.html",
+          "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=4866917746116545473",
+          "schedule_at": "2026-10-27T19:00:00 America/New_York",
+          "media_provider_uploaded": true,
+          "auto_publish": true,
+          "reference_ids": [
+            "competitor-dinner-collage-20261027",
+            "competitor-hero-meal-20261027"
+          ],
+          "prompt_subject": "Photorealistic trio of plated meals made from cooked roast chicken: crispy golden quesadilla wedges, a chicken taco rice bowl, and creamy chicken pasta arranged at a casual home dining table.",
+          "primary_keyword": "leftover chicken recipes",
+          "board_id": "947163434072266364",
+          "provider_post_id": "408055277",
+          "model": "gpt-image-2"
+        },
+        {
+          "id": "408055360",
+          "slug": "weekly-meal-plan-for-busy-families.html",
+          "title": "Easy Weekly Family Meal Plan",
+          "description": "Take the guesswork out of dinners with a flexible seven-night meal plan and shopping guidance for busy households.",
+          "generated": true,
+          "status": "PENDING",
+          "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-27/09-7-easy-family-dinners.jpg",
+          "destination": "https://whatsforeats.online/weekly-meal-plan-for-busy-families.html",
+          "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=5537313764211837855",
+          "schedule_at": "2026-10-27T19:30:00 America/New_York",
+          "media_provider_uploaded": true,
+          "auto_publish": true,
+          "reference_ids": [
+            "competitor-dinner-collage-20261027",
+            "competitor-quick-dinners-20261027"
+          ],
+          "prompt_subject": "Photorealistic overhead spread of several genuine plated family meals, including baked chicken and potatoes, vegetable pasta, taco bowls, and a side salad, different dishes clearly recognizable without overly cluttered collage.",
+          "primary_keyword": "weekly family meal plan",
+          "board_id": "947163434072266364",
+          "provider_post_id": "408055360",
+          "model": "gpt-image-2"
+        }
+      ],
+      "events": [
+        {
+          "at": "2026-10-27T13:30:32",
+          "title": "GitHub image publisher — in_progress",
+          "detail": "GitHub Actions run 40551243118, trigger push. Job completion alone does not prove Pinterest published.",
+          "level": "info",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40551243118"
+        },
+        {
+          "at": "2026-10-27T13:02:00",
+          "title": "Duplicate-post prevention added",
+          "detail": "GitHub photo pipeline now hands off to Metricool without adding the same assets to RSS. Already-added Oct 27 RSS items removed to reduce duplicate imports.",
+          "level": "success"
+        },
+        {
+          "at": "2026-10-27T13:01:14",
+          "title": "GitHub image publisher — success",
+          "detail": "GitHub Actions run 40546571378, trigger push. Job completion alone does not prove Pinterest published.",
+          "level": "success",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40546571378"
+        },
+        {
+          "at": "2026-10-27T13:00:00",
+          "title": "Nine images accepted by Metricool auto-publishing queue",
+          "detail": "Nine distinct uploaded media files and correct article links, all returned Pinterest PENDING + autoPublish true. Permanent posting ID receipt committed.",
+          "level": "success",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-scheduling-ledger/2026-10-27.json"
+        },
+        {
+          "at": "2026-10-27T12:40:35",
+          "title": "GitHub image publisher — success",
+          "detail": "GitHub Actions run 40539791866, trigger push. Job completion alone does not prove Pinterest published.",
+          "level": "success",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40539791866"
+        },
+        {
+          "at": "2026-10-27T12:40:00",
+          "title": "API credits replenished; new creative run succeeds",
+          "detail": "All nine GPT Image 2 Medium food images generated and committed. Image-generation and GitHub deployment both succeeded.",
+          "level": "success",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40539791866"
+        },
+        {
+          "at": "2026-10-27T12:19:00",
+          "title": "API quota cause confirmed",
+          "detail": "Second test identified insufficient_quota / credit_balance_exhausted. No original images generated on this attempt.",
+          "level": "failure",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40539791866"
+        },
+        {
+          "at": "2026-10-27T12:16:10",
+          "title": "GitHub image publisher — failure",
+          "detail": "GitHub Actions run 40539238332, trigger push. Job completion alone does not prove Pinterest published.",
+          "level": "failure",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40539238332"
+        },
+        {
+          "at": "2026-10-27T12:16:00",
+          "title": "First API-generation recovery test failed",
+          "detail": "Image endpoint returned HTTP 429. Diagnostic error handling was added.",
+          "level": "failure",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40539238332"
+        },
+        {
+          "at": "2026-10-27T07:40:35-04:00",
+          "title": "Pinterest research manifest saved",
+          "detail": "3 visual references and 9 creative briefs recorded.",
+          "level": "success",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-research/2026-10-27/manifest.json"
+        },
+        {
+          "at": "2026-10-27T07:40:00",
+          "title": "Research recovery manifest committed",
+          "detail": "Three previously observed competitor images copied into today's private folder; nine new article-specific briefs saved. References honestly labeled re-observed.",
+          "level": "success",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-research/2026-10-27/manifest.json"
+        },
+        {
+          "at": "2026-10-27T07:00:00",
+          "title": "Daily research task ran but required attention",
+          "detail": "ChatGPT research task reported requires_user_action and paused without publishing a complete result; later re-enabled.",
+          "level": "failure"
+        }
+      ],
+      "incidents": [
+        {
+          "title": "7 AM research task interrupted",
+          "cause": "Automation required user attention with empty run result; underlying trigger not identified.",
+          "action": "Task re-enabled and same-day nine-concept research manifest manually recovered; future steps instructed to report actionable failures.",
+          "resolved": true
+        },
+        {
+          "title": "OpenAI image-generation HTTP 429",
+          "cause": "API account returned insufficient_quota / credit_balance_exhausted. The secret was present; there were no paid credits.",
+          "action": "Diagnostic code added; user replenished API balance; subsequent nine-image generation completed successfully.",
+          "resolved": true,
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40539791866"
+        },
+        {
+          "title": "8:15 AM generation did not deliver pins",
+          "cause": "No successful scheduled run observed at the expected time; the exact missed-trigger reason remains unverified.",
+          "action": "A push-triggered recovery run generated all nine images after quota was restored, with additional hourly fallback schedule.",
+          "resolved": true
+        },
+        {
+          "title": "RSS / Metricool duplicate-import exposure",
+          "cause": "Nine images were temporarily present in both the RSS feed and the Metricool queue; Pinterest could have imported items before their removal.",
+          "action": "Newly generated images now default to Metricool-only handoff; duplicate Oct 27 RSS entries removed. Earlier external imports cannot be conclusively ruled out.",
+          "resolved": false
+        }
+      ],
+      "files": [
+        {
+          "label": "Daily research manifest",
+          "path": "pinterest-research/2026-10-27/manifest.json",
+          "detail": "Raw research notes, visuals provenance and nine concepts",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-research/2026-10-27/manifest.json"
+        },
+        {
+          "label": "Image generation ledger",
+          "path": "pinterest-publishing-ledger/2026-10-27.json",
+          "detail": "Original image fingerprints, asset filenames and generation result",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-publishing-ledger/2026-10-27.json"
+        },
+        {
+          "label": "Scheduling receipt",
+          "path": "pinterest-scheduling-ledger/2026-10-27.json",
+          "detail": "Metricool post IDs, accepted schedule, destination links and last provider status",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-scheduling-ledger/2026-10-27.json"
+        },
+        {
+          "label": "Image output folder",
+          "path": "pinterest-daily-pins/2026-10-27",
+          "detail": "All confirmed generated food pin graphics",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/tree/main/pinterest-daily-pins/2026-10-27"
+        }
+      ],
+      "generation_status": "feed_updated_not_pinterest_confirmed",
+      "scheduling_status": "nine_accepted_awaiting_publication",
+      "provider_receipt_as_of": "2026-10-27 afternoon America/Detroit",
+      "provider_note": "Receipt records accepted Metricool autoPublish queues, NOT published Pinterest pin IDs. RSS duplicate avoidance is handled separately.",
+      "metrics_status": "not_connected_or_unverified"
+    },
+    {
+      "date": "2026-10-26",
+      "planned_count": 9,
+      "research_completed_at": "2026-10-26T17:58:27-04:00",
+      "audit_note": "Three Pinterest visual references archived as cropped images from the user shared research screenshot. No publicly verified engagement metrics, so not proven winners. Brand graphics are not admitted as user winners without verified 500+ impressions.",
+      "research_status": "historical_example_NOT_for_tomorrow_reuse",
+      "references": [
+        {
+          "id": "ref-competitor-001",
+          "type": "competitor_observed",
+          "title": "observed visual inspiration not proven",
+          "pin_url": "https://www.pinterest.com/pin/quick-20minute-dinner-recipes-for-busy-nights-in-2025--1124703706948772252/",
+          "visual_features": "Two genuine appetizing food photographs, a bold high-contrast yellow benefit headline, and prominent simple food closeups.",
+          "archive_status": "saved_in_drive",
+          "metric_status": "not_verified"
+        },
+        {
+          "id": "ref-competitor-002",
+          "type": "competitor_observed",
+          "title": "observed visual inspiration not proven",
+          "pin_url": "https://www.pinterest.com/pin/35-dinner-ideas-for-tonight-that-are-nofuss-big-flavor--681873199858570306/",
+          "visual_features": "Multi-meal food collage built around a high-contrast centered text panel; multiple visible specific dishes.",
+          "archive_status": "saved_in_drive",
+          "metric_status": "not_verified"
+        },
+        {
+          "id": "ref-competitor-003",
+          "type": "competitor_observed",
+          "title": "observed visual inspiration not proven",
+          "pin_url": "https://www.pinterest.com/pin/20-easy-homemade-dinner-recipes--157696424443444551/",
+          "visual_features": "Single realistic hero meal photographed from above with a very clean title region and appetizing true-to-recipe details.",
+          "archive_status": "saved_in_drive",
+          "metric_status": "not_verified"
+        },
+        {
+          "id": "brand-style-1",
+          "type": "own_unverified_style",
+          "title": "NOT IN WINNERS UNTIL 500 IMPRESSIONS AND STRONG ENGAGEMENT",
+          "pin_url": "",
+          "visual_features": "Brand identity reference only: cream, forest green, rust accent, appetizing realistic meal, clear editorial headline.",
+          "archive_status": "saved_in_drive",
+          "metric_status": "not_verified"
+        },
+        {
+          "id": "brand-style-2",
+          "type": "own_unverified_style",
+          "title": "NOT IN WINNERS UNTIL 500 IMPRESSIONS AND STRONG ENGAGEMENT",
+          "pin_url": "",
+          "visual_features": "Brand identity reference only: cream, forest green, rust accent, appetizing realistic meal, clear editorial headline.",
+          "archive_status": "saved_in_drive",
+          "metric_status": "not_verified"
+        },
+        {
+          "id": "brand-style-3",
+          "type": "own_unverified_style",
+          "title": "NOT IN WINNERS UNTIL 500 IMPRESSIONS AND STRONG ENGAGEMENT",
+          "pin_url": "",
+          "visual_features": "Brand identity reference only: cream, forest green, rust accent, appetizing realistic meal, clear editorial headline.",
+          "archive_status": "saved_in_drive",
+          "metric_status": "not_verified"
+        },
+        {
+          "id": "brand-style-4",
+          "type": "own_unverified_style",
+          "title": "NOT IN WINNERS UNTIL 500 IMPRESSIONS AND STRONG ENGAGEMENT",
+          "pin_url": "",
+          "visual_features": "Brand identity reference only: cream, forest green, rust accent, appetizing realistic meal, clear editorial headline.",
+          "archive_status": "saved_in_drive",
+          "metric_status": "not_verified"
+        },
+        {
+          "id": "brand-style-5",
+          "type": "own_unverified_style",
+          "title": "NOT IN WINNERS UNTIL 500 IMPRESSIONS AND STRONG ENGAGEMENT",
+          "pin_url": "",
+          "visual_features": "Brand identity reference only: cream, forest green, rust accent, appetizing realistic meal, clear editorial headline.",
+          "archive_status": "saved_in_drive",
+          "metric_status": "not_verified"
+        }
+      ],
+      "evidence_sources": [],
+      "pins": [
+        {
+          "id": "407173112",
+          "slug": "easy-sheet-pan-dinners.html",
+          "title": "Easy Sheet Pan Dinners for Busy Weeknights",
+          "description": "Sheet pan dinners are a simple way to get flavorful meals on the table with less cleanup. Find practical easy dinner recipes for busy families.",
+          "generated": true,
+          "status": "PUBLISHED",
+          "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-26/easy-sheet-pan-dinners-photo-pin.jpg",
+          "destination": "https://whatsforeats.online/easy-sheet-pan-dinners.html",
+          "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-3575784588377635758",
+          "schedule_at": "2026-10-26T18:00:00 America/New_York",
+          "media_provider_uploaded": true,
+          "auto_publish": true,
+          "reference_ids": [
+            "ref-competitor-001",
+            "ref-competitor-003"
+          ],
+          "prompt_subject": "Roasted herb chicken thighs with crisp potatoes and broccoli on a genuine silver baking sheet, garnished with fresh parsley and natural caramelization, warm kitchen counter.",
+          "primary_keyword": "",
+          "board_id": "947163434072266364",
+          "provider_post_id": "407173112",
+          "model": "original hosted image"
+        },
+        {
+          "id": "20-lazy-dinners-for-when-your-brain-has-left-the-building.html",
+          "slug": "20-lazy-dinners-for-when-your-brain-has-left-the-building.html",
+          "title": "20 Lazy Dinner Ideas for Tired Nights",
+          "description": "Quick low-effort dinner ideas for exhausted evenings, with practical shortcuts and family-friendly choices.",
+          "generated": false,
+          "status": "PLANNED",
+          "image_url": "",
+          "destination": "https://whatsforeats.online/20-lazy-dinners-for-when-your-brain-has-left-the-building.html",
+          "planner_url": "",
+          "schedule_at": "",
+          "media_provider_uploaded": false,
+          "auto_publish": false,
+          "reference_ids": [
+            "ref-competitor-001",
+            "ref-competitor-003"
+          ],
+          "prompt_subject": "An indulgent bowl of creamy tomato tortellini, grated parmesan and basil on a worn wooden table with one skillet blurred in the background; realistic and freshly cooked.",
+          "primary_keyword": "",
+          "board_id": "",
+          "provider_post_id": "",
+          "model": ""
+        },
+        {
+          "id": "weekly-meal-plan-for-busy-families.html",
+          "slug": "weekly-meal-plan-for-busy-families.html",
+          "title": "Weekly Family Meal Plan with 7 Easy Dinners",
+          "description": "Use a flexible family meal plan to make dinner decisions easier. Includes approachable recipes and shopping planning.",
+          "generated": false,
+          "status": "PLANNED",
+          "image_url": "",
+          "destination": "https://whatsforeats.online/weekly-meal-plan-for-busy-families.html",
+          "planner_url": "",
+          "schedule_at": "",
+          "media_provider_uploaded": false,
+          "auto_publish": false,
+          "reference_ids": [
+            "ref-competitor-002",
+            "ref-competitor-003"
+          ],
+          "prompt_subject": "Wide overhead editorial family dinner spread with baked chicken, roasted potatoes, a big salad, rustic pasta, and tacos in authentic serving dishes, warm welcoming home table.",
+          "primary_keyword": "",
+          "board_id": "",
+          "provider_post_id": "",
+          "model": ""
+        },
+        {
+          "id": "cheap-family-dinners-cost-per-serving.html",
+          "slug": "cheap-family-dinners-cost-per-serving.html",
+          "title": "Cheap Family Dinners and Cost per Serving",
+          "description": "Make budget-friendly family meals without giving up flavor. Explore simple dishes and ways to compare cost per serving.",
+          "generated": false,
+          "status": "PLANNED",
+          "image_url": "",
+          "destination": "https://whatsforeats.online/cheap-family-dinners-cost-per-serving.html",
+          "planner_url": "",
+          "schedule_at": "",
+          "media_provider_uploaded": false,
+          "auto_publish": false,
+          "reference_ids": [
+            "ref-competitor-002",
+            "ref-competitor-001"
+          ],
+          "prompt_subject": "Beautiful hearty black bean and tomato rice bowls with roasted sweet potatoes, cilantro, lime and modest home-kitchen food plating, natural light.",
+          "primary_keyword": "",
+          "board_id": "",
+          "provider_post_id": "",
+          "model": ""
+        },
+        {
+          "id": "slow-cooker-dinners-for-busy-families.html",
+          "slug": "slow-cooker-dinners-for-busy-families.html",
+          "title": "Easy Slow Cooker Dinners for Busy Families",
+          "description": "Try slow cooker meals with less active cooking time, helpful prep shortcuts, and practical recipe ideas.",
+          "generated": false,
+          "status": "PLANNED",
+          "image_url": "",
+          "destination": "https://whatsforeats.online/slow-cooker-dinners-for-busy-families.html",
+          "planner_url": "",
+          "schedule_at": "",
+          "media_provider_uploaded": false,
+          "auto_publish": false,
+          "reference_ids": [
+            "ref-competitor-001",
+            "ref-competitor-003"
+          ],
+          "prompt_subject": "Photoreal slow cooker with tender shredded salsa chicken in rich tomato sauce, neatly plated tortilla bowls beside it, rustic kitchen counter, steam and fresh cilantro.",
+          "primary_keyword": "",
+          "board_id": "",
+          "provider_post_id": "",
+          "model": ""
+        },
+        {
+          "id": "22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.html",
+          "slug": "22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.html",
+          "title": "Cozy Fall Dinner Ideas for Busy Nights",
+          "description": "Warm up with easy comforting fall meals including soups, casseroles and weeknight dinner favorites.",
+          "generated": false,
+          "status": "PLANNED",
+          "image_url": "",
+          "destination": "https://whatsforeats.online/22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.html",
+          "planner_url": "",
+          "schedule_at": "",
+          "media_provider_uploaded": false,
+          "auto_publish": false,
+          "reference_ids": [
+            "ref-competitor-002",
+            "ref-competitor-003"
+          ],
+          "prompt_subject": "Rich autumn fall supper with bubbling baked pasta casserole in white ceramic baking dish, crusty bread, golden butternut squash soup and warm seasonal light.",
+          "primary_keyword": "",
+          "board_id": "",
+          "provider_post_id": "",
+          "model": ""
+        },
+        {
+          "id": "freezer-meals-for-busy-weeknights.html",
+          "slug": "freezer-meals-for-busy-weeknights.html",
+          "title": "Make Ahead Freezer Meals for Busy Weeknights",
+          "description": "Prep satisfying freezer meals ahead of time and learn sensible freezing, labeling and thawing tips.",
+          "generated": false,
+          "status": "PLANNED",
+          "image_url": "",
+          "destination": "https://whatsforeats.online/freezer-meals-for-busy-weeknights.html",
+          "planner_url": "",
+          "schedule_at": "",
+          "media_provider_uploaded": false,
+          "auto_publish": false,
+          "reference_ids": [
+            "ref-competitor-002",
+            "ref-competitor-001"
+          ],
+          "prompt_subject": "Genuinely appetizing baked ziti in a reusable casserole tray, accompanied by sealed labeled meal prep containers with real chicken and vegetable dinners, home-kitchen styling.",
+          "primary_keyword": "",
+          "board_id": "",
+          "provider_post_id": "",
+          "model": ""
+        },
+        {
+          "id": "leftover-chicken-recipes.html",
+          "slug": "leftover-chicken-recipes.html",
+          "title": "Leftover Chicken Recipes for Easy Dinners",
+          "description": "Turn cooked chicken into easy quesadillas, taco bowls, soups and other family dinners with simple ingredients.",
+          "generated": false,
+          "status": "PLANNED",
+          "image_url": "",
+          "destination": "https://whatsforeats.online/leftover-chicken-recipes.html",
+          "planner_url": "",
+          "schedule_at": "",
+          "media_provider_uploaded": false,
+          "auto_publish": false,
+          "reference_ids": [
+            "ref-competitor-002",
+            "ref-competitor-003"
+          ],
+          "prompt_subject": "Several photoreal leftover roast chicken meals: toasted chicken quesadillas, a colorful chicken taco bowl and creamy chicken pasta on the same wooden table, food photography overhead.",
+          "primary_keyword": "",
+          "board_id": "",
+          "provider_post_id": "",
+          "model": ""
+        },
+        {
+          "id": "picky-eater-dinner-ideas.html",
+          "slug": "picky-eater-dinner-ideas.html",
+          "title": "Easy Family Dinners for Picky Eaters",
+          "description": "Make family dinner flexible with build-your-own taco meals and adaptable familiar ingredients.",
+          "generated": false,
+          "status": "PLANNED",
+          "image_url": "",
+          "destination": "https://whatsforeats.online/picky-eater-dinner-ideas.html",
+          "planner_url": "",
+          "schedule_at": "",
+          "media_provider_uploaded": false,
+          "auto_publish": false,
+          "reference_ids": [
+            "ref-competitor-001",
+            "ref-competitor-003"
+          ],
+          "prompt_subject": "Beautiful family DIY chicken taco night: individual bowls of colorful veggies, seasoned chicken strips, shredded cheese, tortillas and fresh lime on an inviting dining table.",
+          "primary_keyword": "",
+          "board_id": "",
+          "provider_post_id": "",
+          "model": ""
+        },
+        {
+          "id": "407177875",
+          "slug": "5-ingredient-dinners.html",
+          "title": "Easy 5-Ingredient Dinners for Busy Weeknights",
+          "description": "Published historical post; no matching manifest creative brief found.",
+          "generated": true,
+          "status": "PUBLISHED",
+          "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-26/five-ingredient-dinner-pin.jpg",
+          "destination": "https://whatsforeats.online/5-ingredient-dinners.html",
+          "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-5577879543513396778",
+          "schedule_at": "2026-10-26T18:30:00 America/New_York",
+          "media_provider_uploaded": true,
+          "auto_publish": true,
+          "reference_ids": [],
+          "prompt_subject": "",
+          "primary_keyword": "",
+          "board_id": "947163434072264969",
+          "provider_post_id": "407177875",
+          "model": "original hosted image"
+        },
+        {
+          "id": "407177944",
+          "slug": "7-night-dinner-plan-for-picky-families.html",
+          "title": "7-Night Dinner Plan for Picky Families",
+          "description": "Published historical post; no matching manifest creative brief found.",
+          "generated": true,
+          "status": "PUBLISHED",
+          "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-26/seven-night-family-dinner-pin.jpg",
+          "destination": "https://whatsforeats.online/7-night-dinner-plan-for-picky-families.html",
+          "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-6566391734386864315",
+          "schedule_at": "2026-10-26T19:00:00 America/New_York",
+          "media_provider_uploaded": true,
+          "auto_publish": true,
+          "reference_ids": [],
+          "prompt_subject": "",
+          "primary_keyword": "",
+          "board_id": "947163434072266364",
+          "provider_post_id": "407177944",
+          "model": "original hosted image"
+        },
+        {
+          "id": "407177993",
+          "slug": "15-minute-dinners-for-busy-weeknights.html",
+          "title": "15-Minute Dinners for Busy Weeknights | 5 Easy Recipes",
+          "description": "Published historical post; no matching manifest creative brief found.",
+          "generated": true,
+          "status": "PUBLISHED",
+          "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-26/fifteen-minute-dinners-pin.jpg",
+          "destination": "https://whatsforeats.online/15-minute-dinners-for-busy-weeknights.html",
+          "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=1763038473752301425",
+          "schedule_at": "2026-10-26T19:30:00 America/New_York",
+          "media_provider_uploaded": true,
+          "auto_publish": true,
+          "reference_ids": [],
+          "prompt_subject": "",
+          "primary_keyword": "",
+          "board_id": "947163434072266364",
+          "provider_post_id": "407177993",
+          "model": "original hosted image"
+        }
+      ],
+      "events": [
+        {
+          "at": "2026-10-26T19:30:00",
+          "title": "Four evening posts subsequently confirmed published",
+          "detail": "Metricool provider returned PUBLISHED for all four. The earlier five preferred time slots were not verified as scheduled.",
+          "level": "success"
+        },
+        {
+          "at": "2026-10-26T18:00:00",
+          "title": "Evening Pinterest queue begins",
+          "detail": "Four unique photo-led pins scheduled for 6:00, 6:30, 7:00 and 7:30 PM Eastern, each with the correct landing article.",
+          "level": "success"
+        },
+        {
+          "at": "2026-10-26T17:58:27-04:00",
+          "title": "Pinterest research manifest saved",
+          "detail": "8 visual references and 9 creative briefs recorded.",
+          "level": "success",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-research/2026-10-26/manifest.json"
+        },
+        {
+          "at": "2026-10-26T12:00:00",
+          "title": "Original Pinterest visual research archived",
+          "detail": "Three competitor visual crops and five existing brand-style examples saved privately in Google Drive. Nine article-matched briefs recorded; reference metrics not publicly verified.",
+          "level": "success"
+        }
+      ],
+      "incidents": [
+        {
+          "title": "Earlier five scheduled slots not completed",
+          "cause": "The day's earlier planned times had already passed when the evening recovery began.",
+          "action": "Four future evening posts were scheduled and later confirmed published; no backdating or false claims.",
+          "resolved": false
+        }
+      ],
+      "files": [
+        {
+          "label": "Daily research manifest",
+          "path": "pinterest-research/2026-10-26/manifest.json",
+          "detail": "Raw research notes, visuals provenance and nine concepts",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-research/2026-10-26/manifest.json"
+        },
+        {
+          "label": "Scheduling receipt",
+          "path": "pinterest-scheduling-ledger/2026-10-26.json",
+          "detail": "Metricool post IDs, accepted schedule, destination links and last provider status",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-scheduling-ledger/2026-10-26.json"
+        },
+        {
+          "label": "Image output folder",
+          "path": "pinterest-daily-pins/2026-10-26",
+          "detail": "All confirmed generated food pin graphics",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/tree/main/pinterest-daily-pins/2026-10-26"
+        }
+      ],
+      "generation_status": "none",
+      "scheduling_status": "four_verified_published",
+      "provider_receipt_as_of": "2026-10-27",
+      "provider_note": "Four late-day Oct 26 posts verified as PUBLISHED via Metricool Oct 27. Earlier five slots were not verified as scheduled or published. Research contains 9 concepts and 8 references but only 4 original hosted photo-pin assets confirmed.",
+      "metrics_status": "not_connected_or_unverified"
+    }
+  ]
+}
