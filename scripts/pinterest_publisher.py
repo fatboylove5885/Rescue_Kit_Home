@@ -126,7 +126,7 @@ def new_photo(c,index,refmap):
             f"Depict this specific food/scene accurately: {c['food_scene']}. "
             f"Niche design research from observed Pinterest image references suggests: {evidence}. "
             "Use the EFFECTIVE GENERAL PRINCIPLES only: delicious physically plausible food, natural light, genuine cooking textures, intentional framing, generous high-resolution details, sophisticated food-blog photographic styling. "
-            "Make it distinct from the referenced creators' exact imagery, layouts, and brand identity. Portrait 2:3 framing with centered dishes. No existing website photography reused.")
+            "Make it distinct from the referenced creators' exact imagery, layouts, and brand identity. Portrait 2:3 framing with centered dishes. Single uninterrupted photographic scene; NO montage, NO collage, NO split panels, NO white bars, NO dividers, NO empty separator bands. If multiple dishes appear they are all naturally arranged on one continuous physical table. No existing website photography reused.")
     payload=json.dumps(dict(model=OPENAI_IMAGE_MODEL,prompt=prompt,n=1,size='1024x1536',quality='medium',output_format='jpeg')).encode()
     req=urllib.request.Request('https://api.openai.com/v1/images/generations',data=payload,headers={'Content-Type':'application/json','Authorization':'Bearer '+os.environ['OPENAI_API_KEY']},method='POST')
     try:
