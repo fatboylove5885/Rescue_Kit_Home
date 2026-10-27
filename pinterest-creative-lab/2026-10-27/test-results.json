@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-27",
+  "purpose": "Independent original premium visual creative experiment; no publication and no production changes.",
+  "model": "gpt-image-2",
+  "prompt": "Create one photorealistic food editorial advertising photograph, PORTRAIT 1024 x 1536, no text, no lettering, no graphics. A genuinely mouth-watering freshly baked stuffed sweet potato with spicy browned lean beef, golden molten cheddar, black beans, salsa, parsley and lightly caramelized edges, served in a rustic handmade ivory ceramic plate. A little bowl of fresh salsa and soft folded striped linen nearby. Golden hour natural sidelight, detailed realistic roasted potato skin and melting cheese, shallow depth of field but whole hero dish razor sharp. The food fills much of the frame, beautifully plated, believable home-cooking not plastic, irresistible textures, vibrant reds, amber and dark greens, rich contrast. Vertical polished recipe-magazine product photography with breathing room ONLY at extreme top edge for separately placed typography. Not a collage, not a montage, no side-by-side dishes, no seams, no split panels, no whitespace dividers, no watermarks. Evokes cozy comfort food, generous portions, homemade richness, and editorial visual precision.",
+  "tests": [
+    {
+      "name": "A-medium-editorial",
+      "quality": "medium",
+      "file": "A-medium-editorial.jpg",
+      "size_bytes": 436071
+    },
+    {
+      "name": "B-high-editorial",
+      "quality": "high",
+      "file": "B-high-editorial.jpg",
+      "size_bytes": 408576
+    }
+  ],
+  "status": "complete",
+  "notes": "A and B differ only in API image quality (medium versus high). Same original prompt and same layout. Results are meant for visual review, not automatically selected as winners."
+}
