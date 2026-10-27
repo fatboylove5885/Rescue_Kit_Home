@@ -160,10 +160,19 @@ def run():
     manifest=json.loads(RESEARCH.read_text(encoding='utf-8'))
     concepts=validate_manifest(manifest)
     key=os.getenv('OPENAI_API_KEY');ensure(key,'First-party image API key missing. Do not publish recycled photos.')
-    ensure(RSS.is_file(),'Website Pinterest RSS feed missing')
-    tree=ET.parse(RSS);channel=tree.getroot().find('channel');ensure(channel is not None,'RSS channel missing')
-    if any((x.findtext('guid') or '').startswith('wfe-native-'+DATE) for x in channel.findall('item')):
-        print('Already created images for today; no duplicates.');return
+    mode=os.getenv('PINTEREST_POSTING_MODE','metricool')
+    ensure(mode in ('metricool','rss'),'Unknown Pinterest posting mode')
+    if LEDGER.is_file():
+        previous=json.loads(LEDGER.read_text(encoding='utf-8'))
+        existing=previous.get('original_new_images') or []
+        if len(existing)==9 and all((DEST/x['filename']).is_file() for x in existing):
+            print('Nine generated images already exist for today; not regenerating or republishing.')
+            return
+    if mode=='rss':
+        ensure(RSS.is_file(),'Website Pinterest RSS feed missing')
+        tree=ET.parse(RSS);channel=tree.getroot().find('channel');ensure(channel is not None,'RSS channel missing')
+        if any((x.findtext('guid') or '').startswith('wfe-native-'+DATE) for x in channel.findall('item')):
+            print('Already created RSS entries for today; no duplicates.');return
     DEST.mkdir(parents=True,exist_ok=True)
     refmap={r['id']:r for r in manifest['reference_images']};generated=[]
     pub_date=email.utils.format_datetime(dt.datetime.now(ZoneInfo('America/Detroit')).astimezone(dt.timezone.utc))
@@ -174,22 +183,27 @@ def run():
         filename=f'{i:02}-{safe}.jpg';out=DEST/filename
         pin.save(out,'JPEG',quality=91,optimize=True)
         generated.append({'filename':filename,'destination_slug':c['destination_slug'],'image_sha256':sha,'reference_ids':c['research_ref_ids'],'image_model':OPENAI_IMAGE_MODEL,'created_at':dt.datetime.now(dt.timezone.utc).isoformat()})
-    for i,(c,g) in enumerate(zip(concepts,generated),1):
-        item=ET.SubElement(channel,'item')
-        ET.SubElement(item,'title').text=c['seo_title']
-        ET.SubElement(item,'link').text=BASE+c['destination_slug']
-        ET.SubElement(item,'guid',{'isPermaLink':'false'}).text=f'wfe-native-{DATE}-{i:02}-{g["image_sha256"][:12]}'
-        ET.SubElement(item,'pubDate').text=pub_date
-        ET.SubElement(item,'description').text=c['description']
-        ET.SubElement(item,f'{{{MEDIA_NS}}}content',{'url':BASE+f'pinterest-daily-pins/{DATE}/{g["filename"]}','medium':'image','type':'image/jpeg'})
-    for old in channel.findall('item')[:-135]:channel.remove(old)
-    build=channel.find('lastBuildDate')
-    if build is None:build=ET.SubElement(channel,'lastBuildDate')
-    build.text=pub_date
-    ET.indent(tree,space='  ');tree.write(RSS,encoding='utf-8',xml_declaration=True)
+    if mode=='rss':
+        for i,(c,g) in enumerate(zip(concepts,generated),1):
+            item=ET.SubElement(channel,'item')
+            ET.SubElement(item,'title').text=c['seo_title']
+            ET.SubElement(item,'link').text=BASE+c['destination_slug']
+            ET.SubElement(item,'guid',{'isPermaLink':'false'}).text=f'wfe-native-{DATE}-{i:02}-{g["image_sha256"][:12]}'
+            ET.SubElement(item,'pubDate').text=pub_date
+            ET.SubElement(item,'description').text=c['description']
+            ET.SubElement(item,f'{{{MEDIA_NS}}}content',{'url':BASE+f'pinterest-daily-pins/{DATE}/{g["filename"]}','medium':'image','type':'image/jpeg'})
+        for old in channel.findall('item')[:-135]:channel.remove(old)
+        build=channel.find('lastBuildDate')
+        if build is None:build=ET.SubElement(channel,'lastBuildDate')
+        build.text=pub_date
+        ET.indent(tree,space='  ');tree.write(RSS,encoding='utf-8',xml_declaration=True)
     LEDGER.parent.mkdir(parents=True,exist_ok=True)
-    LEDGER.write_text(json.dumps({'date':DATE,'status':'feed_updated_not_pinterest_confirmed','research_manifest':str(RESEARCH.relative_to(ROOT)),'original_new_images':generated},indent=2))
-    print(f'Published {len(generated)} newly AI-generated photo-led images to the RSS feed; Pinterest import still unverified.')
+    state='feed_updated_not_pinterest_confirmed' if mode=='rss' else 'images_ready_awaiting_metricool_schedule'
+    LEDGER.write_text(json.dumps({'date':DATE,'status':state,'posting_mode':mode,'research_manifest':str(RESEARCH.relative_to(ROOT)),'original_new_images':generated},indent=2))
+    if mode=='metricool':
+        print(f'Generated {len(generated)} original Pinterest images; Metricool must schedule and independently verify all nine. RSS intentionally unchanged to prevent duplicates.')
+    else:
+        print(f'Published {len(generated)} newly AI-generated photo-led images to RSS; Pinterest import still unverified.')
 
 if __name__=='__main__':
     try:run()
