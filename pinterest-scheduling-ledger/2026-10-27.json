@@ -1,8 +1,8 @@
 {
   "asset_date": "2026-10-27",
-  "status": "nine_accepted_awaiting_publication",
+  "status": "nine_accepted_one_published_eight_pending",
   "platform": "Metricool Pinterest",
-  "verified_at": "2026-10-27 afternoon America/Detroit",
+  "verified_at": "2026-10-27T13:56:17-04:00",
   "scheduled_count": 9,
   "expected_count": 9,
   "posts": [
@@ -15,10 +15,12 @@
       "link": "https://whatsforeats.online/slow-cooker-dinners-for-busy-families.html",
       "board_id": "947163434072266364",
       "publish_at": "2026-10-27T13:30:00 America/New_York",
-      "status": "PENDING",
+      "status": "PUBLISHED",
       "auto_publish": true,
       "media": "https://static.metricool.com/planner/202610/4488790-file-10467602425158443956.jpeg",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-3379620963386634430"
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-3379620963386634430",
+      "provider_pin_id": "947163365478236183",
+      "public_url": "https://www.pinterest.es/pin/947163365478236183"
     },
     {
       "asset_filename": "02-cheap-family-dinners.jpg",
@@ -133,5 +135,5 @@
       "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=5537313764211837855"
     }
   ],
-  "notes": "Receipt records accepted Metricool autoPublish queues, NOT published Pinterest pin IDs. RSS duplicate avoidance is handled separately."
+  "notes": "Nine unique posts accepted with autoPublish, correct images and links. One confirmed PUBLISHED by connected Metricool; eight remain PENDING. Do not duplicate. RSS duplicates were removed after Metricool acceptance; direct Pinterest pin-level analytics unverified."
 }
