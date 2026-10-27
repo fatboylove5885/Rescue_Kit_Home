@@ -1,82 +1,154 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
-<channel>
-<title>What's For Eats — Dinner Ideas</title>
-<link>https://whatsforeats.online/</link>
-<description>Original easy dinner ideas, weeknight recipes and meal plans from What's For Eats.</description>
-<language>en-us</language>
-<lastBuildDate>Mon, 26 Oct 2026 18:38:00 GMT</lastBuildDate>
-<item>
-<title>Easy Sheet Pan Dinners for Busy Weeknights</title>
-<link>https://whatsforeats.online/easy-sheet-pan-dinners.html</link>
-<guid isPermaLink="false">wfe-sheetpan-original-poster-20261026</guid>
-<pubDate>Mon, 26 Oct 2026 18:38:00 GMT</pubDate>
-<description>Easy sheet pan dinners with roasted chicken and vegetables, roasting tips, and minimal cleanup.</description>
-<media:content url="https://whatsforeats.online/pinterest-daily-pins/2026-10-26/easy-sheet-pan-dinners-photo-pin.jpg" medium="image" type="image/jpeg" />
-</item>
-<item>
-<title>20 Lazy Dinner Ideas for Tired Nights</title>
-<link>https://whatsforeats.online/20-lazy-dinners-for-when-your-brain-has-left-the-building.html</link>
-<guid isPermaLink="false">wfe-lazy-initial-20261026</guid>
-<pubDate>Mon, 26 Oct 2026 18:38:00 GMT</pubDate>
-<description>Low-effort family dinners and shortcuts for exhausted weeknights.</description>
-<media:content url="https://whatsforeats.online/blog-1-hero.jpg" medium="image" type="image/jpeg" />
-</item>
-<item>
-<title>Weekly Family Meal Plan: Seven Easy Dinners</title>
-<link>https://whatsforeats.online/weekly-meal-plan-for-busy-families.html</link>
-<guid isPermaLink="false">wfe-mealplan-initial-20261026</guid>
-<pubDate>Mon, 26 Oct 2026 18:38:00 GMT</pubDate>
-<description>A flexible seven-day family meal plan and a useful shopping list.</description>
-<media:content url="https://whatsforeats.online/rescue-kit-fridge.jpg" medium="image" type="image/jpeg" />
-</item>
-<item>
-<title>Cheap Family Dinner Ideas and Cost per Serving</title>
-<link>https://whatsforeats.online/cheap-family-dinners-cost-per-serving.html</link>
-<guid isPermaLink="false">wfe-budget-initial-20261026</guid>
-<pubDate>Mon, 26 Oct 2026 18:38:00 GMT</pubDate>
-<description>Budget-friendly family meals and practical ways to calculate cost per serving.</description>
-<media:content url="https://whatsforeats.online/budget-pantry-shelf.jpg" medium="image" type="image/jpeg" />
-</item>
-<item>
-<title>Slow Cooker Dinner Ideas for Busy Families</title>
-<link>https://whatsforeats.online/slow-cooker-dinners-for-busy-families.html</link>
-<guid isPermaLink="false">wfe-slowcooker-initial-20261026</guid>
-<pubDate>Mon, 26 Oct 2026 18:38:00 GMT</pubDate>
-<description>Easy slow cooker meals and safe, practical tips for hands-off family dinners.</description>
-<media:content url="https://whatsforeats.online/recipe-3-salsa-chicken.jpg" medium="image" type="image/jpeg" />
-</item>
-<item>
-<title>22 Cozy Fall Dinner Ideas</title>
-<link>https://whatsforeats.online/22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.html</link>
-<guid isPermaLink="false">wfe-fall-initial-20261026</guid>
-<pubDate>Mon, 26 Oct 2026 18:38:00 GMT</pubDate>
-<description>Warm and comforting fall dinners, easy casseroles, and family meal ideas.</description>
-<media:content url="https://whatsforeats.online/make-ahead-night-before.jpg" medium="image" type="image/jpeg" />
-</item>
-<item>
-<title>Make Ahead Freezer Meals for Busy Weeknights</title>
-<link>https://whatsforeats.online/freezer-meals-for-busy-weeknights.html</link>
-<guid isPermaLink="false">wfe-freezer-initial-20261026</guid>
-<pubDate>Mon, 26 Oct 2026 18:38:00 GMT</pubDate>
-<description>Make-ahead freezer meal ideas, storage tips, and safe thawing guidance.</description>
-<media:content url="https://whatsforeats.online/make-ahead-containers-labels.jpg" medium="image" type="image/jpeg" />
-</item>
-<item>
-<title>Leftover Chicken Recipes for Easy Second-Night Dinners</title>
-<link>https://whatsforeats.online/leftover-chicken-recipes.html</link>
-<guid isPermaLink="false">wfe-chicken-initial-20261026</guid>
-<pubDate>Mon, 26 Oct 2026 18:38:00 GMT</pubDate>
-<description>Turn cooked chicken into easy quesadillas, taco bowls, pasta, and soups.</description>
-<media:content url="https://whatsforeats.online/visuals/leftover-chicken-hero.jpg" medium="image" type="image/jpeg" />
-</item>
-<item>
-<title>Picky Eater Dinner Ideas for the Whole Family</title>
-<link>https://whatsforeats.online/picky-eater-dinner-ideas.html</link>
-<guid isPermaLink="false">wfe-picky-initial-20261026</guid>
-<pubDate>Mon, 26 Oct 2026 18:38:00 GMT</pubDate>
-<description>Build-your-own family dinners and flexible ways to reduce mealtime friction.</description>
-<media:content url="https://whatsforeats.online/final-family-table.jpg" medium="image" type="image/jpeg" />
-</item>
-</channel>
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+  <channel>
+    <title>What's For Eats — Dinner Ideas</title>
+    <link>https://whatsforeats.online/</link>
+    <description>Original easy dinner ideas, weeknight recipes and meal plans from What's For Eats.</description>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Oct 2026 16:40:50 +0000</lastBuildDate>
+    <item>
+      <title>Easy Sheet Pan Dinners for Busy Weeknights</title>
+      <link>https://whatsforeats.online/easy-sheet-pan-dinners.html</link>
+      <guid isPermaLink="false">wfe-sheetpan-original-poster-20261026</guid>
+      <pubDate>Mon, 26 Oct 2026 18:38:00 GMT</pubDate>
+      <description>Easy sheet pan dinners with roasted chicken and vegetables, roasting tips, and minimal cleanup.</description>
+      <media:content url="https://whatsforeats.online/pinterest-daily-pins/2026-10-26/easy-sheet-pan-dinners-photo-pin.jpg" medium="image" type="image/jpeg" />
+    </item>
+    <item>
+      <title>20 Lazy Dinner Ideas for Tired Nights</title>
+      <link>https://whatsforeats.online/20-lazy-dinners-for-when-your-brain-has-left-the-building.html</link>
+      <guid isPermaLink="false">wfe-lazy-initial-20261026</guid>
+      <pubDate>Mon, 26 Oct 2026 18:38:00 GMT</pubDate>
+      <description>Low-effort family dinners and shortcuts for exhausted weeknights.</description>
+      <media:content url="https://whatsforeats.online/blog-1-hero.jpg" medium="image" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Weekly Family Meal Plan: Seven Easy Dinners</title>
+      <link>https://whatsforeats.online/weekly-meal-plan-for-busy-families.html</link>
+      <guid isPermaLink="false">wfe-mealplan-initial-20261026</guid>
+      <pubDate>Mon, 26 Oct 2026 18:38:00 GMT</pubDate>
+      <description>A flexible seven-day family meal plan and a useful shopping list.</description>
+      <media:content url="https://whatsforeats.online/rescue-kit-fridge.jpg" medium="image" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Cheap Family Dinner Ideas and Cost per Serving</title>
+      <link>https://whatsforeats.online/cheap-family-dinners-cost-per-serving.html</link>
+      <guid isPermaLink="false">wfe-budget-initial-20261026</guid>
+      <pubDate>Mon, 26 Oct 2026 18:38:00 GMT</pubDate>
+      <description>Budget-friendly family meals and practical ways to calculate cost per serving.</description>
+      <media:content url="https://whatsforeats.online/budget-pantry-shelf.jpg" medium="image" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Slow Cooker Dinner Ideas for Busy Families</title>
+      <link>https://whatsforeats.online/slow-cooker-dinners-for-busy-families.html</link>
+      <guid isPermaLink="false">wfe-slowcooker-initial-20261026</guid>
+      <pubDate>Mon, 26 Oct 2026 18:38:00 GMT</pubDate>
+      <description>Easy slow cooker meals and safe, practical tips for hands-off family dinners.</description>
+      <media:content url="https://whatsforeats.online/recipe-3-salsa-chicken.jpg" medium="image" type="image/jpeg" />
+    </item>
+    <item>
+      <title>22 Cozy Fall Dinner Ideas</title>
+      <link>https://whatsforeats.online/22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.html</link>
+      <guid isPermaLink="false">wfe-fall-initial-20261026</guid>
+      <pubDate>Mon, 26 Oct 2026 18:38:00 GMT</pubDate>
+      <description>Warm and comforting fall dinners, easy casseroles, and family meal ideas.</description>
+      <media:content url="https://whatsforeats.online/make-ahead-night-before.jpg" medium="image" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Make Ahead Freezer Meals for Busy Weeknights</title>
+      <link>https://whatsforeats.online/freezer-meals-for-busy-weeknights.html</link>
+      <guid isPermaLink="false">wfe-freezer-initial-20261026</guid>
+      <pubDate>Mon, 26 Oct 2026 18:38:00 GMT</pubDate>
+      <description>Make-ahead freezer meal ideas, storage tips, and safe thawing guidance.</description>
+      <media:content url="https://whatsforeats.online/make-ahead-containers-labels.jpg" medium="image" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Leftover Chicken Recipes for Easy Second-Night Dinners</title>
+      <link>https://whatsforeats.online/leftover-chicken-recipes.html</link>
+      <guid isPermaLink="false">wfe-chicken-initial-20261026</guid>
+      <pubDate>Mon, 26 Oct 2026 18:38:00 GMT</pubDate>
+      <description>Turn cooked chicken into easy quesadillas, taco bowls, pasta, and soups.</description>
+      <media:content url="https://whatsforeats.online/visuals/leftover-chicken-hero.jpg" medium="image" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Picky Eater Dinner Ideas for the Whole Family</title>
+      <link>https://whatsforeats.online/picky-eater-dinner-ideas.html</link>
+      <guid isPermaLink="false">wfe-picky-initial-20261026</guid>
+      <pubDate>Mon, 26 Oct 2026 18:38:00 GMT</pubDate>
+      <description>Build-your-own family dinners and flexible ways to reduce mealtime friction.</description>
+      <media:content url="https://whatsforeats.online/final-family-table.jpg" medium="image" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Slow Cooker Dinner Ideas for Busy Families</title>
+      <link>https://whatsforeats.online/slow-cooker-dinners-for-busy-families.html</link>
+      <guid isPermaLink="false">wfe-native-2026-10-27-01-1135ff24dc45</guid>
+      <pubDate>Tue, 27 Oct 2026 16:40:50 +0000</pubDate>
+      <description>Bring home comforting slow cooker dinners without hours of hands-on work. Explore easy family recipes, prep shortcuts and practical tips.</description>
+      <media:content url="https://whatsforeats.online/pinterest-daily-pins/2026-10-27/01-slow-cooker-dinners.jpg" medium="image" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Cheap Family Dinner Ideas With Big Flavor</title>
+      <link>https://whatsforeats.online/cheap-family-dinners-cost-per-serving.html</link>
+      <guid isPermaLink="false">wfe-native-2026-10-27-02-4c535709ff63</guid>
+      <pubDate>Tue, 27 Oct 2026 16:40:50 +0000</pubDate>
+      <description>Make satisfying family dinners while keeping grocery spending in check. Explore cheap meal ideas, pantry staples and cost-per-serving tips.</description>
+      <media:content url="https://whatsforeats.online/pinterest-daily-pins/2026-10-27/02-cheap-family-dinners.jpg" medium="image" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Easy Sheet Pan Dinners With Less Cleanup</title>
+      <link>https://whatsforeats.online/easy-sheet-pan-dinners.html</link>
+      <guid isPermaLink="false">wfe-native-2026-10-27-03-42eabaeb6a20</guid>
+      <pubDate>Tue, 27 Oct 2026 16:40:50 +0000</pubDate>
+      <description>Skip the sink full of dishes. Find easy sheet-pan dinner ideas with juicy chicken, roasted vegetables and useful cooking tips.</description>
+      <media:content url="https://whatsforeats.online/pinterest-daily-pins/2026-10-27/03-easy-sheet-pan-dinners.jpg" medium="image" type="image/jpeg" />
+    </item>
+    <item>
+      <title>20 Lazy Dinner Ideas for Tired Nights</title>
+      <link>https://whatsforeats.online/20-lazy-dinners-for-when-your-brain-has-left-the-building.html</link>
+      <guid isPermaLink="false">wfe-native-2026-10-27-04-47bc5a79a25e</guid>
+      <pubDate>Tue, 27 Oct 2026 16:40:50 +0000</pubDate>
+      <description>When you're too tired to cook, browse low-effort family dinners, pantry shortcuts and delicious quick meals for busy nights.</description>
+      <media:content url="https://whatsforeats.online/pinterest-daily-pins/2026-10-27/04-20-lazy-dinners.jpg" medium="image" type="image/jpeg" />
+    </item>
+    <item>
+      <title>15-Minute Dinners for Busy Weeknights</title>
+      <link>https://whatsforeats.online/15-minute-dinners-for-busy-weeknights.html</link>
+      <guid isPermaLink="false">wfe-native-2026-10-27-05-4677dbdabb87</guid>
+      <pubDate>Tue, 27 Oct 2026 16:40:50 +0000</pubDate>
+      <description>Explore fast weeknight dinner recipes such as garlic shrimp fajitas, honey garlic chicken stir fry and creamy chicken spinach pasta.</description>
+      <media:content url="https://whatsforeats.online/pinterest-daily-pins/2026-10-27/05-15-minute-dinners.jpg" medium="image" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Easy Dinner Ideas for Picky Eaters</title>
+      <link>https://whatsforeats.online/picky-eater-dinner-ideas.html</link>
+      <guid isPermaLink="false">wfe-native-2026-10-27-06-b15e9cc5e766</guid>
+      <pubDate>Tue, 27 Oct 2026 16:40:50 +0000</pubDate>
+      <description>Make dinner more flexible for the whole family with customizable tacos, familiar ingredients and low-stress meal ideas.</description>
+      <media:content url="https://whatsforeats.online/pinterest-daily-pins/2026-10-27/06-dinners-picky-eaters-love.jpg" medium="image" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Cozy Fall Dinner Ideas for Chilly Nights</title>
+      <link>https://whatsforeats.online/22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.html</link>
+      <guid isPermaLink="false">wfe-native-2026-10-27-07-d538a150405b</guid>
+      <pubDate>Tue, 27 Oct 2026 16:40:50 +0000</pubDate>
+      <description>Explore comforting soups, pasta bakes and hearty dinner ideas for crisp autumn nights without complicated cooking.</description>
+      <media:content url="https://whatsforeats.online/pinterest-daily-pins/2026-10-27/07-cozy-fall-dinners.jpg" medium="image" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Easy Leftover Chicken Recipes for Dinner</title>
+      <link>https://whatsforeats.online/leftover-chicken-recipes.html</link>
+      <guid isPermaLink="false">wfe-native-2026-10-27-08-65c953abc862</guid>
+      <pubDate>Tue, 27 Oct 2026 16:40:50 +0000</pubDate>
+      <description>Transform extra cooked chicken into crispy quesadillas, colorful taco bowls and creamy pasta meals without starting from scratch.</description>
+      <media:content url="https://whatsforeats.online/pinterest-daily-pins/2026-10-27/08-leftover-chicken-ideas.jpg" medium="image" type="image/jpeg" />
+    </item>
+    <item>
+      <title>Easy Weekly Family Meal Plan</title>
+      <link>https://whatsforeats.online/weekly-meal-plan-for-busy-families.html</link>
+      <guid isPermaLink="false">wfe-native-2026-10-27-09-666bc2072d71</guid>
+      <pubDate>Tue, 27 Oct 2026 16:40:50 +0000</pubDate>
+      <description>Take the guesswork out of dinners with a flexible seven-night meal plan and shopping guidance for busy households.</description>
+      <media:content url="https://whatsforeats.online/pinterest-daily-pins/2026-10-27/09-7-easy-family-dinners.jpg" medium="image" type="image/jpeg" />
+    </item>
+  </channel>
 </rss>

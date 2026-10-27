@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-27",
+  "status": "feed_updated_not_pinterest_confirmed",
+  "research_manifest": "pinterest-research/2026-10-27/manifest.json",
+  "original_new_images": [
+    {
+      "filename": "01-slow-cooker-dinners.jpg",
+      "destination_slug": "slow-cooker-dinners-for-busy-families.html",
+      "image_sha256": "1135ff24dc45325217d64e6c74e96221717970ab026b2fde358b4ef7e12dd469",
+      "reference_ids": [
+        "competitor-hero-meal-20261027",
+        "competitor-quick-dinners-20261027"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-27T16:41:21.013477+00:00"
+    },
+    {
+      "filename": "02-cheap-family-dinners.jpg",
+      "destination_slug": "cheap-family-dinners-cost-per-serving.html",
+      "image_sha256": "4c535709ff63d4c0cea1aef1790a843cb1aa698dd4b2cbf78fbcb9d5c45d7ed1",
+      "reference_ids": [
+        "competitor-dinner-collage-20261027",
+        "competitor-hero-meal-20261027"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-27T16:41:51.969369+00:00"
+    },
+    {
+      "filename": "03-easy-sheet-pan-dinners.jpg",
+      "destination_slug": "easy-sheet-pan-dinners.html",
+      "image_sha256": "42eabaeb6a202525c74b879155181659dc50657259cb5ec5b485cbde919a6232",
+      "reference_ids": [
+        "competitor-hero-meal-20261027",
+        "competitor-quick-dinners-20261027"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-27T16:42:23.988693+00:00"
+    },
+    {
+      "filename": "04-20-lazy-dinners.jpg",
+      "destination_slug": "20-lazy-dinners-for-when-your-brain-has-left-the-building.html",
+      "image_sha256": "47bc5a79a25ea92e6472cbc098ac4f873b2a3525268c50154abe3a89fecac340",
+      "reference_ids": [
+        "competitor-quick-dinners-20261027",
+        "competitor-hero-meal-20261027"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-27T16:42:56.610864+00:00"
+    },
+    {
+      "filename": "05-15-minute-dinners.jpg",
+      "destination_slug": "15-minute-dinners-for-busy-weeknights.html",
+      "image_sha256": "4677dbdabb87f9aee4513b1a00a172aff49a162379de97550e3db3dd44664840",
+      "reference_ids": [
+        "competitor-quick-dinners-20261027",
+        "competitor-dinner-collage-20261027"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-27T16:43:25.552350+00:00"
+    },
+    {
+      "filename": "06-dinners-picky-eaters-love.jpg",
+      "destination_slug": "picky-eater-dinner-ideas.html",
+      "image_sha256": "b15e9cc5e766cb8dcbd23db35f9308e6c94343dd79d5566d75cb37dabbe02838",
+      "reference_ids": [
+        "competitor-dinner-collage-20261027",
+        "competitor-hero-meal-20261027"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-27T16:43:53.910278+00:00"
+    },
+    {
+      "filename": "07-cozy-fall-dinners.jpg",
+      "destination_slug": "22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.html",
+      "image_sha256": "d538a150405bebed318e5a30715a05c1713b0f95aa46faa86d897046a5b44a37",
+      "reference_ids": [
+        "competitor-dinner-collage-20261027",
+        "competitor-hero-meal-20261027"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-27T16:44:24.018960+00:00"
+    },
+    {
+      "filename": "08-leftover-chicken-ideas.jpg",
+      "destination_slug": "leftover-chicken-recipes.html",
+      "image_sha256": "65c953abc862122a1275d3514060f745bf61fb570d219fb5866dd080d2863afa",
+      "reference_ids": [
+        "competitor-dinner-collage-20261027",
+        "competitor-hero-meal-20261027"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-27T16:44:56.010696+00:00"
+    },
+    {
+      "filename": "09-7-easy-family-dinners.jpg",
+      "destination_slug": "weekly-meal-plan-for-busy-families.html",
+      "image_sha256": "666bc2072d711f668b72aa0fc0e372d6d5525d7dff6444238f41352d97cc4c2c",
+      "reference_ids": [
+        "competitor-dinner-collage-20261027",
+        "competitor-quick-dinners-20261027"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-27T16:45:26.944691+00:00"
+    }
+  ]
+}
