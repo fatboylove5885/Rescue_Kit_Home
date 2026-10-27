@@ -1,8 +1,8 @@
 {
   "asset_date": "2026-10-27",
-  "status": "nine_accepted_7_published_2_pending",
+  "status": "nine_verified_published",
   "platform": "Metricool Pinterest",
-  "verified_at": "2026-10-27T18:58:14-04:00",
+  "verified_at": "2026-10-27T19:58:20-04:00",
   "scheduled_count": 9,
   "expected_count": 9,
   "posts": [
@@ -127,10 +127,12 @@
       "link": "https://whatsforeats.online/leftover-chicken-recipes.html",
       "board_id": "947163434072266364",
       "publish_at": "2026-10-27T19:00:00 America/New_York",
-      "status": "PENDING",
+      "status": "PUBLISHED",
       "auto_publish": true,
       "media": "https://static.metricool.com/planner/202610/4488790-file-1941553280469548629.jpeg",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=4866917746116545473"
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=4866917746116545473",
+      "provider_pin_id": "947163365478243907",
+      "public_url": "https://www.pinterest.es/pin/947163365478243907"
     },
     {
       "asset_filename": "09-7-easy-family-dinners.jpg",
@@ -141,11 +143,13 @@
       "link": "https://whatsforeats.online/weekly-meal-plan-for-busy-families.html",
       "board_id": "947163434072266364",
       "publish_at": "2026-10-27T19:30:00 America/New_York",
-      "status": "PENDING",
+      "status": "PUBLISHED",
       "auto_publish": true,
       "media": "https://static.metricool.com/planner/202610/4488790-file-11922039809507573849.jpeg",
-      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=5537313764211837855"
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=5537313764211837855",
+      "provider_pin_id": "947163365478244690",
+      "public_url": "https://www.pinterest.es/pin/947163365478244690"
     }
   ],
-  "notes": "Nine original-image posts accepted with autoPublish. 7 confirmed PUBLISHED, 2 PENDING in fresh connected Metricool readback at 2026-10-27T18:58:14-04:00. No new posts created; no images generated. Do not equate acceptance with publishing. Pinterest RSS duplicate import previously disabled; pin-level analytics unverified."
+  "notes": "All 9 original-image Pinterest posts confirmed PUBLISHED in fresh connected Metricool readback at 2026-10-27T19:58:20-04:00; 9 unique IDs, original files, hosted media, autoPublish, SEO titles and real article links verified. No new posts created, no images regenerated. Pinterest RSS duplicate import previously disabled; pin analytics not verified."
 }
