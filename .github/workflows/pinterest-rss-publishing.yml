@@ -1,5 +1,10 @@
 name: "What's For Eats — research-gated original Pinterest publisher"
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/pinterest-rss-publishing.yml"
   schedule:
     - cron: '15 8 * * *'
       timezone: 'America/Detroit'
