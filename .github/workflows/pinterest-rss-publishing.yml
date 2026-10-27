@@ -6,8 +6,9 @@ on:
       - main
     paths:
       - ".github/workflows/pinterest-rss-publishing.yml"
+      - "pinterest-research/**/manifest.json"
   schedule:
-    - cron: '15 8 * * *'
+    - cron: '15 8,9,10,11 * * *'
       timezone: 'America/Detroit'
   workflow_dispatch:
 permissions:
@@ -35,13 +36,14 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_IMAGE_MODEL: gpt-image-2
+          PINTEREST_POSTING_MODE: metricool
         run: python scripts/pinterest_publisher.py
-      - name: Host successfully generated pin images and update RSS
+      - name: Host newly generated pin images for verified Metricool queue
         shell: bash
         run: |
           git config user.name 'Whats For Eats Pin Publisher'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add pinterest-daily-pins pinterest-rss.xml pinterest-publishing-ledger
+          git add pinterest-daily-pins pinterest-publishing-ledger
           if ! git diff --cached --quiet; then
             git commit -m "Research-based original GPT Image food pins $(TZ=America/Detroit date +%Y-%m-%d)"
             git push origin HEAD:main
