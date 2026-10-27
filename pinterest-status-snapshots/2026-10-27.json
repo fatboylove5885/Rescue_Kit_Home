@@ -1,12 +1,12 @@
 {
   "date": "2026-10-27",
-  "observed_at": "2026-10-27T13:04:47-04:00",
-  "source": "Connected Metricool getScheduledPosts",
-  "notes": "All nine were accepted in Metricool but actual live Pinterest publication is not yet confirmed.",
+  "observed_at": "2026-10-27T13:40:10-04:00",
+  "source": "Connected Metricool API — observed 2026-10-27 at 1:40 PM Eastern",
+  "notes": "First scheduled Oct 27 pin now verifiably PUBLISHED in Metricool; other eight show PENDING. Pinterest direct post URLs and pin-level analytics remain unverified.",
   "posts": [
     {
       "post_id": "408053788",
-      "status": "PENDING"
+      "status": "PUBLISHED"
     },
     {
       "post_id": "408054475",
