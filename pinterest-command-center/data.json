@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-28T14:56:46+00:00",
+  "updated_at": "2026-10-28T15:38:55+00:00",
   "site": "What's For Eats — Pinterest Command Center",
   "timezone": "America/Detroit",
   "visibility": "PUBLIC_SITE_METADATA_ONLY",
@@ -46,7 +46,7 @@
     "original_images": 18,
     "scheduled_receipts": 22,
     "published_verified": 16,
-    "incidents": 7,
+    "incidents": 8,
     "xp": 1120,
     "days_recorded": 3,
     "daily_target": 9,
@@ -64,7 +64,7 @@
         "original_images": 9,
         "scheduled_receipts": 9,
         "published_verified": 3,
-        "incidents": 2,
+        "incidents": 3,
         "xp": 380
       },
       "missions": [
@@ -477,6 +477,16 @@
           "at": "2026-10-28T11:56:58.273789+00:00",
           "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-publishing-ledger/2026-10-28.json",
           "source": "Recorded artifact"
+        },
+        {
+          "date": "2026-10-28",
+          "title": "Unbranded Pinterest photos traced to legacy October 26 RSS feed",
+          "description": "User screenshot of Pinterest profile showed a group of unbranded food, pantry, refrigerator, and meal prep pins above the branded Metricool posts. Current public pinterest-rss.xml still contains nine legacy October 26 items, eight of them using site-owned photographs (blog-1-hero.jpg, rescue-kit-fridge.jpg, budget-pantry-shelf.jpg, recipe-3-salsa-chicken.jpg, make-ahead-night-before.jpg, make-ahead-containers-labels.jpg, visuals/leftover-chicken-hero.jpg, final-family-table.jpg) rather than new branded posters. This provides a strong visual/source match; specific Pinterest pin-to-feed attribution remains unverified because individual imported Pin IDs were not retrieved. These historical RSS entries remain present despite today's Metricool-only generator. Removing items from RSS would not remove already-published Pinterest pins.",
+          "severity": "warning",
+          "phase": "publishing_diagnostics",
+          "at": "2026-10-28T11:35:00-04:00",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-rss.xml",
+          "source": "User screenshot and existing GitHub pinterest-rss.xml"
         },
         {
           "date": "2026-10-28",
@@ -1952,13 +1962,24 @@
   ],
   "runs": [
     {
-      "id": 40710901553,
+      "id": 40718046139,
       "name": "What's For Eats — Pinterest Command Center data sync",
       "event": "push",
       "status": "in_progress",
       "conclusion": null,
+      "created_at": "2026-10-28T15:38:44Z",
+      "updated_at": "2026-10-28T15:38:49Z",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40718046139",
+      "attempt": 1
+    },
+    {
+      "id": 40710901553,
+      "name": "What's For Eats — Pinterest Command Center data sync",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
       "created_at": "2026-10-28T14:56:24Z",
-      "updated_at": "2026-10-28T14:56:40Z",
+      "updated_at": "2026-10-28T14:56:52Z",
       "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40710901553",
       "attempt": 1
     },
@@ -2334,17 +2355,6 @@
       "created_at": "2026-10-28T05:02:59Z",
       "updated_at": "2026-10-28T05:03:14Z",
       "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40635715058",
-      "attempt": 1
-    },
-    {
-      "id": 40629887355,
-      "name": "What's For Eats — Pinterest Command Center data sync",
-      "event": "push",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T04:00:50Z",
-      "updated_at": "2026-10-28T04:01:12Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40629887355",
       "attempt": 1
     }
   ]
