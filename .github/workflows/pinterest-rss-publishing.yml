@@ -40,6 +40,18 @@ jobs:
           OPENAI_IMAGE_MODEL: gpt-image-2
           PINTEREST_POSTING_MODE: metricool
         run: python scripts/pinterest_publisher.py
+      - name: Set Detroit asset date for recoverable upload
+        id: asset_date
+        run: echo "date=$(TZ=America/Detroit date +%F)" >> "$GITHUB_OUTPUT"
+      - name: Preserve generated images and ledger before GitHub push
+        uses: actions/upload-artifact@v4
+        with:
+          name: original-pinterest-pins-${{ steps.asset_date.outputs.date }}
+          path: |
+            pinterest-daily-pins/${{ steps.asset_date.outputs.date }}/
+            pinterest-publishing-ledger/${{ steps.asset_date.outputs.date }}.json
+          retention-days: 7
+          if-no-files-found: error
       - name: Host newly generated pin images for verified Metricool queue
         shell: bash
         run: |
@@ -48,7 +60,20 @@ jobs:
           git add pinterest-daily-pins pinterest-publishing-ledger
           if ! git diff --cached --quiet; then
             git commit -m "Research-based original GPT Image food pins $(TZ=America/Detroit date +%Y-%m-%d)"
-            git push origin HEAD:main
+            # Dashboard status-sync commits can race with the publisher.
+            # Rebase generated assets onto the newest main before each push.
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then
+                echo "Nine original assets safely hosted; Metricool may now schedule."
+                exit 0
+              fi
+              echo "Concurrent main update; retrying asset-only push (attempt $attempt/5)."
+              sleep 3
+            done
+            echo "::error::GitHub asset push failed after five rebased attempts. Generated image artifact is preserved."
+            exit 1
           else
             echo 'No new verified assets; no feed update or duplicate publication.'
           fi
