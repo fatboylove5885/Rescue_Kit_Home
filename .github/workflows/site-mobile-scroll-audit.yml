@@ -1,0 +1,23 @@
+name: Website Mobile Safari Scroll Audit
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'nav.js'
+      - '*.html'
+      - 'pinterest-command-center/*.html'
+      - 'scripts/check_mobile_scroll.py'
+      - '.github/workflows/site-mobile-scroll-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check shared JavaScript syntax
+        run: node --check nav.js
+      - name: Check site-wide HTML inclusion and long recipe scroll sizing
+        run: python3 scripts/check_mobile_scroll.py
