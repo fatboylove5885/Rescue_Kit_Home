@@ -1,14 +1,14 @@
 {
   "date": "2026-10-28",
-  "verified_at": "2026-10-28T18:58:42-04:00",
+  "verified_at": "2026-10-28T19:57:02-04:00",
   "source": "Verified connected Metricool response",
-  "status": "all_scheduled_verified",
+  "status": "partial_published_account_limit_blocked",
   "asset_date": "2026-10-28",
   "posting_mode": "metricool",
   "board_id": "947163434072266364",
   "verified_count": 9,
   "published_count": 7,
-  "pending_count": 2,
+  "pending_count": 0,
   "posts": [
     {
       "asset_filename": "01-easy-weeknight-dinners.jpg",
@@ -152,13 +152,14 @@
       "link": "https://whatsforeats.online/easy-dinner-ideas-no-energy.html",
       "board_id": "947163434072266364",
       "publish_at": "2026-10-28T19:00:00 America/New_York",
-      "status": "PENDING",
+      "status": "ERROR",
       "auto_publish": true,
       "draft": false,
       "media": "https://static.metricool.com/planner/202610/4488790-file-17683126230413326704.jpeg",
       "provider_network": "pinterest",
       "is_ai_generated": true,
-      "image_sha256": "427dad995eb8b74682fc98412afb2ab3e2710fdbb22cb1de352403d603e38dd4"
+      "image_sha256": "427dad995eb8b74682fc98412afb2ab3e2710fdbb22cb1de352403d603e38dd4",
+      "error_detail": "You have reached your Metricool account limit."
     },
     {
       "asset_filename": "09-4-easy-dinner-ways.jpg",
@@ -169,15 +170,17 @@
       "link": "https://whatsforeats.online/sheet-pan-vs-slow-cooker-vs-one-pot-vs-air-fryer.html",
       "board_id": "947163434072266364",
       "publish_at": "2026-10-28T19:30:00 America/New_York",
-      "status": "PENDING",
+      "status": "ERROR",
       "auto_publish": true,
       "draft": false,
       "media": "https://static.metricool.com/planner/202610/4488790-file-9537562492309237492.jpeg",
       "provider_network": "pinterest",
       "is_ai_generated": true,
-      "image_sha256": "ec6986b8efff00d1e210c59ffaa648fcddb903835ae56039db1e2fd1873208f4"
+      "image_sha256": "ec6986b8efff00d1e210c59ffaa648fcddb903835ae56039db1e2fd1873208f4",
+      "error_detail": "You have reached your Metricool account limit."
     }
   ],
-  "notes": "Live Metricool readback 2026-10-28T13:56:54-04:00: 5 PUBLISHED, 4 PENDING; nine matched original assets, real links and board; retired RSS empty, publisher Metricool-only. No duplicate creation. Account-level RSS disconnect and monthly quota unverified.",
-  "publishing_count": 0
+  "notes": "Seven of nine Oct28 pins confirmed PUBLISHED; two returned Pinterest provider ERROR with detailedStatus 'You have reached your Metricool account limit.' Both original posts remain in planner and receipt; no resubmission, retry, or RSS fallback. User must resolve Metricool account posting allowance before remaining pins can publish. Previously accepted 9/9 scheduling does not equal 9/9 published.",
+  "publishing_count": 0,
+  "failed_count": 2
 }
