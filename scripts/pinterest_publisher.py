@@ -194,7 +194,7 @@ def run():
     concepts=validate_manifest(manifest)
     key=os.getenv('OPENAI_API_KEY');ensure(key,'First-party image API key missing. Do not publish recycled photos.')
     mode=os.getenv('PINTEREST_POSTING_MODE','metricool')
-    ensure(mode in ('metricool','rss'),'Unknown Pinterest posting mode')
+    ensure(mode=='metricool', 'RSS Pinterest auto-publishing is RETIRED. Only Metricool may schedule posts; refusing RSS mode.')
     if LEDGER.is_file():
         previous=json.loads(LEDGER.read_text(encoding='utf-8'))
         existing=previous.get('original_new_images') or []
