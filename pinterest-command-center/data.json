@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-28T15:58:47+00:00",
+  "updated_at": "2026-10-28T16:00:12+00:00",
   "site": "What's For Eats — Pinterest Command Center",
   "timezone": "America/Detroit",
   "visibility": "PUBLIC_SITE_METADATA_ONLY",
@@ -468,6 +468,16 @@
         }
       ],
       "events": [
+        {
+          "date": "2026-10-28",
+          "title": "Legacy RSS auto-publishing permanently quarantined",
+          "description": "Removed all nine legacy Oct26 RSS <item> entries (eight unbranded website photos plus one branded). RSS source now contains zero publishable items. Updated scripts/pinterest_publisher.py to hard-reject RSS mode. Added scripts/pinterest_rss_quarantine.py and hourly .github/workflows/pinterest-rss-quarantine.yml; first Actions run 40721360874 succeeded. Pinterest account-side RSS connection has NOT been disconnected and pre-imported Pins might still appear; manual Pinterest settings action needed. Metricool stays the only authorized publishing channel.",
+          "severity": "success",
+          "phase": "publishing_safety",
+          "at": "2026-10-28T11:58:38-04:00",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40721360874",
+          "source": "GitHub RSS feed state and quarantine Actions"
+        },
         {
           "date": "2026-10-28",
           "title": "Metricool scheduling receipt saved",
@@ -1962,13 +1972,24 @@
   ],
   "runs": [
     {
-      "id": 40721360874,
-      "name": "Pinterest RSS Safety Quarantine",
+      "id": 40721582560,
+      "name": "What's For Eats — Pinterest Command Center data sync",
       "event": "push",
       "status": "in_progress",
       "conclusion": null,
+      "created_at": "2026-10-28T16:00:01Z",
+      "updated_at": "2026-10-28T16:00:06Z",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40721582560",
+      "attempt": 1
+    },
+    {
+      "id": 40721360874,
+      "name": "Pinterest RSS Safety Quarantine",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
       "created_at": "2026-10-28T15:58:38Z",
-      "updated_at": "2026-10-28T15:58:42Z",
+      "updated_at": "2026-10-28T15:58:55Z",
       "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40721360874",
       "attempt": 1
     },
@@ -1976,10 +1997,10 @@
       "id": 40721337675,
       "name": "What's For Eats — Pinterest Command Center data sync",
       "event": "push",
-      "status": "in_progress",
-      "conclusion": null,
+      "status": "completed",
+      "conclusion": "success",
       "created_at": "2026-10-28T15:58:29Z",
-      "updated_at": "2026-10-28T15:58:38Z",
+      "updated_at": "2026-10-28T15:58:51Z",
       "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40721337675",
       "attempt": 1
     },
@@ -2333,28 +2354,6 @@
       "created_at": "2026-10-28T07:57:22Z",
       "updated_at": "2026-10-28T07:57:34Z",
       "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40653410589",
-      "attempt": 1
-    },
-    {
-      "id": 40646873408,
-      "name": "What's For Eats — Pinterest Command Center data sync",
-      "event": "push",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T06:55:56Z",
-      "updated_at": "2026-10-28T06:56:24Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40646873408",
-      "attempt": 1
-    },
-    {
-      "id": 40646869248,
-      "name": "What's For Eats — Pinterest Command Center data sync",
-      "event": "push",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T06:55:53Z",
-      "updated_at": "2026-10-28T06:56:08Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40646869248",
       "attempt": 1
     }
   ]
