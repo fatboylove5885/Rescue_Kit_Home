@@ -1,14 +1,14 @@
 {
   "date": "2026-10-28",
-  "verified_at": "2026-10-28T12:02:17-04:00",
+  "verified_at": "2026-10-28T13:04:27-04:00",
   "source": "Verified connected Metricool response",
-  "status": "all_scheduled_pending_publication",
+  "status": "all_scheduled_verified",
   "asset_date": "2026-10-28",
   "posting_mode": "metricool",
   "board_id": "947163434072266364",
   "verified_count": 9,
-  "published_count": 3,
-  "pending_count": 5,
+  "published_count": 5,
+  "pending_count": 4,
   "posts": [
     {
       "asset_filename": "01-easy-weeknight-dinners.jpg",
@@ -76,13 +76,15 @@
       "link": "https://whatsforeats.online/freezer-meals-for-busy-weeknights.html",
       "board_id": "947163434072266364",
       "publish_at": "2026-10-28T12:00:00 America/New_York",
-      "status": "PUBLISHING",
+      "status": "PUBLISHED",
       "auto_publish": true,
       "draft": false,
       "media": "https://static.metricool.com/planner/202610/4488790-file-14544777467933223937.jpeg",
       "provider_network": "pinterest",
       "is_ai_generated": true,
-      "image_sha256": "d734bb474b483e7584b2c34667df1f1267906350bb5f3bcaf3d19f847bb8f75e"
+      "image_sha256": "d734bb474b483e7584b2c34667df1f1267906350bb5f3bcaf3d19f847bb8f75e",
+      "provider_pin_id": "947163365478263151",
+      "public_url": "https://www.pinterest.es/pin/947163365478263151"
     },
     {
       "asset_filename": "05-pantry-dinners.jpg",
@@ -93,13 +95,15 @@
       "link": "https://whatsforeats.online/pantry-staples-list-for-budget-cooking.html",
       "board_id": "947163434072266364",
       "publish_at": "2026-10-28T12:30:00 America/New_York",
-      "status": "PENDING",
+      "status": "PUBLISHED",
       "auto_publish": true,
       "draft": false,
       "media": "https://static.metricool.com/planner/202610/4488790-file-12425577271980681864.jpeg",
       "provider_network": "pinterest",
       "is_ai_generated": true,
-      "image_sha256": "827207de8768bae3d2a46b3429621898339ab54f6b68be47be3e251cc4004d14"
+      "image_sha256": "827207de8768bae3d2a46b3429621898339ab54f6b68be47be3e251cc4004d14",
+      "provider_pin_id": "947163365478263792",
+      "public_url": "https://www.pinterest.es/pin/947163365478263792"
     },
     {
       "asset_filename": "06-7-nights-sorted.jpg",
@@ -170,6 +174,6 @@
       "image_sha256": "ec6986b8efff00d1e210c59ffaa648fcddb903835ae56039db1e2fd1873208f4"
     }
   ],
-  "notes": "Live Metricool readback at 2026-10-28T12:02:17-04:00: 3 PUBLISHED, 1 PUBLISHING, 5 PENDING. All nine original creative posts remain accounted for; no duplicates. PUBLISHING is not proof of publication. Metricool quota not independently verified. RSS publishing retired.",
-  "publishing_count": 1
+  "notes": "Latest live Metricool provider readback 2026-10-28T13:04:27-04:00: 5 PUBLISHED, 4 PENDING, 0 PUBLISHING. All nine original assets and matching article links verified. RSS retired and empty. No duplicate create actions. Account-level RSS disconnect and plan quota remain unverified.",
+  "publishing_count": 0
 }
