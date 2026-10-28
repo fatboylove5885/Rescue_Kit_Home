@@ -1,6 +1,6 @@
 {
   "date": "2026-10-28",
-  "observed_at": "2026-10-28T18:58:42-04:00",
+  "observed_at": "2026-10-28T19:57:02-04:00",
   "source": "Verified connected Metricool response",
   "posts": [
     {
@@ -33,11 +33,11 @@
     },
     {
       "post_id": "408867540",
-      "status": "PENDING"
+      "status": "ERROR"
     },
     {
       "post_id": "408867626",
-      "status": "PENDING"
+      "status": "ERROR"
     }
   ]
 }
