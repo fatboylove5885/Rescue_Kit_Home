@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-28",
+  "status": "images_ready_awaiting_metricool_schedule",
+  "posting_mode": "metricool",
+  "research_manifest": "pinterest-research/2026-10-28/manifest.json",
+  "original_new_images": [
+    {
+      "filename": "01-easy-weeknight-dinners.jpg",
+      "destination_slug": "easy-weeknight-dinner-recipes.html",
+      "image_sha256": "af13d670048b4a2abf8dc465ce685e325614e5df20fea2bf1e3cde2e48e7372e",
+      "reference_ids": [
+        "oct28-single-meal-hero",
+        "oct28-fast-dinner-photo"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-28T11:56:58.273789+00:00"
+    },
+    {
+      "filename": "02-5-ingredient-dinners.jpg",
+      "destination_slug": "5-ingredient-dinners.html",
+      "image_sha256": "8ef703d4d3b99d56121fed34f758c57c0f4935627f89396919fb7adbc239527c",
+      "reference_ids": [
+        "oct28-fast-dinner-photo",
+        "oct28-single-meal-hero"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-28T11:57:29.007620+00:00"
+    },
+    {
+      "filename": "03-18-make-ahead-dinners.jpg",
+      "destination_slug": "18-make-ahead-dinners.html",
+      "image_sha256": "1f5a728cbd742de750b6dc0d0634e2c4de948d42f3d5f2905e4f3c014ac2b221",
+      "reference_ids": [
+        "oct28-family-meal-variety",
+        "oct28-fast-dinner-photo"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-28T11:58:00.884543+00:00"
+    },
+    {
+      "filename": "04-freezer-dinners.jpg",
+      "destination_slug": "freezer-meals-for-busy-weeknights.html",
+      "image_sha256": "d734bb474b483e7584b2c34667df1f1267906350bb5f3bcaf3d19f847bb8f75e",
+      "reference_ids": [
+        "oct28-single-meal-hero",
+        "oct28-family-meal-variety"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-28T11:58:30.015868+00:00"
+    },
+    {
+      "filename": "05-pantry-dinners.jpg",
+      "destination_slug": "pantry-staples-list-for-budget-cooking.html",
+      "image_sha256": "827207de8768bae3d2a46b3429621898339ab54f6b68be47be3e251cc4004d14",
+      "reference_ids": [
+        "oct28-fast-dinner-photo",
+        "oct28-single-meal-hero"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-28T11:59:02.825693+00:00"
+    },
+    {
+      "filename": "06-7-nights-sorted.jpg",
+      "destination_slug": "7-night-dinner-plan-for-picky-families.html",
+      "image_sha256": "594db1e7e62ea877def95bef9c5083cf34abafca5e9b505c2f1834eb3079de6b",
+      "reference_ids": [
+        "oct28-family-meal-variety",
+        "oct28-single-meal-hero"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-28T11:59:32.277880+00:00"
+    },
+    {
+      "filename": "07-lazy-dinners.jpg",
+      "destination_slug": "20-lazy-dinners-sorted-by-how-tired-you-are.html",
+      "image_sha256": "49c2b50a6f7b071ebc1ed4a0055f9b0773a7872274e492a2724abbbe29e2a885",
+      "reference_ids": [
+        "oct28-fast-dinner-photo",
+        "oct28-single-meal-hero"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-28T12:00:05.688450+00:00"
+    },
+    {
+      "filename": "08-no-energy-dinners.jpg",
+      "destination_slug": "easy-dinner-ideas-no-energy.html",
+      "image_sha256": "427dad995eb8b74682fc98412afb2ab3e2710fdbb22cb1de352403d603e38dd4",
+      "reference_ids": [
+        "oct28-single-meal-hero",
+        "oct28-fast-dinner-photo"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-28T12:00:36.811541+00:00"
+    },
+    {
+      "filename": "09-4-easy-dinner-ways.jpg",
+      "destination_slug": "sheet-pan-vs-slow-cooker-vs-one-pot-vs-air-fryer.html",
+      "image_sha256": "ec6986b8efff00d1e210c59ffaa648fcddb903835ae56039db1e2fd1873208f4",
+      "reference_ids": [
+        "oct28-family-meal-variety",
+        "oct28-single-meal-hero"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-28T12:01:07.666222+00:00"
+    }
+  ]
+}
