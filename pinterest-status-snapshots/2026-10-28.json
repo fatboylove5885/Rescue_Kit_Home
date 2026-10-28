@@ -1,6 +1,43 @@
 {
   "date": "2026-10-28",
-  "observed_at": "2026-10-28T07:56:19-04:00",
+  "observed_at": "2026-10-28T08:05:25-04:00",
   "source": "Verified connected Metricool response",
-  "posts": []
+  "posts": [
+    {
+      "post_id": "408866682",
+      "status": "PENDING"
+    },
+    {
+      "post_id": "408866996",
+      "status": "PENDING"
+    },
+    {
+      "post_id": "408867079",
+      "status": "PENDING"
+    },
+    {
+      "post_id": "408867191",
+      "status": "PENDING"
+    },
+    {
+      "post_id": "408867276",
+      "status": "PENDING"
+    },
+    {
+      "post_id": "408867419",
+      "status": "PENDING"
+    },
+    {
+      "post_id": "408867467",
+      "status": "PENDING"
+    },
+    {
+      "post_id": "408867540",
+      "status": "PENDING"
+    },
+    {
+      "post_id": "408867626",
+      "status": "PENDING"
+    }
+  ]
 }
