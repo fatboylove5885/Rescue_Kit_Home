@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-28T21:20:26+00:00",
+  "updated_at": "2026-10-28T21:21:43+00:00",
   "site": "What's For Eats — Pinterest Command Center",
   "timezone": "America/Detroit",
   "visibility": "PUBLIC_SITE_METADATA_ONLY",
@@ -662,6 +662,36 @@
           "at": "2026-10-28T06:00:00-04:00",
           "url": null,
           "source": "Connected guard summary from user screenshot"
+        },
+        {
+          "date": "2026-10-28",
+          "title": "New 3-of-9 free printable Pinterest strategy enforced",
+          "description": "At least three of every nine daily pins from October 29 onward must advertise distinct existing free PDF printables. Added 20-item verified catalog; original Medium-quality AI photos overlay a genuine first-page PDF preview, free CTA, matching HTML landing page and research reference notes. Image publisher hard rejects all-recipe batches. Both Daily Research and Scheduling Guard instructions now require the allocation. User reports printable, bingo and crossword concepts are promising; per-pin private performance evidence remains unverified.",
+          "severity": "success",
+          "phase": "strategy",
+          "at": null,
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-freebie-catalog.json",
+          "source": "GitHub pinterest-freebie-catalog.json, publisher validator, two enabled automations"
+        },
+        {
+          "date": "2026-10-28",
+          "title": "All 20 downloadable PDFs now include optional product recommendations",
+          "description": "PDF workflow verified 20/20 source files, preserving original pages and appending one tasteful, clearly labeled optional recommendation page containing clickable links to the 5:47 P.M. Rescue Kit and Cheap Dinner Vault. New Dinner Crossword Challenge has nine correct crossed answers, an answer sheet, and the appended optional promotion. Idempotent weekly checker plus visual-render QA succeeded.",
+          "severity": "success",
+          "phase": "product_promotion",
+          "at": null,
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40771149496",
+          "source": "GitHub PDF promotion audit and Actions run 40771149496"
+        },
+        {
+          "date": "2026-10-28",
+          "title": "Site-wide mobile scroll-chain protection applied",
+          "description": "Shared safe overscroll-behavior-y containment and modal scroll guard applied to 48 HTML pages, including free PDFs, recipe guides and Pinterest dashboard. Verified via Actions 40770930921. This can prevent webpage-level scroll chaining but cannot guarantee prevention of Pinterest's own native iOS in-app browser sheet scrolling.",
+          "severity": "success",
+          "phase": "site_maintenance",
+          "at": null,
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40770930921",
+          "source": "GitHub sitewide scroll integrity action"
         }
       ],
       "audit_note": "Manual recovery after 07:00 research automation returned needs_attention and disabled itself with no diagnostic text. Three genuine Pinterest visual references from Oct 27 were visually re-reviewed and date-copied into Oct 28 private Drive; they are NOT new discoveries or proven winners. Additional Pinterest pins in budget potato casserole, 5-ingredient and shrimp meals were searched publicly Oct28; their image files were not archived. Broad topics also grounded by Pinterest official 2026 trend report: elevated interest in leftover rotisserie chicken recipes and pantry staples. No original-pin save/impression metrics observed. All nine recipes/landing page slugs verified against the live GitHub tree. These are original creative hypotheses.",
@@ -2071,13 +2101,24 @@
   ],
   "runs": [
     {
-      "id": 40771097253,
+      "id": 40771274166,
       "name": "What's For Eats — Pinterest Command Center data sync",
       "event": "push",
       "status": "in_progress",
       "conclusion": null,
+      "created_at": "2026-10-28T21:21:31Z",
+      "updated_at": "2026-10-28T21:21:35Z",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40771274166",
+      "attempt": 1
+    },
+    {
+      "id": 40771097253,
+      "name": "What's For Eats — Pinterest Command Center data sync",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
       "created_at": "2026-10-28T21:20:16Z",
-      "updated_at": "2026-10-28T21:20:20Z",
+      "updated_at": "2026-10-28T21:20:33Z",
       "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40771097253",
       "attempt": 1
     },
@@ -2343,39 +2384,6 @@
       "created_at": "2026-10-28T16:00:01Z",
       "updated_at": "2026-10-28T16:00:18Z",
       "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40721582560",
-      "attempt": 1
-    },
-    {
-      "id": 40721360874,
-      "name": "Pinterest RSS Safety Quarantine",
-      "event": "push",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T15:58:38Z",
-      "updated_at": "2026-10-28T15:58:55Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40721360874",
-      "attempt": 1
-    },
-    {
-      "id": 40721337675,
-      "name": "What's For Eats — Pinterest Command Center data sync",
-      "event": "push",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T15:58:29Z",
-      "updated_at": "2026-10-28T15:58:51Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40721337675",
-      "attempt": 1
-    },
-    {
-      "id": 40721310390,
-      "name": "What's For Eats — Pinterest Command Center data sync",
-      "event": "push",
-      "status": "completed",
-      "conclusion": "cancelled",
-      "created_at": "2026-10-28T15:58:20Z",
-      "updated_at": "2026-10-28T15:58:38Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40721310390",
       "attempt": 1
     }
   ],
