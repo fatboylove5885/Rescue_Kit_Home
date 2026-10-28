@@ -97,6 +97,15 @@
       "severity": "warning",
       "source": "User screenshot and existing GitHub pinterest-rss.xml",
       "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-rss.xml"
+    },
+    {
+      "at": "2026-10-28T11:58:38-04:00",
+      "title": "Legacy RSS auto-publishing permanently quarantined",
+      "description": "Removed all nine legacy Oct26 RSS <item> entries (eight unbranded website photos plus one branded). RSS source now contains zero publishable items. Updated scripts/pinterest_publisher.py to hard-reject RSS mode. Added scripts/pinterest_rss_quarantine.py and hourly .github/workflows/pinterest-rss-quarantine.yml; first Actions run 40721360874 succeeded. Pinterest account-side RSS connection has NOT been disconnected and pre-imported Pins might still appear; manual Pinterest settings action needed. Metricool stays the only authorized publishing channel.",
+      "severity": "success",
+      "phase": "publishing_safety",
+      "source": "GitHub RSS feed state and quarantine Actions",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40721360874"
     }
   ]
 }
