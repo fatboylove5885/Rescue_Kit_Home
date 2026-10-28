@@ -1,0 +1,50 @@
+name: "What's For Eats — Sitewide Mobile Scroll Integrity"
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/sitewide-scroll-integrity.yml"
+permissions:
+  contents: write
+concurrency:
+  group: wfe-scroll-integrity
+  cancel-in-progress: false
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply safe mobile overscroll containment to all HTML pages
+        run: python scripts/apply_sitewide_scroll_containment.py
+      - name: Verify pages and preserve results
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          paths=list(Path('.').glob('*.html'))+list(Path('pdfs').glob('*.html'))
+          assert len(paths)>=40
+          for p in paths:
+            html=p.read_text(encoding='utf-8')
+            assert 'wfe-mobile-scroll-containment' in html, p
+          print('All',len(paths),'main content and printable pages have scroll containment')
+          PY
+          git config user.name 'Whats For Eats Site Maintenance'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- '*.html' 'pdfs/*.html' 'pinterest-command-center/*.html'
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Apply safe iPhone vertical scroll containment sitewide"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            if git rebase origin/main && git push origin HEAD:main; then exit 0; fi
+            git rebase --abort || true
+            sleep 2
+          done
+          exit 1
