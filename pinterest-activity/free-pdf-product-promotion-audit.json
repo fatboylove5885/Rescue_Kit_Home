@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-10-28T21:17:14.196181+00:00",
+  "updated_at": "2026-10-28T21:20:48.181257+00:00",
   "promotion_type": "Clearly labeled optional final-page companion, preserving every original printable page",
   "count": 20,
-  "updated": 1,
-  "skipped_existing": 19,
+  "updated": 0,
+  "skipped_existing": 20,
   "files": [
     {
       "pdf": "budget-bites-cost-guide.pdf",
@@ -37,13 +37,8 @@
     },
     {
       "pdf": "dinner-crossword-challenge.pdf",
-      "status": "appended",
-      "original_pages": 2,
-      "final_pages": 3,
-      "paid_links": [
-        "https://whatsforeats.online/5-47-rescue-kit.html",
-        "https://fatboylove5885.github.io/Cheap-Dinner-Home/"
-      ]
+      "status": "already_promoted",
+      "page_count": 3
     },
     {
       "pdf": "dinner-rescue-playbook.pdf",
