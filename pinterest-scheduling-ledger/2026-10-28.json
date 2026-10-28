@@ -1,14 +1,14 @@
 {
   "date": "2026-10-28",
-  "verified_at": "2026-10-28T08:05:03-04:00",
+  "verified_at": "2026-10-28T08:56:08-04:00",
   "source": "Connected Metricool getScheduledPosts readback; verified original GitHub research and image ledger",
-  "status": "9_of_9_accepted_by_metricool_pending_publication",
+  "status": "9_of_9_accepted_by_metricool_publication_in_progress",
   "asset_date": "2026-10-28",
   "posting_mode": "metricool",
   "board_id": "947163434072266364",
   "verified_count": 9,
-  "published_count": 0,
-  "pending_count": 9,
+  "published_count": 1,
+  "pending_count": 8,
   "posts": [
     {
       "asset_filename": "01-easy-weeknight-dinners.jpg",
@@ -19,13 +19,15 @@
       "link": "https://whatsforeats.online/easy-weeknight-dinner-recipes.html",
       "board_id": "947163434072266364",
       "publish_at": "2026-10-28T08:30:00 America/New_York",
-      "status": "PENDING",
+      "status": "PUBLISHED",
       "auto_publish": true,
       "draft": false,
       "media": "https://static.metricool.com/planner/202610/4488790-file-17958724871527790811.jpeg",
       "provider_network": "pinterest",
       "is_ai_generated": true,
-      "image_sha256": "af13d670048b4a2abf8dc465ce685e325614e5df20fea2bf1e3cde2e48e7372e"
+      "image_sha256": "af13d670048b4a2abf8dc465ce685e325614e5df20fea2bf1e3cde2e48e7372e",
+      "provider_pin_id": "947163365478257730",
+      "public_url": "https://www.pinterest.es/pin/947163365478257730"
     },
     {
       "asset_filename": "02-5-ingredient-dinners.jpg",
@@ -164,5 +166,5 @@
       "image_sha256": "ec6986b8efff00d1e210c59ffaa648fcddb903835ae56039db1e2fd1873208f4"
     }
   ],
-  "notes": "All 9 original October 28 image assets exist in GitHub, mapped 1:1 to researched concepts and real article slugs. Metricool readback verified nine unique Pinterest provider IDs, static.metricool.com media, autoPublish true, draft false, and PENDING statuses. Actual Pinterest publication is not yet confirmed. The earlier GitHub push conflict lost the first temporary batch; recovered publisher workflow now preserves image artifacts and rebases on concurrent dashboard commits. No RSS duplicate feed insertion. Metricool plan/quota not independently verified; monitor provider PUBLISHED transitions."
+  "notes": "All nine unique October 28 original-image Pinterest posts verified in connected Metricool with matching article links, original hosted media, board, SEO titles, autoPublish true and draft false. 1 PUBLISHED and 8 PENDING as of 2026-10-28T08:56:08-04:00. Published provider IDs are preserved; no new posts created. Metricool plan/quota not independently verified; pending does not prove future publication."
 }
