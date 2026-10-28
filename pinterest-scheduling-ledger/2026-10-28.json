@@ -170,5 +170,6 @@
       "image_sha256": "ec6986b8efff00d1e210c59ffaa648fcddb903835ae56039db1e2fd1873208f4"
     }
   ],
-  "notes": "Live Metricool readback at 2026-10-28T12:02:17-04:00: 3 PUBLISHED and 5 PENDING; no duplicates. Quota not independently verified."
+  "notes": "Live Metricool readback at 2026-10-28T12:02:17-04:00: 3 PUBLISHED, 1 PUBLISHING, 5 PENDING. All nine original creative posts remain accounted for; no duplicates. PUBLISHING is not proof of publication. Metricool quota not independently verified. RSS publishing retired.",
+  "publishing_count": 1
 }
