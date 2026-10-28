@@ -130,6 +130,33 @@
       "provider_status": "PUBLISHED",
       "url": "https://www.pinterest.es/pin/947163365478263792",
       "run_url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40683799311"
+    },
+    {
+      "title": "New 3-of-9 free printable Pinterest strategy enforced",
+      "description": "At least three of every nine daily pins from October 29 onward must advertise distinct existing free PDF printables. Added 20-item verified catalog; original Medium-quality AI photos overlay a genuine first-page PDF preview, free CTA, matching HTML landing page and research reference notes. Image publisher hard rejects all-recipe batches. Both Daily Research and Scheduling Guard instructions now require the allocation. User reports printable, bingo and crossword concepts are promising; per-pin private performance evidence remains unverified.",
+      "severity": "success",
+      "phase": "strategy",
+      "source": "GitHub pinterest-freebie-catalog.json, publisher validator, two enabled automations",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-freebie-catalog.json",
+      "date": "2026-10-28"
+    },
+    {
+      "title": "All 20 downloadable PDFs now include optional product recommendations",
+      "description": "PDF workflow verified 20/20 source files, preserving original pages and appending one tasteful, clearly labeled optional recommendation page containing clickable links to the 5:47 P.M. Rescue Kit and Cheap Dinner Vault. New Dinner Crossword Challenge has nine correct crossed answers, an answer sheet, and the appended optional promotion. Idempotent weekly checker plus visual-render QA succeeded.",
+      "severity": "success",
+      "phase": "product_promotion",
+      "source": "GitHub PDF promotion audit and Actions run 40771149496",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40771149496",
+      "date": "2026-10-28"
+    },
+    {
+      "title": "Site-wide mobile scroll-chain protection applied",
+      "description": "Shared safe overscroll-behavior-y containment and modal scroll guard applied to 48 HTML pages, including free PDFs, recipe guides and Pinterest dashboard. Verified via Actions 40770930921. This can prevent webpage-level scroll chaining but cannot guarantee prevention of Pinterest's own native iOS in-app browser sheet scrolling.",
+      "severity": "success",
+      "phase": "site_maintenance",
+      "source": "GitHub sitewide scroll integrity action",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40770930921",
+      "date": "2026-10-28"
     }
   ]
 }
