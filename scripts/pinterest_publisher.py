@@ -26,6 +26,7 @@ RESEARCH=ROOT/'pinterest-research'/DATE/'manifest.json'
 DEST=ROOT/'pinterest-daily-pins'/DATE
 RSS=ROOT/'pinterest-rss.xml'
 LEDGER=ROOT/'pinterest-publishing-ledger'/f'{DATE}.json'
+FREEBIE_CATALOG=ROOT/'pinterest-freebie-catalog.json'
 OPENAI_IMAGE_MODEL=os.getenv('OPENAI_IMAGE_MODEL','gpt-image-2')
 CREAM=(250,247,237);GREEN=(22,66,45);RUST=(191,58,25);DARK=(43,29,25)
 
@@ -75,6 +76,25 @@ def compose(photo:Image.Image,concept:dict,index:int)->Image.Image:
     overlays. Sourced visual reference notes guide the PHOTO prompt upstream.
     """
     out=ImageOps.fit(photo.convert('RGB'),(1000,1500),method=Image.Resampling.LANCZOS)
+    if concept.get('content_type')=='free_pdf':
+        # Preview exact real PDF pixels, not invented AI text or a fake printable.
+        # The promotional companion page is at the END; the thumbnail is page 1.
+        import fitz
+        pdfpath=ROOT/concept['pdf_slug']
+        with fitz.open(str(pdfpath)) as doc:
+            pix=doc[0].get_pixmap(matrix=fitz.Matrix(1.55,1.55),alpha=False)
+            preview=Image.frombytes('RGB',(pix.width,pix.height),pix.samples)
+        preview.thumbnail((440,770),Image.Resampling.LANCZOS)
+        # Drop-shadow behind the genuine preview, which remains readable on mobile.
+        x=1000-preview.width-65;y=460
+        d0=ImageDraw.Draw(out,'RGBA')
+        d0.rounded_rectangle((x-16,y-17,x+preview.width+17,y+preview.height+21),
+                             radius=24,fill=(20,32,24,150))
+        out.paste(preview,(x,y))
+        d0=ImageDraw.Draw(out,'RGBA')
+        d0.rounded_rectangle((64,1100,412,1166),radius=30,fill=(251,247,238,246))
+        d0.text((238,1133),'REAL PDF PREVIEW',font=font(25),
+                fill=GREEN,anchor='mm')
     d=ImageDraw.Draw(out,'RGBA')
     # Continuous photographic scene; translucent design overlays are not photo splits.
     d.rectangle((0,0,1000,322),fill=(251,247,238,247))
@@ -123,10 +143,26 @@ def validate_manifest(obj):
             ensure(imp>=500 and s+c>=5 and base is not None and rate>=float(base)*1.3, 'Own winner does not meet 500 impressions and cohort-relative engagement thresholds')
     concepts=obj.get('pin_concepts') or []
     ensure(len(concepts)==9,'Exactly nine researched, nonduplicate original pin concepts are required')
-    ensure(len(set(x.get('destination_slug') for x in concepts))==9,'Nine distinct actual article destinations required')
+    ensure(len(set(x.get('destination_slug') for x in concepts))==9,'Nine distinct destinations required')
+    freebie_ids=set()
+    if DATE>='2026-10-29':
+        ensure(FREEBIE_CATALOG.is_file(), 'Free PDF catalog missing; refusing daily campaign with fewer than 3 printables')
+        catalog=json.loads(FREEBIE_CATALOG.read_text(encoding='utf-8'))
+        freebie_ids={x['destination_slug']:x for x in catalog['items']}
+        ensure(sum(c.get('content_type')=='free_pdf' for c in concepts)>=3,
+            'At least THREE out of nine daily Pinterest posts MUST promote three distinct actual FREE PDFs')
     for c in concepts:
         path=c.get('destination_slug','')
-        ensure(bool(re.fullmatch(r'[a-z0-9-]+\.html',path)) and (ROOT/path).is_file(),'Pin destination not a real page: '+path)
+        typ=c.get('content_type','recipe')
+        ensure(typ in ('recipe','free_pdf'),'Unrecognized pin content type')
+        if typ=='free_pdf':
+            ensure(bool(re.fullmatch(r'pdfs/[a-z0-9-]+\.html',path)) and path in freebie_ids,'Free PDF Pin must link to a catalogued HTML printable: '+path)
+            pdf=freebie_ids[path]['pdf_slug']
+            ensure((ROOT/pdf).is_file(),'Free PDF missing: '+pdf)
+            ensure(c.get('pdf_slug')==pdf,'Free PDF original file reference mismatch')
+            ensure('FREE' in (c.get('headline','').upper()+' '+c.get('cta_text','').upper()),'Printable must be clearly labeled FREE')
+        else:
+            ensure(bool(re.fullmatch(r'[a-z0-9-]+\.html',path)) and (ROOT/path).is_file(),'Pin destination not a real recipe page: '+path)
         ensure(c.get('headline') and c.get('seo_title') and c.get('description') and c.get('food_scene'),'Complete original brief required')
         ensure(c.get('research_ref_ids') and all(x in ref_ids for x in c['research_ref_ids']),'Every pin must cite archived same-day references')
         kinds={r['id']:r.get('type') for r in refs}
@@ -145,7 +181,12 @@ def new_photo(c,index,refmap):
     visual_direction=str(c.get('visual_direction') or '')[:700]
     original_twist=str(c.get('original_twist') or '')[:500]
     design_keywords=', '.join(map(str,c.get('design_keywords') or []))[:300]
-    prompt=(
+    bonus=('This pin advertises a REAL FREE downloadable dinner printable, bingo, checklist or dinner activity. '
+           'Photograph a creative food-and-paper-workspace scene: real appetizing meal, cozy tabletop, pencil and clean paper supplies. '
+           'No generated fake writing or fake puzzle letters; a pixel-accurate preview from the actual PDF will be overlaid in the design. '
+           'Leave a reasonable area in center-right of the frame for the actual printable preview, with strong food color/texture still visible. '
+           if c.get('content_type')=='free_pdf' else '')
+    prompt=bonus+(
         'Generate ONE original magazine-quality PHOTOGRAPH of authentic, irresistibly appealing dinner food for a vertically oriented Pinterest recipe card. '
         'The premium branded editorial heading and CTA will be added outside the image by Pillow; do not create any lettering, logos, typography, art or white graphic bands within the photograph. '
         f'Cook and style exactly this NEW meal concept: {c["food_scene"]}. '
