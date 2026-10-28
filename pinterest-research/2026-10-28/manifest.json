@@ -1,0 +1,363 @@
+{
+  "date": "2026-10-28",
+  "research_completed_at": "2026-10-28T07:38:42-04:00",
+  "audit_note": "Manual recovery after 07:00 research automation returned needs_attention and disabled itself with no diagnostic text. Three genuine Pinterest visual references from Oct 27 were visually re-reviewed and date-copied into Oct 28 private Drive; they are NOT new discoveries or proven winners. Additional Pinterest pins in budget potato casserole, 5-ingredient and shrimp meals were searched publicly Oct28; their image files were not archived. Broad topics also grounded by Pinterest official 2026 trend report: elevated interest in leftover rotisserie chicken recipes and pantry staples. No original-pin save/impression metrics observed. All nine recipes/landing page slugs verified against the live GitHub tree. These are original creative hypotheses.",
+  "evidence_sources": [
+    {
+      "type": "official_pinterest_trends",
+      "url": "https://newsroom.pinterest.com/en-ca/news/spring-trend-report-2026/",
+      "note": "Pinterest spring 2026 report found elevated interest in leftover rotisserie chicken recipes and pantry staples; this is search interest, not verified individual pin performance."
+    },
+    {
+      "type": "observed_current_public_pin",
+      "url": "https://in.pinterest.com/pin/307230005851325488/",
+      "note": "Public image/pin for easy hamburger potato casserole found Oct28; source image not archived so not counted among three date-copied visual references."
+    },
+    {
+      "type": "observed_current_public_pin",
+      "url": "https://au.pinterest.com/pin/quick-and-easy-5ingredient-weeknight-dinners-in-30-minutes-or-less--311874342930258074/",
+      "note": "Public 5-ingredient dinner pin found Oct28; not archived. No individual impression/saves claims."
+    },
+    {
+      "type": "observed_current_public_pin",
+      "url": "https://in.pinterest.com/pin/543598617540963038/",
+      "note": "Public 15-minute shrimp dinner pin found Oct28; source photo not archived. No performance claims."
+    }
+  ],
+  "reference_images": [
+    {
+      "id": "oct28-fast-dinner-photo",
+      "type": "competitor_observed",
+      "pin_url": "https://www.pinterest.com/pin/quick-20minute-dinner-recipes-for-busy-nights-in-2025--1124703706948772252/",
+      "archive_file": "Google Drive/Pinterest Reference Library/2026-10-28/Competitor Observed/reobserved-20-minute-dinner-2026-10-28.jpg",
+      "archive_status": "saved_in_drive",
+      "visual_features": "Two tight, freshly cooked food closeups stacked around a conspicuous quick-dinner promise; glistening texture, warm contrast and immediate mobile readability. Relevant for fast-meal hero photography, without duplicating the separator band.",
+      "metric_status": "not_verified",
+      "label": "Genuine Pinterest image visually reviewed again October 28; original was archived October 27. No verified individual save counts; NOT a proven winner."
+    },
+    {
+      "id": "oct28-family-meal-variety",
+      "type": "competitor_observed",
+      "pin_url": "https://www.pinterest.com/pin/35-dinner-ideas-for-tonight-that-are-nofuss-big-flavor--681873199858570306/",
+      "archive_file": "Google Drive/Pinterest Reference Library/2026-10-28/Competitor Observed/reobserved-family-dinner-variety-2026-10-28.jpg",
+      "archive_status": "saved_in_drive",
+      "visual_features": "Multiple distinct plated weeknight dishes fill the visual field; a large central white diamond headline promises many recipes, demonstrating variety and benefit-first hierarchy. Use photographic variety, never the copied diamond or four photo quadrants.",
+      "metric_status": "not_verified",
+      "label": "Re-reviewed prior genuine Pinterest pin October 28 with private dated archive; source specific impressions/saves unknown."
+    },
+    {
+      "id": "oct28-single-meal-hero",
+      "type": "competitor_observed",
+      "pin_url": "https://www.pinterest.com/pin/20-easy-homemade-dinner-recipes--157696424443444551/",
+      "archive_file": "Google Drive/Pinterest Reference Library/2026-10-28/Competitor Observed/reobserved-single-dinner-hero-2026-10-28.jpg",
+      "archive_status": "saved_in_drive",
+      "visual_features": "Large natural skillet dinner of chicken and green vegetables photographed overhead, with simple readable heading and bold teal border. Familiar ingredients and a single honest food hero rather than artificial montage.",
+      "metric_status": "not_verified",
+      "label": "Re-reviewed Pinterest image October 28 with private dated copy; aesthetically useful but not individually verified successful."
+    }
+  ],
+  "pin_concepts": [
+    {
+      "id": "20261028-01",
+      "destination_slug": "easy-weeknight-dinner-recipes.html",
+      "headline": "EASY WEEKNIGHT DINNERS",
+      "seo_title": "Easy Weeknight Dinner Recipes That Make Busy Nights Delicious",
+      "description": "Easy weeknight dinner recipes that actually work after a long day. Discover juicy one-pan meals, quick skillet ideas and low-stress family favorites.",
+      "food_scene": "One authentic sheet-pan lemon-herb roast chicken dinner with glossy caramelized chicken thighs, crispy golden baby potatoes, blanched green beans and lemon slices; photographed as a single continuous table scene with rustic pale linen and a dark tray, dinner looks freshly cooked.",
+      "layout": "hero",
+      "research_ref_ids": [
+        "oct28-single-meal-hero",
+        "oct28-fast-dinner-photo"
+      ],
+      "visual_direction": "Borrow the naturally inviting single hero chicken-pan focus, three-quarter overhead perspective, and easy-to-recognize vegetables from the Pinterest chicken dinner photo. Make juicy browned skin, crisp potatoes and freshness fill 80% of the original full-bleed photo; the editorial overlay will handle the headline.",
+      "original_twist": "Replace competitor plain chicken skillet with beautifully browned lemon herb sheet-pan thighs, crispy potatoes and snap-bright green beans on a textured oak table.",
+      "why_reference_is_relevant": "The re-reviewed Pinterest chicken reference directly aligns with common weeknight meals and immediately recognizable ingredients; the fast-dinner photo supports clear visual urgency.",
+      "design_keywords": [
+        "weeknight dinner",
+        "one-pan chicken",
+        "crispy chicken skin",
+        "golden potatoes",
+        "green beans",
+        "hero close-up"
+      ],
+      "subheadline": "Easy recipes for busy weeknights",
+      "cta_text": "GET THE EASY RECIPES",
+      "primary_keyword": "weeknight dinner",
+      "secondary_keywords": [
+        "one-pan chicken",
+        "crispy chicken skin",
+        "golden potatoes"
+      ],
+      "board_suggestion": "Quick Dinner Recipes"
+    },
+    {
+      "id": "20261028-02",
+      "destination_slug": "5-ingredient-dinners.html",
+      "headline": "5-INGREDIENT DINNERS",
+      "seo_title": "5-Ingredient Dinners That Taste Like You Worked All Day",
+      "description": "Big flavor without a long grocery list. Try quick 5-ingredient dinners for busy nights, using realistic pantry shortcuts and family-friendly favorites.",
+      "food_scene": "One deep black cast iron skillet of sticky honey-garlic chicken chunks, glistening amber sauce, caramelized broccoli, sesame specks and vibrant scallion curls on a honey-toned wood dining table, with a small bowl of warm jasmine rice in the near background.",
+      "layout": "photo_first",
+      "research_ref_ids": [
+        "oct28-fast-dinner-photo",
+        "oct28-single-meal-hero"
+      ],
+      "visual_direction": "Emulate the irresistible tight-cropped saucy food textures in the quick dinner reference: bold bright glaze, actual steaming cooked chicken and high-contrast broccoli against dark cast iron. Compose low three-quarter angle, shallow depth but sharply detailed hero meal.",
+      "original_twist": "Use sticky honey-garlic chicken with glossy broccoli in black skillet instead of the pasta pictured in reference, with warm natural side lighting and subtle sesame garnish.",
+      "why_reference_is_relevant": "The quick-dinner competitor image demonstrates strong visible sensory appeal and the headline 20-minute value proposition, which suit a 5-ingredient meal promise.",
+      "design_keywords": [
+        "5 ingredient recipes",
+        "glossy sauce",
+        "one skillet",
+        "honey garlic chicken",
+        "broccoli",
+        "golden side lighting"
+      ],
+      "subheadline": "Big flavor. Less fuss.",
+      "cta_text": "GET THE EASY RECIPES",
+      "primary_keyword": "5 ingredient recipes",
+      "secondary_keywords": [
+        "glossy sauce",
+        "one skillet",
+        "honey garlic chicken"
+      ],
+      "board_suggestion": "Quick Dinner Recipes"
+    },
+    {
+      "id": "20261028-03",
+      "destination_slug": "18-make-ahead-dinners.html",
+      "headline": "18 MAKE AHEAD DINNERS",
+      "seo_title": "18 Make-Ahead Dinners That Make Weeknights Easier",
+      "description": "Prepare these comforting dinner recipes ahead of time. Explore pasta bakes, freezer-friendly prep and easy reheating meals for busy families.",
+      "food_scene": "A fresh pan of bubbling richly layered baked ziti with golden browned mozzarella, ribbons of red tomato sauce, and chopped fresh basil in a white oval ceramic casserole dish; one generous spoon lifts a steamy portion with cheese stretch, linen napkin and fork naturally on the same tabletop.",
+      "layout": "editorial",
+      "research_ref_ids": [
+        "oct28-family-meal-variety",
+        "oct28-fast-dinner-photo"
+      ],
+      "visual_direction": "Use the food abundance and multi-recipe promise of the 35-dinner collage while translating it into a single high-quality original hero dish: vivid red sauce, browned cheese, close-up plated perspective and the impression of hearty batch cooking. No diamond collage.",
+      "original_twist": "Feature a single detailed baked ziti with lifted cheese-stretch portion and golden top rather than the reference's multiple rectangular photographs.",
+      "why_reference_is_relevant": "The multi-dinner inspiration illustrates a substantial number-led benefit; a make-ahead pasta bake naturally expresses the same abundance and ease in an original photograph.",
+      "design_keywords": [
+        "make ahead dinners",
+        "comfort pasta bake",
+        "melting cheese",
+        "baked ziti",
+        "batch cooking",
+        "moody warm light"
+      ],
+      "subheadline": "Family favorites made simple",
+      "cta_text": "GET THE EASY RECIPES",
+      "primary_keyword": "make ahead dinners",
+      "secondary_keywords": [
+        "comfort pasta bake",
+        "melting cheese",
+        "baked ziti"
+      ],
+      "board_suggestion": "Meal Prep Recipes"
+    },
+    {
+      "id": "20261028-04",
+      "destination_slug": "freezer-meals-for-busy-weeknights.html",
+      "headline": "FREEZER DINNERS",
+      "seo_title": "Freezer Meals for Busy Weeknights | Comfort Food You Can Prep Ahead",
+      "description": "Stock your freezer with helpful dinner ideas instead of scrambling at six. Explore practical make-ahead dinners that still look and taste homemade.",
+      "food_scene": "Homemade rich enchilada-style chicken rice bake fresh from the oven, bubbling lightly browned cheese across a red ceramic baking dish and charred sweetcorn, black beans, tender chicken and bell pepper pieces visible where a spoon lifts a portion; a closed meal-prep glass container rests blurred in background, one continuous photographed scene.",
+      "layout": "hero",
+      "research_ref_ids": [
+        "oct28-single-meal-hero",
+        "oct28-family-meal-variety"
+      ],
+      "visual_direction": "Prioritize a single authentic homemade casserole as in the chicken hero reference, with the rich pan detail and strong bold number-ready headline discipline of the variety reference. Frame a generous portion lifted by spoon for visual anticipation and crisp browned food textures.",
+      "original_twist": "Substitute a vibrant chicken-rice enchilada bake in a red ceramic tray for the plain chicken skillet, and gently signal freezer readiness with a glass container in background.",
+      "why_reference_is_relevant": "The single-meal reference communicates an approachable cooked family supper, and the multi-recipe reference supports the concept of saving dinner choices for later.",
+      "design_keywords": [
+        "freezer dinner",
+        "chicken rice bake",
+        "cheese pull",
+        "meal prep",
+        "red casserole dish",
+        "authentic textures"
+      ],
+      "subheadline": "Easy recipes for busy weeknights",
+      "cta_text": "GET THE EASY RECIPES",
+      "primary_keyword": "freezer dinner",
+      "secondary_keywords": [
+        "chicken rice bake",
+        "cheese pull",
+        "meal prep"
+      ],
+      "board_suggestion": "Meal Prep Recipes"
+    },
+    {
+      "id": "20261028-05",
+      "destination_slug": "pantry-staples-list-for-budget-cooking.html",
+      "headline": "PANTRY DINNERS",
+      "seo_title": "Pantry Dinner Ideas That Save Money and Still Taste Amazing",
+      "description": "Dinner from what you already own. Learn pantry staples for budget cooking and turn rice, beans, pasta and simple seasonings into delicious meals.",
+      "food_scene": "A rich cast iron skillet of tomato-braised smoky white beans with spicy sliced sausage, onion, herbs, charred blistered cherry tomatoes and a little grated parmesan, with a piece of rustic bread soaking up sauce; amber evening light and tight vivid hero detail.",
+      "layout": "photo_first",
+      "research_ref_ids": [
+        "oct28-fast-dinner-photo",
+        "oct28-single-meal-hero"
+      ],
+      "visual_direction": "The quick-meal closeup reference shows the value of intensely detailed bite-size textures and simple ingredient contrast. Keep the cooked beans and glossy red sauce sharply visible; show one believable family skillet dinner, not a sterile pantry ingredient flat lay.",
+      "original_twist": "Use a rustic tomato-braised beans and smoky sausage one-skillet meal rather than competitor chicken or pasta imagery, with inviting bread and tomato gloss.",
+      "why_reference_is_relevant": "A familiar close-up skillet scene converts the abstract concept of pantry savings into a craveable meal and fits the quick-dinner visual precedent.",
+      "design_keywords": [
+        "pantry dinner",
+        "budget cooking",
+        "smoky beans",
+        "easy skillet",
+        "tomato red",
+        "rustic bread"
+      ],
+      "subheadline": "Big flavor. Less fuss.",
+      "cta_text": "GET THE EASY RECIPES",
+      "primary_keyword": "pantry dinner",
+      "secondary_keywords": [
+        "budget cooking",
+        "smoky beans",
+        "easy skillet"
+      ],
+      "board_suggestion": "Most Affordable Recipes"
+    },
+    {
+      "id": "20261028-06",
+      "destination_slug": "7-night-dinner-plan-for-picky-families.html",
+      "headline": "7 NIGHTS SORTED",
+      "seo_title": "7-Night Family Dinner Plan for Picky Eaters",
+      "description": "Make dinner decisions easier with a 7-night picky-eater meal plan full of flexible, familiar favorites, easy swaps and practical planning ideas.",
+      "food_scene": "Three genuine family dinner plates naturally set close together on one warm oak table: soft warm chicken tacos with separate customizable toppings and shredded cheese, classic saucy rotini with tomato basil and parmesan in ceramic bowl, and two crispy baked golden chicken tender strips with roasted potatoes and ketchup. Bright home dinner sunlight; food tactile realistic and inviting.",
+      "layout": "editorial",
+      "research_ref_ids": [
+        "oct28-family-meal-variety",
+        "oct28-single-meal-hero"
+      ],
+      "visual_direction": "Borrow the visible range of different approachable dishes from the multi-dinner reference while avoiding its copied white diamond and rigid photo quadrants. Put three meals naturally together on one table and keep recognizable easy kid-friendly dishes prominent.",
+      "original_twist": "Replace the collage of unrelated recipe screenshots with one original photographic family table featuring customizable tacos, pasta and crispy chicken tenders.",
+      "why_reference_is_relevant": "The 35-dinner Pinterest image visually conveys many choices, useful for a seven-night plan; the chicken hero shows recognizable familiar family foods.",
+      "design_keywords": [
+        "7 night plan",
+        "picky eater dinners",
+        "tacos pasta chicken",
+        "family food",
+        "natural table",
+        "multiple dishes"
+      ],
+      "subheadline": "Family favorites made simple",
+      "cta_text": "GET THE 7-NIGHT PLAN",
+      "primary_keyword": "7 night plan",
+      "secondary_keywords": [
+        "picky eater dinners",
+        "tacos pasta chicken",
+        "family food"
+      ],
+      "board_suggestion": "Quick Dinner Recipes"
+    },
+    {
+      "id": "20261028-07",
+      "destination_slug": "20-lazy-dinners-sorted-by-how-tired-you-are.html",
+      "headline": "LAZY DINNERS",
+      "seo_title": "20 Lazy Dinners Sorted by How Tired You Are",
+      "description": "Too tired to cook? These lazy dinner recipes are grouped by energy level so you can make something delicious without overthinking tonight.",
+      "food_scene": "An impossibly appetizing one-pot creamy sun-dried tomato orzo with tender shredded rotisserie chicken, baby spinach leaves, vivid roasted cherry tomatoes and freshly grated parmesan, served straight from a pale ceramic skillet with a brass spoon and crumpled linen, warm home dining table.",
+      "layout": "hero",
+      "research_ref_ids": [
+        "oct28-fast-dinner-photo",
+        "oct28-single-meal-hero"
+      ],
+      "visual_direction": "Use the visually accessible quick-dinner reference: close-up of a nearly ready-to-eat skillet with sauce gloss and bright herbs that can be understood at a glance. Tight framing, golden food, darker leafy green accents, large readable speed/effort promise added later.",
+      "original_twist": "Choose rich one-pot chicken orzo with sun-dried tomatoes instead of competitor's quick pasta montage; the shot shows a single continuous calm meal rather than a split composition.",
+      "why_reference_is_relevant": "A time-saving, energy-saving promise and a hearty glossy hero meal directly address the low-effort dinner niche shown by the fast-dinner reference.",
+      "design_keywords": [
+        "lazy dinners",
+        "rotisserie chicken",
+        "one pot orzo",
+        "creamy sauce",
+        "low effort",
+        "comfort food"
+      ],
+      "subheadline": "Easy recipes for busy weeknights",
+      "cta_text": "GET THE EASY RECIPES",
+      "primary_keyword": "lazy dinners",
+      "secondary_keywords": [
+        "rotisserie chicken",
+        "one pot orzo",
+        "creamy sauce"
+      ],
+      "board_suggestion": "Quick Dinner Recipes"
+    },
+    {
+      "id": "20261028-08",
+      "destination_slug": "easy-dinner-ideas-no-energy.html",
+      "headline": "NO-ENERGY DINNERS",
+      "seo_title": "Easy Dinner Ideas When You Have No Energy Left",
+      "description": "Dinner doesn't have to be complicated. Find super-easy meals for nights when you're exhausted, including smart shortcuts and comforting family favorites.",
+      "food_scene": "A comforting fully cooked loaded baked russet potato on a matte ivory plate cut open and generously topped with hot slow-cooked shredded barbecue chicken, melted sharp cheddar, smoky spices, diced green onions and a spoon of sour cream; real crispy potato skin, warm steam, tiny side dish of pickles, bright afternoon kitchen light.",
+      "layout": "photo_first",
+      "research_ref_ids": [
+        "oct28-single-meal-hero",
+        "oct28-fast-dinner-photo"
+      ],
+      "visual_direction": "Take the single-plate approachable dinner subject and simple heading structure from the homemade-dinner reference, plus the high-contrast food texture and time-saving value proposition from the quick-dinner example. The cut potato, hot filling and toppings must dominate the frame.",
+      "original_twist": "Create a distinctive loaded barbecue-chicken baked potato comfort dinner, not the chicken skillet or pasta from the source pins; emphasize molten cheese, rough crispy skin and slow-cooker convenience.",
+      "why_reference_is_relevant": "This topic needs a very familiar low-effort comfort meal that looks filling; both archived hero references show ordinary ingredients are effective visual hooks.",
+      "design_keywords": [
+        "no energy dinner",
+        "loaded baked potato",
+        "barbecue chicken",
+        "cheddar",
+        "quick comfort food",
+        "photorealistic"
+      ],
+      "subheadline": "Big flavor. Less fuss.",
+      "cta_text": "GET THE EASY RECIPES",
+      "primary_keyword": "no energy dinner",
+      "secondary_keywords": [
+        "loaded baked potato",
+        "barbecue chicken",
+        "cheddar"
+      ],
+      "board_suggestion": "Quick Dinner Recipes"
+    },
+    {
+      "id": "20261028-09",
+      "destination_slug": "sheet-pan-vs-slow-cooker-vs-one-pot-vs-air-fryer.html",
+      "headline": "4 EASY DINNER WAYS",
+      "seo_title": "Sheet Pan vs Slow Cooker vs One-Pot vs Air Fryer: Which Dinner Is Easiest?",
+      "description": "Compare the best low-effort dinner methods: sheet pan, slow cooker, one-pot, and air fryer. Find the easiest fit for your weeknight schedule.",
+      "food_scene": "An overhead magazine photograph on a single warm pale table featuring four naturally clustered family-size dishes prepared in distinct methods: golden chicken and peppers on a silver sheet pan, saucy pulled chicken with rice in a ceramic bowl, creamy basil orzo in a dark saucepan, and a small basket of crisp breaded chicken bites from an air fryer; deliberate original real dinnerware layout, warm natural window lighting, clean background and harmonious color.",
+      "layout": "editorial",
+      "research_ref_ids": [
+        "oct28-family-meal-variety",
+        "oct28-single-meal-hero"
+      ],
+      "visual_direction": "Reinterpret the variety structure of the 35-dinner collage by showing four real, distinct dishes arranged on one physical tabletop, shot as ONE continuous natural photo. No photo quadrants and no white diamond. Use color contrast of golden chicken, red peppers and greens plus headline hierarchy and a polished editorial CTA overlay.",
+      "original_twist": "Use a new overhead 'four cooking methods in one kitchen' table arrangement with sheet pan, slow cooker bowl, one-pot skillet and air fryer basket instead of four unrelated stock photos.",
+      "why_reference_is_relevant": "A four-method comparison requires visually separate but unified meals; the high-variety Pinterest reference demonstrates the advantage of multiple appetizing options at first glance.",
+      "design_keywords": [
+        "easy dinner methods",
+        "sheet pan",
+        "air fryer",
+        "slow cooker",
+        "one pot",
+        "side by side comparison"
+      ],
+      "subheadline": "Family favorites made simple",
+      "cta_text": "GET THE EASY RECIPES",
+      "primary_keyword": "easy dinner methods",
+      "secondary_keywords": [
+        "sheet pan",
+        "air fryer",
+        "slow cooker"
+      ],
+      "board_suggestion": "Quick Dinner Recipes"
+    }
+  ],
+  "status": "research_complete_archived_reobservations_awaiting_original_generation",
+  "private_library_folder": "Google Drive/Pinterest Reference Library/2026-10-28/Competitor Observed",
+  "reference_archive_type": "reobserved (3 dated copies from genuine Pinterest images previously inspected, not three new Pinterest discoveries)",
+  "generation_mode": "first-party OpenAI GPT Image 2 Medium",
+  "image_publication_policy": "Metricool scheduling only after nine original image files and ledger; no RSS duplicate"
+}
