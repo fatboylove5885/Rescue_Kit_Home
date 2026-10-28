@@ -1,14 +1,14 @@
 {
   "date": "2026-10-28",
-  "verified_at": "2026-10-28T08:56:08-04:00",
-  "source": "Connected Metricool getScheduledPosts readback; verified original GitHub research and image ledger",
-  "status": "9_of_9_accepted_by_metricool_publication_in_progress",
+  "verified_at": "2026-10-28T10:02:41-04:00",
+  "source": "Verified connected Metricool response",
+  "status": "all_scheduled_pending_publication",
   "asset_date": "2026-10-28",
   "posting_mode": "metricool",
   "board_id": "947163434072266364",
   "verified_count": 9,
-  "published_count": 1,
-  "pending_count": 8,
+  "published_count": 3,
+  "pending_count": 6,
   "posts": [
     {
       "asset_filename": "01-easy-weeknight-dinners.jpg",
@@ -38,13 +38,15 @@
       "link": "https://whatsforeats.online/5-ingredient-dinners.html",
       "board_id": "947163434072266364",
       "publish_at": "2026-10-28T09:00:00 America/New_York",
-      "status": "PENDING",
+      "status": "PUBLISHED",
       "auto_publish": true,
       "draft": false,
       "media": "https://static.metricool.com/planner/202610/4488790-file-10436812856807148898.jpeg",
       "provider_network": "pinterest",
       "is_ai_generated": true,
-      "image_sha256": "8ef703d4d3b99d56121fed34f758c57c0f4935627f89396919fb7adbc239527c"
+      "image_sha256": "8ef703d4d3b99d56121fed34f758c57c0f4935627f89396919fb7adbc239527c",
+      "provider_pin_id": "947163365478258607",
+      "public_url": "https://www.pinterest.es/pin/947163365478258607"
     },
     {
       "asset_filename": "03-18-make-ahead-dinners.jpg",
@@ -55,13 +57,15 @@
       "link": "https://whatsforeats.online/18-make-ahead-dinners.html",
       "board_id": "947163434072266364",
       "publish_at": "2026-10-28T09:30:00 America/New_York",
-      "status": "PENDING",
+      "status": "PUBLISHED",
       "auto_publish": true,
       "draft": false,
       "media": "https://static.metricool.com/planner/202610/4488790-file-12572607920846874700.jpeg",
       "provider_network": "pinterest",
       "is_ai_generated": true,
-      "image_sha256": "1f5a728cbd742de750b6dc0d0634e2c4de948d42f3d5f2905e4f3c014ac2b221"
+      "image_sha256": "1f5a728cbd742de750b6dc0d0634e2c4de948d42f3d5f2905e4f3c014ac2b221",
+      "provider_pin_id": "947163365478259320",
+      "public_url": "https://www.pinterest.es/pin/947163365478259320"
     },
     {
       "asset_filename": "04-freezer-dinners.jpg",
