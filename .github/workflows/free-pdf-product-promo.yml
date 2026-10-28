@@ -25,7 +25,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install PDF tools
-        run: python -m pip install --disable-pip-version-check pypdf==6.1.3 reportlab==4.4.4
+        run: python -m pip install --disable-pip-version-check pypdf==6.1.3 reportlab==4.4.4 pymupdf==1.26.5
       - name: Add original dinner crossword puzzle if not already published
         run: |
           if [ ! -f pdfs/dinner-crossword-challenge.pdf ]; then
@@ -33,12 +33,14 @@ jobs:
           fi
       - name: Add tasteful optional product page and verify links in every PDF
         run: python scripts/add_product_promos_to_free_pdfs.py
+      - name: Render visually and verify promotional page links in all PDFs
+        run: python scripts/render_pdf_promotional_preview.py
       - name: Publish PDF updates and audit receipt
         shell: bash
         run: |
           git config user.name 'Whats For Eats PDF Publisher'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add pdfs/*.pdf pinterest-activity/free-pdf-product-promotion-audit.json
+          git add pdfs/*.pdf pinterest-activity/free-pdf-product-promotion-audit.json pinterest-activity/pdf-promotion-visual-check.png
           if git diff --cached --quiet; then
             echo "All PDF promotions already in place."
             exit 0
