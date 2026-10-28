@@ -31,7 +31,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install image layout renderer
-        run: python -m pip install --disable-pip-version-check Pillow==11.3.0
+        run: python -m pip install --disable-pip-version-check Pillow==11.3.0 pymupdf==1.26.5
       - name: Validate research-led Pinterest image renderer syntax
         run: python -m py_compile scripts/pinterest_publisher.py
       - name: Generate nine BRAND NEW first-party AI food images ONLY AFTER today's archived research
