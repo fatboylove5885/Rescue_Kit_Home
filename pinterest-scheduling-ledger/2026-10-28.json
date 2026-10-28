@@ -1,14 +1,14 @@
 {
   "date": "2026-10-28",
-  "verified_at": "2026-10-28T13:56:54-04:00",
+  "verified_at": "2026-10-28T18:58:42-04:00",
   "source": "Verified connected Metricool response",
   "status": "all_scheduled_verified",
   "asset_date": "2026-10-28",
   "posting_mode": "metricool",
   "board_id": "947163434072266364",
   "verified_count": 9,
-  "published_count": 5,
-  "pending_count": 4,
+  "published_count": 7,
+  "pending_count": 2,
   "posts": [
     {
       "asset_filename": "01-easy-weeknight-dinners.jpg",
@@ -114,13 +114,15 @@
       "link": "https://whatsforeats.online/7-night-dinner-plan-for-picky-families.html",
       "board_id": "947163434072266364",
       "publish_at": "2026-10-28T18:00:00 America/New_York",
-      "status": "PENDING",
+      "status": "PUBLISHED",
       "auto_publish": true,
       "draft": false,
       "media": "https://static.metricool.com/planner/202610/4488790-file-14282083938327438971.jpeg",
       "provider_network": "pinterest",
       "is_ai_generated": true,
-      "image_sha256": "594db1e7e62ea877def95bef9c5083cf34abafca5e9b505c2f1834eb3079de6b"
+      "image_sha256": "594db1e7e62ea877def95bef9c5083cf34abafca5e9b505c2f1834eb3079de6b",
+      "provider_pin_id": "947163365478272111",
+      "public_url": "https://www.pinterest.es/pin/947163365478272111"
     },
     {
       "asset_filename": "07-lazy-dinners.jpg",
@@ -131,13 +133,15 @@
       "link": "https://whatsforeats.online/20-lazy-dinners-sorted-by-how-tired-you-are.html",
       "board_id": "947163434072266364",
       "publish_at": "2026-10-28T18:30:00 America/New_York",
-      "status": "PENDING",
+      "status": "PUBLISHED",
       "auto_publish": true,
       "draft": false,
       "media": "https://static.metricool.com/planner/202610/4488790-file-1277692788240895483.jpeg",
       "provider_network": "pinterest",
       "is_ai_generated": true,
-      "image_sha256": "49c2b50a6f7b071ebc1ed4a0055f9b0773a7872274e492a2724abbbe29e2a885"
+      "image_sha256": "49c2b50a6f7b071ebc1ed4a0055f9b0773a7872274e492a2724abbbe29e2a885",
+      "provider_pin_id": "947163365478272663",
+      "public_url": "https://www.pinterest.es/pin/947163365478272663"
     },
     {
       "asset_filename": "08-no-energy-dinners.jpg",
