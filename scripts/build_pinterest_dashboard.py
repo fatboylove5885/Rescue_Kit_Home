@@ -31,7 +31,7 @@ def build_day(date):
   pins.append(dict(id=c.get("id"),date=date,title=c.get("seo_title") or c.get("headline"),headline=c.get("headline"),
    description=c.get("description"),link=BASE+"/"+slug,slug=slug,image_url=BASE+"/"+image_path if available else None,
    image_available=available,image_model=i.get("image_model"),image_sha256=i.get("image_sha256"),image_created_at=i.get("created_at"),
-   scene=c.get("food_scene"),layout=c.get("layout"),reference_ids=c.get("research_ref_ids") or [],
+   scene=c.get("food_scene"),layout=c.get("layout"),content_type=c.get("content_type","recipe"),pdf_slug=c.get("pdf_slug"),reference_ids=c.get("research_ref_ids") or [],
    keywords=([c.get("primary_keyword")]+(c.get("secondary_keywords") or [])) if c.get("primary_keyword") else [],
    board=c.get("board_suggestion") or "Not recorded",provider_board_id=r.get("board_id"),
    status=state,status_source="Metricool snapshot" if v else ("Metricool receipt" if r else "GitHub artifact"),
@@ -45,7 +45,7 @@ def build_day(date):
   pins.append(dict(id=r.get("post_id"),date=date,title=r.get("pin_title"),headline=r.get("pin_title"),
    description=r.get("description"),link=r.get("link"),slug=slug,image_url=r.get("image_url"),
    image_available=bool(r.get("image_url")),image_model="Not recorded",image_sha256=None,image_created_at=None,
-   scene="Source scene not fully logged",layout="Not recorded",reference_ids=[],keywords=[],board="Quick Dinner Recipes",
+   scene="Source scene not fully logged",layout="Not recorded",content_type="recipe",pdf_slug=None,reference_ids=[],keywords=[],board="Quick Dinner Recipes",
    provider_board_id=r.get("board_id"),status=str(v.get("status") or r.get("status") or "UNKNOWN").upper(),
    status_source="Metricool snapshot" if v else "Historical receipt",
    status_observed_at=snap.get("observed_at") if v else r.get("observed_at"),schedule_time=r.get("publish_at"),
@@ -74,17 +74,19 @@ def build_day(date):
  npub=sum(1 for p in pins if p.get("status")=="PUBLISHED")
  nr=sum(r.get("archive_status")=="saved_in_drive" for r in refs)
  warn=sum(e["severity"] in ("warning","error") for e in ev)
+ free_pdf_count=sum(p.get("content_type")=="free_pdf" for p in pins)
  xp=20*bool(m)+10*nr+15*generated_count+15*nsch+20*npub
  missions=[
   dict(name="Research done",done=bool(m),details="Dated Pinterest manifest exists"),
   dict(name="Reference vault stocked",done=nr>=3,details="Three or more references archived privately"),
   dict(name="9 original food images",done=generated_count>=9,details="Nine distinct photos in repository"),
+  dict(name="3 free printables",done=free_pdf_count>=3 if date>="2026-10-29" else True,details="At least 3 of the 9 daily posts feature real free PDFs"),
   dict(name="9 posts scheduled",done=nsch>=9,details="Nine provider post IDs accepted"),
   dict(name="9 posts published",done=npub>=9,details="Verified PUBLISHED on provider")]
  src=[("Research manifest",rp,m),("Image ledger",ip,img),("Scheduling receipt",sp,sch),("Provider status snapshot",vp,snap),("Operations history",ap,act)]
  return dict(date=date,status="published" if npub>=9 else "scheduled" if nsch>=9 else "generated" if generated_count>=9 else "research" if m else "partial",
   totals=dict(concepts=len(m.get("pin_concepts",[])),references=len(refs),archived_refs=nr,original_images=generated_count,
-  scheduled_receipts=nsch,published_verified=npub,incidents=warn,xp=xp),missions=missions,
+  scheduled_receipts=nsch,published_verified=npub,free_pdf_pins=free_pdf_count,incidents=warn,xp=xp),missions=missions,
   pins=pins,references=refs,events=ev,audit_note=m.get("audit_note") or "No research manifest",
   evidence_sources=m.get("evidence_sources") or [],
   raw_sources=[dict(label=n,url=refpath(p),available=bool(obj)) for n,p,obj in src],
@@ -101,7 +103,7 @@ def main():
  for path in ["pinterest-research/*/manifest.json","pinterest-publishing-ledger/*.json","pinterest-scheduling-ledger/*.json","pinterest-status-snapshots/*.json","pinterest-activity/*.json"]:
   for f in ROOT.glob(path):dates.add(f.parent.name if f.name=="manifest.json" else f.stem)
  days=[build_day(d) for d in sorted(dates,reverse=True) if len(d)==10 and d[4]=="-" and d[7]=="-"]
- summary={k:sum(d["totals"][k] for d in days) for k in ["concepts","references","archived_refs","original_images","scheduled_receipts","published_verified","incidents","xp"]}
+ summary={k:sum(d["totals"][k] for d in days) for k in ["concepts","references","archived_refs","original_images","scheduled_receipts","published_verified","free_pdf_pins","incidents","xp"]}
  summary.update(days_recorded=len(days),daily_target=9,latest_date=days[0]["date"] if days else None,daily_research_streak=0)
  for d in days:
   if d["missions"][0]["done"]:summary["daily_research_streak"]+=1
@@ -110,6 +112,8 @@ def main():
  runs=[dict(id=x.get("id"),name=x.get("name"),event=x.get("event"),status=x.get("status"),conclusion=x.get("conclusion"),
    created_at=x.get("created_at"),updated_at=x.get("updated_at"),url=x.get("html_url"),attempt=x.get("run_attempt"))
    for x in actions.get("workflow_runs",[]) if any(word in str(x.get("name","")).lower() for word in ["pinterest","dashboard"])]
+ catalog=read("pinterest-freebie-catalog.json")
+ audit=read("pinterest-activity/free-pdf-product-promotion-audit.json")
  report=dict(schema_version=2,updated_at=dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
    site="What's For Eats — Pinterest Command Center",timezone="America/Detroit",visibility="PUBLIC_SITE_METADATA_ONLY",
    security_notice="Public dashboard. No API keys, user account emails, or private reference screenshots are embedded.",
@@ -123,7 +127,9 @@ def main():
     dict(title="Account and API limits",detail="Provider posting quotas and API credits can block automated publishing."),
     dict(title="Image storage growth",detail="Nine new JPG images per day grow the same GitHub site by roughly 90-135 MB monthly; a CDN may be needed later."),
     dict(title="No invented metrics",detail="Pinterest clicks, saves and impressions remain unknown until trustworthy account records are connected.")],
-   stats=summary,days=days,runs=runs[:55])
+   stats=summary,days=days,runs=runs[:55],
+   free_pdf_strategy={"daily_minimum":3,"daily_total":9,"verified_inventory":len(catalog.get("items",[])),
+    "verified_promoted_pdf_files":audit.get("count"),"source":"pinterest-freebie-catalog.json"})
  out=ROOT/"pinterest-command-center/data.json";out.parent.mkdir(parents=True,exist_ok=True)
  out.write_text(json.dumps(report,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
  print(f"Command Center: {len(days)} days, {sum(len(d['pins']) for d in days)} posts, {len(runs)} runs")
