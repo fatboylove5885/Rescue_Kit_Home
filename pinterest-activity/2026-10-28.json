@@ -36,6 +36,15 @@
       "phase": "research",
       "source": "GitHub manuscript commit and triggered Actions run",
       "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40681709090"
+    },
+    {
+      "at": "2026-10-28T07:56:19-04:00",
+      "title": "Original image publisher failed to upload after all nine generated",
+      "description": "GitHub Actions run 40681709090 generated all nine original GPT Image 2 Medium food images and ledger locally, but its push was rejected (non-fast-forward) because concurrent dashboard updates changed main. No image files or ledger reached GitHub; no artifact was uploaded by that old workflow, so its temporary output cannot be reused. The nine are NOT scheduled. Fixed publishing workflow to preserve a seven-day downloadable artifact before GitHub push and rebase/retry concurrent pushes up to five times. A fresh publisher run may incur additional image API credits; no plan upgrade or credit purchase authorized.",
+      "severity": "error",
+      "phase": "publishing",
+      "source": "GitHub Actions job 122793785759 logs; GitHub workflow update commit adbac203b5d3437ca537346efe467c7ad9947b93",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40681709090"
     }
   ]
 }
