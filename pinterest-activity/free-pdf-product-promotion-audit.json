@@ -1,65 +1,45 @@
 {
-  "updated_at": "2026-10-28T21:14:02.303999+00:00",
+  "updated_at": "2026-10-28T21:17:14.196181+00:00",
   "promotion_type": "Clearly labeled optional final-page companion, preserving every original printable page",
-  "count": 19,
-  "updated": 19,
-  "skipped_existing": 0,
+  "count": 20,
+  "updated": 1,
+  "skipped_existing": 19,
   "files": [
     {
       "pdf": "budget-bites-cost-guide.pdf",
-      "status": "appended",
-      "original_pages": 4,
-      "final_pages": 5,
-      "paid_links": [
-        "https://whatsforeats.online/5-47-rescue-kit.html",
-        "https://fatboylove5885.github.io/Cheap-Dinner-Home/"
-      ]
+      "status": "already_promoted",
+      "page_count": 5
     },
     {
       "pdf": "budget-pantry-checklist.pdf",
-      "status": "appended",
-      "original_pages": 4,
-      "final_pages": 5,
-      "paid_links": [
-        "https://whatsforeats.online/5-47-rescue-kit.html",
-        "https://fatboylove5885.github.io/Cheap-Dinner-Home/"
-      ]
+      "status": "already_promoted",
+      "page_count": 5
     },
     {
       "pdf": "chicken-leftover-reinvention-kit.pdf",
-      "status": "appended",
-      "original_pages": 3,
-      "final_pages": 4,
-      "paid_links": [
-        "https://whatsforeats.online/5-47-rescue-kit.html",
-        "https://fatboylove5885.github.io/Cheap-Dinner-Home/"
-      ]
+      "status": "already_promoted",
+      "page_count": 4
     },
     {
       "pdf": "cooking-method-cheat-sheet.pdf",
-      "status": "appended",
-      "original_pages": 7,
-      "final_pages": 8,
-      "paid_links": [
-        "https://whatsforeats.online/5-47-rescue-kit.html",
-        "https://fatboylove5885.github.io/Cheap-Dinner-Home/"
-      ]
+      "status": "already_promoted",
+      "page_count": 8
     },
     {
       "pdf": "cozy-dinner-bingo.pdf",
-      "status": "appended",
-      "original_pages": 1,
-      "final_pages": 2,
-      "paid_links": [
-        "https://whatsforeats.online/5-47-rescue-kit.html",
-        "https://fatboylove5885.github.io/Cheap-Dinner-Home/"
-      ]
+      "status": "already_promoted",
+      "page_count": 2
     },
     {
       "pdf": "cozy-season-supper-collection.pdf",
+      "status": "already_promoted",
+      "page_count": 6
+    },
+    {
+      "pdf": "dinner-crossword-challenge.pdf",
       "status": "appended",
-      "original_pages": 5,
-      "final_pages": 6,
+      "original_pages": 2,
+      "final_pages": 3,
       "paid_links": [
         "https://whatsforeats.online/5-47-rescue-kit.html",
         "https://fatboylove5885.github.io/Cheap-Dinner-Home/"
@@ -67,133 +47,68 @@
     },
     {
       "pdf": "dinner-rescue-playbook.pdf",
-      "status": "appended",
-      "original_pages": 25,
-      "final_pages": 26,
-      "paid_links": [
-        "https://whatsforeats.online/5-47-rescue-kit.html",
-        "https://fatboylove5885.github.io/Cheap-Dinner-Home/"
-      ]
+      "status": "already_promoted",
+      "page_count": 26
     },
     {
       "pdf": "energy-level-dinner-selector.pdf",
-      "status": "appended",
-      "original_pages": 26,
-      "final_pages": 27,
-      "paid_links": [
-        "https://whatsforeats.online/5-47-rescue-kit.html",
-        "https://fatboylove5885.github.io/Cheap-Dinner-Home/"
-      ]
+      "status": "already_promoted",
+      "page_count": 27
     },
     {
       "pdf": "family-meal-planning-map.pdf",
-      "status": "appended",
-      "original_pages": 4,
-      "final_pages": 5,
-      "paid_links": [
-        "https://whatsforeats.online/5-47-rescue-kit.html",
-        "https://fatboylove5885.github.io/Cheap-Dinner-Home/"
-      ]
+      "status": "already_promoted",
+      "page_count": 5
     },
     {
       "pdf": "five-ingredient-favorites.pdf",
-      "status": "appended",
-      "original_pages": 3,
-      "final_pages": 4,
-      "paid_links": [
-        "https://whatsforeats.online/5-47-rescue-kit.html",
-        "https://fatboylove5885.github.io/Cheap-Dinner-Home/"
-      ]
+      "status": "already_promoted",
+      "page_count": 4
     },
     {
       "pdf": "freezer-friendly-family-meals.pdf",
-      "status": "appended",
-      "original_pages": 3,
-      "final_pages": 4,
-      "paid_links": [
-        "https://whatsforeats.online/5-47-rescue-kit.html",
-        "https://fatboylove5885.github.io/Cheap-Dinner-Home/"
-      ]
+      "status": "already_promoted",
+      "page_count": 4
     },
     {
       "pdf": "low-energy-meal-survival-guide.pdf",
-      "status": "appended",
-      "original_pages": 4,
-      "final_pages": 5,
-      "paid_links": [
-        "https://whatsforeats.online/5-47-rescue-kit.html",
-        "https://fatboylove5885.github.io/Cheap-Dinner-Home/"
-      ]
+      "status": "already_promoted",
+      "page_count": 5
     },
     {
       "pdf": "picky-eater-plate-builder.pdf",
-      "status": "appended",
-      "original_pages": 4,
-      "final_pages": 5,
-      "paid_links": [
-        "https://whatsforeats.online/5-47-rescue-kit.html",
-        "https://fatboylove5885.github.io/Cheap-Dinner-Home/"
-      ]
+      "status": "already_promoted",
+      "page_count": 5
     },
     {
       "pdf": "picky-family-weeknight-blueprint.pdf",
-      "status": "appended",
-      "original_pages": 12,
-      "final_pages": 13,
-      "paid_links": [
-        "https://whatsforeats.online/5-47-rescue-kit.html",
-        "https://fatboylove5885.github.io/Cheap-Dinner-Home/"
-      ]
+      "status": "already_promoted",
+      "page_count": 13
     },
     {
       "pdf": "seven-night-picky-eater-menu.pdf",
-      "status": "appended",
-      "original_pages": 3,
-      "final_pages": 4,
-      "paid_links": [
-        "https://whatsforeats.online/5-47-rescue-kit.html",
-        "https://fatboylove5885.github.io/Cheap-Dinner-Home/"
-      ]
+      "status": "already_promoted",
+      "page_count": 4
     },
     {
       "pdf": "sheet-pan-supper-starter.pdf",
-      "status": "appended",
-      "original_pages": 3,
-      "final_pages": 4,
-      "paid_links": [
-        "https://whatsforeats.online/5-47-rescue-kit.html",
-        "https://fatboylove5885.github.io/Cheap-Dinner-Home/"
-      ]
+      "status": "already_promoted",
+      "page_count": 4
     },
     {
       "pdf": "slow-cooker-comfort-collection.pdf",
-      "status": "appended",
-      "original_pages": 3,
-      "final_pages": 4,
-      "paid_links": [
-        "https://whatsforeats.online/5-47-rescue-kit.html",
-        "https://fatboylove5885.github.io/Cheap-Dinner-Home/"
-      ]
+      "status": "already_promoted",
+      "page_count": 4
     },
     {
       "pdf": "weeknight-dinner-companion.pdf",
-      "status": "appended",
-      "original_pages": 16,
-      "final_pages": 17,
-      "paid_links": [
-        "https://whatsforeats.online/5-47-rescue-kit.html",
-        "https://fatboylove5885.github.io/Cheap-Dinner-Home/"
-      ]
+      "status": "already_promoted",
+      "page_count": 17
     },
     {
       "pdf": "what-to-cook-tonight-picker.pdf",
-      "status": "appended",
-      "original_pages": 1,
-      "final_pages": 2,
-      "paid_links": [
-        "https://whatsforeats.online/5-47-rescue-kit.html",
-        "https://fatboylove5885.github.io/Cheap-Dinner-Home/"
-      ]
+      "status": "already_promoted",
+      "page_count": 2
     }
   ]
 }
