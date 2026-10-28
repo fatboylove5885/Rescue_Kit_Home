@@ -66,6 +66,28 @@
       "provider_status": "PUBLISHED",
       "url": "https://www.pinterest.es/pin/947163365478257730",
       "run_url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40683799311"
+    },
+    {
+      "at": "2026-10-28T10:02:41-04:00",
+      "title": "Pinterest pin publication confirmed",
+      "description": "Metricool confirms 5-Ingredient Dinners That Taste Like You Worked All Day published on Pinterest; original media, matching destination, SEO title, board and automatic publishing validated.",
+      "severity": "success",
+      "phase": "publishing",
+      "source": "Verified connected Metricool getScheduledPosts",
+      "post_id": "408866996",
+      "provider_status": "PUBLISHED",
+      "url": "https://www.pinterest.es/pin/947163365478258607"
+    },
+    {
+      "at": "2026-10-28T10:02:41-04:00",
+      "title": "Pinterest pin publication confirmed",
+      "description": "Metricool confirms 18 Make-Ahead Dinners That Make Weeknights Easier published on Pinterest; original media, matching destination, SEO title, board and automatic publishing validated.",
+      "severity": "success",
+      "phase": "publishing",
+      "source": "Verified connected Metricool getScheduledPosts",
+      "post_id": "408867079",
+      "provider_status": "PUBLISHED",
+      "url": "https://www.pinterest.es/pin/947163365478259320"
     }
   ]
 }
