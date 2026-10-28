@@ -1,0 +1,241 @@
+{
+  "version": 1,
+  "updated_on": "2026-10-28",
+  "policy": {
+    "daily_pins": 9,
+    "minimum_free_pdf_pins": 3,
+    "recipe_or_paid_product_pins_max": 6,
+    "rotate_across_days": true,
+    "exclude_back_to_back_repeats_when_possible": true,
+    "research_before_generating": true,
+    "link_to_actual_freebie_not_unconfigured_email_gate": true,
+    "required_field": "content_type=free_pdf",
+    "preferred_slots": [
+      "09:30",
+      "12:30",
+      "19:00"
+    ],
+    "notes": "Every freebie pin must feature an authentic preview of the downloadable PDF, a clear FREE benefit in the headline, correct direct HTML printable landing, actual original OpenAI photo, and references documented in today's research."
+  },
+  "product_promotions": [
+    {
+      "name": "5:47 P.M. Rescue Kit",
+      "url": "https://whatsforeats.online/5-47-rescue-kit.html"
+    },
+    {
+      "name": "Cheap Dinner Vault",
+      "url": "https://fatboylove5885.github.io/Cheap-Dinner-Home/"
+    }
+  ],
+  "items": [
+    {
+      "id": "cozy-dinner-bingo",
+      "title": "Cozy Dinner Bingo",
+      "category": "game",
+      "hook": "A cozy seasonal dinner bingo challenge that is genuinely fun to print and fill in",
+      "visual_motif": "bingo board, pencil, cozy food styling",
+      "destination_slug": "pdfs/cozy-dinner-bingo.html",
+      "pdf_slug": "pdfs/cozy-dinner-bingo.pdf",
+      "link": "https://whatsforeats.online/pdfs/cozy-dinner-bingo.html",
+      "daily_priority": "high"
+    },
+    {
+      "id": "what-to-cook-tonight-picker",
+      "title": "What to Cook Tonight Picker",
+      "category": "game",
+      "hook": "Interactive-feeling printable dinner decision picker for tired nights",
+      "visual_motif": "decision wheel or selection cards",
+      "destination_slug": "pdfs/what-to-cook-tonight-picker.html",
+      "pdf_slug": "pdfs/what-to-cook-tonight-picker.pdf",
+      "link": "https://whatsforeats.online/pdfs/what-to-cook-tonight-picker.html",
+      "daily_priority": "high"
+    },
+    {
+      "id": "energy-level-dinner-selector",
+      "title": "Energy-Level Dinner Selector",
+      "category": "game",
+      "hook": "Match dinner to energy level with a printable chooser",
+      "visual_motif": "simple choice chart and food inspiration",
+      "destination_slug": "pdfs/energy-level-dinner-selector.html",
+      "pdf_slug": "pdfs/energy-level-dinner-selector.pdf",
+      "link": "https://whatsforeats.online/pdfs/energy-level-dinner-selector.html",
+      "daily_priority": "high"
+    },
+    {
+      "id": "budget-pantry-checklist",
+      "title": "Budget Pantry Checklist",
+      "category": "checklist",
+      "hook": "A free printable budget pantry essentials checklist",
+      "visual_motif": "pantry shelves and checkboxes",
+      "destination_slug": "pdfs/budget-pantry-checklist.html",
+      "pdf_slug": "pdfs/budget-pantry-checklist.pdf",
+      "link": "https://whatsforeats.online/pdfs/budget-pantry-checklist.html",
+      "daily_priority": "high"
+    },
+    {
+      "id": "family-meal-planning-map",
+      "title": "Family Meal-Planning Map",
+      "category": "planner",
+      "hook": "A family meal planning worksheet with grocery overview",
+      "visual_motif": "planner and checked weekly boxes",
+      "destination_slug": "pdfs/family-meal-planning-map.html",
+      "pdf_slug": "pdfs/family-meal-planning-map.pdf",
+      "link": "https://whatsforeats.online/pdfs/family-meal-planning-map.html",
+      "daily_priority": "high"
+    },
+    {
+      "id": "cooking-method-cheat-sheet",
+      "title": "Cooking Method Cheat Sheet",
+      "category": "cheat_sheet",
+      "hook": "Compare air fryer, slow cooker, sheet pan and one-pot cooking on one printable",
+      "visual_motif": "cooking method icons and quick-reference table",
+      "destination_slug": "pdfs/cooking-method-cheat-sheet.html",
+      "pdf_slug": "pdfs/cooking-method-cheat-sheet.pdf",
+      "link": "https://whatsforeats.online/pdfs/cooking-method-cheat-sheet.html",
+      "daily_priority": "high"
+    },
+    {
+      "id": "picky-eater-plate-builder",
+      "title": "Picky-Eater Plate Builder",
+      "category": "activity",
+      "hook": "A family-friendly build-a-plate dinner activity printable",
+      "visual_motif": "plate segments and child-friendly ingredients",
+      "destination_slug": "pdfs/picky-eater-plate-builder.html",
+      "pdf_slug": "pdfs/picky-eater-plate-builder.pdf",
+      "link": "https://whatsforeats.online/pdfs/picky-eater-plate-builder.html",
+      "daily_priority": "high"
+    },
+    {
+      "id": "seven-night-picky-eater-menu",
+      "title": "Seven-Night Picky-Eater Menu",
+      "category": "planner",
+      "hook": "A free seven-night dinner menu for families",
+      "visual_motif": "meal plan grid with happy dinner icons",
+      "destination_slug": "pdfs/seven-night-picky-eater-menu.html",
+      "pdf_slug": "pdfs/seven-night-picky-eater-menu.pdf",
+      "link": "https://whatsforeats.online/pdfs/seven-night-picky-eater-menu.html",
+      "daily_priority": "high"
+    },
+    {
+      "id": "budget-bites-cost-guide",
+      "title": "Budget Bites Cost Guide",
+      "category": "guide",
+      "hook": "A free meal cost breakdown and shopping budget printable",
+      "visual_motif": "budget columns and appetizing food",
+      "destination_slug": "pdfs/budget-bites-cost-guide.html",
+      "pdf_slug": "pdfs/budget-bites-cost-guide.pdf",
+      "link": "https://whatsforeats.online/pdfs/budget-bites-cost-guide.html",
+      "daily_priority": "high"
+    },
+    {
+      "id": "chicken-leftover-reinvention-kit",
+      "title": "Chicken Leftover Reinvention Kit",
+      "category": "guide",
+      "hook": "Turn leftover chicken into tomorrow's dinner without extra stress",
+      "visual_motif": "leftovers reuse idea cards",
+      "destination_slug": "pdfs/chicken-leftover-reinvention-kit.html",
+      "pdf_slug": "pdfs/chicken-leftover-reinvention-kit.pdf",
+      "link": "https://whatsforeats.online/pdfs/chicken-leftover-reinvention-kit.html",
+      "daily_priority": "standard"
+    },
+    {
+      "id": "five-ingredient-favorites",
+      "title": "Five-Ingredient Favorites",
+      "category": "guide",
+      "hook": "Easy recipes using only five main ingredients",
+      "visual_motif": "five ingredient item card",
+      "destination_slug": "pdfs/five-ingredient-favorites.html",
+      "pdf_slug": "pdfs/five-ingredient-favorites.pdf",
+      "link": "https://whatsforeats.online/pdfs/five-ingredient-favorites.html",
+      "daily_priority": "standard"
+    },
+    {
+      "id": "sheet-pan-supper-starter",
+      "title": "Sheet-Pan Supper Starter",
+      "category": "guide",
+      "hook": "A quick printed sheet-pan meal shortcut guide",
+      "visual_motif": "sheet pan food with printable",
+      "destination_slug": "pdfs/sheet-pan-supper-starter.html",
+      "pdf_slug": "pdfs/sheet-pan-supper-starter.pdf",
+      "link": "https://whatsforeats.online/pdfs/sheet-pan-supper-starter.html",
+      "daily_priority": "standard"
+    },
+    {
+      "id": "freezer-friendly-family-meals",
+      "title": "Freezer-Friendly Family Meals",
+      "category": "checklist",
+      "hook": "Freezer meal prep and thawing checklist",
+      "visual_motif": "freezer labels and organization",
+      "destination_slug": "pdfs/freezer-friendly-family-meals.html",
+      "pdf_slug": "pdfs/freezer-friendly-family-meals.pdf",
+      "link": "https://whatsforeats.online/pdfs/freezer-friendly-family-meals.html",
+      "daily_priority": "standard"
+    },
+    {
+      "id": "low-energy-meal-survival-guide",
+      "title": "Low-Energy Meal Survival Guide",
+      "category": "guide",
+      "hook": "Dinner ideas when energy is low",
+      "visual_motif": "low energy quick choices",
+      "destination_slug": "pdfs/low-energy-meal-survival-guide.html",
+      "pdf_slug": "pdfs/low-energy-meal-survival-guide.pdf",
+      "link": "https://whatsforeats.online/pdfs/low-energy-meal-survival-guide.html",
+      "daily_priority": "standard"
+    },
+    {
+      "id": "slow-cooker-comfort-collection",
+      "title": "Slow-Cooker Comfort Collection",
+      "category": "guide",
+      "hook": "Save time with cozy slow-cooker dinner ideas",
+      "visual_motif": "slow cooker meal cheat sheet",
+      "destination_slug": "pdfs/slow-cooker-comfort-collection.html",
+      "pdf_slug": "pdfs/slow-cooker-comfort-collection.pdf",
+      "link": "https://whatsforeats.online/pdfs/slow-cooker-comfort-collection.html",
+      "daily_priority": "standard"
+    },
+    {
+      "id": "weeknight-dinner-companion",
+      "title": "Weeknight Dinner Companion",
+      "category": "guide",
+      "hook": "Easy weeknight cooking reference with useful kitchen shortcuts",
+      "visual_motif": "quick dinner instruction list",
+      "destination_slug": "pdfs/weeknight-dinner-companion.html",
+      "pdf_slug": "pdfs/weeknight-dinner-companion.pdf",
+      "link": "https://whatsforeats.online/pdfs/weeknight-dinner-companion.html",
+      "daily_priority": "standard"
+    },
+    {
+      "id": "cozy-season-supper-collection",
+      "title": "Cozy-Season Supper Collection",
+      "category": "guide",
+      "hook": "Comforting cool-weather family dinner inspiration",
+      "visual_motif": "cozy seasonal menu cards",
+      "destination_slug": "pdfs/cozy-season-supper-collection.html",
+      "pdf_slug": "pdfs/cozy-season-supper-collection.pdf",
+      "link": "https://whatsforeats.online/pdfs/cozy-season-supper-collection.html",
+      "daily_priority": "standard"
+    },
+    {
+      "id": "dinner-rescue-playbook",
+      "title": "Dinner Rescue Playbook",
+      "category": "guide",
+      "hook": "Low-effort dinners for exhausted evenings",
+      "visual_motif": "dinner emergency plan with recipes",
+      "destination_slug": "pdfs/dinner-rescue-playbook.html",
+      "pdf_slug": "pdfs/dinner-rescue-playbook.pdf",
+      "link": "https://whatsforeats.online/pdfs/dinner-rescue-playbook.html",
+      "daily_priority": "standard"
+    },
+    {
+      "id": "picky-family-weeknight-blueprint",
+      "title": "Picky-Family Weeknight Blueprint",
+      "category": "planner",
+      "hook": "Flexible dinners for picky-eater family nights",
+      "visual_motif": "easy swaps and weekly planner",
+      "destination_slug": "pdfs/picky-family-weeknight-blueprint.html",
+      "pdf_slug": "pdfs/picky-family-weeknight-blueprint.pdf",
+      "link": "https://whatsforeats.online/pdfs/picky-family-weeknight-blueprint.html",
+      "daily_priority": "standard"
+    }
+  ]
+}
