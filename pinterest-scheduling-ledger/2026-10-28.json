@@ -1,6 +1,6 @@
 {
   "date": "2026-10-28",
-  "verified_at": "2026-10-28T11:58:25-04:00",
+  "verified_at": "2026-10-28T12:02:17-04:00",
   "source": "Verified connected Metricool response",
   "status": "all_scheduled_pending_publication",
   "asset_date": "2026-10-28",
@@ -8,7 +8,7 @@
   "board_id": "947163434072266364",
   "verified_count": 9,
   "published_count": 3,
-  "pending_count": 6,
+  "pending_count": 5,
   "posts": [
     {
       "asset_filename": "01-easy-weeknight-dinners.jpg",
@@ -76,7 +76,7 @@
       "link": "https://whatsforeats.online/freezer-meals-for-busy-weeknights.html",
       "board_id": "947163434072266364",
       "publish_at": "2026-10-28T12:00:00 America/New_York",
-      "status": "PENDING",
+      "status": "PUBLISHING",
       "auto_publish": true,
       "draft": false,
       "media": "https://static.metricool.com/planner/202610/4488790-file-14544777467933223937.jpeg",
@@ -170,5 +170,5 @@
       "image_sha256": "ec6986b8efff00d1e210c59ffaa648fcddb903835ae56039db1e2fd1873208f4"
     }
   ],
-  "notes": "All nine original October 28 Pinterest posts reverified via connected Metricool at 2026-10-28T11:58:25-04:00: 3 PUBLISHED and 6 PENDING. Correct matching article links, SEO titles, original hosted media, board, autoPublish true, draft false. No duplicate creations. Metricool plan/quota remains independently unverified; PENDING does not guarantee publication."
+  "notes": "Live Metricool readback at 2026-10-28T12:02:17-04:00: 3 PUBLISHED and 5 PENDING; no duplicates. Quota not independently verified."
 }
