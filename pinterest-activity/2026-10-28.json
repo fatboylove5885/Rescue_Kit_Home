@@ -179,6 +179,24 @@
       "time": "2026-10-28T18:58:42-04:00",
       "url": "https://www.pinterest.es/pin/947163365478272663",
       "run_url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40683799311"
+    },
+    {
+      "at": "2026-10-28T19:57:21-04:00",
+      "title": "Two Pinterest publications blocked by Metricool account limit",
+      "description": "Live connected Metricool returned Pinterest provider ERROR for Oct28 19:00 post 408867540 and 19:30 post 408867626, each with detailedStatus 'You have reached your Metricool account limit.' Seven other Oct28 posts and nine Oct27 posts are confirmed PUBLISHED. Nine original assets remain safely hosted. No retries or duplicates; account posting allowance must be resolved before publishing remaining items. This is a provider publishing failure, not an image or research failure.",
+      "severity": "error",
+      "phase": "publishing",
+      "source": "Verified connected Metricool getScheduledPosts response",
+      "post_ids": [
+        "408867540",
+        "408867626"
+      ],
+      "provider_status": "ERROR",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/commit/a4bae7713aaeef19efd299592d709df4cf520783",
+      "metricool_planner_links": [
+        "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-7786129202440679826",
+        "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=1639797486338327161"
+      ]
     }
   ]
 }
