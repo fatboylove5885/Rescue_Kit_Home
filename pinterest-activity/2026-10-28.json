@@ -88,6 +88,15 @@
       "post_id": "408867079",
       "provider_status": "PUBLISHED",
       "url": "https://www.pinterest.es/pin/947163365478259320"
+    },
+    {
+      "at": "2026-10-28T11:35:00-04:00",
+      "title": "Unbranded Pinterest photos traced to legacy October 26 RSS feed",
+      "description": "User screenshot of Pinterest profile showed a group of unbranded food, pantry, refrigerator, and meal prep pins above the branded Metricool posts. Current public pinterest-rss.xml still contains nine legacy October 26 items, eight of them using site-owned photographs (blog-1-hero.jpg, rescue-kit-fridge.jpg, budget-pantry-shelf.jpg, recipe-3-salsa-chicken.jpg, make-ahead-night-before.jpg, make-ahead-containers-labels.jpg, visuals/leftover-chicken-hero.jpg, final-family-table.jpg) rather than new branded posters. This provides a strong visual/source match; specific Pinterest pin-to-feed attribution remains unverified because individual imported Pin IDs were not retrieved. These historical RSS entries remain present despite today's Metricool-only generator. Removing items from RSS would not remove already-published Pinterest pins.",
+      "phase": "publishing_diagnostics",
+      "severity": "warning",
+      "source": "User screenshot and existing GitHub pinterest-rss.xml",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-rss.xml"
     }
   ]
 }
