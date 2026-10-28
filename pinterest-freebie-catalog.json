@@ -15,7 +15,7 @@
       "12:30",
       "19:00"
     ],
-    "notes": "Every freebie pin must feature an authentic preview of the downloadable PDF, a clear FREE benefit in the headline, correct direct HTML printable landing, actual original OpenAI photo, and references documented in today's research."
+    "notes": "Every freebie pin must feature an authentic preview of the downloadable PDF, a clear FREE benefit in the headline, correct direct HTML printable landing, actual original OpenAI photo, and references documented in today's research. Crossword PDF is now available and should feature in the activity/game rotation alongside Cozy Dinner Bingo."
   },
   "product_promotions": [
     {
@@ -28,6 +28,18 @@
     }
   ],
   "items": [
+    {
+      "id": "dinner-crossword-challenge",
+      "title": "Free Dinner Crossword Challenge",
+      "category": "game",
+      "hook": "Solve nine kitchen-themed clues with this real free printable crossword and answer key.",
+      "visual_motif": "true 9-answer crossword grid with pencil, inviting kitchen table, appetizing food photography",
+      "destination_slug": "pdfs/dinner-crossword-challenge.html",
+      "pdf_slug": "pdfs/dinner-crossword-challenge.pdf",
+      "link": "https://whatsforeats.online/pdfs/dinner-crossword-challenge.html",
+      "daily_priority": "high",
+      "verified_pdf_pages": 3
+    },
     {
       "id": "cozy-dinner-bingo",
       "title": "Cozy Dinner Bingo",
