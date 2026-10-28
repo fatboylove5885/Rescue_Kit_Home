@@ -129,7 +129,20 @@ footer{text-align:center;font-size:.85rem;opacity:.75;padding:30px 20px}
 .site-nav .dropdown-panel a:hover,.site-nav .dropdown-panel a:focus-visible{background:#f5e6d6;color:#a83d1c}
 @media(max-width:640px){.site-nav .nav-dropdown{display:block;width:100%}.site-nav .nav-dropdown>summary{width:100%;padding:12px}.site-nav .dropdown-panel{position:static;min-width:0;max-width:none;margin:0 0 6px 12px;box-shadow:none;border-radius:8px;background:#fffdf9}.site-nav .menu-links .nav-dropdown .dropdown-panel a{padding:10px 12px!important}}
 
-</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"What’s for Eats","url":"https://whatsforeats.online/","description":"Easy dinner recipes, low-effort cooking guides, budget meal ideas and practical dinner tools."}</script><script src="/nav.js?v=2" defer></script></head><body>
+</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"What’s for Eats","url":"https://whatsforeats.online/","description":"Easy dinner recipes, low-effort cooking guides, budget meal ideas and practical dinner tools."}</script><script src="/nav.js?v=2" defer></script><style id="wfe-mobile-scroll-containment">
+/* Preserve natural document scrolling while reducing nested browser scroll chaining. */
+html,body { overscroll-behavior-y: contain; overscroll-behavior-x: none; }
+dialog[open], [role="dialog"][aria-modal="true"],[data-wfe-scroll-lock="true"] {
+  overscroll-behavior-y:contain;
+  -webkit-overflow-scrolling:touch;
+}
+/* Scroll inside a modal, not behind it, with safe mobile viewport sizing. */
+dialog[open], [role="dialog"][aria-modal="true"] {
+  max-height:min(95dvh,100%);
+  overflow-y:auto;
+}
+</style>
+</head><body>
 <a class="skip" href="#recipes">Skip to the recipes</a>
 <nav class="site-nav" aria-label="Main navigation"><div class="nav-inner"><a class="brand" href="https://whatsforeats.online/">What’s for Eats</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">☰ Menu</button><div class="menu-links" id="primary-menu"><a href="https://whatsforeats.online/" aria-current="page">Home</a><details class="nav-dropdown"><summary>Blogs</summary><div class="dropdown-panel"><a href="https://whatsforeats.online/blogs.html">All Blogs &amp; Dinner Guides</a><a href="https://whatsforeats.online/sheet-pan-vs-slow-cooker-vs-one-pot-vs-air-fryer.html">Sheet Pan vs. Slow Cooker vs. One Pot vs. Air Fryer</a><a href="https://whatsforeats.online/20-lazy-dinners-for-when-your-brain-has-left-the-building.html">20 Lazy Dinners</a><a href="https://whatsforeats.online/22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.html">22 Cozy Fall Dinners</a><a href="https://whatsforeats.online/7-night-dinner-plan-for-picky-families.html">7-Night Plan for Picky Families</a></div></details><details class="nav-dropdown"><summary>Free PDFs</summary><div class="dropdown-panel"><a href="https://whatsforeats.online/free-pdfs.html">Free PDF &amp; Printable Library</a><a href="https://whatsforeats.online/freebies.html?asset=picky-family-7-night-dinner-plan">7-Night Dinner Plan Printable</a><a href="https://whatsforeats.online/22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.html">Fall Dinner Bingo &amp; Cozy Guide</a></div></details></div></div></nav>
 <div id="prog"></div>

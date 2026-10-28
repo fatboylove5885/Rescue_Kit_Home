@@ -38,7 +38,20 @@
 @media(max-width:600px){.recipe-details{padding:15px}.planning-table{font-size:14px}}
 
 </style>
-<meta property="article:modified_time" content="2026-10-18"><script src="/nav.js?v=2" defer></script></head>
+<meta property="article:modified_time" content="2026-10-18"><script src="/nav.js?v=2" defer></script><style id="wfe-mobile-scroll-containment">
+/* Preserve natural document scrolling while reducing nested browser scroll chaining. */
+html,body { overscroll-behavior-y: contain; overscroll-behavior-x: none; }
+dialog[open], [role="dialog"][aria-modal="true"],[data-wfe-scroll-lock="true"] {
+  overscroll-behavior-y:contain;
+  -webkit-overflow-scrolling:touch;
+}
+/* Scroll inside a modal, not behind it, with safe mobile viewport sizing. */
+dialog[open], [role="dialog"][aria-modal="true"] {
+  max-height:min(95dvh,100%);
+  overflow-y:auto;
+}
+</style>
+</head>
 <body>
 <nav class="site-nav" aria-label="Main navigation"><div class="nav-inner"><a class="brand" href="https://whatsforeats.online/">What's for Eats</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">☰ Menu</button><div class="menu" id="primary-menu"><a href="https://whatsforeats.online/">Home</a><a href="https://whatsforeats.online/blogs.html">Blogs</a><a href="https://whatsforeats.online/free-pdfs.html">Free PDFs</a><a href="https://whatsforeats.online/freebies.html">Get the printables</a></div></div></nav>
 <main class="wrap">

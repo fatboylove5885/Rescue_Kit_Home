@@ -6,7 +6,20 @@
 <meta property="og:image" content="https://whatsforeats.online/visuals/cozy-fall-hero.jpg">
 <style>
 :root{--green:#23533d;--rust:#c45531;--ink:#29281f;--muted:#736b5e;--cream:#fff8ed;--line:#e7d5c0}*{box-sizing:border-box}html{overscroll-behavior-y:contain}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.65 system-ui,-apple-system,'Segoe UI',sans-serif;overscroll-behavior-y:contain}a{color:var(--green)}.nav{max-width:1100px;margin:auto;padding:20px;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}.brand{font:900 22px Georgia,serif;color:var(--green);text-decoration:none}.nav>a:last-child{font-size:14px;font-weight:800}.wrap{max-width:1050px;padding:16px 20px 70px;margin:auto}.hero{border-radius:27px;background:linear-gradient(135deg,#1e4b39,#327b52);color:white;padding:38px clamp(25px,5vw,58px);box-shadow:0 20px 45px #183d2730;position:relative;overflow:hidden}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:2.5px;color:#e3efb3;font-weight:900}.hero h1{font:700 clamp(40px,6vw,66px)/1.06 Georgia,serif;max-width:650px;letter-spacing:-2px;margin:15px 0}.hero p{max-width:640px;font-size:18px;color:#e2f6e8}.badges{display:flex;gap:11px;flex-wrap:wrap;margin:23px 0}.badge{background:#ffffff22;border:1px solid #ffffff40;border-radius:30px;padding:8px 14px;font-size:13px}.btn{display:inline-block;border-radius:12px;padding:16px 24px;background:#fee2ac;color:#1d402e;font-weight:900;text-decoration:none;box-shadow:0 5px 0 #122e2050}.btn.secondary{background:var(--rust);color:white}.section{margin:28px 0;border:1px solid var(--line);border-radius:20px;background:white;padding:25px}.section h2{font:700 27px Georgia,serif;color:var(--green);margin:0 0 13px}.cols{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;align-items:start}.grid{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));border:3px solid var(--green);max-width:440px;margin:auto}.cell{aspect-ratio:1;border:.6px solid #789383;background:white;position:relative}.cell.black{background:#23533d}.cell small{position:absolute;top:0;left:3px;font:700 9px Arial;color:var(--rust)}.clues{display:grid;grid-template-columns:1fr 1fr;gap:15px}.clues h3{margin:0 0 9px;color:var(--rust)}.clues ul{list-style:none;margin:0;padding:0}.clues li{padding:8px 0;border-bottom:1px dashed #dfdfd6;font-size:14px}.upsell{background:#f0eee4;border-radius:18px;padding:25px;display:grid;gap:15px}.upsell p{margin:3px 0 10px}.upsell a{font-weight:900}.foot{text-align:center;padding:32px;color:var(--muted);font-size:13px}@media(max-width:720px){.cols,.clues{grid-template-columns:1fr}.hero h1{letter-spacing:-1px}.section{padding:17px}}@media print{.nav,.hero,.upsell,.foot{display:none}.section{border:0;padding:0}body{background:white}}
-</style><script src="/nav.js" defer></script></head><body>
+</style><script src="/nav.js" defer></script><style id="wfe-mobile-scroll-containment">
+/* Preserve natural document scrolling while reducing nested browser scroll chaining. */
+html,body { overscroll-behavior-y: contain; overscroll-behavior-x: none; }
+dialog[open], [role="dialog"][aria-modal="true"],[data-wfe-scroll-lock="true"] {
+  overscroll-behavior-y:contain;
+  -webkit-overflow-scrolling:touch;
+}
+/* Scroll inside a modal, not behind it, with safe mobile viewport sizing. */
+dialog[open], [role="dialog"][aria-modal="true"] {
+  max-height:min(95dvh,100%);
+  overflow-y:auto;
+}
+</style>
+</head><body>
 <nav class="nav"><a class="brand" href="/">What's For Eats</a><a href="/free-pdfs.html">← All Free Printables</a></nav><main class="wrap">
 <header class="hero"><div class="kicker">FREE KITCHEN ACTIVITY · NO PURCHASE REQUIRED</div><h1>What's For Dinner?<br>Crossword Challenge.</h1>
 <p>Turn dinnertime into a little brain break. Nine real kitchen and recipe clues, a printable puzzle, and an answer key—all in one free download.</p>
