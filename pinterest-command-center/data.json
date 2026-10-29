@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-29T01:02:52+00:00",
+  "updated_at": "2026-10-29T01:43:05+00:00",
   "site": "What's For Eats — Pinterest Command Center",
   "timezone": "America/Detroit",
   "visibility": "PUBLIC_SITE_METADATA_ONLY",
@@ -47,7 +47,7 @@
     "scheduled_receipts": 22,
     "published_verified": 20,
     "free_pdf_pins": 0,
-    "incidents": 9,
+    "incidents": 10,
     "xp": 1200,
     "days_recorded": 3,
     "daily_target": 9,
@@ -66,7 +66,7 @@
         "scheduled_receipts": 9,
         "published_verified": 7,
         "free_pdf_pins": 0,
-        "incidents": 4,
+        "incidents": 5,
         "xp": 460
       },
       "missions": [
@@ -493,6 +493,16 @@
         }
       ],
       "events": [
+        {
+          "date": "2026-10-28",
+          "title": "Free printable email signup redirect patched site-wide",
+          "description": "Visitor reported email gate button stayed loading and never redirected. Connected Google Sheet shows two October 28 submissions as Email sent, so primary fault is Google HtmlService nested iframe confirmation routing. Installed shared /freebie-capture.js on 16 public HTML pages with email form: handles nested-frame response origin and requestId, redirects to exact static free printable upon verified response, also redirects on completed iframe load with honest unverified confirmation text, and provides explicit 12-second recovery link/error instead of an infinite spinner. Updated Apps Script source in GitHub with top-window postMessage; that source still requires deployment to replace live Google Script version. No email addresses published.",
+          "severity": "warning",
+          "phase": "site_conversions",
+          "at": "2026-10-28T21:27:00-04:00",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/freebie-capture.js",
+          "source": "GitHub front-end changes and Google Sheet delivery statuses"
+        },
         {
           "date": "2026-10-28",
           "title": "Metricool publishing status observed",
@@ -2131,13 +2141,24 @@
   ],
   "runs": [
     {
-      "id": 40797939706,
+      "id": 40802071001,
       "name": "What's For Eats — Pinterest Command Center data sync",
       "event": "push",
       "status": "in_progress",
       "conclusion": null,
+      "created_at": "2026-10-29T01:42:55Z",
+      "updated_at": "2026-10-29T01:42:59Z",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40802071001",
+      "attempt": 1
+    },
+    {
+      "id": 40797939706,
+      "name": "What's For Eats — Pinterest Command Center data sync",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
       "created_at": "2026-10-29T01:02:32Z",
-      "updated_at": "2026-10-29T01:02:47Z",
+      "updated_at": "2026-10-29T01:02:56Z",
       "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40797939706",
       "attempt": 1
     },
@@ -2260,204 +2281,6 @@
       "created_at": "2026-10-28T22:58:46Z",
       "updated_at": "2026-10-28T22:59:00Z",
       "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40783998902",
-      "attempt": 1
-    },
-    {
-      "id": 40776143512,
-      "name": "What's For Eats — Pinterest Command Center data sync",
-      "event": "push",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T21:57:20Z",
-      "updated_at": "2026-10-28T21:57:48Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40776143512",
-      "attempt": 1
-    },
-    {
-      "id": 40776138663,
-      "name": "What's For Eats — Pinterest Command Center data sync",
-      "event": "push",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T21:57:18Z",
-      "updated_at": "2026-10-28T21:57:34Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40776138663",
-      "attempt": 1
-    },
-    {
-      "id": 40771274166,
-      "name": "What's For Eats — Pinterest Command Center data sync",
-      "event": "push",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T21:21:31Z",
-      "updated_at": "2026-10-28T21:21:54Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40771274166",
-      "attempt": 1
-    },
-    {
-      "id": 40771097253,
-      "name": "What's For Eats — Pinterest Command Center data sync",
-      "event": "push",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T21:20:16Z",
-      "updated_at": "2026-10-28T21:20:33Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40771097253",
-      "attempt": 1
-    },
-    {
-      "id": 40770322323,
-      "name": "What's For Eats — research-gated original Pinterest publisher",
-      "event": "push",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T21:14:46Z",
-      "updated_at": "2026-10-28T21:15:21Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40770322323",
-      "attempt": 1
-    },
-    {
-      "id": 40770300090,
-      "name": "Pinterest RSS Safety Quarantine",
-      "event": "push",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T21:14:37Z",
-      "updated_at": "2026-10-28T21:15:10Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40770300090",
-      "attempt": 1
-    },
-    {
-      "id": 40767719799,
-      "name": "Pinterest RSS Safety Quarantine",
-      "event": "schedule",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T20:56:41Z",
-      "updated_at": "2026-10-28T20:56:52Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40767719799",
-      "attempt": 1
-    },
-    {
-      "id": 40767715810,
-      "name": "What's For Eats — Pinterest Command Center data sync",
-      "event": "push",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T20:56:39Z",
-      "updated_at": "2026-10-28T20:57:17Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40767715810",
-      "attempt": 1
-    },
-    {
-      "id": 40767709333,
-      "name": "What's For Eats — Pinterest Command Center data sync",
-      "event": "push",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T20:56:36Z",
-      "updated_at": "2026-10-28T20:56:53Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40767709333",
-      "attempt": 1
-    },
-    {
-      "id": 40759428427,
-      "name": "What's For Eats — Pinterest Command Center data sync",
-      "event": "push",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T20:00:49Z",
-      "updated_at": "2026-10-28T20:01:13Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40759428427",
-      "attempt": 1
-    },
-    {
-      "id": 40759409515,
-      "name": "What's For Eats — Pinterest Command Center data sync",
-      "event": "push",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T20:00:41Z",
-      "updated_at": "2026-10-28T20:00:59Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40759409515",
-      "attempt": 1
-    },
-    {
-      "id": 40750529464,
-      "name": "What's For Eats — Pinterest Command Center data sync",
-      "event": "push",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T19:01:35Z",
-      "updated_at": "2026-10-28T19:02:03Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40750529464",
-      "attempt": 1
-    },
-    {
-      "id": 40750522051,
-      "name": "What's For Eats — Pinterest Command Center data sync",
-      "event": "push",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T19:01:32Z",
-      "updated_at": "2026-10-28T19:01:48Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40750522051",
-      "attempt": 1
-    },
-    {
-      "id": 40744414226,
-      "name": "What's For Eats — research-gated original Pinterest publisher",
-      "event": "schedule",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T18:21:54Z",
-      "updated_at": "2026-10-28T18:22:10Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40744414226",
-      "attempt": 1
-    },
-    {
-      "id": 40743970897,
-      "name": "What's For Eats — Pinterest Command Center data sync",
-      "event": "schedule",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T18:19:06Z",
-      "updated_at": "2026-10-28T18:19:26Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40743970897",
-      "attempt": 1
-    },
-    {
-      "id": 40740533950,
-      "name": "What's For Eats — Pinterest Command Center data sync",
-      "event": "push",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T17:57:06Z",
-      "updated_at": "2026-10-28T17:57:35Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40740533950",
-      "attempt": 1
-    },
-    {
-      "id": 40740519997,
-      "name": "What's For Eats — Pinterest Command Center data sync",
-      "event": "push",
-      "status": "completed",
-      "conclusion": "cancelled",
-      "created_at": "2026-10-28T17:57:00Z",
-      "updated_at": "2026-10-28T17:57:07Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40740519997",
-      "attempt": 1
-    },
-    {
-      "id": 40740513804,
-      "name": "What's For Eats — Pinterest Command Center data sync",
-      "event": "push",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-10-28T17:56:58Z",
-      "updated_at": "2026-10-28T17:57:14Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40740513804",
       "attempt": 1
     }
   ],
