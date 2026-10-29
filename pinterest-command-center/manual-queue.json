@@ -1,6 +1,6 @@
 {
   "mode": "manual_only",
-  "updated_at": "2026-10-29T07:56:31-04:00",
+  "updated_at": "2026-10-29T07:58:00-04:00",
   "instructions": "Manual Pinterest posting only. Nine Oct29 GPT Image 2 HIGH originals (3 verified free PDFs, 6 recipes) and two unposted Oct28 recovery pins. Copy SEO title/description and matching URL; open/download each image. No Metricool scheduling, RSS, or automatic Pinterest posting.",
   "pins": [
     {
@@ -36,7 +36,9 @@
       "image_model": "gpt-image-2",
       "image_quality": "high",
       "winning_style": "buffalo-check-benefit",
-      "image_variant": "redo-2026-10-29"
+      "image_variant": "redo-2026-10-29",
+      "prior_original_image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29-redo/01-15-minute-dinners.jpg",
+      "source_ledger": "pinterest-publishing-ledger/2026-10-29-redo.json"
     },
     {
       "date": "2026-10-29",
@@ -51,7 +53,9 @@
       "image_model": "gpt-image-2",
       "image_quality": "high",
       "winning_style": "cinematic-moody",
-      "image_variant": "redo-2026-10-29"
+      "image_variant": "redo-2026-10-29",
+      "prior_original_image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29-redo/02-slow-cooker-comfort.jpg",
+      "source_ledger": "pinterest-publishing-ledger/2026-10-29-redo.json"
     },
     {
       "date": "2026-10-29",
@@ -66,7 +70,9 @@
       "image_model": "gpt-image-2",
       "image_quality": "high",
       "winning_style": "corkboard-printable",
-      "image_variant": "redo-2026-10-29"
+      "image_variant": "redo-2026-10-29",
+      "prior_original_image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29-redo/03-free-dinner-crossword.jpg",
+      "source_ledger": "pinterest-publishing-ledger/2026-10-29-redo.json"
     },
     {
       "date": "2026-10-29",
@@ -81,7 +87,9 @@
       "image_model": "gpt-image-2",
       "image_quality": "high",
       "winning_style": "dinner-choice-cards",
-      "image_variant": "redo-2026-10-29"
+      "image_variant": "redo-2026-10-29",
+      "prior_original_image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29-redo/04-one-chicken-more-dinners.jpg",
+      "source_ledger": "pinterest-publishing-ledger/2026-10-29-redo.json"
     },
     {
       "date": "2026-10-29",
@@ -96,7 +104,9 @@
       "image_model": "gpt-image-2",
       "image_quality": "high",
       "winning_style": "botanical-fall-bingo",
-      "image_variant": "redo-2026-10-29"
+      "image_variant": "redo-2026-10-29",
+      "prior_original_image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29-redo/05-free-cozy-dinner-bingo.jpg",
+      "source_ledger": "pinterest-publishing-ledger/2026-10-29-redo.json"
     },
     {
       "date": "2026-10-29",
@@ -111,7 +121,9 @@
       "image_model": "gpt-image-2",
       "image_quality": "high",
       "winning_style": "visual-checklist",
-      "image_variant": "redo-2026-10-29"
+      "image_variant": "redo-2026-10-29",
+      "prior_original_image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29-redo/06-cheap-dinners-real-numbers.jpg",
+      "source_ledger": "pinterest-publishing-ledger/2026-10-29-redo.json"
     },
     {
       "date": "2026-10-29",
@@ -126,7 +138,9 @@
       "image_model": "gpt-image-2",
       "image_quality": "high",
       "winning_style": "three-step-howto",
-      "image_variant": "redo-2026-10-29"
+      "image_variant": "redo-2026-10-29",
+      "prior_original_image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29-redo/07-one-pan-less-cleanup.jpg",
+      "source_ledger": "pinterest-publishing-ledger/2026-10-29-redo.json"
     },
     {
       "date": "2026-10-29",
@@ -141,7 +155,9 @@
       "image_model": "gpt-image-2",
       "image_quality": "high",
       "winning_style": "planner-cards",
-      "image_variant": "redo-2026-10-29"
+      "image_variant": "redo-2026-10-29",
+      "prior_original_image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29-redo/08-free-family-meal-map.jpg",
+      "source_ledger": "pinterest-publishing-ledger/2026-10-29-redo.json"
     },
     {
       "date": "2026-10-29",
@@ -156,7 +172,10 @@
       "image_model": "gpt-image-2",
       "image_quality": "high",
       "winning_style": "sweater-lifestyle",
-      "image_variant": "redo-2026-10-29"
+      "image_variant": "redo-2026-10-29",
+      "prior_original_image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29-redo/09-22-cozy-fall-dinners.jpg",
+      "source_ledger": "pinterest-publishing-ledger/2026-10-29-redo.json"
     }
-  ]
+  ],
+  "notes": "One-time user-approved nine HIGH-quality creative redo verified, replaces ONLY Oct29 manual image URLs; old Medium images and Oct28 two missing items preserved. No automatic posting."
 }
