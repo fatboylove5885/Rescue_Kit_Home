@@ -121,9 +121,10 @@ function doPost(e) {
     const email = String(data.email || '').trim().toLowerCase();
     const assetKey = String(data.asset || 'picky-family-7-night-dinner-plan');
     const asset = ASSETS[assetKey];
+    const requestId = String(data.request_id || '').slice(0, 90);
     const marketing = data.marketing === true || String(data.marketing || '').toLowerCase() === 'true';
-    if (!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)) return resultPage({ok:false,error:'Enter a valid email address.'});
-    if (!asset) return resultPage({ok:false,error:'That printable was not found.'});
+    if (!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)) return resultPage({ok:false,error:'Enter a valid email address.'}, requestId);
+    if (!asset) return resultPage({ok:false,error:'That printable was not found.'}, requestId);
 
     const ss = SpreadsheetApp.openById(SHEET_ID);
     let sheet = ss.getSheetByName('Subscribers');
@@ -145,17 +146,31 @@ function doPost(e) {
       status = 'Signup recorded; email send failed; redirect ready';
     }
     sheet.getRange(row, 6).setValue(status);
-    return resultPage({ok:true,title:asset.title,url:asset.url,marketingOptIn:marketing});
+    return resultPage({ok:true,title:asset.title,url:asset.url,marketingOptIn:marketing}, requestId);
   } catch (err) {
     return resultPage({ok:false,error:'Signup could not be completed. Please try again.'});
   }
 }
-function resultPage(result) {
-  const payload = JSON.stringify(result).replace(/</g, '\\u003c');
-  const html = '<!doctype html><html><head><meta charset="utf-8"><title>Free dinner guide</title></head><body><p>' +
-    (result.ok ? 'Your guide is ready. Opening it now…' : 'We could not complete your request.') +
-    '</p><script>window.parent.postMessage({type:"freebie-signup-result",payload:' + payload + '}, "*");<\/script></body></html>';
-  return HtmlService.createHtmlOutput(html).setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+function resultPage(result, requestId) {
+  // HTMLService renders inside Google's own nested sandbox iframe. The
+  // calling website may be *more than one frame* above this script.
+  // Send only the non-sensitive delivery result to the top-level window.
+  const message = {
+    type: 'freebie-signup-result',
+    requestId: String(requestId || ''),
+    payload: result
+  };
+  const safeMessage = JSON.stringify(message).replace(/</g, '\\u003c');
+  const html = '<!doctype html><html><head><meta charset="utf-8">' +
+    '<title>Free dinner printable</title></head><body><p>' +
+    (result.ok ? 'Your free guide is ready. Opening it now…' :
+                 'We could not confirm your free printable request.') +
+    '</p><script>(function(){var m=' + safeMessage +
+    ';try{window.top.postMessage(m,"*");}catch(e){}' +
+    'try{window.parent.postMessage(m,"*");}catch(e){}' +
+    '})();</' + 'script></body></html>';
+  return HtmlService.createHtmlOutput(html)
+    .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
 }
 function doGet() {
   return json({ok:true,service:SITE_NAME+' printable delivery',message:'POST email, asset, marketing, and source fields.'});
