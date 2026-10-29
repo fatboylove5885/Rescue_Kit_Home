@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-29",
+  "status": "images_ready_awaiting_metricool_schedule",
+  "posting_mode": "metricool",
+  "research_manifest": "pinterest-research/2026-10-29/manifest.json",
+  "original_new_images": [
+    {
+      "filename": "01-15-minute-dinners.jpg",
+      "destination_slug": "15-minute-dinners-for-busy-weeknights.html",
+      "image_sha256": "79e305c51e937c5cb96a285ad3fea455708e71738d16cefcd5eef7b249c77270",
+      "reference_ids": [
+        "oct29-fast-dinner-reobserved",
+        "oct29-single-hero-reobserved"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-29T11:00:11.619379+00:00"
+    },
+    {
+      "filename": "02-slow-cooker-comfort.jpg",
+      "destination_slug": "slow-cooker-dinners-for-busy-families.html",
+      "image_sha256": "acf6a22aea8fac04656e4781d55f9e0a85b8a0979eeccef9a7182bee52477d4c",
+      "reference_ids": [
+        "oct29-family-variety-reobserved",
+        "oct29-fast-dinner-reobserved"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-29T11:00:42.141358+00:00"
+    },
+    {
+      "filename": "03-free-dinner-crossword.jpg",
+      "destination_slug": "pdfs/dinner-crossword-challenge.html",
+      "image_sha256": "59e2ee7b7de0b91bd2442cad4d9f01b72cdc857eddb71e729be38be76e09b002",
+      "reference_ids": [
+        "oct29-family-variety-reobserved",
+        "oct29-single-hero-reobserved"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-29T11:01:09.230342+00:00"
+    },
+    {
+      "filename": "04-one-chicken-more-dinners.jpg",
+      "destination_slug": "leftover-chicken-recipes.html",
+      "image_sha256": "5affe4896493bf60c679b418b04bc482e7403208e57588b2e7049e823bd44709",
+      "reference_ids": [
+        "oct29-fast-dinner-reobserved",
+        "oct29-single-hero-reobserved"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-29T11:01:40.099383+00:00"
+    },
+    {
+      "filename": "05-free-cozy-dinner-bingo.jpg",
+      "destination_slug": "pdfs/cozy-dinner-bingo.html",
+      "image_sha256": "4d7785bf5434c3fea38b28c33b4a31be2059c0816144b7270d42f302acf2a451",
+      "reference_ids": [
+        "oct29-family-variety-reobserved",
+        "oct29-fast-dinner-reobserved"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-29T11:02:08.472921+00:00"
+    },
+    {
+      "filename": "06-cheap-dinners-real-numbers.jpg",
+      "destination_slug": "cheap-family-dinners-cost-per-serving.html",
+      "image_sha256": "1f6ed16f0c85eaaa85593e7a13c890c376b44658ffb17ea5d3a0a7589cf5bbcf",
+      "reference_ids": [
+        "oct29-single-hero-reobserved",
+        "oct29-family-variety-reobserved"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-29T11:02:42.073068+00:00"
+    },
+    {
+      "filename": "07-one-pan-less-cleanup.jpg",
+      "destination_slug": "easy-sheet-pan-dinners.html",
+      "image_sha256": "c06bd042136592ac4136ec9178b6b6141699d66a21086c1569d9d72d45e328d6",
+      "reference_ids": [
+        "oct29-single-hero-reobserved",
+        "oct29-fast-dinner-reobserved"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-29T11:03:11.477043+00:00"
+    },
+    {
+      "filename": "08-free-family-meal-map.jpg",
+      "destination_slug": "pdfs/family-meal-planning-map.html",
+      "image_sha256": "71c860ee719a5902307d156f49de8e5ea0e22d84ce72d3d24d566860f3d126e4",
+      "reference_ids": [
+        "oct29-family-variety-reobserved",
+        "oct29-single-hero-reobserved"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-29T11:03:40.475380+00:00"
+    },
+    {
+      "filename": "09-22-cozy-fall-dinners.jpg",
+      "destination_slug": "22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.html",
+      "image_sha256": "89767e8f1d666b1a61845b24918cf00d0d90fb20daf5999c5322337458907c4b",
+      "reference_ids": [
+        "oct29-fast-dinner-reobserved",
+        "oct29-family-variety-reobserved"
+      ],
+      "image_model": "gpt-image-2",
+      "created_at": "2026-10-29T11:04:12.749141+00:00"
+    }
+  ]
+}
