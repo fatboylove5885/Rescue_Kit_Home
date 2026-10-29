@@ -1,0 +1,430 @@
+{
+  "date": "2026-10-29",
+  "research_completed_at": "2026-10-29T06:59:00-04:00",
+  "audit_note": "Research-first Oct29: three genuine Pinterest dinner images visually re-reviewed from private Oct28 archive and COPIED into verified Oct29 private JPEG folder; all three are re-observed, NOT newly discovered or proven winners. Three additional real Pinterest printable pin images were visually inspected Oct29 (crossword, weekly meal plan, meal builder) but raw i.pinimg download failed due container DNS/network resolution; therefore NOT marked archived and not counted as three mandatory archived reference_images. Do not imply Pinterest performance from their appearance. Connected Metricool 68 original pins through Oct28 show highest 61 impressions/3 outbound clicks; no pin meets 500-impression verified-winner threshold. Oct28 published 7/9; 2 Pinterest provider ERROR 'You have reached your Metricool account limit'. No paid upgrade or RSS fallback authorized. Oct29 manifest has 3 real catalog PDF printables and 6 verified existing article pages. First-party photo generation is a separate triggered workflow; manifest commit is not proof of image generation, scheduling or publication.",
+  "evidence_sources": [
+    {
+      "type": "newly_visually_observed_pinterest_pin_not_archived",
+      "url": "https://www.pinterest.com/pin/287597126183713040/",
+      "image_url": "https://i.pinimg.com/originals/74/70/a1/7470a116cfd0080fb0b81473ca5a5980.jpg",
+      "observation": "Oct29 image search showed a weekly meal-plan/grocery-budget sheet with turquoise polka-dot edge, seven daily boxes and shopping lines; inspires visible planning functionality, not copied layout.",
+      "archive_status": "not_archived_image_download_blocked",
+      "metric_status": "not_verified"
+    },
+    {
+      "type": "newly_visually_observed_pinterest_pin_not_archived",
+      "url": "https://www.pinterest.com/pin/free-printable-meal-builder-how-to-build-a-meal-planning-dinner--341992165472577696/",
+      "image_url": "https://i.pinimg.com/736x/71/2a/e4/712ae45ac46d64671b35af0a6a540b05.jpg",
+      "observation": "Oct29 visually inspected real free meal-builder pin: printable grid pages at top, broad muted rose headline panel, clear FREE benefit; use genuine product-preview principle but not its exact text/layout.",
+      "archive_status": "not_archived_image_download_blocked",
+      "metric_status": "not_verified"
+    },
+    {
+      "type": "newly_visually_observed_pinterest_pin_not_archived",
+      "url": "https://www.pinterest.com/pin/933300722750450142/",
+      "image_url": "https://i.pinimg.com/originals/d7/e0/1f/d7e01fbd2e0b62c5f421743a0f67ab42.jpg",
+      "observation": "Oct29 visually inspected real food crossword pin: legible numbered black-and-white grid flanked by small colorful food illustrations; actual grid visibility matters, never copy its grid or illustrations.",
+      "archive_status": "not_archived_image_download_blocked",
+      "metric_status": "not_verified"
+    }
+  ],
+  "reference_images": [
+    {
+      "id": "oct29-fast-dinner-reobserved",
+      "type": "competitor_observed",
+      "pin_url": "https://www.pinterest.com/pin/quick-20minute-dinner-recipes-for-busy-nights-in-2025--1124703706948772252/",
+      "archive_file": "Google Drive/Pinterest Reference Library/2026-10-29/Competitor Observed/reobserved-20-minute-dinner-2026-10-29.jpg",
+      "archive_status": "saved_in_drive",
+      "visual_features": "Visually re-reviewed real two-panel 20-minute dinner Pinterest image: stacked close-up saucy chicken pasta and fusilli with peppers, warm amber food tones, bold black lettering on a compact yellow central time-promise strip. For originality borrow appetite appeal and immediate promise, not the split image or banner.",
+      "metric_status": "not_verified",
+      "label": "RE-OBSERVED Oct29, first archived Oct27; dated private JPEG copy verified in Google Drive Oct29; individual pin engagement not verified.",
+      "archive_drive_url": "https://drive.google.com/file/d/1bpSSiY_p1N6fic48CnNhwfeskfYUPJTm/view"
+    },
+    {
+      "id": "oct29-family-variety-reobserved",
+      "type": "competitor_observed",
+      "pin_url": "https://www.pinterest.com/pin/35-dinner-ideas-for-tonight-that-are-nofuss-big-flavor--681873199858570306/",
+      "archive_file": "Google Drive/Pinterest Reference Library/2026-10-29/Competitor Observed/reobserved-family-dinner-variety-2026-10-29.jpg",
+      "archive_status": "saved_in_drive",
+      "visual_features": "Visually re-reviewed real Pinterest pin with four tightly cropped cooked meals in warm golden and red tones surrounding a giant central 35 easy dinner recipes promise. Strong number-first mobile hierarchy and abundant familiar food; do not reproduce the white diamond, quadrant collage or exact copy.",
+      "metric_status": "not_verified",
+      "label": "RE-OBSERVED Oct29, original visual archived Oct27; dated private JPEG copy verified Oct29; no per-pin save/click evidence.",
+      "archive_drive_url": "https://drive.google.com/file/d/1adlMybjPI_dccEgo3onv738mAE0_o1CA/view"
+    },
+    {
+      "id": "oct29-single-hero-reobserved",
+      "type": "competitor_observed",
+      "pin_url": "https://www.pinterest.com/pin/20-easy-homemade-dinner-recipes--157696424443444551/",
+      "archive_file": "Google Drive/Pinterest Reference Library/2026-10-29/Competitor Observed/reobserved-single-dinner-hero-2026-10-29.jpg",
+      "archive_status": "saved_in_drive",
+      "visual_features": "Visually re-reviewed real Pinterest pin showing one overhead home-cooked chicken and green-bean skillet framed by tomatoes, basil and pale side dishes. A compact title sits above the continuous meal photo with a teal border; recognizable ingredients and clear hero-to-headline hierarchy, not a proven performance winner.",
+      "metric_status": "not_verified",
+      "label": "RE-OBSERVED Oct29 from earlier Pinterest visual; dated private JPEG copy verified Oct29; performance unverified.",
+      "archive_drive_url": "https://drive.google.com/file/d/1h7t2p3tgSZbMOyaU4C5RENCZWaAi-6VA/view"
+    }
+  ],
+  "pin_concepts": [
+    {
+      "id": "20261029-01",
+      "content_type": "recipe",
+      "destination_slug": "15-minute-dinners-for-busy-weeknights.html",
+      "headline": "15-MINUTE DINNERS",
+      "seo_title": "15-Minute Dinner Recipes for Busy Weeknights | 5 Fast Favorites",
+      "description": "Dinner can still feel homemade when time is short. Try five real 15-minute meals, including honey garlic chicken stir-fry, shrimp fajitas, quick tacos and creamy pasta. Save these fast weeknight recipes for tonight.",
+      "primary_keyword": "15 minute dinner recipes",
+      "secondary_keywords": [
+        "quick chicken stir fry",
+        "fast weeknight dinners",
+        "easy family dinners"
+      ],
+      "board_suggestion": "Quick Dinner Recipes",
+      "food_scene": "Original realistic honey-garlic chicken stir-fry in a dark carbon-steel wok, glossy bite-size chicken, vivid broccoli, orange pepper, ginger and scallion curls, with a small white bowl of steamed rice off-center; low three-quarter close-up, side-lit from a kitchen window, steam and real cooked texture.",
+      "layout": "hero",
+      "research_ref_ids": [
+        "oct29-fast-dinner-reobserved",
+        "oct29-single-hero-reobserved"
+      ],
+      "visual_direction": "Use the visually reviewed quick-dinner reference's mouthwatering close crop, sauce sheen and instant speed promise, but preserve the single continuous dish focus from the overhead skillet reference. Fill 80 percent of frame with glossy chicken and vegetables; editorial headline should be oversized and easy to read on mobile.",
+      "original_twist": "Swap the source's stacked pasta photos for a single original honey-garlic chicken wok with orange pepper highlights, dark steel texture and side lighting.",
+      "why_reference_is_relevant": "The fast-dinner pin visibly emphasizes short cooking time with appetizing saucy food, directly matching this verified article's five 15-minute meals.",
+      "design_keywords": [
+        "deep black wok",
+        "honey glaze",
+        "broccoli emerald",
+        "warm amber window light",
+        "low three-quarter crop",
+        "oversized rust serif"
+      ],
+      "subheadline": "Five fast, real-food favorites",
+      "cta_text": "GET THE EASY RECIPES",
+      "alt_text": "Honey garlic chicken stir-fry with broccoli and peppers in a dark wok promoting five 15-minute dinner recipes.",
+      "target_post_time_local": "08:30"
+    },
+    {
+      "id": "20261029-02",
+      "content_type": "recipe",
+      "destination_slug": "slow-cooker-dinners-for-busy-families.html",
+      "headline": "SLOW COOKER COMFORT",
+      "seo_title": "Slow Cooker Dinners for Busy Families | Easy Comfort Food Ideas",
+      "description": "Let your slow cooker handle a busy evening. Find family-friendly slow cooker recipes and practical prep tips, from pulled pork sandwiches to salsa chicken and hearty soups.",
+      "primary_keyword": "slow cooker dinners for busy families",
+      "secondary_keywords": [
+        "crockpot pulled pork",
+        "easy slow cooker recipes",
+        "family comfort food"
+      ],
+      "board_suggestion": "Slow Cooker Dinner Recipes",
+      "food_scene": "An original freshly shredded slow-cooker pulled pork sandwich piled high on a toasted brioche bun, tangy red cabbage slaw and pickle slices; glazed pork strands glisten, a black ceramic slow cooker softly visible behind on a dark oak table, cinematic three-quarter side angle, rich window light.",
+      "layout": "photo_first",
+      "research_ref_ids": [
+        "oct29-family-variety-reobserved",
+        "oct29-fast-dinner-reobserved"
+      ],
+      "visual_direction": "Borrow the warm browned, generous food texture and immediately understandable family-dinner benefit of the four-dish reference, then translate it into one photorealistic piled-high sandwich with slow cooker context. Use a dramatic near-lens meat texture, subtle dark green shadow and only a compact editorial overlay.",
+      "original_twist": "Feature a tall slaw-topped pulled-pork brioche sandwich with crockpot in soft background rather than any reference chicken, pasta or four-quadrant dinner montage.",
+      "why_reference_is_relevant": "The Pinterest family-dinner collage makes food abundance visible; the slow-cooker article includes pulled pork sandwiches, so a single indulgent hero is truthful.",
+      "design_keywords": [
+        "brioche sandwich closeup",
+        "shredded pork sheen",
+        "purple slaw",
+        "rustic dark oak",
+        "soft crockpot silhouette",
+        "large cream headline"
+      ],
+      "subheadline": "Comfort without the last-minute rush",
+      "cta_text": "SEE THE SLOW COOKER MEALS",
+      "alt_text": "Slow cooker pulled pork sandwich with slaw and a crockpot in the background for easy family dinners.",
+      "target_post_time_local": "09:00"
+    },
+    {
+      "id": "20261029-03",
+      "content_type": "free_pdf",
+      "destination_slug": "pdfs/dinner-crossword-challenge.html",
+      "pdf_slug": "pdfs/dinner-crossword-challenge.pdf",
+      "headline": "FREE DINNER CROSSWORD",
+      "seo_title": "Free Dinner Crossword Printable with Answer Key | Family Kitchen Game",
+      "description": "Print a free food-themed crossword with nine kitchen and dinner clues plus a separate answer key. A fun family table activity or meal-planning binder bonus. Get the actual downloadable PDF free—no purchase required.",
+      "primary_keyword": "free dinner crossword printable",
+      "secondary_keywords": [
+        "food crossword PDF",
+        "free kitchen word puzzle",
+        "family printable game"
+      ],
+      "board_suggestion": "Free Printables and Dinner Games",
+      "food_scene": "Original photorealistic cozy breakfast-nook tabletop with a steaming rustic bowl of tomato soup, golden toasted cheese strips, natural pencil and folded linen on a warm oak surface; deliberately leave a clean paper-friendly area on right for the exact first-page crossword PDF preview added by the publisher, no AI-generated letters or fake puzzle.",
+      "layout": "editorial",
+      "research_ref_ids": [
+        "oct29-family-variety-reobserved",
+        "oct29-single-hero-reobserved"
+      ],
+      "visual_direction": "Re-observed Pinterest references show that a bold benefit promise must be legible at a glance and food must look warm and approachable. Fresh Oct29 Pinterest crossword observation showed a true numbered grid with small food illustrations; display only the real PDF first-page preview via PyMuPDF, paired with original tomato soup photography and oversized FREE title.",
+      "original_twist": "Make a quiet original warm-oak kitchen scene with grilled-cheese tomato soup and a pixel-accurate real nine-clue PDF preview instead of copying the observed colorful illustrated nineteen-item food crossword.",
+      "why_reference_is_relevant": "The verified live Pinterest food crossword image demonstrates the value of visible real puzzle squares; archived food imagery contributes appetite appeal without recreating anyone else's grid.",
+      "design_keywords": [
+        "real PDF crossword preview",
+        "cream paper",
+        "graphite pencil",
+        "tomato soup red",
+        "rust headline",
+        "warm oak tabletop",
+        "readable grid"
+      ],
+      "subheadline": "9 kitchen clues + answer key",
+      "cta_text": "GET FREE PRINTABLE",
+      "alt_text": "Free nine-clue dinner crossword PDF preview beside tomato soup, grilled cheese and a pencil on a wooden table.",
+      "target_post_time_local": "09:30",
+      "preferred_post_time_local": "09:30"
+    },
+    {
+      "id": "20261029-04",
+      "content_type": "recipe",
+      "destination_slug": "leftover-chicken-recipes.html",
+      "headline": "ONE CHICKEN, MORE DINNERS",
+      "seo_title": "Leftover Chicken Recipes | Turn One Chicken into Several Easy Dinners",
+      "description": "Make one cooked chicken go further with easy leftover chicken recipes: crispy quesadillas, taco bowls, creamy pasta and soup. Discover a practical three-night plan and safe storage tips.",
+      "primary_keyword": "leftover chicken recipes",
+      "secondary_keywords": [
+        "chicken quesadilla",
+        "rotisserie chicken dinner ideas",
+        "use up cooked chicken"
+      ],
+      "board_suggestion": "Leftover Makeover Recipes",
+      "food_scene": "A freshly cut golden toasted chicken quesadilla on a weathered walnut cutting board, visible shredded chicken and melted cheese in each triangular wedge, cilantro, a small bowl of chunky red salsa and lime wedges, angled from low three-quarter view with shallow depth of field and realistic crisp tortilla blistering.",
+      "layout": "hero",
+      "research_ref_ids": [
+        "oct29-fast-dinner-reobserved",
+        "oct29-single-hero-reobserved"
+      ],
+      "visual_direction": "Follow the fast-dinner reference's strong texture-first close crop and the chicken-skillet reference's familiar recognizable ingredients. Make the original quesadilla's toasted edges and cheese interior dominate the hero, with bright cilantro and salsa adding fresh green and red contrast and a compact headline zone.",
+      "original_twist": "Show one golden cross-section chicken quesadilla on a rustic board rather than the reference's creamy pasta or overhead green-bean skillet.",
+      "why_reference_is_relevant": "Quick saucy and chicken-centric Pinterest images make an economical leftover-chicken transformation visually clear, while the linked article actually teaches chicken quesadillas.",
+      "design_keywords": [
+        "toasted tortilla texture",
+        "melted cheese interior",
+        "walnut cutting board",
+        "lime wedges",
+        "salsa red",
+        "close diagonal crop"
+      ],
+      "subheadline": "Turn leftovers into tonight's favorite",
+      "cta_text": "GET THE LEFTOVER IDEAS",
+      "alt_text": "Crispy leftover chicken quesadilla wedges with melted cheese, salsa and lime on a wooden board.",
+      "target_post_time_local": "12:00"
+    },
+    {
+      "id": "20261029-05",
+      "content_type": "free_pdf",
+      "destination_slug": "pdfs/cozy-dinner-bingo.html",
+      "pdf_slug": "pdfs/cozy-dinner-bingo.pdf",
+      "headline": "FREE COZY DINNER BINGO",
+      "seo_title": "Free Cozy Dinner Bingo Printable | Fun Fall Family Dinner Challenge",
+      "description": "Make dinnertime a game with a free cozy dinner bingo printable. Check off soup night, slow cooker dinners, leftovers and other simple family food moments. Print the real PDF and enjoy the challenge at home.",
+      "primary_keyword": "free dinner bingo printable",
+      "secondary_keywords": [
+        "fall food bingo",
+        "cozy family dinner game",
+        "printable meal challenge"
+      ],
+      "board_suggestion": "Free Printables and Dinner Games",
+      "food_scene": "Original cozy autumn kitchen table photograph with a steaming bowl of creamy white chicken chili topped with herbs, a few toasted bread slices, amber ceramic mug, unmarked pencil and soft oatmeal linen. Leave a flat, softly lit paper placement area on right for a genuine PDF bingo first-page overlay, not AI-created letters or squares.",
+      "layout": "photo_first",
+      "research_ref_ids": [
+        "oct29-family-variety-reobserved",
+        "oct29-fast-dinner-reobserved"
+      ],
+      "visual_direction": "Re-observed Pinterest family-dinner and quick-dinner images demonstrate warmth, abundance and concise benefit-led headline hierarchy. Newly inspected Oct29 Pinterest food printable examples reveal that a recognizable activity preview is essential; place the true first-page bingo PDF image over original creamy-chili photography with large FREE lettering, never a hallucinated bingo grid.",
+      "original_twist": "Use an original rustic white-chili fall table with real first-page Cozy Dinner Bingo preview and delicate rust-green editorial type instead of the reference's yellow strip or white diamond montage.",
+      "why_reference_is_relevant": "The warm family-dinner food photos suit a cozy challenge, while the new printable research shows that users should see the actual game sheet before clicking.",
+      "design_keywords": [
+        "authentic PDF bingo preview",
+        "warm cream linen",
+        "steaming chili",
+        "rust editorial serif",
+        "muted sage",
+        "golden side light"
+      ],
+      "subheadline": "A little fun for the whole family",
+      "cta_text": "GET FREE PRINTABLE",
+      "alt_text": "Cozy dinner bingo PDF preview with a steaming bowl of chicken chili, pencil and autumn tabletop.",
+      "target_post_time_local": "12:30",
+      "preferred_post_time_local": "12:30"
+    },
+    {
+      "id": "20261029-06",
+      "content_type": "recipe",
+      "destination_slug": "cheap-family-dinners-cost-per-serving.html",
+      "headline": "CHEAP DINNERS, REAL NUMBERS",
+      "seo_title": "Cheap Family Dinners with Cost Per Serving | Budget Meal Examples",
+      "description": "Find practical cheap family dinner examples and learn how to calculate cost per serving. Start with pantry pasta or egg fried rice, then use the easy formula to compare your own meals.",
+      "primary_keyword": "cheap family dinners cost per serving",
+      "secondary_keywords": [
+        "budget egg fried rice",
+        "cheap dinner ideas",
+        "dinner cost calculator"
+      ],
+      "board_suggestion": "Budget Family Dinners",
+      "food_scene": "A large shallow black skillet of authentic homemade egg fried rice, fluffy individual golden rice grains, peas, diced carrots, scrambled egg ribbons and scallions, wooden spatula resting naturally, shot from true overhead on a modest light wood family table with a folded sage napkin.",
+      "layout": "editorial",
+      "research_ref_ids": [
+        "oct29-single-hero-reobserved",
+        "oct29-family-variety-reobserved"
+      ],
+      "visual_direction": "Take the overhead natural single-skillet presentation from the chicken reference and the strong benefit-forward hierarchy from the 35-dinner collage, without duplicating either. Let golden rice, green peas and orange carrots provide distinct ingredient contrast and leave a slim top overlay for cost-per-serving editorial text.",
+      "original_twist": "Replace the reference's chicken and green beans with simple golden egg fried rice and real budget-friendly pantry vegetables in a completely different pan and tabletop.",
+      "why_reference_is_relevant": "The overhead skillet image is immediately legible as a home-cooked dinner; the linked budget article specifically uses egg fried rice as a worked cost example.",
+      "design_keywords": [
+        "overhead rice skillet",
+        "individual rice grains",
+        "golden egg",
+        "bright peas",
+        "simple light wood",
+        "large rust cost headline"
+      ],
+      "subheadline": "Easy meals + a smarter budget",
+      "cta_text": "SEE THE BUDGET EXAMPLES",
+      "alt_text": "Homemade egg fried rice with peas and carrots in a black skillet promoting family dinner cost-per-serving examples.",
+      "target_post_time_local": "18:00"
+    },
+    {
+      "id": "20261029-07",
+      "content_type": "recipe",
+      "destination_slug": "easy-sheet-pan-dinners.html",
+      "headline": "ONE PAN. LESS CLEANUP.",
+      "seo_title": "Easy Sheet Pan Dinners | Roasted Sausage and Veggies + More",
+      "description": "Try easy sheet-pan dinners that save cleanup and still taste delicious. Learn timing tips for roasted sausage, potatoes and broccoli plus flexible protein-and-vegetable combinations.",
+      "primary_keyword": "easy sheet pan dinners",
+      "secondary_keywords": [
+        "sheet pan sausage potatoes broccoli",
+        "one pan family meals",
+        "easy oven dinners"
+      ],
+      "board_suggestion": "One Pan Dinner Recipes",
+      "food_scene": "An original edge-to-edge dark metal sheet pan with browned sliced smoked sausage, crispy golden baby potatoes, deeply roasted broccoli florets and glistening olive-oil herbs, photographed diagonally from a near-overhead perspective with a rustic terracotta tile backdrop and a simple kitchen towel.",
+      "layout": "photo_first",
+      "research_ref_ids": [
+        "oct29-single-hero-reobserved",
+        "oct29-fast-dinner-reobserved"
+      ],
+      "visual_direction": "Use the single-dish Pinterest reference's honest home-cooked ingredients and overhead clarity, while borrowing the quick-dinner image's vivid warm food texture. Keep the sheet-pan edges, roasted crisp potatoes and broccoli visible, with photo dominating the canvas and a bold minimal green editorial headline.",
+      "original_twist": "Replace the competitor chicken skillet with a full sheet tray of browned sausage, crisp potatoes and charred broccoli against original terracotta tiles.",
+      "why_reference_is_relevant": "The familiar skillet chicken image suggests approachable home cooking, and the verified sheet-pan article explicitly features sausage, potatoes and broccoli as a combination.",
+      "design_keywords": [
+        "dark metal tray",
+        "crisp potato edges",
+        "roasted broccoli",
+        "sausage caramelization",
+        "terracotta tiles",
+        "near overhead angle"
+      ],
+      "subheadline": "Dinner made easier, dishes minimized",
+      "cta_text": "GET THE SHEET PAN IDEAS",
+      "alt_text": "Roasted sausage, golden potatoes and broccoli on one sheet pan for easy family dinners.",
+      "target_post_time_local": "18:30"
+    },
+    {
+      "id": "20261029-08",
+      "content_type": "free_pdf",
+      "destination_slug": "pdfs/family-meal-planning-map.html",
+      "pdf_slug": "pdfs/family-meal-planning-map.pdf",
+      "headline": "FREE FAMILY MEAL MAP",
+      "seo_title": "Free Family Meal Planning Map PDF | 7-Night Dinner Planner",
+      "description": "Stop the nightly dinner guessing. Download a free family meal-planning map with calendar-first steps, seven simple dinner ideas and a pantry-first grocery planning checklist. Printable PDF included.",
+      "primary_keyword": "free family meal planning printable",
+      "secondary_keywords": [
+        "seven night dinner plan",
+        "weekly dinner planning PDF",
+        "family grocery checklist"
+      ],
+      "board_suggestion": "Free Meal Planning Printables",
+      "food_scene": "Original bright natural family-table photograph with two colorful build-your-own chicken taco plates, avocado, shredded lettuce, diced tomatoes and warm tortillas on cream plates, a simple pencil and neutral notebook beside a folded sage cloth. Leave a clean right-side space for the exact genuine family meal-planning map PDF preview.",
+      "layout": "editorial",
+      "research_ref_ids": [
+        "oct29-family-variety-reobserved",
+        "oct29-single-hero-reobserved"
+      ],
+      "visual_direction": "The re-reviewed family dinner collage demonstrates the value of visible choice and the chicken skillet reference shows approachable ingredients. A newly inspected real Pinterest meal-plan-and-grocery-budget pin uses clear day-by-day planning columns. Use an original taco-table photo and pixel-accurate actual PDF first-page overlay with prominent FREE planner promise; never recreate the turquoise polka-dot source.",
+      "original_twist": "Use two real colorful taco plates and a true first-page family planner preview on soft cream with sage accents, not the competitor's blank brown-line meal-plan template or its polka-dot border.",
+      "why_reference_is_relevant": "The live Pinterest weekly meal-plan reference makes the practical day-by-day benefit visible, while the archived dinner photos guide appealing meal photography for the real seven-night family map.",
+      "design_keywords": [
+        "authentic planner PDF preview",
+        "family taco table",
+        "sage cloth",
+        "fresh avocado green",
+        "natural bright light",
+        "oversized FREE serif"
+      ],
+      "subheadline": "Plan your week, not your stress",
+      "cta_text": "GET FREE PRINTABLE",
+      "alt_text": "Family meal-planning map printable PDF preview beside chicken taco plates, a pencil and a notebook.",
+      "target_post_time_local": "19:00",
+      "preferred_post_time_local": "19:00"
+    },
+    {
+      "id": "20261029-09",
+      "content_type": "recipe",
+      "destination_slug": "22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.html",
+      "headline": "22 COZY FALL DINNERS",
+      "seo_title": "22 Cozy Fall Dinners | Chicken Wild Rice Soup and Comfort Food",
+      "description": "Craving something warm after a long day? Explore 22 cozy fall dinners, including creamy chicken and wild rice soup, casseroles, slow cooker meals and easy sheet-pan favorites.",
+      "primary_keyword": "cozy fall dinners",
+      "secondary_keywords": [
+        "chicken wild rice soup",
+        "fall comfort food dinners",
+        "cozy family recipes"
+      ],
+      "board_suggestion": "Cozy Fall Dinner Recipes",
+      "food_scene": "One original rustic ceramic bowl filled with creamy chicken and wild rice soup, visible shredded chicken, black wild rice, diced orange carrots, celery, thyme leaves and a crusty torn bread piece on linen, photographed at an intimate three-quarter angle with moody amber window light and shallow background blur.",
+      "layout": "hero",
+      "research_ref_ids": [
+        "oct29-fast-dinner-reobserved",
+        "oct29-family-variety-reobserved"
+      ],
+      "visual_direction": "Borrow the warm glistening comfort-food close crop from the quick-dinner image and the generous multiple-meal promise from the family-dinner reference, but create a single sumptuous chicken wild rice soup photograph with highly visible rice, carrots, chicken and thyme. Keep 85 percent of pin food-dominant with oversized two-line rust serif title.",
+      "original_twist": "Feature a freshly photographed creamy chicken wild rice soup in a speckled stoneware bowl with torn sourdough, rather than competitor pasta and four-dish collage imagery.",
+      "why_reference_is_relevant": "Both observed dinner references communicate warmth and substantial family food; the linked high-traffic fall article contains this exact chicken and wild rice soup recipe.",
+      "design_keywords": [
+        "speckled ceramic bowl",
+        "wild rice texture",
+        "orange carrot cubes",
+        "fresh thyme",
+        "torn crusty bread",
+        "moody amber light",
+        "rust serif headline"
+      ],
+      "subheadline": "The comfort food list you'll keep",
+      "cta_text": "EXPLORE ALL 22 DINNERS",
+      "alt_text": "Creamy chicken and wild rice soup with carrots, celery, thyme and crusty bread promoting 22 cozy fall dinners.",
+      "target_post_time_local": "19:30"
+    }
+  ],
+  "status": "research_complete_three_reobserved_images_privately_archived_manifest_ready",
+  "analytics_snapshot": {
+    "source": "Connected Metricool brand 4488790 Pinterest Pins > posts",
+    "observed_on": "2026-10-29",
+    "period": "2026-10-01 to 2026-10-29 06:59 America/Detroit",
+    "pins_returned": 68,
+    "highest_impressions": 61,
+    "highest_impressions_pin_id": "947163365477634220",
+    "highest_impressions_pin_saves": 0,
+    "highest_impressions_pin_outbound_clicks": 3,
+    "own_verified_winners": 0,
+    "classification": "Own Pins Pending 500; no verified winner or cohort-relative assessment",
+    "previous_day_status": "2026-10-28: 7 PUBLISHED, 2 ERROR due Metricool account posting limit; 9 accepted to planner does not mean 9 published."
+  },
+  "creative_policy": {
+    "daily_total": 9,
+    "free_pdf": 3,
+    "recipe": 6,
+    "image_model": "gpt-image-2",
+    "quality": "medium",
+    "real_pdf_previews": "Use actual first page via PyMuPDF, never invented text",
+    "competitor_reference_use": "General principles only; original photo and layout; do not use source pixels as output",
+    "rss_fallback": false,
+    "auto_publish": "Only Metricool after original image asset and provider receipts",
+    "free_pdf_slots_local": [
+      "09:30",
+      "12:30",
+      "19:00"
+    ]
+  }
+}
