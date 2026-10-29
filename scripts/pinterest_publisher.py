@@ -22,10 +22,16 @@ ET.register_namespace('media',MEDIA_NS)
 TODAY=dt.datetime.now(ZoneInfo('America/Detroit')).date()
 if os.environ.get('PIN_DATE'): TODAY=dt.date.fromisoformat(os.environ['PIN_DATE'])
 DATE=TODAY.isoformat()
+VARIANT=os.getenv('PIN_VARIANT','')
+if VARIANT not in ('','redo-2026-10-29'):
+    raise RuntimeError('Unapproved image-generation variant')
+QUALITY=os.getenv('OPENAI_IMAGE_QUALITY','high')
+if QUALITY not in ('medium','high'):
+    raise RuntimeError('Unsupported quality setting')
 RESEARCH=ROOT/'pinterest-research'/DATE/'manifest.json'
-DEST=ROOT/'pinterest-daily-pins'/DATE
+DEST=ROOT/'pinterest-daily-pins'/(DATE if not VARIANT else DATE+'-redo')
 RSS=ROOT/'pinterest-rss.xml'
-LEDGER=ROOT/'pinterest-publishing-ledger'/f'{DATE}.json'
+LEDGER=ROOT/'pinterest-publishing-ledger'/(DATE+('-redo' if VARIANT else '')+'.json')
 FREEBIE_CATALOG=ROOT/'pinterest-freebie-catalog.json'
 OPENAI_IMAGE_MODEL=os.getenv('OPENAI_IMAGE_MODEL','gpt-image-2')
 CREAM=(250,247,237);GREEN=(22,66,45);RUST=(191,58,25);DARK=(43,29,25)
@@ -75,6 +81,8 @@ def compose(photo:Image.Image,concept:dict,index:int)->Image.Image:
     Original meal imagery spans nearly entire card; only small header/CTA
     overlays. Sourced visual reference notes guide the PHOTO prompt upstream.
     """
+    if VARIANT:
+        return compose_redo(photo,concept,index)
     out=ImageOps.fit(photo.convert('RGB'),(1000,1500),method=Image.Resampling.LANCZOS)
     if concept.get('content_type')=='free_pdf':
         # Preview exact real PDF pixels, not invented AI text or a fake printable.
@@ -201,7 +209,7 @@ def new_photo(c,index,refmap):
         'Avoid CGI, plastic appearance, cartoon style, AI surrealism, repeated food assets, fake seams, collages, quadrants, split panels, gigantic empty photo areas, overlaid text, watermarks and any direct reconstruction of another creator\'s composition. '
         'The outer 20 percent at the top and last 11 percent at the bottom will receive a branded editorial overlay, so make the best hero food visible in the central 20-89 percent region.'
     )
-    payload=json.dumps(dict(model=OPENAI_IMAGE_MODEL,prompt=prompt,n=1,size='1024x1536',quality='medium',output_format='jpeg')).encode()
+    payload=json.dumps(dict(model=OPENAI_IMAGE_MODEL,prompt=prompt,n=1,size='1024x1536',quality=QUALITY,output_format='jpeg')).encode()
     req=urllib.request.Request('https://api.openai.com/v1/images/generations',data=payload,headers={'Content-Type':'application/json','Authorization':'Bearer '+os.environ['OPENAI_API_KEY']},method='POST')
     try:
         with urllib.request.urlopen(req, timeout=170) as resp:
@@ -234,8 +242,16 @@ def run():
     manifest=json.loads(RESEARCH.read_text(encoding='utf-8'))
     concepts=validate_manifest(manifest)
     key=os.getenv('OPENAI_API_KEY');ensure(key,'First-party image API key missing. Do not publish recycled photos.')
-    mode=os.getenv('PINTEREST_POSTING_MODE','metricool')
-    ensure(mode=='metricool', 'RSS Pinterest auto-publishing is RETIRED. Only Metricool may schedule posts; refusing RSS mode.')
+    mode=os.getenv('PINTEREST_POSTING_MODE','manual')
+    ensure(mode=='manual','Automatic Pinterest posting is retired. Only manual Command Center queue is allowed.')
+    if VARIANT:
+        ensure(DATE=='2026-10-29' and os.getenv('APPROVED_REDO_ONCE')=='2026-10-29-user-approved','Extra batch requires exact user-approved one-time override')
+        old=json.loads((ROOT/'pinterest-publishing-ledger'/(DATE+'.json')).read_text(encoding='utf-8'))
+        ensure(len(old.get('original_new_images') or [])==9,'Original 9-image batch count not verified')
+        ensure(QUALITY=='high' and OPENAI_IMAGE_MODEL=='gpt-image-2','Revised batch requires predictable GPT Image 2 HIGH pricing')
+        ensure(9*0.041+9*0.165+0.12<2.0,'Conservative 2 USD estimated daily budget exceeded')
+    else:
+        ensure(QUALITY=='high' and OPENAI_IMAGE_MODEL=='gpt-image-2','Only fixed-price High quality approved for daily <= $2 budget')
     if LEDGER.is_file():
         previous=json.loads(LEDGER.read_text(encoding='utf-8'))
         existing=previous.get('original_new_images') or []
@@ -272,12 +288,9 @@ def run():
         build.text=pub_date
         ET.indent(tree,space='  ');tree.write(RSS,encoding='utf-8',xml_declaration=True)
     LEDGER.parent.mkdir(parents=True,exist_ok=True)
-    state='feed_updated_not_pinterest_confirmed' if mode=='rss' else 'images_ready_awaiting_metricool_schedule'
-    LEDGER.write_text(json.dumps({'date':DATE,'status':state,'posting_mode':mode,'research_manifest':str(RESEARCH.relative_to(ROOT)),'original_new_images':generated},indent=2))
-    if mode=='metricool':
-        print(f'Generated {len(generated)} original Pinterest images; Metricool must schedule and independently verify all nine. RSS intentionally unchanged to prevent duplicates.')
-    else:
-        print(f'Published {len(generated)} newly AI-generated photo-led images to RSS; Pinterest import still unverified.')
+    state='images_ready_for_manual_queue'
+    LEDGER.write_text(json.dumps({'date':DATE,'status':state,'posting_mode':mode,'quality':QUALITY,'variant':VARIANT or 'standard','research_manifest':str(RESEARCH.relative_to(ROOT)),'estimated_output_cost_usd':round(len(generated)*(0.165 if QUALITY=='high' else 0.041),3),'original_new_images':generated},indent=2))
+    print(f'Generated {len(generated)} HIGH-quality original Pinterest images for MANUAL Command Center queue only. No Metricool/RSS posting.')
 
 if __name__=='__main__':
     try:run()
