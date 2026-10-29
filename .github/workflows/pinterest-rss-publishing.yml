@@ -44,7 +44,7 @@ jobs:
         run: |
           git config user.name 'Whats For Eats Image Cost Guard'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add pinterest-generation-attempts
+          if [ -d pinterest-generation-attempts ]; then git add pinterest-generation-attempts; fi
           if ! git diff --cached --quiet; then
             git commit -m "Reserve single high-quality Pinterest image batch before API calls"
             for attempt in 1 2 3 4 5; do
