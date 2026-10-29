@@ -1,0 +1,103 @@
+{
+  "updated_date": "2026-10-29",
+  "classification": "USER_NOMINATED_QUALIFIED_WINNING_REFERENCES",
+  "verification": "User identifies these as top-performing. Individual pin impressions/saves/outbound clicks not provided; do not assert independently verified >=500 impressions.",
+  "source": "Nine user-uploaded Pinterest screenshots in chat, October 29, 2026; do not treat screenshot files as final pin assets.",
+  "references": [
+    {
+      "id": "user-winner-1",
+      "source_filename": "IMG_2909.jpeg",
+      "title": "Lazy dinners everyone eats",
+      "winning_pattern": "Bold buffalo-check typography, three circular food closeups",
+      "content_type": "recipe",
+      "priority": "high",
+      "metrics_verified": false
+    },
+    {
+      "id": "user-winner-2",
+      "source_filename": "IMG_2910.jpeg",
+      "title": "Dinners that taste like your favorite sweater",
+      "winning_pattern": "Warm first-person cozy soup lifestyle, handwritten headline",
+      "content_type": "recipe",
+      "priority": "high",
+      "metrics_verified": false
+    },
+    {
+      "id": "user-winner-3",
+      "source_filename": "IMG_2911.jpeg",
+      "title": "Moody fall dinners",
+      "winning_pattern": "Dark cinematic beef stew, dramatic serif headline",
+      "content_type": "recipe",
+      "priority": "high",
+      "metrics_verified": false
+    },
+    {
+      "id": "user-winner-4",
+      "source_filename": "IMG_2914.jpeg",
+      "title": "Free fall dinner bingo",
+      "winning_pattern": "Useful 5x5 printable activity with autumn illustrations",
+      "content_type": "free_pdf",
+      "priority": "high",
+      "metrics_verified": false
+    },
+    {
+      "id": "user-winner-5",
+      "source_filename": "IMG_2912.jpeg",
+      "title": "Loaded potato bar",
+      "winning_pattern": "Three-step food preparation infographic, warm appetizing photos",
+      "content_type": "recipe",
+      "priority": "high",
+      "metrics_verified": false
+    },
+    {
+      "id": "user-winner-6",
+      "source_filename": "IMG_2913.jpeg",
+      "title": "October dinner ideas",
+      "winning_pattern": "Playful numbered autumn calendar doors",
+      "content_type": "recipe",
+      "priority": "high",
+      "metrics_verified": false
+    },
+    {
+      "id": "user-winner-7",
+      "source_filename": "IMG_2915.jpeg",
+      "title": "Easy fall dinners for beginners",
+      "winning_pattern": "Soft watercolor illustrated fall kitchen",
+      "content_type": "recipe",
+      "priority": "high",
+      "metrics_verified": false
+    },
+    {
+      "id": "user-winner-8",
+      "source_filename": "IMG_2916.png",
+      "title": "What's for dinner this fall?",
+      "winning_pattern": "Visually organized recipe choice cards and plated food",
+      "content_type": "recipe",
+      "priority": "high",
+      "metrics_verified": false
+    },
+    {
+      "id": "user-winner-9",
+      "source_filename": "IMG_2917.jpeg",
+      "title": "22 fall dinners",
+      "winning_pattern": "Corkboard recipe note collage with appetizing food photography",
+      "content_type": "recipe",
+      "priority": "high",
+      "metrics_verified": false
+    }
+  ],
+  "creative_policy": {
+    "research_first": true,
+    "retain_past_references": true,
+    "generate_original_not_copy": true,
+    "manual_queue_only": true,
+    "images_per_day": 9,
+    "free_pdf_minimum": 3,
+    "recipe_count": 6,
+    "daily_generation_budget_usd_max": 2,
+    "second_batch_same_day_requires_explicit_user_approval": true,
+    "do_not_generate_without_verified_model_cost_and_remaining_daily_budget": true,
+    "replace_today_batch_requested": true,
+    "never_delete_prior_generated_assets": true
+  }
+}
