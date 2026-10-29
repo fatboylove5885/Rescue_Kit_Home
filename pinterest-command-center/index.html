@@ -100,5 +100,19 @@ async function manualQueue(){try{const r=await fetch('manual-queue.json?'+Date.n
 function escapeManual(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function copyManual(i,k){navigator.clipboard.writeText(window.manualPins[i][k]||'')}
 manualQueue();setInterval(manualQueue,120000);
+async function qualifiedWinningReferences(){try{
+  const r=await fetch('../pinterest-winning-reference-library.json?'+Date.now(),{cache:'no-store'});
+  if(!r.ok)return;const data=await r.json();
+  const selected=(data.references||[]).filter(x=>x.qualification_status==='USER_QUALIFIED_WINNER');
+  if(!selected.length)return;
+  let holder=document.getElementById('winnerReferenceDeck');
+  if(!holder){holder=document.createElement('section');holder.id='winnerReferenceDeck';holder.className='manualqueue';document.getElementById('manualQueue')?.after(holder)}
+  if(!holder)return;
+  holder.innerHTML='<h2>🏆 Your 9 Qualified Winning Design References</h2>'+
+   '<p>These are designs you nominated as top-performing. Pin-specific impressions and saves are not independently verified. Source artwork remains privately archived in Google Drive, not copied into new pins.</p>'+
+   '<div class="manualgrid">'+selected.map((x,i)=>'<article class="manualcard"><p style="font-weight:900;color:#b9f36d">WINNER #'+(i+1)+'</p><h3>'+escapeManual(x.title)+'</h3><p>'+escapeManual(x.winning_pattern)+'</p><p style="font-size:10px;color:#91b7b1">USER QUALIFIED · OCT 29 · PRIVATE ARCHIVE</p></article>').join('')+'</div>'+
+   '<p><a href="https://drive.google.com/drive/folders/1NylhMoIQ0pQakbZ7C4GVM-QCGne9GNfg" target="_blank" rel="noopener" style="color:#b9f36d;font-weight:800">Open your private reference library ↗</a></p>';
+}catch(e){console.warn('Qualified winner deck unavailable',e)}}
+qualifiedWinningReferences();setInterval(qualifiedWinningReferences,120000);
 </script>
 </body></html>
