@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-29",
+  "status": "images_ready_for_manual_queue",
+  "posting_mode": "manual",
+  "quality": "high",
+  "variant": "redo-2026-10-29",
+  "research_manifest": "pinterest-research/2026-10-29/manifest.json",
+  "estimated_output_cost_usd": 1.485,
+  "original_new_images": [
+    {
+      "filename": "01-15-minute-dinners.jpg",
+      "destination_slug": "15-minute-dinners-for-busy-weeknights.html",
+      "image_sha256": "9843f1de1cef4d0943539f612488f6d5ea3d298b6b7b98b9ee4d5d7fd8c705e4",
+      "reference_ids": [
+        "oct29-fast-dinner-reobserved",
+        "oct29-single-hero-reobserved"
+      ],
+      "winning_style": "buffalo-check-benefit",
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "created_at": "2026-10-29T11:44:37.548843+00:00"
+    },
+    {
+      "filename": "02-slow-cooker-comfort.jpg",
+      "destination_slug": "slow-cooker-dinners-for-busy-families.html",
+      "image_sha256": "f6ff51e2a7c91df13ca26bde4dfc4cc0cb2bf7cae01fc0069cb09c54c8885310",
+      "reference_ids": [
+        "oct29-family-variety-reobserved",
+        "oct29-fast-dinner-reobserved"
+      ],
+      "winning_style": "cinematic-moody",
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "created_at": "2026-10-29T11:46:05.833794+00:00"
+    },
+    {
+      "filename": "03-free-dinner-crossword.jpg",
+      "destination_slug": "pdfs/dinner-crossword-challenge.html",
+      "image_sha256": "226d775894ad87a850bd5d515b9cb6647b0421c0e4a5eb0f3aea2e4b36801018",
+      "reference_ids": [
+        "oct29-family-variety-reobserved",
+        "oct29-single-hero-reobserved"
+      ],
+      "winning_style": "corkboard-printable",
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "created_at": "2026-10-29T11:47:30.337185+00:00"
+    },
+    {
+      "filename": "04-one-chicken-more-dinners.jpg",
+      "destination_slug": "leftover-chicken-recipes.html",
+      "image_sha256": "a574b200d38abb1ba96ec768d9b179f478f7b3d6c2209c118dfce58fe7c1d65b",
+      "reference_ids": [
+        "oct29-fast-dinner-reobserved",
+        "oct29-single-hero-reobserved"
+      ],
+      "winning_style": "dinner-choice-cards",
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "created_at": "2026-10-29T11:49:01.083884+00:00"
+    },
+    {
+      "filename": "05-free-cozy-dinner-bingo.jpg",
+      "destination_slug": "pdfs/cozy-dinner-bingo.html",
+      "image_sha256": "e5b63f8056cc1dcc4ecf6fcc650754c363108745158b38985a2a172099718bcd",
+      "reference_ids": [
+        "oct29-family-variety-reobserved",
+        "oct29-fast-dinner-reobserved"
+      ],
+      "winning_style": "botanical-fall-bingo",
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "created_at": "2026-10-29T11:50:26.098110+00:00"
+    },
+    {
+      "filename": "06-cheap-dinners-real-numbers.jpg",
+      "destination_slug": "cheap-family-dinners-cost-per-serving.html",
+      "image_sha256": "cdcc1f8dc4c52364fd2be8f6a0724f3562355f20aa83d32441d4d0b77b32dec3",
+      "reference_ids": [
+        "oct29-single-hero-reobserved",
+        "oct29-family-variety-reobserved"
+      ],
+      "winning_style": "visual-checklist",
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "created_at": "2026-10-29T11:51:58.171350+00:00"
+    },
+    {
+      "filename": "07-one-pan-less-cleanup.jpg",
+      "destination_slug": "easy-sheet-pan-dinners.html",
+      "image_sha256": "a2dc1d07d2a021b3aa2da0c6fdddb124498b0b97ac0bfa6115c3175c6acbd158",
+      "reference_ids": [
+        "oct29-single-hero-reobserved",
+        "oct29-fast-dinner-reobserved"
+      ],
+      "winning_style": "three-step-howto",
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "created_at": "2026-10-29T11:53:32.615766+00:00"
+    },
+    {
+      "filename": "08-free-family-meal-map.jpg",
+      "destination_slug": "pdfs/family-meal-planning-map.html",
+      "image_sha256": "4d57f808e73246f4760b9450c98eb9c064c4b6477cc3511d2e0e9cbe92523106",
+      "reference_ids": [
+        "oct29-family-variety-reobserved",
+        "oct29-single-hero-reobserved"
+      ],
+      "winning_style": "planner-cards",
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "created_at": "2026-10-29T11:54:49.102240+00:00"
+    },
+    {
+      "filename": "09-22-cozy-fall-dinners.jpg",
+      "destination_slug": "22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.html",
+      "image_sha256": "2c323171fec6a6559364235c1e7c9258ee2e4f007a346d40df910f0f8999f018",
+      "reference_ids": [
+        "oct29-fast-dinner-reobserved",
+        "oct29-family-variety-reobserved"
+      ],
+      "winning_style": "sweater-lifestyle",
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "created_at": "2026-10-29T11:56:16.644784+00:00"
+    }
+  ]
+}
