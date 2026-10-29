@@ -1,7 +1,7 @@
 {
   "mode": "manual_only",
-  "updated_at": "2026-10-29",
-  "instructions": "Download original pin image and copy SEO title, description, and destination URL into Pinterest manually. Never auto-schedule via Metricool or RSS.",
+  "updated_at": "2026-10-29T07:56:31-04:00",
+  "instructions": "Manual Pinterest posting only. Nine Oct29 GPT Image 2 HIGH originals (3 verified free PDFs, 6 recipes) and two unposted Oct28 recovery pins. Copy SEO title/description and matching URL; open/download each image. No Metricool scheduling, RSS, or automatic Pinterest posting.",
   "pins": [
     {
       "date": "2026-10-28",
@@ -26,101 +26,137 @@
     {
       "date": "2026-10-29",
       "content_type": "recipe",
-      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29/01-15-minute-dinners.jpg",
+      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29-redo/01-15-minute-dinners.jpg",
       "title": "15-Minute Dinner Recipes for Busy Weeknights | 5 Fast Favorites",
       "description": "Dinner can still feel homemade when time is short. Try five real 15-minute meals, including honey garlic chicken stir-fry, shrimp fajitas, quick tacos and creamy pasta. Save these fast weeknight recipes for tonight.",
       "destination_url": "https://whatsforeats.online/15-minute-dinners-for-busy-weeknights.html",
       "pdf_slug": null,
       "status": "READY_FOR_MANUAL_POST",
-      "image_sha256": "79e305c51e937c5cb96a285ad3fea455708e71738d16cefcd5eef7b249c77270"
+      "image_sha256": "9843f1de1cef4d0943539f612488f6d5ea3d298b6b7b98b9ee4d5d7fd8c705e4",
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "winning_style": "buffalo-check-benefit",
+      "image_variant": "redo-2026-10-29"
     },
     {
       "date": "2026-10-29",
       "content_type": "recipe",
-      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29/02-slow-cooker-comfort.jpg",
+      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29-redo/02-slow-cooker-comfort.jpg",
       "title": "Slow Cooker Dinners for Busy Families | Easy Comfort Food Ideas",
       "description": "Let your slow cooker handle a busy evening. Find family-friendly slow cooker recipes and practical prep tips, from pulled pork sandwiches to salsa chicken and hearty soups.",
       "destination_url": "https://whatsforeats.online/slow-cooker-dinners-for-busy-families.html",
       "pdf_slug": null,
       "status": "READY_FOR_MANUAL_POST",
-      "image_sha256": "acf6a22aea8fac04656e4781d55f9e0a85b8a0979eeccef9a7182bee52477d4c"
+      "image_sha256": "f6ff51e2a7c91df13ca26bde4dfc4cc0cb2bf7cae01fc0069cb09c54c8885310",
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "winning_style": "cinematic-moody",
+      "image_variant": "redo-2026-10-29"
     },
     {
       "date": "2026-10-29",
       "content_type": "free_pdf",
-      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29/03-free-dinner-crossword.jpg",
+      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29-redo/03-free-dinner-crossword.jpg",
       "title": "Free Dinner Crossword Printable with Answer Key | Family Kitchen Game",
       "description": "Print a free food-themed crossword with nine kitchen and dinner clues plus a separate answer key. A fun family table activity or meal-planning binder bonus. Get the actual downloadable PDF free—no purchase required.",
       "destination_url": "https://whatsforeats.online/pdfs/dinner-crossword-challenge.html",
       "pdf_slug": "pdfs/dinner-crossword-challenge.pdf",
       "status": "READY_FOR_MANUAL_POST",
-      "image_sha256": "59e2ee7b7de0b91bd2442cad4d9f01b72cdc857eddb71e729be38be76e09b002"
+      "image_sha256": "226d775894ad87a850bd5d515b9cb6647b0421c0e4a5eb0f3aea2e4b36801018",
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "winning_style": "corkboard-printable",
+      "image_variant": "redo-2026-10-29"
     },
     {
       "date": "2026-10-29",
       "content_type": "recipe",
-      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29/04-one-chicken-more-dinners.jpg",
+      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29-redo/04-one-chicken-more-dinners.jpg",
       "title": "Leftover Chicken Recipes | Turn One Chicken into Several Easy Dinners",
       "description": "Make one cooked chicken go further with easy leftover chicken recipes: crispy quesadillas, taco bowls, creamy pasta and soup. Discover a practical three-night plan and safe storage tips.",
       "destination_url": "https://whatsforeats.online/leftover-chicken-recipes.html",
       "pdf_slug": null,
       "status": "READY_FOR_MANUAL_POST",
-      "image_sha256": "5affe4896493bf60c679b418b04bc482e7403208e57588b2e7049e823bd44709"
+      "image_sha256": "a574b200d38abb1ba96ec768d9b179f478f7b3d6c2209c118dfce58fe7c1d65b",
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "winning_style": "dinner-choice-cards",
+      "image_variant": "redo-2026-10-29"
     },
     {
       "date": "2026-10-29",
       "content_type": "free_pdf",
-      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29/05-free-cozy-dinner-bingo.jpg",
+      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29-redo/05-free-cozy-dinner-bingo.jpg",
       "title": "Free Cozy Dinner Bingo Printable | Fun Fall Family Dinner Challenge",
       "description": "Make dinnertime a game with a free cozy dinner bingo printable. Check off soup night, slow cooker dinners, leftovers and other simple family food moments. Print the real PDF and enjoy the challenge at home.",
       "destination_url": "https://whatsforeats.online/pdfs/cozy-dinner-bingo.html",
       "pdf_slug": "pdfs/cozy-dinner-bingo.pdf",
       "status": "READY_FOR_MANUAL_POST",
-      "image_sha256": "4d7785bf5434c3fea38b28c33b4a31be2059c0816144b7270d42f302acf2a451"
+      "image_sha256": "e5b63f8056cc1dcc4ecf6fcc650754c363108745158b38985a2a172099718bcd",
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "winning_style": "botanical-fall-bingo",
+      "image_variant": "redo-2026-10-29"
     },
     {
       "date": "2026-10-29",
       "content_type": "recipe",
-      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29/06-cheap-dinners-real-numbers.jpg",
+      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29-redo/06-cheap-dinners-real-numbers.jpg",
       "title": "Cheap Family Dinners with Cost Per Serving | Budget Meal Examples",
       "description": "Find practical cheap family dinner examples and learn how to calculate cost per serving. Start with pantry pasta or egg fried rice, then use the easy formula to compare your own meals.",
       "destination_url": "https://whatsforeats.online/cheap-family-dinners-cost-per-serving.html",
       "pdf_slug": null,
       "status": "READY_FOR_MANUAL_POST",
-      "image_sha256": "1f6ed16f0c85eaaa85593e7a13c890c376b44658ffb17ea5d3a0a7589cf5bbcf"
+      "image_sha256": "cdcc1f8dc4c52364fd2be8f6a0724f3562355f20aa83d32441d4d0b77b32dec3",
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "winning_style": "visual-checklist",
+      "image_variant": "redo-2026-10-29"
     },
     {
       "date": "2026-10-29",
       "content_type": "recipe",
-      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29/07-one-pan-less-cleanup.jpg",
+      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29-redo/07-one-pan-less-cleanup.jpg",
       "title": "Easy Sheet Pan Dinners | Roasted Sausage and Veggies + More",
       "description": "Try easy sheet-pan dinners that save cleanup and still taste delicious. Learn timing tips for roasted sausage, potatoes and broccoli plus flexible protein-and-vegetable combinations.",
       "destination_url": "https://whatsforeats.online/easy-sheet-pan-dinners.html",
       "pdf_slug": null,
       "status": "READY_FOR_MANUAL_POST",
-      "image_sha256": "c06bd042136592ac4136ec9178b6b6141699d66a21086c1569d9d72d45e328d6"
+      "image_sha256": "a2dc1d07d2a021b3aa2da0c6fdddb124498b0b97ac0bfa6115c3175c6acbd158",
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "winning_style": "three-step-howto",
+      "image_variant": "redo-2026-10-29"
     },
     {
       "date": "2026-10-29",
       "content_type": "free_pdf",
-      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29/08-free-family-meal-map.jpg",
+      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29-redo/08-free-family-meal-map.jpg",
       "title": "Free Family Meal Planning Map PDF | 7-Night Dinner Planner",
       "description": "Stop the nightly dinner guessing. Download a free family meal-planning map with calendar-first steps, seven simple dinner ideas and a pantry-first grocery planning checklist. Printable PDF included.",
       "destination_url": "https://whatsforeats.online/pdfs/family-meal-planning-map.html",
       "pdf_slug": "pdfs/family-meal-planning-map.pdf",
       "status": "READY_FOR_MANUAL_POST",
-      "image_sha256": "71c860ee719a5902307d156f49de8e5ea0e22d84ce72d3d24d566860f3d126e4"
+      "image_sha256": "4d57f808e73246f4760b9450c98eb9c064c4b6477cc3511d2e0e9cbe92523106",
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "winning_style": "planner-cards",
+      "image_variant": "redo-2026-10-29"
     },
     {
       "date": "2026-10-29",
       "content_type": "recipe",
-      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29/09-22-cozy-fall-dinners.jpg",
+      "image_url": "https://whatsforeats.online/pinterest-daily-pins/2026-10-29-redo/09-22-cozy-fall-dinners.jpg",
       "title": "22 Cozy Fall Dinners | Chicken Wild Rice Soup and Comfort Food",
       "description": "Craving something warm after a long day? Explore 22 cozy fall dinners, including creamy chicken and wild rice soup, casseroles, slow cooker meals and easy sheet-pan favorites.",
       "destination_url": "https://whatsforeats.online/22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.html",
       "pdf_slug": null,
       "status": "READY_FOR_MANUAL_POST",
-      "image_sha256": "89767e8f1d666b1a61845b24918cf00d0d90fb20daf5999c5322337458907c4b"
+      "image_sha256": "2c323171fec6a6559364235c1e7c9258ee2e4f007a346d40df910f0f8999f018",
+      "image_model": "gpt-image-2",
+      "image_quality": "high",
+      "winning_style": "sweater-lifestyle",
+      "image_variant": "redo-2026-10-29"
     }
   ]
 }
