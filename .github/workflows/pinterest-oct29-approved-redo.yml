@@ -1,0 +1,74 @@
+name: Pinterest Creative Upgrade — approved Oct 29 nine-pin redo
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/pinterest-oct29-approved-redo.yml"
+permissions:
+  contents: write
+concurrency:
+  group: daily-whatsforeats-pinterest
+  cancel-in-progress: false
+jobs:
+  redo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 80
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install precise photo and genuine PDF-preview renderer
+        run: pip install Pillow==11.3.0 pymupdf==1.26.5
+      - name: Validate code and one-time budget envelope
+        run: |
+          python -m py_compile scripts/pinterest_publisher.py
+          python - <<'PY'
+          import json,pathlib
+          p=pathlib.Path('pinterest-publishing-ledger/2026-10-29.json')
+          j=json.loads(p.read_text())
+          assert len(j['original_new_images'])==9, 'Original October 29 batch must have nine image entries'
+          assert 9*0.041+9*0.165+0.12 < 2, 'Budget estimate would exceed $2'
+          assert not pathlib.Path('pinterest-publishing-ledger/2026-10-29-redo.json').exists(), 'One-time redo already exists'
+          print('ONE-TIME REDO: original Medium nine images preserved; nine High outputs reserve at most $1.98 estimated including $0.12 combined input allowance.')
+          PY
+      - name: One-time user-approved HIGH-quality nine-pin redo — manual queue only
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_IMAGE_MODEL: gpt-image-2
+          OPENAI_IMAGE_QUALITY: high
+          PIN_DATE: "2026-10-29"
+          PIN_VARIANT: redo-2026-10-29
+          APPROVED_REDO_ONCE: 2026-10-29-user-approved
+          PINTEREST_POSTING_MODE: manual
+        run: python scripts/pinterest_publisher.py
+      - name: Preserve generated images and proof
+        uses: actions/upload-artifact@v4
+        with:
+          name: approved-pinterest-redo-2026-10-29
+          path: |
+            pinterest-daily-pins/2026-10-29-redo/
+            pinterest-publishing-ledger/2026-10-29-redo.json
+          retention-days: 14
+          if-no-files-found: error
+      - name: Host premium original pins without replacing original nine
+        shell: bash
+        run: |
+          git config user.name 'Whats For Eats Premium Pin Editor'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add pinterest-daily-pins/2026-10-29-redo pinterest-publishing-ledger/2026-10-29-redo.json
+          git commit -m "Archive nine approved original premium redo pins October 29"
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              echo "Redo images hosted; update manual queue with verified image files."
+              exit 0
+            fi
+            sleep 3
+          done
+          exit 1
