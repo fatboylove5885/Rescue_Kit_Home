@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-29",
+  "currency": "USD",
+  "scope": "Only the What's For Eats Pinterest image-generation workflow. Other OpenAI API usage excluded.",
+  "image_model": "gpt-image-2",
+  "quality_default": "high",
+  "daily_generation_count_default": 9,
+  "free_pdf_pins_minimum": 3,
+  "estimated_output_cost_original_9_medium": 0.369,
+  "estimated_output_cost_user_approved_redo_9_high": 1.485,
+  "estimated_combined_image_output_cost": 1.854,
+  "allowance_for_prompt_input_cost": 0.12,
+  "estimated_combined_total_with_allowance": 1.974,
+  "actual_billed_total": "not_verified_by_connected_service",
+  "reference_price_source": "https://developers.openai.com/api/docs/guides/image-generation",
+  "verified_github_redo_run": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40867504784",
+  "original_ledger": "pinterest-publishing-ledger/2026-10-29.json",
+  "redo_ledger": "pinterest-publishing-ledger/2026-10-29-redo.json",
+  "one_time_oct29_extra_batch_approval": "consumed",
+  "future_extra_same_day_generation": "blocked_without_explicit_user_approval",
+  "note": "This estimate includes a generous $0.12 prompt reserve but cannot enforce a global OpenAI organization billing limit. Both image batches remain preserved in GitHub."
+}
