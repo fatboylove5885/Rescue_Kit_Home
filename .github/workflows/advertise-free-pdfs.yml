@@ -1,0 +1,47 @@
+name: Add paid-product invitations inside all free PDFs
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/ensure_pdf_product_promos.py'
+      - '.github/workflows/advertise-free-pdfs.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: wfe-pdf-product-promotions
+  cancel-in-progress: false
+jobs:
+  add-promos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check pypdf==5.9.0 reportlab==4.4.9
+      - name: Add clickable optional product links to all free PDF files
+        run: python scripts/ensure_pdf_product_promos.py
+      - name: Commit updated PDFs
+        shell: bash
+        run: |
+          git config user.name 'Whats For Eats Free PDF Publisher'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add pdfs/*.pdf
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Add optional Rescue Kit and Cheap Dinner Vault pages to every free PDF"
+          for attempt in 1 2 3; do
+            git fetch origin main
+            if git rebase -X theirs origin/main && git push origin HEAD:main; then
+              echo "Free PDF promotions safely deployed"
+              exit 0
+            fi
+            git rebase --abort || true
+            sleep 2
+          done
+          echo "::error::Could not push PDF promotions safely"
+          exit 1
