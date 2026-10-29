@@ -74,6 +74,35 @@ def main():
         try:
             reader=PdfReader(str(path))
             if reader.is_encrypted:raise RuntimeError("Encrypted PDF cannot be safely modified")
+            # The repository already has an original premium product promotion
+            # (/WFEProductPromoV1). Keep that original promotional page.
+            # If a previous job also appended our newer promo page, remove ONLY
+            # that redundant final page to avoid two promotional pages.
+            original_promo=(reader.metadata or {}).get("/WFEProductPromoV1")=="true"
+            last_text=reader.pages[-1].extract_text() or ""
+            if original_promo:
+                if MARKER in last_text:
+                    if len(reader.pages)<2 or "Make tomorrow" not in (reader.pages[-2].extract_text() or ""):
+                        raise RuntimeError("Cannot safely identify prior original promotion page")
+                    writer=PdfWriter()
+                    for old_page in reader.pages[:-1]:
+                        writer.add_page(old_page)
+                    writer.add_metadata({k:str(v) for k,v in (reader.metadata or {}).items()
+                                         if v is not None and k!="/WFE_Promo"})
+                    fd,tmp=tempfile.mkstemp(suffix=".pdf",dir=PDFS);os.close(fd)
+                    try:
+                        with open(tmp,"wb") as out:writer.write(out)
+                        verify=PdfReader(tmp)
+                        assert len(verify.pages)==len(reader.pages)-1
+                        assert "Make tomorrow" in (verify.pages[-1].extract_text() or "")
+                        assert len(verify.pages[-1].get("/Annots",[]))>=2
+                        os.replace(tmp,path)
+                    finally:
+                        if os.path.exists(tmp):os.unlink(tmp)
+                    edited+=1
+                else:
+                    skipped+=1
+                continue
             if any(MARKER in (page.extract_text() or "") for page in reader.pages[-2:]):
                 skipped+=1;continue
             writer=PdfWriter()
