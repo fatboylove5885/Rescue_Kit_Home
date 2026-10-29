@@ -197,6 +197,15 @@
         "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=-7786129202440679826",
         "https://app.metricool.com/planner/calendar?blogId=4488790&openWithPostUuid=1639797486338327161"
       ]
+    },
+    {
+      "at": "2026-10-28T21:27:00-04:00",
+      "title": "Free printable email signup redirect patched site-wide",
+      "phase": "site_conversions",
+      "severity": "warning",
+      "description": "Visitor reported email gate button stayed loading and never redirected. Connected Google Sheet shows two October 28 submissions as Email sent, so primary fault is Google HtmlService nested iframe confirmation routing. Installed shared /freebie-capture.js on 16 public HTML pages with email form: handles nested-frame response origin and requestId, redirects to exact static free printable upon verified response, also redirects on completed iframe load with honest unverified confirmation text, and provides explicit 12-second recovery link/error instead of an infinite spinner. Updated Apps Script source in GitHub with top-window postMessage; that source still requires deployment to replace live Google Script version. No email addresses published.",
+      "source": "GitHub front-end changes and Google Sheet delivery statuses",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/freebie-capture.js"
     }
   ]
 }
