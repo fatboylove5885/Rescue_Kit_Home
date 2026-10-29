@@ -4,8 +4,8 @@ from pathlib import Path
 from xml.etree import ElementTree as ET
 
 publisher = Path("scripts/pinterest_publisher.py").read_text()
-if "ensure(mode=='metricool'" not in publisher:
-    raise RuntimeError("Pinterest publisher could use forbidden RSS mode")
+if "ensure(mode=='manual'" not in publisher:
+    raise RuntimeError("Pinterest publisher is not locked to MANUAL mode")
 
 feed = Path("pinterest-rss.xml")
 tree = ET.parse(feed)
