@@ -51,6 +51,24 @@ def build_day(date):
    status_observed_at=snap.get("observed_at") if v else r.get("observed_at"),schedule_time=r.get("publish_at"),
    post_id=r.get("post_id"),auto_publish=r.get("auto_publish"),planner_url=r.get("planner_url"),
    media_url=r.get("media_url"),source_manifest_url=None))
+ # Manual queue is authoritative for user-ready assets; keep old provider receipts as history.
+ manual=read("pinterest-command-center/manual-queue.json")
+ manual_rows={p.get("destination_url"):p for p in manual.get("pins",[]) if p.get("date")==date}
+ for p in pins:
+  match=manual_rows.get(p.get("link"))
+  if not match:continue
+  p["image_url"]=match.get("image_url") or p.get("image_url")
+  p["image_available"]=bool(p.get("image_url"))
+  p["image_sha256"]=match.get("image_sha256") or p.get("image_sha256")
+  p["image_model"]=match.get("image_model") or p.get("image_model")
+  p["image_quality"]=match.get("image_quality")
+  p["image_variant"]=match.get("image_variant")
+  p["winning_style"]=match.get("winning_style")
+  p["status"]=match.get("status","READY_FOR_MANUAL_POST")
+  p["status_source"]="GitHub verified manual queue"
+  p["manual_posting"]=True
+  p["auto_publish"]=False
+  p["schedule_time"]=None
  refs=[]
  for r in m.get("reference_images",[]):
   path=str(r.get("archive_file") or "")
@@ -83,8 +101,12 @@ def build_day(date):
   dict(name="3 free printables",done=free_pdf_count>=3 if date>="2026-10-29" else True,details="At least 3 of the 9 daily posts feature real free PDFs"),
   dict(name="9 posts scheduled",done=nsch>=9,details="Nine provider post IDs accepted"),
   dict(name="9 posts published",done=npub>=9,details="Verified PUBLISHED on provider")]
+ if date>="2026-10-29":
+  manual_ready=sum(p.get("status")=="READY_FOR_MANUAL_POST" for p in pins)
+  missions[-2]=dict(name="9 manual pins ready",done=manual_ready>=9,details="Nine copy-ready original images, SEO titles, descriptions and verified links")
+  missions[-1]=dict(name="Manual posting by owner",done=False,details="Ready for the owner to post; no automatic Pinterest publishing")
  src=[("Research manifest",rp,m),("Image ledger",ip,img),("Scheduling receipt",sp,sch),("Provider status snapshot",vp,snap),("Operations history",ap,act)]
- return dict(date=date,status="published" if npub>=9 else "scheduled" if nsch>=9 else "generated" if generated_count>=9 else "research" if m else "partial",
+ return dict(date=date,status="manual_ready" if date>="2026-10-29" and sum(p.get("status")=="READY_FOR_MANUAL_POST" for p in pins)>=9 else "published" if npub>=9 else "scheduled" if nsch>=9 else "generated" if generated_count>=9 else "research" if m else "partial",
   totals=dict(concepts=len(m.get("pin_concepts",[])),references=len(refs),archived_refs=nr,original_images=generated_count,
   scheduled_receipts=nsch,published_verified=npub,free_pdf_pins=free_pdf_count,incidents=warn,xp=xp),missions=missions,
   pins=pins,references=refs,events=ev,audit_note=m.get("audit_note") or "No research manifest",
@@ -119,12 +141,12 @@ def main():
    security_notice="Public dashboard. No API keys, user account emails, or private reference screenshots are embedded.",
    library_url=LIB,github_repo=GH,metricool_url="https://app.metricool.com/planner/calendar?blogId=4488790",
    pipeline=["Competitor Pinterest research","Private reference library archive","Daily 9-concept research manifest",
-   "GPT Image 2 Medium original photographs","GitHub image receipts","Metricool automatic scheduling and receipts",
-   "Actual Metricool publication status when observed"],
+   "GPT Image 2 original photographs within $2 daily estimated budget","GitHub image receipts and manual-ready queue","Owner copies images, SEO text and links into Pinterest",
+   "Historical Metricool provider status retained for past posts"],
    known_limits=[
     dict(title="Public website",detail="Any visitor can access operational metadata; raw private Drive assets and secrets are excluded."),
     dict(title="Status snapshot, not live feed",detail="Metricool statuses update only when a connected agent writes a verified snapshot."),
-    dict(title="Account and API limits",detail="Provider posting quotas and API credits can block automated publishing."),
+    dict(title="Manual posting only",detail="No Metricool or RSS auto-posting. Image generation requires validated $2 per-day budget."),
     dict(title="Image storage growth",detail="Nine new JPG images per day grow the same GitHub site by roughly 90-135 MB monthly; a CDN may be needed later."),
     dict(title="No invented metrics",detail="Pinterest clicks, saves and impressions remain unknown until trustworthy account records are connected.")],
    stats=summary,days=days,runs=runs[:55],
