@@ -81,8 +81,7 @@ def compose(photo:Image.Image,concept:dict,index:int)->Image.Image:
     Original meal imagery spans nearly entire card; only small header/CTA
     overlays. Sourced visual reference notes guide the PHOTO prompt upstream.
     """
-    if VARIANT:
-        return compose_redo(photo,concept,index)
+    return compose_redo(photo,concept,index)
     out=ImageOps.fit(photo.convert('RGB'),(1000,1500),method=Image.Resampling.LANCZOS)
     if concept.get('content_type')=='free_pdf':
         # Preview exact real PDF pixels, not invented AI text or a fake printable.
@@ -126,6 +125,169 @@ def compose(photo:Image.Image,concept:dict,index:int)->Image.Image:
     d.text((500,1396),concept.get('cta_text','GET THE EASY RECIPES')[:34],font=font(32),fill=(255,255,255),anchor='mm')
     d.text((500,1475),'whatsforeats.online',font=font(21),fill=DARK,anchor='mm')
     return out
+
+# Original visual directions deconstructed from nine user-nominated winning Pins.
+# The source screenshots are stored privately; the API receives only artistic notes.
+WINNER_STYLES=[
+ ('buffalo-check-benefit','Big charismatic condensed food-benefit typography, warm red/brown buffalo check textures, generous cooked-food hero and one compact benefit callout; create own distinct graphic geometry.'),
+ ('cinematic-moody','Dark cinematic low-key home-cooking editorial with deep green/black shadows, candle-like highlights, glistening real stew, enormous elegant gold serif words; original dish.'),
+ ('corkboard-printable','Tactile corkboard pinned-paper visual organization, oversized easy-to-read FREE activity heading, authentic original crossword page, cozy kitchen objects; not the source layout.'),
+ ('dinner-choice-cards','Editorial choice-card layout, plenty of lush freshly-cooked food, three clearly grouped practical leftover meal paths, warm cream/rust typographic hierarchy.'),
+ ('botanical-fall-bingo','Autumn leaf frame, attractive food-photo tabletop, distinctly real 5x5 free bingo PDF preview, prominent FREE promise, tasteful watercolor-style graphic accents.'),
+ ('visual-checklist','Magazine-style infographic with color-block checklist or quick comparison, appetizing food photography, readable oversized headline and trustworthy educational copy.'),
+ ('three-step-howto','Bold practical three-step food instruction look with vibrant roast-food photo, warm ochre and burgundy labels, mobile-legible short steps.'),
+ ('planner-cards','Tactile paper meal-planning card motif, legible genuine PDF preview, apple/sage/cream editorial palette and plated family dinner hero.'),
+ ('sweater-lifestyle','Very cozy first-person autumn soup or casserole photography, knitted sleeve/linen textures, intimate warm coffee-colored window lighting and floating handwritten-feeling white editorial heading.')
+]
+def _rf(size,style='serif'):
+    paths={
+      'serif':['/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf'],
+      'sans':['/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'],
+      'italic':['/usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Italic.ttf',
+                '/usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf']}
+    for p in paths.get(style,paths['serif']):
+        if Path(p).is_file():return ImageFont.truetype(p,size)
+    return font(size,serif=True)
+
+def _headline(draw, text, xcenter, y, width, maxlines=3, initial=92,
+              fill=(42,45,35), style='serif', lineheight=1.1):
+    words=str(text).upper().split(); best=None
+    for sz in range(initial,39,-2):
+        ff=_rf(sz,style); lines=[]; row=''
+        for word in words:
+            nextrow=(row+' '+word).strip()
+            if draw.textbbox((0,0),nextrow,font=ff)[2]<=width:row=nextrow
+            else:
+                if row:lines.append(row)
+                row=word
+        if row:lines.append(row)
+        if len(lines)<=maxlines:best=(ff,lines);break
+    if not best:raise PublishingBlocked('Headline cannot fit: '+text)
+    ff,lines=best
+    for k,t in enumerate(lines):
+        draw.text((xcenter,int(y+k*ff.size*lineheight)),t,anchor='mt',font=ff,fill=fill,
+                  stroke_width=0)
+    return y+len(lines)*ff.size*lineheight
+
+def _pdf_preview(concept,width=560):
+    import fitz
+    doc=ROOT/concept['pdf_slug']
+    with fitz.open(str(doc)) as pdf:
+        pix=pdf[0].get_pixmap(matrix=fitz.Matrix(1.65,1.65),alpha=False)
+        im=Image.frombytes('RGB',(pix.width,pix.height),pix.samples)
+    im.thumbnail((width,820),Image.Resampling.LANCZOS)
+    return im
+
+def _poster_footer(draw,label='GET THE FREE RECIPES',palette=None):
+    ink=(255,255,246) if palette=='dark' else (52,40,29)
+    bg=(107,34,32,245) if palette=='dark' else (128,45,33,242)
+    draw.rounded_rectangle((150,1376,850,1454),radius=38,fill=bg)
+    txt=label[:32].upper()
+    f=_rf(31,'sans')
+    while draw.textbbox((0,0),txt,font=f)[2]>660 and f.size>18:f=_rf(f.size-1,'sans')
+    draw.text((500,1415),txt,anchor='mm',font=f,fill=(255,249,233))
+    draw.text((500,1480),'whatsforeats.online',anchor='mm',font=_rf(20,'sans'),fill=ink)
+
+def compose_redo(photo:Image.Image,concept:dict,index:int)->Image.Image:
+    """Nine distinct user-winning-inspired visual systems, all original pixels.
+    PDF preview comes ONLY from the actual on-site PDF (no AI fake grids).
+    """
+    W,H=1000,1500
+    base=ImageOps.fit(photo.convert('RGB'),(W,H),Image.Resampling.LANCZOS)
+    kind=(index-1)%9
+    title=concept['headline']
+    if kind==0: # warm plaid/tactile bold benefit
+        canvas=Image.new('RGB',(W,H),(92,22,25))
+        d=ImageDraw.Draw(canvas,'RGBA')
+        for u in range(0,W,115):d.rectangle((u,0,u+56,H),fill=(155,37,39,255))
+        for v in range(0,H,115):d.rectangle((0,v,W,v+54),fill=(159,40,42,165))
+        food=base.crop((0,0,W,950))
+        canvas.paste(food,(0,525))
+        d=ImageDraw.Draw(canvas,'RGBA')
+        d.rounded_rectangle((70,64,930,535),radius=70,fill=(250,239,217,250),outline=(126,40,33,255),width=7)
+        d.rounded_rectangle((86,80,914,519),radius=60,outline=(168,104,68,255),width=2)
+        _headline(d,title,500,117,810,maxlines=3,initial=107,fill=(48,32,28),style='sans')
+        d.text((500,490),'FAST • EASY • CROWD-PLEASING',anchor='mm',font=_rf(24,'sans'),fill=(133,48,29))
+        _poster_footer(d,'SAVE THESE QUICK DINNERS','dark')
+    elif kind==1: # cinematic dark
+        canvas=base.copy(); d=ImageDraw.Draw(canvas,'RGBA')
+        for y in range(0,530,10):
+            alpha=int(245*(1-y/540))
+            d.rectangle((0,y,1000,y+11),fill=(10,18,13,max(0,alpha)))
+        _headline(d,title,500,72,920,maxlines=3,initial=110,fill=(238,186,101))
+        d.text((500,435),'COMFORT FOOD FOR DARK EVENINGS',font=_rf(24,'italic'),fill=(242,236,223),anchor='mm')
+        _poster_footer(d,'SEE THE COZY RECIPES','dark')
+    elif kind==2: # crossword corkboard
+        canvas=Image.new('RGB',(W,H),(128,91,61));canvas.paste(base.crop((0,0,1000,500)),(0,830))
+        d=ImageDraw.Draw(canvas,'RGBA')
+        d.rectangle((24,25,976,1340),fill=(177,125,80,242),outline=(83,53,39,255),width=16)
+        d.rounded_rectangle((83,77,917,362),radius=35,fill=(253,244,221,253))
+        _headline(d,'FREE DINNER CROSSWORD',500,132,790,maxlines=3,initial=80,fill=(110,45,26),style='serif')
+        d.text((500,331),'PRINT • PLAY • SOLVE',anchor='mm',font=_rf(25,'sans'),fill=(44,59,36))
+        paper=_pdf_preview(concept,625)
+        x=(1000-paper.width)//2;y=403
+        d.rounded_rectangle((x-14,y-15,x+paper.width+14,y+paper.height+19),radius=17,fill=(32,27,23,145))
+        canvas.paste(paper,(x,y))
+        d=ImageDraw.Draw(canvas,'RGBA')
+        _poster_footer(d,'DOWNLOAD THE REAL PDF','dark')
+    elif kind==3: # choice-card info with photo
+        canvas=base.copy();d=ImageDraw.Draw(canvas,'RGBA')
+        d.rounded_rectangle((30,40,970,340),radius=34,fill=(253,246,227,238))
+        _headline(d,title,500,82,875,maxlines=3,initial=96,fill=(61,75,42))
+        tags=['TACOS TONIGHT','PASTA TOMORROW','SOUP NEXT']
+        for k,tag in enumerate(tags):
+            x=56+k*316
+            d.rounded_rectangle((x,1080,x+292,1210),radius=20,fill=(251,241,219,240),outline=(172,98,62,255),width=3)
+            d.text((x+146,1143),tag,anchor='mm',font=_rf(22,'sans'),fill=(91,50,36))
+        _poster_footer(d,'GET THE CHICKEN IDEAS')
+    elif kind==4: # honest bingo PDF, autumn botanicals
+        canvas=Image.new('RGB',(W,H),(251,242,219));canvas.paste(base.crop((0,0,W,970)),(0,530))
+        d=ImageDraw.Draw(canvas,'RGBA')
+        for p in range(0,1000,140):
+            d.ellipse((p+20,20,p+80,65),fill=(205,127,55,100))
+            d.ellipse((p+65,1220,p+112,1280),fill=(151,92,44,150))
+        _headline(d,'FREE DINNER BINGO',500,73,950,maxlines=2,initial=90,fill=(125,69,30))
+        d.text((500,272),'A FUN FAMILY DINNER CHALLENGE',anchor='mm',font=_rf(24,'sans'),fill=(64,68,44))
+        paper=_pdf_preview(concept,640);x=(1000-paper.width)//2;y=345
+        d.rounded_rectangle((x-13,y-15,x+paper.width+13,y+paper.height+18),radius=16,fill=(42,46,38,110))
+        canvas.paste(paper,(x,y));d=ImageDraw.Draw(canvas,'RGBA')
+        _poster_footer(d,'GET YOUR FREE BINGO')
+    elif kind==5: # practical, no made-up numeric savings
+        canvas=base.copy();d=ImageDraw.Draw(canvas,'RGBA')
+        d.rounded_rectangle((34,35,966,345),radius=28,fill=(250,242,222,248))
+        _headline(d,title,500,84,886,maxlines=3,initial=94,fill=(111,39,34),style='sans')
+        for k,word in enumerate(['PANTRY FIRST','COOK ONCE','COMPARE COSTS']):
+            x=40+k*320
+            d.rounded_rectangle((x,1100,x+300,1232),radius=20,fill=(249,235,210,246),outline=(160,86,60,255),width=3)
+            d.text((x+150,1166),word,anchor='mm',font=_rf(22,'sans'),fill=(80,51,38))
+        _poster_footer(d,'SEE REAL BUDGET IDEAS')
+    elif kind==6: # three-step visual infographic
+        canvas=base.copy();d=ImageDraw.Draw(canvas,'RGBA')
+        d.rounded_rectangle((25,40,975,320),radius=30,fill=(252,241,219,244))
+        _headline(d,title,500,90,905,maxlines=2,initial=94,fill=(113,45,35),style='sans')
+        d.rounded_rectangle((40,1110,960,1302),radius=22,fill=(250,238,217,246),outline=(130,53,36,255),width=5)
+        for k,word in enumerate(['1  PREP','2  ROAST','3  SERVE']):
+            d.text((183+k*315,1202),word,anchor='mm',font=_rf(29,'sans'),fill=(100,45,37))
+        _poster_footer(d,'GET THE ONE-PAN GUIDE')
+    elif kind==7: # planner cards with accurate original preview
+        canvas=Image.new('RGB',(W,H),(229,229,207));canvas.paste(base.crop((0,0,1000,940)),(0,520))
+        d=ImageDraw.Draw(canvas,'RGBA')
+        d.rounded_rectangle((35,35,965,310),radius=30,fill=(253,249,239,248))
+        _headline(d,'FREE FAMILY MEAL MAP',500,89,900,maxlines=3,initial=82,fill=(67,84,48))
+        d.text((500,293),'SEVEN NIGHTS • LESS GUESSWORK',font=_rf(22,'sans'),anchor='mm',fill=(132,72,45))
+        paper=_pdf_preview(concept,640);x=(1000-paper.width)//2;y=358
+        d.rounded_rectangle((x-13,y-13,x+paper.width+13,y+paper.height+15),radius=15,fill=(39,47,33,120))
+        canvas.paste(paper,(x,y));d=ImageDraw.Draw(canvas,'RGBA')
+        _poster_footer(d,'GET THE FREE PLANNER')
+    else: # cozy lifestyle text floated on dark photographic scene
+        canvas=base.copy();d=ImageDraw.Draw(canvas,'RGBA')
+        for y in range(0,640,8):
+            a=max(0,int(220*(1-y/650)))
+            d.rectangle((0,y,1000,y+8),fill=(26,24,20,a))
+        _headline(d,title,500,130,920,maxlines=3,initial=109,fill=(253,238,209),style='italic')
+        d.text((500,502),'22 WARM MEALS FOR COOL EVENINGS',anchor='mm',font=_rf(25,'sans'),fill=(251,238,215))
+        _poster_footer(d,'EXPLORE THE 22 DINNERS','dark')
+    return canvas
 
 def validate_manifest(obj):
     ensure(obj.get('date')==DATE,f'Research manifest must be for TODAY ({DATE}), not old evidence')
@@ -194,7 +356,11 @@ def new_photo(c,index,refmap):
            'No generated fake writing or fake puzzle letters; a pixel-accurate preview from the actual PDF will be overlaid in the design. '
            'Leave a reasonable area in center-right of the frame for the actual printable preview, with strong food color/texture still visible. '
            if c.get('content_type')=='free_pdf' else '')
-    prompt=bonus+(
+    winning_style,winning_notes=WINNER_STYLES[(index-1)%9]
+    prompt=(
+        f'Original creative direction from user-nominated winning Pinterest visuals (do not copy exact works): {winning_notes}. '
+        'Your composition must visually and emotionally fit this specific style. '
+    )+bonus+(
         'Generate ONE original magazine-quality PHOTOGRAPH of authentic, irresistibly appealing dinner food for a vertically oriented Pinterest recipe card. '
         'The premium branded editorial heading and CTA will be added outside the image by Pillow; do not create any lettering, logos, typography, art or white graphic bands within the photograph. '
         f'Cook and style exactly this NEW meal concept: {c["food_scene"]}. '
@@ -272,7 +438,7 @@ def run():
         safe=re.sub('[^a-z0-9]+','-',c['headline'].lower()).strip('-')[:55]
         filename=f'{i:02}-{safe}.jpg';out=DEST/filename
         pin.save(out,'JPEG',quality=91,optimize=True)
-        generated.append({'filename':filename,'destination_slug':c['destination_slug'],'image_sha256':sha,'reference_ids':c['research_ref_ids'],'image_model':OPENAI_IMAGE_MODEL,'created_at':dt.datetime.now(dt.timezone.utc).isoformat()})
+        generated.append({'filename':filename,'destination_slug':c['destination_slug'],'image_sha256':sha,'reference_ids':c['research_ref_ids'],'winning_style':WINNER_STYLES[(i-1)%9][0],'image_model':OPENAI_IMAGE_MODEL,'image_quality':QUALITY,'created_at':dt.datetime.now(dt.timezone.utc).isoformat()})
     if mode=='rss':
         for i,(c,g) in enumerate(zip(concepts,generated),1):
             item=ET.SubElement(channel,'item')
