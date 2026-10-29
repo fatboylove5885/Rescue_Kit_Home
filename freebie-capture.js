@@ -3,7 +3,7 @@
    Never regard a hidden iframe loading as proof a subscriber was recorded. */
 (function(){
   "use strict";
-  var BUSY_TIMEOUT_MS = 12000;
+  var BUSY_TIMEOUT_MS = 9000;
   function el(id){return document.getElementById(id);}
   function routeFor(asset){
     var routes=window.FREEBIE_HTML_ROUTES || {};
@@ -31,8 +31,15 @@
     var recovery=document.createElement("a");
     recovery.href=destination.pathname;
     recovery.textContent="Open your free printable directly →";
-    recovery.style.cssText="display:none;margin:9px 0 12px;color:#2c694b;font-size:15px;text-decoration:underline;font-weight:700;";
+    recovery.style.cssText="display:inline-block;margin:9px 0 12px;color:#2c694b;font-size:15px;text-decoration:underline;font-weight:700;";
     form.appendChild(recovery);
+    function openGuideUnverified(){
+      // A frontend cannot prove that Apps Script recorded or emailed a subscriber.
+      // Never trap the visitor behind a spinner, and never claim verified delivery.
+      show("We could not confirm the email signup. Your free guide is still available, and we are opening it now.",true);
+      finish();
+      window.location.assign(destination.href);
+    }
     function show(message,withLink){
       status.textContent=message;status.style.display="block";
       recovery.style.display=withLink?"inline-block":"none";
@@ -74,8 +81,10 @@
       if(!active)return;
       setTimeout(function(){
         if(!active)return; // A real success/error callback already took priority.
+        // The iframe loading does not prove email delivery. Give the service
+        // a chance to send an authenticated success message before fallback.
+        show("Opening your free guide. Email delivery has not yet been confirmed.",true);
         finish();
-        show("Your request was submitted. Opening the free guide; please check your email for delivery confirmation.",true);
         window.location.assign(destination.href);
       },1800);
     });
@@ -105,14 +114,13 @@
       rid.value=requestId;
       active=true;button.disabled=true;button.textContent="Sending your free printable…";
       button.setAttribute("aria-busy","true");
-      show("Submitting your request securely. Your guide will open after confirmation.",false);
+      show("Submitting your request. Your free guide will open even if the email service cannot confirm delivery.",true);
       timer=setTimeout(function(){
         if(!active)return;
-        finish();
-        show("We couldn't verify email delivery. Please try again, or open the free printable directly below.",true);
+        openGuideUnverified();
       },BUSY_TIMEOUT_MS);
       try { HTMLFormElement.prototype.submit.call(backend); }
-      catch(err){finish();show("The email service didn't respond. Open your free printable below.",true);}
+      catch(err){openGuideUnverified();}
     },true);
   }
   function start(){
