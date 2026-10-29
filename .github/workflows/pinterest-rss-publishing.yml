@@ -34,6 +34,28 @@ jobs:
         run: python -m pip install --disable-pip-version-check Pillow==11.3.0 pymupdf==1.26.5
       - name: Validate research-led Pinterest image renderer syntax
         run: python -m py_compile scripts/pinterest_publisher.py
+      - name: Create verified paid-image attempt reservation BEFORE any API calls
+        env:
+          OPENAI_IMAGE_MODEL: gpt-image-2
+          OPENAI_IMAGE_QUALITY: high
+        run: python scripts/pinterest_paid_generation_lock.py
+      - name: Commit daily spending lock so retries cannot duplicate API charges
+        shell: bash
+        run: |
+          git config user.name 'Whats For Eats Image Cost Guard'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add pinterest-generation-attempts
+          if ! git diff --cached --quiet; then
+            git commit -m "Reserve single high-quality Pinterest image batch before API calls"
+            for attempt in 1 2 3 4 5; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then exit 0; fi
+              sleep 3
+            done
+            echo "::error::Cannot persist paid-attempt lock; refusing to call OpenAI API"
+            exit 1
+          fi
       - name: Generate nine BRAND NEW first-party AI food images ONLY AFTER today's archived research
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
