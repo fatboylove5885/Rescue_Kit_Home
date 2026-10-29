@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-29T10:57:37+00:00",
+  "updated_at": "2026-10-29T10:59:34+00:00",
   "site": "What's For Eats — Pinterest Command Center",
   "timezone": "America/Detroit",
   "visibility": "PUBLIC_SITE_METADATA_ONLY",
@@ -40,21 +40,527 @@
     }
   ],
   "stats": {
-    "concepts": 27,
-    "references": 14,
-    "archived_refs": 14,
+    "concepts": 36,
+    "references": 17,
+    "archived_refs": 17,
     "original_images": 18,
     "scheduled_receipts": 22,
     "published_verified": 20,
-    "free_pdf_pins": 0,
+    "free_pdf_pins": 3,
     "incidents": 10,
-    "xp": 1200,
-    "days_recorded": 3,
+    "xp": 1250,
+    "days_recorded": 4,
     "daily_target": 9,
-    "latest_date": "2026-10-28",
-    "daily_research_streak": 3
+    "latest_date": "2026-10-29",
+    "daily_research_streak": 4
   },
   "days": [
+    {
+      "date": "2026-10-29",
+      "status": "research",
+      "totals": {
+        "concepts": 9,
+        "references": 3,
+        "archived_refs": 3,
+        "original_images": 0,
+        "scheduled_receipts": 0,
+        "published_verified": 0,
+        "free_pdf_pins": 3,
+        "incidents": 0,
+        "xp": 50
+      },
+      "missions": [
+        {
+          "name": "Research done",
+          "done": true,
+          "details": "Dated Pinterest manifest exists"
+        },
+        {
+          "name": "Reference vault stocked",
+          "done": true,
+          "details": "Three or more references archived privately"
+        },
+        {
+          "name": "9 original food images",
+          "done": false,
+          "details": "Nine distinct photos in repository"
+        },
+        {
+          "name": "3 free printables",
+          "done": true,
+          "details": "At least 3 of the 9 daily posts feature real free PDFs"
+        },
+        {
+          "name": "9 posts scheduled",
+          "done": false,
+          "details": "Nine provider post IDs accepted"
+        },
+        {
+          "name": "9 posts published",
+          "done": false,
+          "details": "Verified PUBLISHED on provider"
+        }
+      ],
+      "pins": [
+        {
+          "id": "20261029-01",
+          "date": "2026-10-29",
+          "title": "15-Minute Dinner Recipes for Busy Weeknights | 5 Fast Favorites",
+          "headline": "15-MINUTE DINNERS",
+          "description": "Dinner can still feel homemade when time is short. Try five real 15-minute meals, including honey garlic chicken stir-fry, shrimp fajitas, quick tacos and creamy pasta. Save these fast weeknight recipes for tonight.",
+          "link": "https://whatsforeats.online/15-minute-dinners-for-busy-weeknights.html",
+          "slug": "15-minute-dinners-for-busy-weeknights.html",
+          "image_url": null,
+          "image_available": false,
+          "image_model": null,
+          "image_sha256": null,
+          "image_created_at": null,
+          "scene": "Original realistic honey-garlic chicken stir-fry in a dark carbon-steel wok, glossy bite-size chicken, vivid broccoli, orange pepper, ginger and scallion curls, with a small white bowl of steamed rice off-center; low three-quarter close-up, side-lit from a kitchen window, steam and real cooked texture.",
+          "layout": "hero",
+          "content_type": "recipe",
+          "pdf_slug": null,
+          "reference_ids": [
+            "oct29-fast-dinner-reobserved",
+            "oct29-single-hero-reobserved"
+          ],
+          "keywords": [
+            "15 minute dinner recipes",
+            "quick chicken stir fry",
+            "fast weeknight dinners",
+            "easy family dinners"
+          ],
+          "board": "Quick Dinner Recipes",
+          "provider_board_id": null,
+          "status": "RESEARCHED",
+          "status_source": "GitHub artifact",
+          "status_observed_at": null,
+          "schedule_time": null,
+          "post_id": null,
+          "auto_publish": null,
+          "planner_url": null,
+          "media_url": null,
+          "source_manifest_url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-research/2026-10-29/manifest.json"
+        },
+        {
+          "id": "20261029-02",
+          "date": "2026-10-29",
+          "title": "Slow Cooker Dinners for Busy Families | Easy Comfort Food Ideas",
+          "headline": "SLOW COOKER COMFORT",
+          "description": "Let your slow cooker handle a busy evening. Find family-friendly slow cooker recipes and practical prep tips, from pulled pork sandwiches to salsa chicken and hearty soups.",
+          "link": "https://whatsforeats.online/slow-cooker-dinners-for-busy-families.html",
+          "slug": "slow-cooker-dinners-for-busy-families.html",
+          "image_url": null,
+          "image_available": false,
+          "image_model": null,
+          "image_sha256": null,
+          "image_created_at": null,
+          "scene": "An original freshly shredded slow-cooker pulled pork sandwich piled high on a toasted brioche bun, tangy red cabbage slaw and pickle slices; glazed pork strands glisten, a black ceramic slow cooker softly visible behind on a dark oak table, cinematic three-quarter side angle, rich window light.",
+          "layout": "photo_first",
+          "content_type": "recipe",
+          "pdf_slug": null,
+          "reference_ids": [
+            "oct29-family-variety-reobserved",
+            "oct29-fast-dinner-reobserved"
+          ],
+          "keywords": [
+            "slow cooker dinners for busy families",
+            "crockpot pulled pork",
+            "easy slow cooker recipes",
+            "family comfort food"
+          ],
+          "board": "Slow Cooker Dinner Recipes",
+          "provider_board_id": null,
+          "status": "RESEARCHED",
+          "status_source": "GitHub artifact",
+          "status_observed_at": null,
+          "schedule_time": null,
+          "post_id": null,
+          "auto_publish": null,
+          "planner_url": null,
+          "media_url": null,
+          "source_manifest_url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-research/2026-10-29/manifest.json"
+        },
+        {
+          "id": "20261029-03",
+          "date": "2026-10-29",
+          "title": "Free Dinner Crossword Printable with Answer Key | Family Kitchen Game",
+          "headline": "FREE DINNER CROSSWORD",
+          "description": "Print a free food-themed crossword with nine kitchen and dinner clues plus a separate answer key. A fun family table activity or meal-planning binder bonus. Get the actual downloadable PDF free—no purchase required.",
+          "link": "https://whatsforeats.online/pdfs/dinner-crossword-challenge.html",
+          "slug": "pdfs/dinner-crossword-challenge.html",
+          "image_url": null,
+          "image_available": false,
+          "image_model": null,
+          "image_sha256": null,
+          "image_created_at": null,
+          "scene": "Original photorealistic cozy breakfast-nook tabletop with a steaming rustic bowl of tomato soup, golden toasted cheese strips, natural pencil and folded linen on a warm oak surface; deliberately leave a clean paper-friendly area on right for the exact first-page crossword PDF preview added by the publisher, no AI-generated letters or fake puzzle.",
+          "layout": "editorial",
+          "content_type": "free_pdf",
+          "pdf_slug": "pdfs/dinner-crossword-challenge.pdf",
+          "reference_ids": [
+            "oct29-family-variety-reobserved",
+            "oct29-single-hero-reobserved"
+          ],
+          "keywords": [
+            "free dinner crossword printable",
+            "food crossword PDF",
+            "free kitchen word puzzle",
+            "family printable game"
+          ],
+          "board": "Free Printables and Dinner Games",
+          "provider_board_id": null,
+          "status": "RESEARCHED",
+          "status_source": "GitHub artifact",
+          "status_observed_at": null,
+          "schedule_time": null,
+          "post_id": null,
+          "auto_publish": null,
+          "planner_url": null,
+          "media_url": null,
+          "source_manifest_url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-research/2026-10-29/manifest.json"
+        },
+        {
+          "id": "20261029-04",
+          "date": "2026-10-29",
+          "title": "Leftover Chicken Recipes | Turn One Chicken into Several Easy Dinners",
+          "headline": "ONE CHICKEN, MORE DINNERS",
+          "description": "Make one cooked chicken go further with easy leftover chicken recipes: crispy quesadillas, taco bowls, creamy pasta and soup. Discover a practical three-night plan and safe storage tips.",
+          "link": "https://whatsforeats.online/leftover-chicken-recipes.html",
+          "slug": "leftover-chicken-recipes.html",
+          "image_url": null,
+          "image_available": false,
+          "image_model": null,
+          "image_sha256": null,
+          "image_created_at": null,
+          "scene": "A freshly cut golden toasted chicken quesadilla on a weathered walnut cutting board, visible shredded chicken and melted cheese in each triangular wedge, cilantro, a small bowl of chunky red salsa and lime wedges, angled from low three-quarter view with shallow depth of field and realistic crisp tortilla blistering.",
+          "layout": "hero",
+          "content_type": "recipe",
+          "pdf_slug": null,
+          "reference_ids": [
+            "oct29-fast-dinner-reobserved",
+            "oct29-single-hero-reobserved"
+          ],
+          "keywords": [
+            "leftover chicken recipes",
+            "chicken quesadilla",
+            "rotisserie chicken dinner ideas",
+            "use up cooked chicken"
+          ],
+          "board": "Leftover Makeover Recipes",
+          "provider_board_id": null,
+          "status": "RESEARCHED",
+          "status_source": "GitHub artifact",
+          "status_observed_at": null,
+          "schedule_time": null,
+          "post_id": null,
+          "auto_publish": null,
+          "planner_url": null,
+          "media_url": null,
+          "source_manifest_url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-research/2026-10-29/manifest.json"
+        },
+        {
+          "id": "20261029-05",
+          "date": "2026-10-29",
+          "title": "Free Cozy Dinner Bingo Printable | Fun Fall Family Dinner Challenge",
+          "headline": "FREE COZY DINNER BINGO",
+          "description": "Make dinnertime a game with a free cozy dinner bingo printable. Check off soup night, slow cooker dinners, leftovers and other simple family food moments. Print the real PDF and enjoy the challenge at home.",
+          "link": "https://whatsforeats.online/pdfs/cozy-dinner-bingo.html",
+          "slug": "pdfs/cozy-dinner-bingo.html",
+          "image_url": null,
+          "image_available": false,
+          "image_model": null,
+          "image_sha256": null,
+          "image_created_at": null,
+          "scene": "Original cozy autumn kitchen table photograph with a steaming bowl of creamy white chicken chili topped with herbs, a few toasted bread slices, amber ceramic mug, unmarked pencil and soft oatmeal linen. Leave a flat, softly lit paper placement area on right for a genuine PDF bingo first-page overlay, not AI-created letters or squares.",
+          "layout": "photo_first",
+          "content_type": "free_pdf",
+          "pdf_slug": "pdfs/cozy-dinner-bingo.pdf",
+          "reference_ids": [
+            "oct29-family-variety-reobserved",
+            "oct29-fast-dinner-reobserved"
+          ],
+          "keywords": [
+            "free dinner bingo printable",
+            "fall food bingo",
+            "cozy family dinner game",
+            "printable meal challenge"
+          ],
+          "board": "Free Printables and Dinner Games",
+          "provider_board_id": null,
+          "status": "RESEARCHED",
+          "status_source": "GitHub artifact",
+          "status_observed_at": null,
+          "schedule_time": null,
+          "post_id": null,
+          "auto_publish": null,
+          "planner_url": null,
+          "media_url": null,
+          "source_manifest_url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-research/2026-10-29/manifest.json"
+        },
+        {
+          "id": "20261029-06",
+          "date": "2026-10-29",
+          "title": "Cheap Family Dinners with Cost Per Serving | Budget Meal Examples",
+          "headline": "CHEAP DINNERS, REAL NUMBERS",
+          "description": "Find practical cheap family dinner examples and learn how to calculate cost per serving. Start with pantry pasta or egg fried rice, then use the easy formula to compare your own meals.",
+          "link": "https://whatsforeats.online/cheap-family-dinners-cost-per-serving.html",
+          "slug": "cheap-family-dinners-cost-per-serving.html",
+          "image_url": null,
+          "image_available": false,
+          "image_model": null,
+          "image_sha256": null,
+          "image_created_at": null,
+          "scene": "A large shallow black skillet of authentic homemade egg fried rice, fluffy individual golden rice grains, peas, diced carrots, scrambled egg ribbons and scallions, wooden spatula resting naturally, shot from true overhead on a modest light wood family table with a folded sage napkin.",
+          "layout": "editorial",
+          "content_type": "recipe",
+          "pdf_slug": null,
+          "reference_ids": [
+            "oct29-single-hero-reobserved",
+            "oct29-family-variety-reobserved"
+          ],
+          "keywords": [
+            "cheap family dinners cost per serving",
+            "budget egg fried rice",
+            "cheap dinner ideas",
+            "dinner cost calculator"
+          ],
+          "board": "Budget Family Dinners",
+          "provider_board_id": null,
+          "status": "RESEARCHED",
+          "status_source": "GitHub artifact",
+          "status_observed_at": null,
+          "schedule_time": null,
+          "post_id": null,
+          "auto_publish": null,
+          "planner_url": null,
+          "media_url": null,
+          "source_manifest_url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-research/2026-10-29/manifest.json"
+        },
+        {
+          "id": "20261029-07",
+          "date": "2026-10-29",
+          "title": "Easy Sheet Pan Dinners | Roasted Sausage and Veggies + More",
+          "headline": "ONE PAN. LESS CLEANUP.",
+          "description": "Try easy sheet-pan dinners that save cleanup and still taste delicious. Learn timing tips for roasted sausage, potatoes and broccoli plus flexible protein-and-vegetable combinations.",
+          "link": "https://whatsforeats.online/easy-sheet-pan-dinners.html",
+          "slug": "easy-sheet-pan-dinners.html",
+          "image_url": null,
+          "image_available": false,
+          "image_model": null,
+          "image_sha256": null,
+          "image_created_at": null,
+          "scene": "An original edge-to-edge dark metal sheet pan with browned sliced smoked sausage, crispy golden baby potatoes, deeply roasted broccoli florets and glistening olive-oil herbs, photographed diagonally from a near-overhead perspective with a rustic terracotta tile backdrop and a simple kitchen towel.",
+          "layout": "photo_first",
+          "content_type": "recipe",
+          "pdf_slug": null,
+          "reference_ids": [
+            "oct29-single-hero-reobserved",
+            "oct29-fast-dinner-reobserved"
+          ],
+          "keywords": [
+            "easy sheet pan dinners",
+            "sheet pan sausage potatoes broccoli",
+            "one pan family meals",
+            "easy oven dinners"
+          ],
+          "board": "One Pan Dinner Recipes",
+          "provider_board_id": null,
+          "status": "RESEARCHED",
+          "status_source": "GitHub artifact",
+          "status_observed_at": null,
+          "schedule_time": null,
+          "post_id": null,
+          "auto_publish": null,
+          "planner_url": null,
+          "media_url": null,
+          "source_manifest_url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-research/2026-10-29/manifest.json"
+        },
+        {
+          "id": "20261029-08",
+          "date": "2026-10-29",
+          "title": "Free Family Meal Planning Map PDF | 7-Night Dinner Planner",
+          "headline": "FREE FAMILY MEAL MAP",
+          "description": "Stop the nightly dinner guessing. Download a free family meal-planning map with calendar-first steps, seven simple dinner ideas and a pantry-first grocery planning checklist. Printable PDF included.",
+          "link": "https://whatsforeats.online/pdfs/family-meal-planning-map.html",
+          "slug": "pdfs/family-meal-planning-map.html",
+          "image_url": null,
+          "image_available": false,
+          "image_model": null,
+          "image_sha256": null,
+          "image_created_at": null,
+          "scene": "Original bright natural family-table photograph with two colorful build-your-own chicken taco plates, avocado, shredded lettuce, diced tomatoes and warm tortillas on cream plates, a simple pencil and neutral notebook beside a folded sage cloth. Leave a clean right-side space for the exact genuine family meal-planning map PDF preview.",
+          "layout": "editorial",
+          "content_type": "free_pdf",
+          "pdf_slug": "pdfs/family-meal-planning-map.pdf",
+          "reference_ids": [
+            "oct29-family-variety-reobserved",
+            "oct29-single-hero-reobserved"
+          ],
+          "keywords": [
+            "free family meal planning printable",
+            "seven night dinner plan",
+            "weekly dinner planning PDF",
+            "family grocery checklist"
+          ],
+          "board": "Free Meal Planning Printables",
+          "provider_board_id": null,
+          "status": "RESEARCHED",
+          "status_source": "GitHub artifact",
+          "status_observed_at": null,
+          "schedule_time": null,
+          "post_id": null,
+          "auto_publish": null,
+          "planner_url": null,
+          "media_url": null,
+          "source_manifest_url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-research/2026-10-29/manifest.json"
+        },
+        {
+          "id": "20261029-09",
+          "date": "2026-10-29",
+          "title": "22 Cozy Fall Dinners | Chicken Wild Rice Soup and Comfort Food",
+          "headline": "22 COZY FALL DINNERS",
+          "description": "Craving something warm after a long day? Explore 22 cozy fall dinners, including creamy chicken and wild rice soup, casseroles, slow cooker meals and easy sheet-pan favorites.",
+          "link": "https://whatsforeats.online/22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.html",
+          "slug": "22-cozy-fall-dinners-that-taste-like-wearing-your-favorite-sweater.html",
+          "image_url": null,
+          "image_available": false,
+          "image_model": null,
+          "image_sha256": null,
+          "image_created_at": null,
+          "scene": "One original rustic ceramic bowl filled with creamy chicken and wild rice soup, visible shredded chicken, black wild rice, diced orange carrots, celery, thyme leaves and a crusty torn bread piece on linen, photographed at an intimate three-quarter angle with moody amber window light and shallow background blur.",
+          "layout": "hero",
+          "content_type": "recipe",
+          "pdf_slug": null,
+          "reference_ids": [
+            "oct29-fast-dinner-reobserved",
+            "oct29-family-variety-reobserved"
+          ],
+          "keywords": [
+            "cozy fall dinners",
+            "chicken wild rice soup",
+            "fall comfort food dinners",
+            "cozy family recipes"
+          ],
+          "board": "Cozy Fall Dinner Recipes",
+          "provider_board_id": null,
+          "status": "RESEARCHED",
+          "status_source": "GitHub artifact",
+          "status_observed_at": null,
+          "schedule_time": null,
+          "post_id": null,
+          "auto_publish": null,
+          "planner_url": null,
+          "media_url": null,
+          "source_manifest_url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-research/2026-10-29/manifest.json"
+        }
+      ],
+      "references": [
+        {
+          "id": "oct29-fast-dinner-reobserved",
+          "date": "2026-10-29",
+          "type": "competitor_observed",
+          "pin_url": "https://www.pinterest.com/pin/quick-20minute-dinner-recipes-for-busy-nights-in-2025--1124703706948772252/",
+          "file_name": "reobserved-20-minute-dinner-2026-10-29.jpg",
+          "archive_status": "saved_in_drive",
+          "design_notes": "Visually re-reviewed real two-panel 20-minute dinner Pinterest image: stacked close-up saucy chicken pasta and fusilli with peppers, warm amber food tones, bold black lettering on a compact yellow central time-promise strip. For originality borrow appetite appeal and immediate promise, not the split image or banner.",
+          "metric_status": "not_verified",
+          "label": "RE-OBSERVED Oct29, first archived Oct27; dated private JPEG copy verified in Google Drive Oct29; individual pin engagement not verified.",
+          "private_library_url": "https://drive.google.com/drive/folders/1TzX-um3SpktjJ9jh1gP8F0cYbOHbcvHd"
+        },
+        {
+          "id": "oct29-family-variety-reobserved",
+          "date": "2026-10-29",
+          "type": "competitor_observed",
+          "pin_url": "https://www.pinterest.com/pin/35-dinner-ideas-for-tonight-that-are-nofuss-big-flavor--681873199858570306/",
+          "file_name": "reobserved-family-dinner-variety-2026-10-29.jpg",
+          "archive_status": "saved_in_drive",
+          "design_notes": "Visually re-reviewed real Pinterest pin with four tightly cropped cooked meals in warm golden and red tones surrounding a giant central 35 easy dinner recipes promise. Strong number-first mobile hierarchy and abundant familiar food; do not reproduce the white diamond, quadrant collage or exact copy.",
+          "metric_status": "not_verified",
+          "label": "RE-OBSERVED Oct29, original visual archived Oct27; dated private JPEG copy verified Oct29; no per-pin save/click evidence.",
+          "private_library_url": "https://drive.google.com/drive/folders/1TzX-um3SpktjJ9jh1gP8F0cYbOHbcvHd"
+        },
+        {
+          "id": "oct29-single-hero-reobserved",
+          "date": "2026-10-29",
+          "type": "competitor_observed",
+          "pin_url": "https://www.pinterest.com/pin/20-easy-homemade-dinner-recipes--157696424443444551/",
+          "file_name": "reobserved-single-dinner-hero-2026-10-29.jpg",
+          "archive_status": "saved_in_drive",
+          "design_notes": "Visually re-reviewed real Pinterest pin showing one overhead home-cooked chicken and green-bean skillet framed by tomatoes, basil and pale side dishes. A compact title sits above the continuous meal photo with a teal border; recognizable ingredients and clear hero-to-headline hierarchy, not a proven performance winner.",
+          "metric_status": "not_verified",
+          "label": "RE-OBSERVED Oct29 from earlier Pinterest visual; dated private JPEG copy verified Oct29; performance unverified.",
+          "private_library_url": "https://drive.google.com/drive/folders/1TzX-um3SpktjJ9jh1gP8F0cYbOHbcvHd"
+        }
+      ],
+      "events": [
+        {
+          "date": "2026-10-29",
+          "title": "Daily Pinterest research saved",
+          "description": "3 documented references and 9 creative briefs.",
+          "severity": "success",
+          "phase": "research",
+          "at": "2026-10-29T06:59:00-04:00",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-research/2026-10-29/manifest.json",
+          "source": "Recorded artifact"
+        }
+      ],
+      "audit_note": "Research-first Oct29: three genuine Pinterest dinner images visually re-reviewed from private Oct28 archive and COPIED into verified Oct29 private JPEG folder; all three are re-observed, NOT newly discovered or proven winners. Three additional real Pinterest printable pin images were visually inspected Oct29 (crossword, weekly meal plan, meal builder) but raw i.pinimg download failed due container DNS/network resolution; therefore NOT marked archived and not counted as three mandatory archived reference_images. Do not imply Pinterest performance from their appearance. Connected Metricool 68 original pins through Oct28 show highest 61 impressions/3 outbound clicks; no pin meets 500-impression verified-winner threshold. Oct28 published 7/9; 2 Pinterest provider ERROR 'You have reached your Metricool account limit'. No paid upgrade or RSS fallback authorized. Oct29 manifest has 3 real catalog PDF printables and 6 verified existing article pages. First-party photo generation is a separate triggered workflow; manifest commit is not proof of image generation, scheduling or publication.",
+      "evidence_sources": [
+        {
+          "type": "newly_visually_observed_pinterest_pin_not_archived",
+          "url": "https://www.pinterest.com/pin/287597126183713040/",
+          "image_url": "https://i.pinimg.com/originals/74/70/a1/7470a116cfd0080fb0b81473ca5a5980.jpg",
+          "observation": "Oct29 image search showed a weekly meal-plan/grocery-budget sheet with turquoise polka-dot edge, seven daily boxes and shopping lines; inspires visible planning functionality, not copied layout.",
+          "archive_status": "not_archived_image_download_blocked",
+          "metric_status": "not_verified"
+        },
+        {
+          "type": "newly_visually_observed_pinterest_pin_not_archived",
+          "url": "https://www.pinterest.com/pin/free-printable-meal-builder-how-to-build-a-meal-planning-dinner--341992165472577696/",
+          "image_url": "https://i.pinimg.com/736x/71/2a/e4/712ae45ac46d64671b35af0a6a540b05.jpg",
+          "observation": "Oct29 visually inspected real free meal-builder pin: printable grid pages at top, broad muted rose headline panel, clear FREE benefit; use genuine product-preview principle but not its exact text/layout.",
+          "archive_status": "not_archived_image_download_blocked",
+          "metric_status": "not_verified"
+        },
+        {
+          "type": "newly_visually_observed_pinterest_pin_not_archived",
+          "url": "https://www.pinterest.com/pin/933300722750450142/",
+          "image_url": "https://i.pinimg.com/originals/d7/e0/1f/d7e01fbd2e0b62c5f421743a0f67ab42.jpg",
+          "observation": "Oct29 visually inspected real food crossword pin: legible numbered black-and-white grid flanked by small colorful food illustrations; actual grid visibility matters, never copy its grid or illustrations.",
+          "archive_status": "not_archived_image_download_blocked",
+          "metric_status": "not_verified"
+        }
+      ],
+      "raw_sources": [
+        {
+          "label": "Research manifest",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-research/2026-10-29/manifest.json",
+          "available": true
+        },
+        {
+          "label": "Image ledger",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-publishing-ledger/2026-10-29.json",
+          "available": false
+        },
+        {
+          "label": "Scheduling receipt",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-scheduling-ledger/2026-10-29.json",
+          "available": false
+        },
+        {
+          "label": "Provider status snapshot",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-status-snapshots/2026-10-29.json",
+          "available": false
+        },
+        {
+          "label": "Operations history",
+          "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/blob/main/pinterest-activity/2026-10-29.json",
+          "available": false
+        }
+      ],
+      "status_snapshot_at": null,
+      "reviewed_at": "2026-10-29T06:59:00-04:00"
+    },
     {
       "date": "2026-10-28",
       "status": "scheduled",
@@ -2141,13 +2647,35 @@
   ],
   "runs": [
     {
-      "id": 40861578118,
+      "id": 40861847442,
       "name": "What's For Eats — Pinterest Command Center data sync",
       "event": "push",
       "status": "in_progress",
       "conclusion": null,
+      "created_at": "2026-10-29T10:59:23Z",
+      "updated_at": "2026-10-29T10:59:28Z",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40861847442",
+      "attempt": 1
+    },
+    {
+      "id": 40861847412,
+      "name": "What's For Eats — research-gated original Pinterest publisher",
+      "event": "push",
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-10-29T10:59:23Z",
+      "updated_at": "2026-10-29T10:59:28Z",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40861847412",
+      "attempt": 1
+    },
+    {
+      "id": 40861578118,
+      "name": "What's For Eats — Pinterest Command Center data sync",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
       "created_at": "2026-10-29T10:57:13Z",
-      "updated_at": "2026-10-29T10:57:30Z",
+      "updated_at": "2026-10-29T10:57:43Z",
       "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/40861578118",
       "attempt": 1
     },
