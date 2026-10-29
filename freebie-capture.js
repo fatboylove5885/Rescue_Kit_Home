@@ -67,6 +67,18 @@
         show((result.error||"We couldn't confirm the email request.")+" You can still open the free printable below.",true);
       }
     });
+    // Google Apps Script's HtmlService can nest its reply inside additional iframes.
+    // A completed load is not verified email delivery; it only lets us open
+    // the free guide without trapping the visitor behind a stuck spinner.
+    frame.addEventListener("load",function(){
+      if(!active)return;
+      setTimeout(function(){
+        if(!active)return; // A real success/error callback already took priority.
+        finish();
+        show("Your request was submitted. Opening the free guide; please check your email for delivery confirmation.",true);
+        window.location.assign(destination.href);
+      },1800);
+    });
     // Capture BEFORE all legacy form handlers, including inline listener fallbacks.
     form.addEventListener("submit",function(ev){
       ev.preventDefault();ev.stopImmediatePropagation();
