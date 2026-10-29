@@ -123,7 +123,7 @@ function doPost(e) {
     const asset = ASSETS[assetKey];
     const requestId = String(data.request_id || '').slice(0, 90);
     const marketing = data.marketing === true || String(data.marketing || '').toLowerCase() === 'true';
-    if (!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)) return resultPage({ok:false,error:'Enter a valid email address.'}, requestId);
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return resultPage({ok:false,error:'Enter a valid email address.'}, requestId);
     if (!asset) return resultPage({ok:false,error:'That printable was not found.'}, requestId);
 
     const ss = SpreadsheetApp.openById(SHEET_ID);
