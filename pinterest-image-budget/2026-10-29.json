@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-29",
+  "timezone": "America/Detroit",
+  "model": "gpt-image-2",
+  "currency": "USD",
+  "budget_cap_usd": 2,
+  "source": "GitHub .github/workflows/pinterest-oct29-approved-redo.yml budget envelope; estimated API output prices, not verified billing",
+  "batches": [
+    {
+      "variant": "original",
+      "images": 9,
+      "quality": "medium",
+      "estimated_output_cost_usd": 0.369,
+      "asset_ledger": "pinterest-publishing-ledger/2026-10-29.json"
+    },
+    {
+      "variant": "redo-2026-10-29",
+      "images": 9,
+      "quality": "high",
+      "estimated_output_cost_usd": 1.485,
+      "asset_ledger": "pinterest-publishing-ledger/2026-10-29-redo.json",
+      "approval": "User explicitly approved one October 29 redo"
+    }
+  ],
+  "estimated_output_total_usd": 1.854,
+  "reserved_input_and_overhead_usd": 0.12,
+  "estimated_envelope_total_usd": 1.974,
+  "estimated_remaining_envelope_usd": 0.026,
+  "actual_billed_usd": null,
+  "actual_billing_verified": false,
+  "additional_generation_allowed": false,
+  "note": "Both batches already generated. No third Oct29 batch. Actual OpenAI billing has not been independently retrieved. Values are conservative workflow estimates, not transaction receipts."
+}
