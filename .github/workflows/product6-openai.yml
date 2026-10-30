@@ -1,9 +1,6 @@
 name: Product 6 - OpenAI artwork and PDF
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['scripts/build_product6_openai.py']
 permissions:
   contents: read
 concurrency:
