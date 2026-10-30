@@ -140,11 +140,17 @@ function vWeek(){
     const opts=R.filter(x=>!d.l||x.lvl==d.l).map(x=>`<option value="${x.n}" ${d.r==x.n?"selected":""}>${x.n}. ${esc(x.t)}</option>`).join("");
     const cur=d.r?byN(d.r):null;
     return `<div class="card day"><div class="d">${DAYS[i]}</div><div><div class="seg" role="group" aria-label="${DAYS[i]} energy level">${[1,2,3].map(l=>`<button class="chip" data-dl="${i}:${l}" aria-pressed="${d.l==l}">Level ${l}</button>`).join("")}</div>
-    <label class="noprint" for="w${i}" style="display:none">${DAYS[i]} dinner</label><select id="w${i}" data-wk="${i}"><option value="">Choose a dinner</option>${opts}</select>
+    <label class="noprint" for="w${i}" style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)">${DAYS[i]} dinner</label><select id="w${i}" data-wk="${i}"><option value="">Choose a dinner</option>${opts}</select>
     ${cur?`<div class="eff" style="margin-top:6px">${esc(cur.eff)} · dishes: ${esc(cur.dish)}${cur.lvl==3?" · start it earlier in the day":""}</div>`:""}</div></div>`}).join("")}`;
 }
 const AIS=[["Frozen",/frozen/i],["Pantry",/powder|seasoning|paprika|cumin|\bsalt\b|pepper|\boil\b|honey|ketchup|broth|sauce|salsa|soy|bbq|\bcan\b|\bjar\b|pouch|ramen|\brice\b|spaghetti|ziti|penne|linguine|gnocchi|nuts|pickles|olives|crackers|chips|chili|foil|sesame/i],["Meat & deli",/chicken|sausage|kielbasa|salami|deli meat|meatball|pepperoni|bacon/i],["Dairy & eggs",/cheese|egg|butter|sour cream|ricotta|parmesan|mozzarella|hummus|feta|ranch/i],["Bread & tortillas",/tortilla|pita|naan|\bbun|bread/i],["Produce",/carrot|cucumber|grape|apple|potato|spinach|bean|lemon|garlic|avocado|cilantro|jalap|lettuce|cabbage|onion|lime|pea|corn|vegetable|pepper/i]];
-function aisle(s){for(const[a,re]of AIS)if(re.test(s))return a;return "Pantry"}
+function aisle(s){
+ if(/frozen/i.test(s))return 'Frozen';
+ if(/peanut butter|granola|honey|cinnamon|oats/i.test(s))return 'Pantry';
+ if(/yogurt|milk|cream|cheese|eggs?|butter|feta|hummus|ranch/i.test(s))return 'Dairy & eggs';
+ if(/berries|banana|apple|lemon|lime|carrot|cucumber|spinach|lettuce|cabbage|broccoli|onion|tomato|potato|avocado|grapes|green beans|bell pepper|cilantro|mushroom/i.test(s)&&!/can |canned|jar|sauce|soup|powder|flakes|dried|frozen|seasoning/i.test(s))return 'Produce';
+ for(const[a,re]of AIS)if(re.test(s))return a;return 'Pantry'
+}
 function vShop(){
   const ids=[...new Set(S.week.filter(d=>d.r).map(d=>d.r))];
   if(!ids.length)return `<h2>Grocery list</h2><p class="empty">Plan at least one dinner on the Week plan tab and the list builds itself.</p><div class="row" style="justify-content:center;margin-top:12px"><button class="go" data-tab="week">Go to Week plan</button></div>`;
