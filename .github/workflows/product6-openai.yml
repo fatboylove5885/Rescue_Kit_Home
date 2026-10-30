@@ -1,0 +1,35 @@
+name: Product 6 - OpenAI artwork and PDF
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/build_product6_openai.py']
+permissions:
+  contents: read
+concurrency:
+  group: product6-openai
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install reportlab Pillow pymupdf
+      - uses: actions/cache@v4
+        with:
+          path: product6-output/assets
+          key: product6-openai-art-v1
+      - name: Generate dedicated OpenAI artwork and build checked PDF
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python scripts/build_product6_openai.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: product6-openai-review
+          path: product6-output/
+          retention-days: 30
