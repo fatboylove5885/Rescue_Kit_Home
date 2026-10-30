@@ -104,7 +104,7 @@ card('The finish line','By the end, choose three dinners, prep shared ingredient
 # 4
 base('02 / Keep it small','The two-person starter plan','Scale by appetite and household size after one trial week.')
 card('Choose a base','Cook rice for your next meal and freeze any later portions promptly. Or keep tortillas ready and cook couscous fresh on the night.',630,115)
-card('Choose two anchors','Cook 500 g / 1.1 lb raw boneless chicken, or prepare a plant-based alternative. Keep two cans of beans in the pantry to open when needed.',502,115,palette[1])
+card('Choose two anchors','Cook about 700 g / 1.5 lb raw boneless chicken, or prepare a plant-based alternative. Keep two cans of beans in the pantry to open when needed.',502,115,palette[1])
 card('Choose two kinds of color','Roast broccoli and carrots together. Keep cabbage and cucumber raw and dry. Separate hot components from fresh toppings.',374,115,palette[2])
 card('Choose two contrasting finishes','A cool herb yogurt sauce and bright lemon tahini sauce give the same ingredients two different identities. Make only what you can safely use.',246,115,palette[3]);done()
 # 5
@@ -121,7 +121,7 @@ done()
 base('05 / Make dinner feel different','Change two of these three things')
 photo('01',36,410,540,232)
 for i,(h,b) in enumerate([('FORMAT','Bowl -> wrap -> skillet. Chicken and vegetables can become three different eating experiences.'),('FLAVOR','Lemon-herb -> smoky salsa -> sesame-ginger. Start with neutral components and season at assembly.'),('TEXTURE','Soft rice + crisp cabbage; warm beans + crunchy tortilla; creamy sauce + fresh cucumber.')]):card(h,b,391-i*101,90,palette[i])
-text('Worked remix: Monday chicken bowl = rice + yogurt + roast vegetables. Tuesday flatbread = bread + lemon tahini + raw crunch. Same anchor, different dinner.',36,83,540,8);done()
+text('Worked remix: Monday chicken bowl = rice + yogurt + roast vegetables. Tuesday flatbread = bread + lemon tahini + raw crunch. Same anchor, different dinner.',36,96,540,8);done()
 # 8
 base('06 / A seven-night plan','Prep is not seven days in the fridge','Later-week dinners use frozen portions, unopened pantry food, or fresh cooking.')
 week=[('MON','Chicken bowls','Sunday chicken + vegetables. Rice cooked fresh or safely thawed.'),('TUE','Chicken flatbreads','Finish the refrigerated chicken; use fresh crunch.'),('WED','Black bean tacos','Open beans today. Warm tortillas and add cabbage.'),('THU','Pesto broccoli pasta','Cook pasta and broccoli fresh; open white beans.'),('FRI','Sweet potato boats','Cook potatoes fresh. Use unopened beans and frozen corn.'),('SAT','Turkey skillet','Cook fresh turkey, or thaw raw frozen turkey safely in fridge.'),('SUN','Soup + review','Use pantry beans and tomatoes; plan the next three dinners.')]
@@ -131,7 +131,7 @@ done()
 # 9
 base('07 / Safety first','The label is part of the recipe')
 for i,(h,b) in enumerate([('CHILL + SEPARATE','Keep fridge at 4 C / 40 F or below. Refrigerate perishables within 2 hours, or 1 hour above 32 C / 90 F. Use shallow containers; keep raw meat separate.'),('A CONSERVATIVE WORKBOOK RULE','Use refrigerated cooked components within 48 hours, or freeze promptly. USDA permits many cooked leftovers 3-4 days; this workbook uses a shorter default for mixed markets. Follow shorter labels/local rules.'),('RICE NEEDS EXTRA CARE','Cool cooked rice as quickly as possible, ideally within 1 hour. Refrigerate for no more than 1 day before reheating, or freeze promptly. Reheat only once; do not keep reheated leftovers.'),('HEAT THE FOOD, NOT JUST THE DISH','Check chicken, ground turkey and reheated leftovers reach 74 C / 165 F throughout. Stir microwave food and check multiple spots. Thaw in fridge, or follow safe microwave thawing and cook immediately.')]):card(h,b,637-i*136,123,palette[i])
-text('Sources: FoodSafety.gov temperature chart; USDA reheating guidance; UK FSA rice and cooking guidance. Links on page 34. Smell cannot prove food is safe.',36,85,540,8);done()
+text('Sources: FoodSafety.gov temperature chart; USDA reheating guidance; UK FSA rice and cooking guidance. Links on page 34. Smell cannot prove food is safe.',36,96,540,8);done()
 # 10
 base('08 / Make the same food taste new','Two sauces, two personalities')
 photo('components',36,405,540,238)
@@ -164,7 +164,7 @@ text('Yield check: 500 g raw boneless chicken may yield roughly 350-400 g cooked
 # 25
 base('11 / The example shopping list','Buy the gap, not the whole kitchen')
 for i,(h,b) in enumerate([('PRODUCE','1 small broccoli + 2 carrots (aim for 2 cups cooked); 1/2 cucumber; cabbage for 2 shredded cups; 1 lemon; 1 lime; small bunch parsley or dill.'),('ANCHORS + BASES','About 700 g / 1.5 lb raw boneless chicken; 1 can black beans; dry rice sufficient for 2 cups cooked (check packet yield); 2 large flatbreads; 4 small tortillas.'),('CHILLED + JARS','1/2 cup plain yogurt; 4 tbsp salsa. Check use-by dates and storage instructions. Buy smaller packs when the rest has no planned use.'),('PANTRY CHECK','Oil; cumin; smoked paprika; salt if wanted. Optional: tahini for an alternative finish. Cross out what you own before shopping.')]):card(h,b,634-i*135,122,palette[i])
-text('This list covers the three-dinner example only. The seven-night menu on page 8 requires additional ingredients from the relevant recipe cards.',36,85,540,8);done()
+text('This list covers the three-dinner example only. The seven-night menu on page 8 requires additional ingredients from the relevant recipe cards.',36,96,540,8);done()
 # 26
 base('12 / Put names on containers','The fridge map that gets food eaten')
 photo('components',36,406,540,237)
@@ -184,11 +184,11 @@ for wi,(h,sub,cols) in enumerate(works):
   y=510-i*60;rect(36,y,540,55,palette[i%4],5)
   c.setStrokeColor(HexColor('#A4B2A5'));c.setLineWidth(.5)
   for j in range(1,4):c.line(36+j*135,y+7,36+j*135,y+48)
- text('Small plan, clear labels, useful food. Photograph your completed page if that helps your household coordinate.',36,85,540,8);done()
+ text('Small plan, clear labels, useful food. Photograph your completed page if that helps your household coordinate.',36,96,540,8);done()
 # 33
 base('14 / Make it yours','The four-week confidence check')
 for i,(h,b) in enumerate([('WEEK 1 / THREE DINNERS','Complete the page 24 example or your own equivalent. Record prep time, leftover amounts and the dinner everyone liked best.'),('WEEK 2 / ONE REMIX','Keep the winning components. Change one meal format and one sauce. Avoid adding a whole new ingredient list.'),('WEEK 3 / A REAL BACKUP','Freeze a suitable portion promptly and schedule when to thaw it. Try an unopened pantry dinner on your busiest night.'),('WEEK 4 / KEEP THE WINNERS','Choose 6 favorite meal builds. Compare planned dinners with dinners eaten. Track unused food and extra shopping trips; improve one friction point.')]):card(h,b,634-i*135,121,palette[i])
-text('Success means less decision effort and more food eaten - not perfect meal prep. This is a planning system, not a medical or nutrition prescription.',36,83,540,8);done()
+text('Success means less decision effort and more food eaten - not perfect meal prep. This is a planning system, not a medical or nutrition prescription.',36,96,540,8);done()
 # 34
 base('Sources + honest production notes','Read, verify, then make it yours')
 refs=[('Safe minimum temperatures','https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures'),('USDA: reheating leftovers','https://ask.fsis.usda.gov/article/How-do-I-reheat-leftovers-safely'),('UK FSA: rice and reheating','https://www.gov.uk/government/publications/home-food-fact-checker/home-food-fact-checker'),('UK FSA: cooking food','https://www.food.gov.uk/safety-hygiene/cooking-your-food')]
