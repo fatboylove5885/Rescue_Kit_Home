@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-04T20:24:05+00:00",
+  "updated_at": "2026-11-05T01:26:13+00:00",
   "site": "What's For Eats — Pinterest Command Center",
   "timezone": "America/Detroit",
   "visibility": "PUBLIC_SITE_METADATA_ONLY",
@@ -2741,13 +2741,46 @@
   ],
   "runs": [
     {
-      "id": 41906209196,
+      "id": 41948484858,
       "name": "What's For Eats — Pinterest Command Center data sync",
       "event": "schedule",
       "status": "in_progress",
       "conclusion": null,
+      "created_at": "2026-11-05T01:26:00Z",
+      "updated_at": "2026-11-05T01:26:05Z",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/41948484858",
+      "attempt": 1
+    },
+    {
+      "id": 41926153752,
+      "name": "Pinterest RSS Safety Quarantine",
+      "event": "schedule",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-04T22:32:26Z",
+      "updated_at": "2026-11-04T22:32:38Z",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/41926153752",
+      "attempt": 1
+    },
+    {
+      "id": 41906627476,
+      "name": "What's For Eats — research-gated original Pinterest publisher",
+      "event": "schedule",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-04T20:26:30Z",
+      "updated_at": "2026-11-04T20:26:45Z",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/41906627476",
+      "attempt": 1
+    },
+    {
+      "id": 41906209196,
+      "name": "What's For Eats — Pinterest Command Center data sync",
+      "event": "schedule",
+      "status": "completed",
+      "conclusion": "success",
       "created_at": "2026-11-04T20:23:52Z",
-      "updated_at": "2026-11-04T20:23:57Z",
+      "updated_at": "2026-11-04T20:24:11Z",
       "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/41906209196",
       "attempt": 1
     },
