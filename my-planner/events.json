@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "lastUpdated": "2026-11-09",
+  "events": [
+    {
+      "id": "ringling-circus-2026-11-14",
+      "title": "Ringling Bros. and Barnum & Bailey Circus",
+      "category": "Outing",
+      "priority": "high",
+      "date": "2026-11-14",
+      "departureTime": "13:30",
+      "returnTime": "18:30",
+      "returnIsApproximate": true,
+      "venue": "Little Caesars Arena",
+      "meetingPlace": "Village of New Haven Municipal Offices",
+      "meetingAddress": "57775 Main Street, New Haven, MI 48048",
+      "price": "$30 per person",
+      "included": "Transportation and circus entry",
+      "notes": "Village of New Haven Parks & Recreation trip. Bus leaves the municipal offices at 1:30 PM and is expected back in the village around 6:30 PM. Registration is currently being accepted at the municipal offices, with payment due when registering. The flyer does not state a separate registration deadline.",
+      "source": "User-provided flyer"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "register-ringling-2026-11-14",
+      "title": "Register and pay for the circus trip",
+      "priority": "high",
+      "eventId": "ringling-circus-2026-11-14",
+      "dueDate": null,
+      "details": "Pay $30 per person at registration at the Village of New Haven Municipal Offices. No separate registration deadline is listed."
+    },
+    {
+      "id": "arrive-ringling-2026-11-14",
+      "title": "Be at the municipal offices for the 1:30 PM departure",
+      "priority": "medium",
+      "eventId": "ringling-circus-2026-11-14",
+      "dueDate": "2026-11-14",
+      "dueTime": "13:30",
+      "details": "Departure location: 57775 Main Street, New Haven, MI 48048. The bus is expected back around 6:30 PM."
+    }
+  ]
+}
