@@ -50,6 +50,21 @@
       "source": "User-provided RA ticket screenshot"
     },
     {
+      "id": "henry-ford-orthopaedics-dekker-2026-11-17",
+      "title": "Orthopaedics / Sports Medicine Appointment",
+      "category": "Appointment",
+      "priority": "high",
+      "date": "2026-11-17",
+      "startTime": "08:40",
+      "durationMinutes": 10,
+      "venue": "Henry Ford Orthopaedics – New Baltimore",
+      "venueAddress": "36750 26 Mile Rd, Suite 140, Chesterfield, MI 48047",
+      "physician": "Robert Dekker, MD",
+      "phone": "586-879-2010",
+      "notes": "Tuesday at 8:40 AM EST. Scheduled 10-minute appointment with Robert Dekker, MD. Office phone: 586-879-2010. Pre-visit questionnaires become available November 10. If radiology was performed outside HFHS, bring any current radiology films. This appointment is a medical visit; no diagnosis has been recorded.",
+      "source": "User-provided MyChart appointment screenshot"
+    },
+    {
       "id": "big-pink-2016-night-2026-11-20",
       "title": "2016 Night: Club Throwbacks (DJ KDirty + Celex the DJ)",
       "category": "Nightlife",
@@ -105,6 +120,23 @@
       "eventId": "big-pink-girly-pop-2026-11-13",
       "dueDate": "2026-11-13",
       "details": "Friday, November 13 at 10 PM at Big Pink. Wearing pink is required for free entry, which is first come, first served. Have your RA ticket ready."
+    },
+    {
+      "id": "henry-ford-questionnaires-2026-11-17",
+      "title": "Complete pre-visit questionnaires for Nov 17 appointment",
+      "priority": "high",
+      "eventId": "henry-ford-orthopaedics-dekker-2026-11-17",
+      "dueDate": null,
+      "details": "Questionnaires become available Tuesday, November 10, 2026 in MyChart. Complete them before the November 17 appointment; no specific deadline is shown."
+    },
+    {
+      "id": "henry-ford-outside-radiology-films-2026-11-17",
+      "title": "Bring outside radiology films to orthopaedics appointment (if applicable)",
+      "priority": "medium",
+      "eventId": "henry-ford-orthopaedics-dekker-2026-11-17",
+      "dueDate": "2026-11-17",
+      "dueTime": "08:40",
+      "details": "Bring any current radiology films only if the imaging was performed outside HFHS. Appointment is at 8:40 AM, 36750 26 Mile Rd, Suite 140, Chesterfield."
     }
   ]
 }
