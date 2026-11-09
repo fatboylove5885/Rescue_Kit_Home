@@ -71,10 +71,10 @@
         const hasJourney=Boolean(e.departureTime||e.returnTime);
         const timing=hasJourney
           ? '<strong>Departure:</strong> '+esc(fmtTime(e.departureTime))+' · <strong>Return:</strong> '+(e.returnIsApproximate?'about ':'')+esc(fmtTime(e.returnTime))
-          : '<strong>Event:</strong> '+esc(fmtTime(e.startTime))+' – '+esc(fmtTime(e.endTime))+(e.endsNextDay?' (next day)':'');
+          : '<strong>'+esc(e.category==='Appointment'?'Appointment':'Event')+':</strong> '+esc(fmtTime(e.startTime))+(e.endTime?' – '+esc(fmtTime(e.endTime)):'')+(e.durationMinutes?' · Scheduled '+esc(e.durationMinutes)+' minutes':'')+(e.endsNextDay?' (next day)':'');
         const location=e.meetingPlace
           ? '<strong>Meeting point:</strong> '+esc(e.meetingPlace)+(e.meetingAddress?'<br>'+esc(e.meetingAddress):'')
-          : '<strong>Location:</strong> '+esc(e.venue||'Location not provided');
+          : '<strong>Location:</strong> '+esc(e.venue||'Location not provided')+(e.venueAddress?'<br>'+esc(e.venueAddress):'');
         const venueDetail=e.meetingPlace&&e.venue?'<div class="detail"><span class="detail-icon" aria-hidden="true">◉</span><span><strong>Event venue:</strong> '+esc(e.venue)+'</span></div>':'';
         const admission=e.price||e.included?'<div class="detail"><span class="detail-icon" aria-hidden="true">＄</span><span><strong>'+esc(e.price||'Admission')+'</strong>'+(e.included?' · '+esc(e.included):'')+'</span></div>':'';
         const address=e.meetingAddress||e.venueAddress;
