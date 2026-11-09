@@ -3,6 +3,21 @@
   "lastUpdated": "2026-11-09",
   "events": [
     {
+      "id": "big-pink-girly-pop-2026-11-13",
+      "title": "Girly Pop Pink Party: Problematicblackhottie",
+      "category": "Nightlife",
+      "priority": "medium",
+      "date": "2026-11-13",
+      "startTime": "22:00",
+      "endTime": "02:00",
+      "endsNextDay": true,
+      "venue": "Big Pink",
+      "price": "1 free-entry ticket",
+      "included": "Must wear pink · First come, first served",
+      "notes": "Wear pink for free entry. Ticket states first come, first served; entry is not guaranteed. Keep your RA ticket available.",
+      "source": "User-provided RA ticket screenshot"
+    },
+    {
       "id": "ringling-circus-2026-11-14",
       "title": "Ringling Bros. and Barnum & Bailey Circus",
       "category": "Outing",
@@ -18,6 +33,51 @@
       "included": "Transportation and circus entry",
       "notes": "Village of New Haven Parks & Recreation trip. Bus leaves the municipal offices at 1:30 PM and is expected back in the village around 6:30 PM. Registration is currently being accepted at the municipal offices, with payment due when registering. The flyer does not state a separate registration deadline.",
       "source": "User-provided flyer"
+    },
+    {
+      "id": "big-pink-dj-marathon-carter-2026-11-14",
+      "title": "Hip-Hop Night: DJ Marathon B2B DJ Carter (Open Format Club Hits)",
+      "category": "Nightlife",
+      "priority": "medium",
+      "date": "2026-11-14",
+      "startTime": "22:00",
+      "endTime": "02:00",
+      "endsNextDay": true,
+      "venue": "Big Pink",
+      "price": "1 free-entry ticket",
+      "included": "First come, first served",
+      "notes": "Free entry is first come, first served. Keep your RA ticket available. Entry is not guaranteed.",
+      "source": "User-provided RA ticket screenshot"
+    },
+    {
+      "id": "big-pink-2016-night-2026-11-20",
+      "title": "2016 Night: Club Throwbacks (DJ KDirty + Celex the DJ)",
+      "category": "Nightlife",
+      "priority": "medium",
+      "date": "2026-11-20",
+      "startTime": "22:00",
+      "endTime": "02:00",
+      "endsNextDay": true,
+      "venue": "Big Pink",
+      "price": "1 free-entry ticket",
+      "included": "First come, first served",
+      "notes": "Free entry is first come, first served. Keep your RA ticket available. Entry is not guaranteed.",
+      "source": "User-provided RA ticket screenshot"
+    },
+    {
+      "id": "big-pink-dj-mobeatz-2026-11-21",
+      "title": "Hip-Hop Night: DJ Mobeatz + More (Open Format Club Hits)",
+      "category": "Nightlife",
+      "priority": "medium",
+      "date": "2026-11-21",
+      "startTime": "22:00",
+      "endTime": "02:00",
+      "endsNextDay": true,
+      "venue": "Big Pink",
+      "price": "1 free-entry ticket",
+      "included": "First come, first served",
+      "notes": "Free entry is first come, first served. Keep your RA ticket available. Entry is not guaranteed.",
+      "source": "User-provided RA ticket screenshot"
     }
   ],
   "tasks": [
@@ -37,6 +97,14 @@
       "dueDate": "2026-11-14",
       "dueTime": "13:30",
       "details": "Departure location: 57775 Main Street, New Haven, MI 48048. The bus is expected back around 6:30 PM."
+    },
+    {
+      "id": "wear-pink-big-pink-2026-11-13",
+      "title": "Wear pink and bring your ticket to Girly Pop Pink Party",
+      "priority": "high",
+      "eventId": "big-pink-girly-pop-2026-11-13",
+      "dueDate": "2026-11-13",
+      "details": "Friday, November 13 at 10 PM at Big Pink. Wearing pink is required for free entry, which is first come, first served. Have your RA ticket ready."
     }
   ]
 }
