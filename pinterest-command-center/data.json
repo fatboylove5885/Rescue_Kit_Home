@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-14T22:56:23+00:00",
+  "updated_at": "2026-11-15T02:35:25+00:00",
   "site": "What's For Eats — Pinterest Command Center",
   "timezone": "America/Detroit",
   "visibility": "PUBLIC_SITE_METADATA_ONLY",
@@ -2741,13 +2741,35 @@
   ],
   "runs": [
     {
-      "id": 43650656276,
+      "id": 43668487652,
       "name": "What's For Eats — Pinterest Command Center data sync",
       "event": "schedule",
       "status": "in_progress",
       "conclusion": null,
+      "created_at": "2026-11-15T02:35:16Z",
+      "updated_at": "2026-11-15T02:35:20Z",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/43668487652",
+      "attempt": 1
+    },
+    {
+      "id": 43664533119,
+      "name": "Pinterest RSS Safety Quarantine",
+      "event": "schedule",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-15T01:44:59Z",
+      "updated_at": "2026-11-15T01:45:12Z",
+      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/43664533119",
+      "attempt": 1
+    },
+    {
+      "id": 43650656276,
+      "name": "What's For Eats — Pinterest Command Center data sync",
+      "event": "schedule",
+      "status": "completed",
+      "conclusion": "success",
       "created_at": "2026-11-14T22:56:13Z",
-      "updated_at": "2026-11-14T22:56:17Z",
+      "updated_at": "2026-11-14T22:56:28Z",
       "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/43650656276",
       "attempt": 1
     },
@@ -3321,28 +3343,6 @@
       "created_at": "2026-11-07T17:59:50Z",
       "updated_at": "2026-11-07T18:00:04Z",
       "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/42399020170",
-      "attempt": 1
-    },
-    {
-      "id": 42390589278,
-      "name": "Pinterest RSS Safety Quarantine",
-      "event": "schedule",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-11-07T16:17:59Z",
-      "updated_at": "2026-11-07T16:18:09Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/42390589278",
-      "attempt": 1
-    },
-    {
-      "id": 42361700056,
-      "name": "Pinterest RSS Safety Quarantine",
-      "event": "schedule",
-      "status": "completed",
-      "conclusion": "success",
-      "created_at": "2026-11-07T09:54:45Z",
-      "updated_at": "2026-11-07T09:54:55Z",
-      "url": "https://github.com/fatboylove5885/Rescue_Kit_Home/actions/runs/42361700056",
       "attempt": 1
     }
   ],
